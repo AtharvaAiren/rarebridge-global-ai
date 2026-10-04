@@ -1,0 +1,50 @@
+RareBridge — separate one-minute product walkthrough
+Public app: https://rarebridge-global-ai.vercel.app
+
+ACTUAL RECORDING
+submission/walkthrough/RareBridge-60s-walkthrough.mp4
+submission/walkthrough/VIDEO_VERIFICATION.json
+The public-production capture is verified at 60.00 seconds, using real public
+API responses without mocks and with no browser page errors. Narration uses
+macOS Samantha synthesized speech. This product video does not replace the
+separate team introduction/pitch. Check the latest verification record after any
+recapture and match the submitted file to the final tested build.
+
+The current recording follows this sequence:
+0–6 seconds: public search.
+  "RareBridge helps patient groups find research they can build on."
+6–11 seconds: SYNGAP1 and the natural-history goal.
+  "Search SYNGAP1 and choose a natural-history study."
+11–19 seconds: trace the source-backed, inferred navigation route to STXBP1.
+  "This sourced route leads to a shared framework. Inferred connections keep
+  their labels." Source checking does not turn inference into established biology.
+19–26 seconds: open the specific framework assessment.
+  "Recorded use is supported; permissions and local fit still need checking."
+26–34 seconds: hide the anchor publication.
+  "Two checks lose support. The overall outcome still needs information."
+34–40 seconds: restore the source.
+  "Support returns without changing the underlying records."
+40–47 seconds: inspect SCN2A's unknown applicability to this framework.
+  "Applicability remains unanswered. This is never approved reuse."
+47–53 seconds: prepare the sourced collaboration proposal for the restored
+  SYNGAP1 framework case, with concrete questions and a public research contact.
+53–60 seconds: download the actual text brief.
+  "The group leaves with a focused proposal for expert review and a concrete
+  next step."
+
+The exported artifact is submission/walkthrough/demonstrated-brief.txt.
+This recording demonstrates the core evidence-to-action workflow. It does not
+show newly generated AI scouting, measure 10x impact, establish a scientific
+connection, grant data access or provide treatment advice. Genuine AI scouting/
+assistant results are documented separately in AI_VERIFICATION.txt and can be
+shown in the team pitch. Cached generation must stay labeled cached.
+
+FINAL CAPTURE/SUBMISSION CHECK
+- Use the stable public alias above, not a login-protected deployment URL.
+- Retain the actual inferred/pending/source-checked labels and two-check change.
+- Show the brief's real sources, unresolved checks and public collaborator route.
+- Never expose keys, participant data or private lab communications.
+- Keep a team video separate with accurate credits for all four people. The PS
+  does not specify human faces/voices; explicitly synthesized narration and real
+  product footage can support that video without impersonating team members.
+- Confirm final MP4 duration/format, public access or upload, and portal receipt.

@@ -1,0 +1,20 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "canonical_id": "DOI:10.1002/epi.70374",
+  "source": {
+    "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+    "url": "https://doi.org/10.1002/epi.70374",
+    "aliases": [
+      "PMID:42446932"
+    ],
+    "published_on": "2026-07-14",
+    "source_kind": "human_observational_study",
+    "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+  },
+  "requested_id": "DOI:10.1002/epi.70374",
+  "cited_by_assessments": [
+    "framework-for-scn2a",
+    "framework-for-stxbp1",
+    "framework-for-syngap1"
+  ]
+}

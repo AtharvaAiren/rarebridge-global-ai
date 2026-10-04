@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>RareBridge · Brief preparation timing pilot</title>
+  <link rel="icon" href="./favicon.png">
+  <style>
+    :root { font-family: Lexend, system-ui, sans-serif; background: #f7f9fb; color: #0d2236; --surface: #fff; --muted: #45596c; --line: #dce4ec; --tint: #eef3f7; --brand: #092f4c; --gold: #f8bb0a; }
+    * { box-sizing: border-box; } body { margin: 0; } a { color: #1f5078; } button, input, select, textarea { font: inherit; } button, a.button { min-height: 44px; cursor: pointer; } :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    header, main, footer { max-width: 1060px; margin: auto; padding: 24px; } header { display: flex; gap: 24px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); } header strong { font-size: 22px; letter-spacing: -.6px; } header a { font-size: 14px; } main { padding-top: 40px; } h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; line-height: 1.15; } h1 { font-size: clamp(32px, 5vw, 48px); max-width: 760px; margin: 12px 0 20px; } h2 { font-size: 28px; } h3 { font-size: 21px; } p, li { line-height: 1.65; } .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); } .lead { max-width: 760px; color: var(--muted); font-size: 17px; } .band { background: var(--tint); padding: 20px 24px; border-radius: 14px; margin: 24px 0; } .band p { margin: 0; } section { border-top: 1px solid var(--line); padding: 28px 0; margin-top: 20px; } section h2 { margin-top: 0; } details { margin: 20px 0; } summary { cursor: pointer; min-height: 44px; padding: 10px 0; } .sources { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; list-style: none; } .sources a { display: inline-block; padding: 8px 0; } .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } label { display: grid; gap: 8px; font-size: 14px; font-weight: 500; } label small, .muted { color: var(--muted); font-weight: 400; font-size: 13px; line-height: 1.6; } input, select, textarea { background: var(--surface); color: inherit; border: 1px solid #b9c7d4; border-radius: 8px; width: 100%; padding: 12px; min-height: 44px; } textarea { resize: vertical; } input:disabled, select:disabled, textarea:disabled { opacity: .8; } .full { grid-column: 1 / -1; } .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; } button { border: 0; padding: 10px 16px; border-radius: 8px; background: var(--tint); color: inherit; } button.primary { background: var(--brand); color: white; } button.accent { background: var(--gold); color: #092f4c; } button:disabled { opacity: .5; cursor: not-allowed; } .timers { display: flex; flex-wrap: wrap; gap: 40px; margin: 24px 0; } .timer strong { display: block; font-variant-numeric: tabular-nums; font-size: 32px; font-weight: 500; margin-top: 8px; } .timer span { font-size: 13px; color: var(--muted); } .checks { display: grid; gap: 14px; list-style: none; padding: 0; } .checks label { display: flex; align-items: flex-start; gap: 12px; font-weight: 400; line-height: 1.6; } .checks input { width: 19px; height: 19px; min-height: 19px; margin-top: 2px; flex: none; accent-color: #1f5078; } #notice { padding: 12px 0; min-height: 48px; color: var(--muted); } .table-wrap { overflow-x: auto; } table { width: 100%; border-collapse: collapse; font-size: 13px; } th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: top; } th { color: var(--muted); font-weight: 500; } td button { font-size: 12px; padding: 6px 10px; } #ratio-list { padding-left: 20px; } #ratio-list li { margin: 12px 0; } .ratio-value { font-size: 21px; font-weight: 600; } .storage-note { font-size: 13px; color: var(--muted); } footer { border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); padding-bottom: 48px; } [hidden] { display: none !important; }
+    @media (max-width: 640px) { header, main, footer { padding-left: 20px; padding-right: 20px; } .grid { grid-template-columns: 1fr; } .full { grid-column: auto; } .timers { gap: 24px; } .band { padding: 16px; } }
+    @media (prefers-color-scheme: dark) { :root { background: #071a2a; color: #eaf0f6; --surface: #0f2a40; --muted: #a9bbcc; --line: #1b3a54; --tint: #0c2438; } a { color: #7fb0da; } input, select, textarea { border-color: #2c5070; } }
+  </style>
+</head>
+<body>
+  <header><strong>RareBridge</strong><a href="./">Open the research app ↗</a></header>
+  <main>
+    <p class="eyebrow">Measurement tool · small pilot</p>
+    <h1>How much time does preparing a useful brief actually take?</h1>
+    <p class="lead">Compare manual research with RareBridge using the same frozen sources, task, and fictional local assumptions. A completed run must pass the quality checklist. This page records real observations; it contains no sample timing results.</p>
+    <div class="band"><p><strong>Measure brief preparation only.</strong> A faster draft does not establish faster expert approval, study launch, treatment development, or clinical benefit. Do not enter patient information. Use anonymous participant and reviewer codes.</p></div>
+    <details open><summary><strong>Run the pilot fairly</strong></summary><ol>
+      <li>Freeze the source pack: save the exact pages/PDF versions or record their version and hash. Give both methods the same material and fictional constraints. The links below are starting sources, not an automatically frozen pack.</li>
+      <li>Use at least two participants if possible. Participant A does manual then app; participant B does app then manual. Record familiarity, training, and order. A one-person result must be labelled as such.</li>
+      <li>Manual: use the source pack, browser, and a blank editor without RareBridge. App: use RareBridge with the same pack and inspect its evidence. Record source inspection, revisions, and checklist review within the timed task.</li>
+      <li>Start when the participant receives the task. Pause active work only for unrelated interruptions; wall time continues. Finish only when a reviewer has checked all six criteria. Record failed and incomplete attempts too.</li>
+      <li>Keep the anonymous brief artifacts for quality review. Review without knowing the method when practical. Export the full log and report raw times, quality, failures, sample size, and order limitations.</li>
+    </ol><ul class="sources">
+      <li><a href="https://doi.org/10.1002/epi.70374" target="_blank" rel="noopener noreferrer">Published study protocol ↗</a></li>
+      <li><a href="https://www.stxbp1disorders.org/starr" target="_blank" rel="noopener noreferrer">STXBP1 Foundation · STARR ↗</a></li>
+      <li><a href="https://endd.med.upenn.edu/research/natural-history-study/" target="_blank" rel="noopener noreferrer">ENDD · Natural History Study ↗</a></li>
+    </ul><p class="muted">Record any additional source and its version in the frozen pack. A preprint and published paper are different versions; duplicate DOI/PMID identifiers do not supply independent evidence. Confirm that both methods can inspect the same material.</p></details>
+
+    <section aria-labelledby="run-title"><h2 id="run-title">1. Describe the run</h2>
+      <form id="run-form">
+        <div class="grid" id="metadata">
+          <label>Anonymous participant code<input name="participant" required maxlength="60" placeholder="For example, P01"><small>Reuse the same code for this person’s manual and app runs.</small></label>
+          <label>Task-cycle code<input name="cycle" required maxlength="60" placeholder="For example, round-1"><small>Use a new cycle for repeats. Multiple runs of the same method in a cycle cannot be paired.</small></label>
+          <label>Method<select name="method" required><option value="">Choose method</option><option value="manual">Manual · sources + blank editor</option><option value="app">RareBridge app</option></select></label>
+          <label>Order for this participant<select name="order" required><option value="">Choose order</option><option value="1">First method</option><option value="2">Second method</option></select></label>
+          <label>Domain familiarity<select name="experience" required><option value="">Choose familiarity</option><option value="none">No rare-disease research experience</option><option value="some">Some relevant experience</option><option value="experienced">Experienced researcher / clinician</option></select></label>
+          <label>Frozen source-pack version / hash<input name="source_pack" required maxlength="200" placeholder="Exact pack identifier used by both methods"></label>
+          <label>Integrated code commit / snapshot<input name="code_snapshot" required maxlength="200" placeholder="Commit hash or named frozen build"><small>Record the same tested app snapshot for the paired manual baseline.</small></label>
+          <label>AI mode / model / participant training<input name="ai_training" required maxlength="300" placeholder="Record actual mode/model and training, or none"><small>Describe this method; export retains this field even though it is not a matching key.</small></label>
+          <label class="full">Exact task<textarea name="task" required rows="3" maxlength="1200">Prepare a first collaboration brief for a SYNGAP1 patient organization considering the published STARR/ProMMiS framework for a natural-history study.</textarea></label>
+          <label class="full">Identical fictional local constraints<textarea name="constraints" required rows="3" maxlength="1200" placeholder="State the same hypothetical cohort, age range, staffing, travel/access constraints, and unknowns for both methods. Do not enter real participant details."></textarea></label>
+        </div>
+        <div class="actions"><button id="start" class="accent" type="submit">Start this run</button><button id="pause" type="button" disabled>Pause active work</button></div>
+      </form>
+      <div class="timers" aria-label="Run timers"><div class="timer"><span>Elapsed wall time · includes interruptions</span><strong id="wall-time">—</strong></div><div class="timer"><span>Active work · excludes recorded pauses</span><strong id="active-time">—</strong></div></div>
+      <p id="run-state" class="muted">No run started.</p>
+      <p class="storage-note">Runs stay in this browser where local storage is available. Use one pilot tab per browser and keep it open during a run; closing it does not automatically pause the active timer. Export after each participant. No data is sent to a server.</p>
+    </section>
+
+    <section aria-labelledby="quality-title"><h2 id="quality-title">2. Review the brief before finishing</h2><p class="muted">Check each item after inspecting the actual artifact. The timer runs through review and corrections. These software controls record review; they do not perform it.</p>
+      <ul class="checks" id="checks">
+        <li><label><input type="checkbox" value="scope">Correct target, goal, resource, and scoped proposed use.</label></li>
+        <li><label><input type="checkbox" value="checks">Supported and unknown checks are accurate, including access and local fit.</label></li>
+        <li><label><input type="checkbox" value="citations">Source URLs are supplied; duplicate identifiers do not inflate paper count.</label></li>
+        <li><label><input type="checkbox" value="questions">At least two concrete unanswered questions and responsible roles are included.</label></li>
+        <li><label><input type="checkbox" value="collaboration">A sourced public collaborator route and reviewable draft message are included.</label></li>
+        <li><label><input type="checkbox" value="boundaries">No approved-reuse claim, established SCN2A fit, or treatment-benefit claim.</label></li>
+      </ul>
+      <div class="grid">
+        <label>Anonymous reviewer code<input id="reviewer" maxlength="60" placeholder="Required to mark complete"></label>
+        <label>Brief artifact reference<input id="artifact" maxlength="240" placeholder="Anonymous filename or artifact ID · required to complete"></label>
+        <label class="full">Quality notes / errors / corrections / failure reason<textarea id="notes" maxlength="2000" rows="3" placeholder="Record actual omissions and corrections. A failed or incomplete attempt requires a reason."></textarea></label>
+      </div>
+      <div class="actions"><button id="finish" class="primary" type="button" disabled>Finish · checklist passed</button><button id="incomplete" type="button" disabled>Mark incomplete</button><button id="failed" type="button" disabled>Mark failed</button></div>
+      <p id="notice" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="results-title"><h2 id="results-title">3. Inspect the measured result</h2><p id="denominator" class="muted"></p><ul id="ratio-list"></ul>
+      <p class="muted">The ratio is manual elapsed wall time ÷ app elapsed wall time for successful matched pairs only. A value below 1 means the app took longer. Participants, cycle, source pack, code snapshot, exact task, fictional constraints, and familiarity must match; order must be reversed within the pair. Duplicate attempts in one method/cycle make that group ineligible. Active times, failures, and quality notes remain in the full log.</p>
+      <div class="table-wrap"><table><thead><tr><th>Participant / cycle</th><th>Method / order</th><th>Outcome</th><th>Wall / active</th><th>Quality / reviewer</th><th>Actions</th></tr></thead><tbody id="runs"></tbody></table></div>
+      <div class="actions"><button id="export-csv" type="button">Export all runs · CSV</button><button id="export-json" type="button">Export full log · JSON</button></div>
+      <p class="muted">Report all attempts and raw times with the successful-pair ratio. A “10× brief preparation” observation requires an observed ratio of at least 10 under these conditions; it still does not prove 10× acceleration of the clinical or research milestone. Small pilots and practice effects limit generalization.</p>
+    </section>
+  </main>
+  <footer>Timing pilot for a research workflow. No clinical decision, patient account, appointment, or outreach is performed here. Follow the measurement protocol in <code>submission/IMPACT_CASE.txt</code>; this page measures only its intermediate brief-preparation task.</footer>
+  <script>
+    'use strict';
+    const STORAGE_KEY = 'rarebridge.impact-pilot.v1';
+    const $ = (id) => document.getElementById(id);
+    const fields = ['participant', 'cycle', 'method', 'order', 'experience', 'source_pack', 'code_snapshot', 'ai_training', 'task', 'constraints'];
+    const criteria = ['scope', 'checks', 'citations', 'questions', 'collaboration', 'boundaries'];
+    let runs = [];
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+      if (Array.isArray(saved)) runs = saved.filter((run) => run && typeof run === 'object' && typeof run.id === 'string' && fields.every((field) => typeof run[field] === 'string') && ['running', 'complete', 'failed', 'incomplete'].includes(run.status) && Number.isFinite(run.started_ms) && Number.isFinite(run.active_ms) && (run.active_started_ms === null || Number.isFinite(run.active_started_ms)));
+    } catch { $('notice').textContent = 'Browser storage could not be read. You can still record runs and export this visit.'; }
+    let currentId = runs.find((run) => run.status === 'running')?.id || null;
+    const current = () => runs.find((run) => run.id === currentId && run.status === 'running') || null;
+    const activeMs = (run, now = Date.now()) => run.active_ms + (run.active_started_ms === null ? 0 : Math.max(0, now - run.active_started_ms));
+    const wallMs = (run, now = Date.now()) => Math.max(0, (run.finished_ms ?? now) - run.started_ms);
+    const duration = (ms) => { const seconds = Math.floor(ms / 1000); return `${String(Math.floor(seconds / 3600)).padStart(2, '0')}:${String(Math.floor(seconds / 60) % 60).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`; };
+    const minutes = (ms) => (ms / 60000).toFixed(3);
+    function persist() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(runs)); }
+      catch { $('notice').textContent = 'Browser storage is unavailable. Export this log before leaving; the current visit still works.'; }
+    }
+    function quality() { return [...document.querySelectorAll('#checks input:checked')].map((input) => input.value); }
+    function setMetadata(run) {
+      for (const field of fields) {
+        const input = $('run-form').elements.namedItem(field);
+        if (run) input.value = run[field];
+        input.disabled = !!run;
+      }
+    }
+    function updateControls() {
+      const run = current();
+      $('start').disabled = !!run;
+      $('pause').disabled = !run;
+      $('pause').textContent = run?.active_started_ms === null ? 'Resume active work' : 'Pause active work';
+      for (const id of ['finish', 'failed', 'incomplete']) $(id).disabled = !run;
+      setMetadata(run);
+      $('run-state').textContent = run ? `${run.method === 'manual' ? 'Manual' : 'App'} run for ${run.participant} · ${run.cycle} · ${run.active_started_ms === null ? 'active work paused; wall time continues' : 'timing in progress'}` : 'No run in progress. Describe the next run to start.';
+      updateTimers();
+    }
+    function updateTimers() {
+      const run = current();
+      $('wall-time').textContent = run ? duration(wallMs(run)) : '—';
+      $('active-time').textContent = run ? duration(activeMs(run)) : '—';
+      if (run) {
+        const tableTime = document.getElementById(`run-time-${run.id}`);
+        if (tableTime) tableTime.textContent = `${minutes(wallMs(run))} / ${minutes(activeMs(run))} min (ongoing)`;
+      }
+    }
+    function pairKey(run) { return JSON.stringify(['participant', 'cycle', 'source_pack', 'code_snapshot', 'task', 'constraints', 'experience'].map((field) => run[field].trim())); }
+    function pairedResults() {
+      const groups = new Map();
+      for (const run of runs) { const key = pairKey(run); if (!groups.has(key)) groups.set(key, []); groups.get(key).push(run); }
+      const pairs = [];
+      for (const group of groups.values()) {
+        const manual = group.filter((run) => run.method === 'manual');
+        const app = group.filter((run) => run.method === 'app');
+        if (manual.length !== 1 || app.length !== 1) continue;
+        const first = manual[0], second = app[0];
+        const complete = (run) => run.status === 'complete' && Number.isFinite(run.finished_ms) && run.finished_ms > run.started_ms && criteria.every((item) => run.quality_passed?.includes(item)) && run.reviewer?.trim() && run.artifact?.trim();
+        if (!complete(first) || !complete(second) || !['1', '2'].includes(first.order) || !['1', '2'].includes(second.order) || first.order === second.order) continue;
+        const earlier = first.order === '1' ? first : second;
+        const later = first.order === '2' ? first : second;
+        if (earlier.finished_ms > later.started_ms) continue;
+        pairs.push({ manual: first, app: second, ratio: wallMs(first) / wallMs(second) });
+      }
+      return pairs;
+    }
+    function cell(row, content) { const node = document.createElement('td'); node.textContent = content; row.append(node); return node; }
+    function renderResults() {
+      const pairs = pairedResults();
+      const counts = Object.fromEntries(['complete', 'failed', 'incomplete', 'running'].map((status) => [status, runs.filter((run) => run.status === status).length]));
+      const participants = new Set(runs.map((run) => run.participant.trim())).size;
+      const pairedParticipants = new Set(pairs.map((pair) => pair.manual.participant.trim())).size;
+      $('denominator').textContent = `${runs.length} total attempts · ${participants} participants · ${counts.complete} checklist-passed · ${counts.failed} failed · ${counts.incomplete} incomplete · ${counts.running} in progress. ${pairs.length} eligible successful matched pairs from ${pairedParticipants} participants.`;
+      $('ratio-list').replaceChildren();
+      if (!pairs.length) { const item = document.createElement('li'); item.textContent = 'No comparable successful pair yet. A ratio has not been measured.'; $('ratio-list').append(item); }
+      for (const pair of pairs) {
+        const item = document.createElement('li');
+        const value = document.createElement('strong'); value.className = 'ratio-value'; value.textContent = `${pair.ratio.toFixed(2)}× `;
+        item.append(value, document.createTextNode(`brief-preparation wall-time ratio · ${pair.manual.participant} / ${pair.manual.cycle}. Manual ${minutes(wallMs(pair.manual))} min; app ${minutes(wallMs(pair.app))} min. Quality: 6/6 in each; reviewers ${pair.manual.reviewer} / ${pair.app.reviewer}. Order: ${pair.manual.order === '1' ? 'manual then app' : 'app then manual'}.`));
+        $('ratio-list').append(item);
+      }
+      $('runs').replaceChildren();
+      for (const run of runs) {
+        const row = document.createElement('tr');
+        cell(row, `${run.participant} / ${run.cycle}`); cell(row, `${run.method} / ${run.order}`); cell(row, run.status);
+        const timeCell = cell(row, `${minutes(wallMs(run))} / ${minutes(activeMs(run))} min${run.status === 'running' ? ' (ongoing)' : ''}`);
+        timeCell.id = `run-time-${run.id}`;
+        cell(row, `${run.quality_passed?.length || 0}/6 · ${run.reviewer || 'not recorded'}`);
+        const actions = cell(row, '');
+        const inspect = document.createElement('button'); inspect.type = 'button'; inspect.textContent = 'Inspect / download'; inspect.onclick = () => download(`rarebridge-run-${run.id}.json`, JSON.stringify(snapshotRun(run), null, 2), 'application/json'); actions.append(inspect);
+        $('runs').append(row);
+      }
+    }
+    $('run-form').addEventListener('submit', (event) => {
+      event.preventDefault(); if (current() || !$('run-form').reportValidity()) return;
+      const data = new FormData($('run-form'));
+      if (fields.some((field) => !String(data.get(field) || '').trim())) { $('notice').textContent = 'Every run-description field needs a value before timing starts.'; return; }
+      const now = Date.now();
+      const run = Object.fromEntries(fields.map((field) => [field, String(data.get(field)).trim()]));
+      Object.assign(run, { id: crypto.randomUUID(), status: 'running', started_at: new Date(now).toISOString(), started_ms: now, active_ms: 0, active_started_ms: now, quality_passed: [], reviewer: '', artifact: '', notes: '', pause_events: [] });
+      runs.push(run); currentId = run.id;
+      document.querySelectorAll('#checks input').forEach((input) => { input.checked = false; });
+      for (const id of ['reviewer', 'artifact', 'notes']) $(id).value = '';
+      $('notice').textContent = 'Timing started. Finish only after the artifact passes the checklist; include corrections and source inspection.';
+      persist(); updateControls(); renderResults();
+    });
+    $('pause').onclick = () => {
+      const run = current(); if (!run) return;
+      const now = Date.now();
+      if (run.active_started_ms === null) { run.active_started_ms = now; run.pause_events.push({ event: 'resume', at: new Date(now).toISOString() }); }
+      else { run.active_ms = activeMs(run, now); run.active_started_ms = null; run.pause_events.push({ event: 'pause', at: new Date(now).toISOString() }); }
+      persist(); updateControls(); renderResults();
+    };
+    function finish(status) {
+      const run = current(); if (!run) return;
+      const checked = quality(), reviewer = $('reviewer').value.trim(), artifact = $('artifact').value.trim(), notes = $('notes').value.trim();
+      if (status === 'complete' && (checked.length !== criteria.length || !reviewer || !artifact)) { $('notice').textContent = 'A completed run needs all six inspected quality checks, a reviewer code, and an artifact reference. Otherwise mark incomplete or failed.'; return; }
+      if (status !== 'complete' && !notes) { $('notice').textContent = 'Record the reason before marking an attempt failed or incomplete.'; $('notes').focus(); return; }
+      const now = Date.now();
+      Object.assign(run, { active_ms: activeMs(run, now), active_started_ms: null, finished_ms: now, finished_at: new Date(now).toISOString(), status, quality_passed: checked, reviewer, artifact, notes });
+      currentId = null; persist(); updateControls(); renderResults();
+      $('notice').textContent = status === 'complete' ? 'Checklist-passed run recorded. Export the log, then record the other method using the same metadata and opposite order.' : `${status === 'failed' ? 'Failed' : 'Incomplete'} attempt recorded and retained in the denominator.`;
+    }
+    $('finish').onclick = () => finish('complete'); $('failed').onclick = () => finish('failed'); $('incomplete').onclick = () => finish('incomplete');
+    function snapshotRun(run, now = Date.now()) { return { ...run, exported_at: new Date(now).toISOString(), elapsed_wall_ms: wallMs(run, now), observed_active_ms: activeMs(run, now), measurement_scope: 'brief_preparation_only', clinical_milestone_acceleration: 'not_measured' }; }
+    function download(filename, content, mime) { const url = URL.createObjectURL(new Blob([content], { type: mime })); const link = document.createElement('a'); link.href = url; link.download = filename; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
+    $('export-json').onclick = () => { if (!runs.length) { $('notice').textContent = 'No observed run to export yet.'; return; } download('rarebridge-impact-pilot.json', JSON.stringify({ protocol: 'same-pack-counterbalanced-brief-pilot-v1', measurement_scope: 'brief_preparation_only', exported_at: new Date().toISOString(), attempts: runs.map((run) => snapshotRun(run)), matched_successful_pairs: pairedResults().map((pair) => ({ manual_run_id: pair.manual.id, app_run_id: pair.app.id, elapsed_wall_ratio: pair.ratio })) }, null, 2), 'application/json'); };
+    $('export-csv').onclick = () => {
+      if (!runs.length) { $('notice').textContent = 'No observed run to export yet.'; return; }
+      const columns = ['id', ...fields, 'status', 'started_at', 'finished_at', 'elapsed_wall_ms', 'observed_active_ms', 'quality_passed', 'reviewer', 'artifact', 'notes', 'pause_events', 'measurement_scope', 'clinical_milestone_acceleration'];
+      // Protect spreadsheet users from interpreting arbitrary participant-entered text as a formula.
+      const quote = (value) => { let text = Array.isArray(value) ? JSON.stringify(value) : String(value ?? ''); if (/^[\s]*[=+\-@]/.test(text)) text = `'${text}`; return `"${text.replaceAll('"', '""')}"`; };
+      const rows = [columns.map(quote).join(','), ...runs.map((run) => { const snapshot = snapshotRun(run); return columns.map((column) => quote(snapshot[column])).join(','); })];
+      download('rarebridge-impact-pilot.csv', rows.join('\r\n'), 'text/csv;charset=utf-8');
+    };
+    updateControls(); renderResults();
+    setInterval(updateTimers, 500);
+  </script>
+</body>
+</html>

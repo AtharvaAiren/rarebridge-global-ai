@@ -1,0 +1,3257 @@
+[
+  {
+    "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+    "record": {
+      "name": "SCN2A-Related Developmental and Epileptic Encephalopathy",
+      "creation_date": "2026-07-18T00:00:00Z",
+      "category": "Genetic",
+      "description": "SCN2A-related developmental and epileptic encephalopathy (DEE11) is caused by pathogenic variants in SCN2A, which encodes the voltage-gated sodium channel Nav1.2. The disorder has a striking mechanistic dichotomy with opposite treatment implications. Gain-of-function variants increase Nav1.2 sodium current and typically produce early-infantile-onset (usually before three months) epilepsy that often responds to sodium-channel-blocking drugs. Loss-of-function variants reduce Nav1.2 current and typically produce later-onset (after three months) epilepsy and/or autism and intellectual disability, in which sodium-channel blockers can paradoxically worsen seizures. Determining the functional consequence of the variant is therefore central to management.",
+      "parents": [
+        "Epilepsy",
+        "Neurological Disease"
+      ],
+      "synonyms": [
+        "DEE11",
+        "SCN2A encephalopathy",
+        "SCN2A-related epilepsy"
+      ],
+      "disease_term": {
+        "preferred_term": "developmental and epileptic encephalopathy, 11",
+        "term": {
+          "id": "MONDO:0013388",
+          "label": "developmental and epileptic encephalopathy, 11"
+        }
+      },
+      "mappings": {
+        "mondo_mappings": [
+          {
+            "term": {
+              "id": "MONDO:0013388",
+              "label": "developmental and epileptic encephalopathy, 11"
+            },
+            "mapping_predicate": "skos:exactMatch",
+            "mapping_source": "MONDO",
+            "mapping_justification": "MONDO:0013388 is the SCN2A developmental and epileptic encephalopathy (DEE11) concept."
+          }
+        ]
+      },
+      "classifications": {
+        "channelopathy_category": {
+          "classification_value": "neurological channelopathy",
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Mutations in SCN2A, a gene encoding the voltage-gated sodium channel Nav1.2, have been associated with a spectrum of epilepsies and neurodevelopmental disorders.",
+              "explanation": "The disease gene encodes a voltage-gated sodium channel (Nav1.2) whose dysfunction produces a CNS phenotype, placing this disorder in the neurological channelopathy organ-system group."
+            }
+          ]
+        },
+        "harrisons_chapter": [
+          {
+            "classification_value": "NEUROLOGIC",
+            "evidence": [
+              {
+                "reference": "PMID:28379373",
+                "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+                "supports": "SUPPORT",
+                "evidence_source": "HUMAN_CLINICAL",
+                "snippet": "Mutations in SCN2A, a gene encoding the voltage-gated sodium channel Nav1.2, have been associated with a spectrum of epilepsies and neurodevelopmental disorders.",
+                "explanation": "The disorder presents as an epilepsy and neurodevelopmental syndrome, whose clinical home is the neurologic Part."
+              }
+            ]
+          },
+          {
+            "classification_value": "GENETICS_ENVIRONMENT_DISEASE",
+            "evidence": [
+              {
+                "reference": "PMID:28379373",
+                "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+                "supports": "SUPPORT",
+                "evidence_source": "HUMAN_CLINICAL",
+                "snippet": "Our clinical and experimental data suggest a correlation between age at disease onset, response to sodium channel blockers and the functional properties of mutations in children with SCN2A-related epilepsy.",
+                "explanation": "This is a monogenic disorder in which the functional consequence of the individual SCN2A variant determines phenotype and drug response, so the Mendelian-genetics Part applies in addition to the neurologic one."
+              }
+            ],
+            "notes": "Unlike the polygenic idiopathic generalized epilepsies, SCN2A-DEE is a single-gene, autosomal dominant (usually de novo) disorder, so a genetic Part is a substantive rather than nominal assignment here."
+          }
+        ]
+      },
+      "inheritance": [
+        {
+          "name": "Autosomal dominant (de novo)",
+          "inheritance_term": {
+            "preferred_term": "Autosomal dominant inheritance",
+            "term": {
+              "id": "HP:0000006",
+              "label": "Autosomal dominant inheritance"
+            }
+          },
+          "description": "SCN2A-DEE is autosomal dominant; the great majority of variants are de novo. Recurrence risk to siblings is low but not zero (on the order of 1-2%) because of the possibility of parental germline (or low-level somatic) mosaicism.",
+          "evidence": [
+            {
+              "reference": "PMID:34859793",
+              "reference_title": "Phenotypic spectrum and long-term outcome of children with genetic early-infantile-onset developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "With regards to inheritance pattern, de novo heterozygous mutations accounted for the majority (104/118; 88.1%)",
+              "explanation": "In a genetically diagnosed early-infantile-onset DEE cohort (which included SCN2A cases), de novo heterozygous variants accounted for the large majority, supporting the de novo autosomal dominant mode of inheritance."
+            },
+            {
+              "reference": "PMID:31077350",
+              "reference_title": "Parental mosaicism in epilepsies due to alleged de novo variants.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Parental mosaicism was observed in the following genes: SCN1A, SCN2A, SCN8A, and STXBP1.",
+              "explanation": "Documents parental somatic mosaicism for SCN2A variants that appeared de novo, the basis for the small but non-zero sibling recurrence risk."
+            },
+            {
+              "reference": "PMID:31077350",
+              "reference_title": "Parental mosaicism in epilepsies due to alleged de novo variants.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "parents affected by low-grade mosaicism are faced with an increased recurrence risk for transmitting the pathogenic variant, compared to the overall recurrence risk for a second affected child estimated at approximately 1%",
+              "explanation": "Quantifies the baseline sibling recurrence risk (~1%) and the mosaicism mechanism that raises it in individual families."
+            }
+          ]
+        }
+      ],
+      "mechanistic_hypotheses": [
+        {
+          "hypothesis_group_id": "scn2a_gain_of_function_early_onset",
+          "hypothesis_label": "Gain-of-Function / Early-Onset Model",
+          "status": "CANONICAL",
+          "description": "Gain-of-function SCN2A variants increase Nav1.2 sodium current and neuronal excitability, producing early-infantile-onset epilepsy (typically before three months of age) that often responds to sodium-channel-blocking drugs.",
+          "evidence": [
+            {
+              "reference": "PMID:31904126",
+              "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Some missense, gain of function variants tend to present in early infancy with epilepsy",
+              "explanation": "States the gain-of-function / early-infantile-onset arm of the SCN2A dichotomy that this hypothesis group models."
+            },
+            {
+              "reference": "PMID:28256214",
+              "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Variants observed in infantile seizures are predominantly missense, leading to a gain of function and increased neuronal excitability.",
+              "explanation": "Voltage-clamp characterization links infantile-seizure SCN2A variants to gain of Nav1.2 function and increased neuronal excitability."
+            }
+          ]
+        },
+        {
+          "hypothesis_group_id": "scn2a_loss_of_function_later_onset",
+          "hypothesis_label": "Loss-of-Function / Later-Onset Model",
+          "status": "CANONICAL",
+          "description": "Loss-of-function SCN2A variants reduce Nav1.2 current, impairing action potential firing in excitatory neurons, and typically produce later-onset (after three months) epilepsy and/or autism and intellectual disability, in which sodium-channel blockers can worsen seizures.",
+          "evidence": [
+            {
+              "reference": "PMID:37578743",
+              "reference_title": "Epilepsy-associated SCN2A (NaV1.2) variants exhibit diverse and complex functional properties.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "predominantly gain-of-function variants cause neonatal-onset epilepsy, whereas loss-of-function variants are associated with ASD and ID",
+              "explanation": "States the loss-of-function arm (autism and intellectual disability) of the SCN2A functional dichotomy modeled by this hypothesis group."
+            },
+            {
+              "reference": "PMID:28256214",
+              "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "In contrast to gain of function variants that contribute to seizure, we found that all ASD-associated variants dampened or eliminated channel function.",
+              "explanation": "Direct electrophysiological demonstration that autism-associated SCN2A variants reduce or abolish Nav1.2 function."
+            },
+            {
+              "reference": "PMID:37578743",
+              "reference_title": "Epilepsy-associated SCN2A (NaV1.2) variants exhibit diverse and complex functional properties.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Many epilepsy-associated variants in our study exhibited complex patterns of gain- and loss-of-functions that are difficult to classify by a simple binary scheme.",
+              "explanation": "Important caveat: high-throughput automated patch-clamp shows many variants have mixed gain/loss features, so the two-arm model is a useful simplification rather than a strict binary."
+            }
+          ]
+        }
+      ],
+      "pathophysiology": [
+        {
+          "name": "SCN2A Variant (Nav1.2 Dysfunction)",
+          "description": "A pathogenic variant in SCN2A alters the function of the voltage-gated sodium channel Nav1.2. This node captures the single concept of the initiating channel lesion, whose functional direction (gain versus loss of function) sets the clinical arm.",
+          "role": "trigger",
+          "gene": {
+            "preferred_term": "SCN2A",
+            "term": {
+              "id": "hgnc:10588",
+              "label": "SCN2A"
+            }
+          },
+          "molecular_functions": [
+            {
+              "preferred_term": "voltage-gated sodium channel activity",
+              "term": {
+                "id": "GO:0005248",
+                "label": "voltage-gated sodium channel activity"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:29691040",
+              "reference_title": "Progress in Understanding and Treating SCN2A-Mediated Disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Advances in gene discovery for neurodevelopmental disorders have identified SCN2A dysfunction as a leading cause of infantile seizures, autism spectrum disorder, and intellectual disability. SCN2A encodes the neuronal sodium channel NaV1.2.",
+              "explanation": "Establishes the initiating lesion of this entry: SCN2A variants disrupting the neuronal sodium channel Nav1.2 as a leading cause of infantile seizures and neurodevelopmental disease."
+            },
+            {
+              "reference": "PMID:29691040",
+              "reference_title": "Progress in Understanding and Treating SCN2A-Mediated Disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Functional assays demonstrate strong correlation between genotype and phenotype.",
+              "explanation": "Supports the modeling choice that the functional direction of the variant (gain versus loss of function) is what sets the clinical arm. The genotype-phenotype correlation is established by in vitro functional (electrophysiological) characterization of the variants."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Increased Nav1.2 Sodium Current (Gain of Function)",
+              "causal_link_type": "DIRECT",
+              "description": "Gain-of-function variants increase Nav1.2 sodium current.",
+              "hypothesis_groups": [
+                "scn2a_gain_of_function_early_onset"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:30813884",
+                  "reference_title": "Further corroboration of distinct functional features in SCN2A variants causing intellectual disability or epileptic phenotypes.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "IN_VITRO",
+                  "snippet": "small gain-of-function variants cause BFNIE and EE variants exhibit variable but profound Nav1.2 gating changes",
+                  "explanation": "Whole-cell patch-clamp of patient variants links epilepsy-associated SCN2A alleles to gain of Nav1.2 channel function."
+                }
+              ]
+            },
+            {
+              "target": "Decreased Nav1.2 Sodium Current (Loss of Function)",
+              "causal_link_type": "DIRECT",
+              "description": "Loss-of-function variants reduce Nav1.2 sodium current.",
+              "hypothesis_groups": [
+                "scn2a_loss_of_function_later_onset"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:30813884",
+                  "reference_title": "Further corroboration of distinct functional features in SCN2A variants causing intellectual disability or epileptic phenotypes.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "IN_VITRO",
+                  "snippet": "The three variants identified in ID patients without seizures, p.R937C, p.L611Vfs*35 and p.W1716*, did not produce measurable currents.",
+                  "explanation": "Variants from intellectual-disability patients produced no measurable sodium current, i.e. loss of Nav1.2 function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Increased Nav1.2 Sodium Current (Gain of Function)",
+          "description": "Gain-of-function variants increase the Nav1.2 sodium current (through enhanced activation, impaired inactivation, or increased persistent current), directly raising neuronal excitability. This node captures the single concept of the gain-of-function channel state and conforms to the shared epilepsy final common pathway.",
+          "role": "mediator",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Ion Channel and Synaptic Dysfunction",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "Sodium ion transmembrane transport",
+              "term": {
+                "id": "GO:0035725",
+                "label": "sodium ion transmembrane transport"
+              },
+              "modifier": "INCREASED"
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "mutations associated with early infantile epilepsy result in increased sodium channel activity with gain-of-function",
+              "explanation": "Functional studies show early-infantile-epilepsy SCN2A mutations increase sodium channel activity (gain of function)."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Neuronal Hyperexcitability and Network Dysfunction",
+              "causal_link_type": "DIRECT",
+              "description": "Increased sodium current directly raises neuronal excitability.",
+              "hypothesis_groups": [
+                "scn2a_gain_of_function_early_onset"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:28256214",
+                  "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "IN_VITRO",
+                  "snippet": "leading to a gain of function and increased neuronal excitability",
+                  "explanation": "Directly links increased Nav1.2 function to increased neuronal excitability, the causal step modeled by this edge."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Decreased Nav1.2 Sodium Current (Loss of Function)",
+          "description": "Loss-of-function variants reduce the Nav1.2 sodium current, impairing action potential initiation and propagation especially in excitatory pyramidal neurons during early development. This node captures the single concept of the loss-of-function channel state and conforms to the shared epilepsy final common pathway.",
+          "role": "mediator",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Ion Channel and Synaptic Dysfunction",
+          "cell_types": [
+            {
+              "preferred_term": "Pyramidal (excitatory) neuron",
+              "term": {
+                "id": "CL:0000598",
+                "label": "pyramidal neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "Sodium ion transmembrane transport",
+              "term": {
+                "id": "GO:0035725",
+                "label": "sodium ion transmembrane transport"
+              },
+              "modifier": "DECREASED"
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "mutations in patients with late-onset forms and an insufficient response to sodium channel blockers were associated with loss-of-function effects",
+              "explanation": "Late-onset SCN2A forms with poor sodium-channel-blocker response show loss-of-function channel effects."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Neuronal Hyperexcitability and Network Dysfunction",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "description": "Reduced excitatory-neuron firing dysregulates developing circuits and network excitability.",
+              "hypothesis_groups": [
+                "scn2a_loss_of_function_later_onset"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:31230762",
+                  "reference_title": "The Autism-Associated Gene Scn2a Contributes to Dendritic Excitability and Synaptic Function in the Prefrontal Cortex.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "NaV1.2 loss reduced action potential backpropagation into dendrites, impairing synaptic plasticity and synaptic strength",
+                  "explanation": "Shows the intermediate steps by which reduced Nav1.2 current dysregulates cortical circuits (dendritic excitability and synaptic function) rather than acting through simple firing loss alone."
+                },
+                {
+                  "reference": "PMID:34348148",
+                  "reference_title": "Severe deficiency of the voltage-gated sodium channel Na(V)1.2 elevates neuronal excitability in adult mice.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "Using a NaV1.2-deficient mouse model, we show enhanced intrinsic excitability of principal neurons in the prefrontal cortex and striatum, brain regions known to be involved in Scn2a-related seizures.",
+                  "explanation": "Demonstrates that severe Nav1.2 deficiency can paradoxically produce network hyperexcitability, the counter-intuitive link this edge encodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neuronal Hyperexcitability and Network Dysfunction",
+          "description": "Both arms converge on abnormal cortical network excitability - direct hyperexcitability in the gain-of-function arm, and developmental network dysfunction in the loss-of-function arm. This node captures the single concept of the resulting network dysfunction and conforms to the shared epilepsy final common pathway.",
+          "role": "central_effector",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Neuronal Hyperexcitability and Hypersynchrony",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:34348148",
+              "reference_title": "Severe deficiency of the voltage-gated sodium channel Na(V)1.2 elevates neuronal excitability in adult mice.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Here, we report the counterintuitive finding that severe NaV1.2 deficiency results in increased neuronal excitability.",
+              "explanation": "Frames the convergent node: the loss-of-function arm does not simply reduce excitability but converges on the same abnormal network excitability as the gain-of-function arm."
+            },
+            {
+              "reference": "PMID:34348148",
+              "reference_title": "Severe deficiency of the voltage-gated sodium channel Na(V)1.2 elevates neuronal excitability in adult mice.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "This unexpected neuronal hyperexcitability may serve as a cellular basis underlying NaV1.2 deficiency-related seizures.",
+              "explanation": "Supports modeling this node as the proximate cellular substrate of seizures for both arms, including the loss-of-function arm."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Seizures and Developmental Encephalopathy",
+              "causal_link_type": "DIRECT",
+              "description": "Network dysfunction produces seizures and impaired development.",
+              "evidence": [
+                {
+                  "reference": "PMID:34850743",
+                  "reference_title": "Antisense oligonucleotide therapy reduces seizures and extends life span in an SCN2A gain-of-function epilepsy model.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "Untreated Q/+ mice presented with spontaneous seizures at P1 and did not survive beyond P30.",
+                  "explanation": "In a knock-in model of an SCN2A gain-of-function DEE variant, the resulting excitability change produces spontaneous seizures and early death, the clinical endpoint this edge encodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seizures and Developmental Encephalopathy",
+          "description": "The clinical result is seizures (focal, tonic, epileptic spasms, and others, with age and arm-dependent semiology) together with developmental impairment; the loss-of-function arm is more associated with autism and intellectual disability. This node captures the single concept of the seizure/encephalopathy endpoint and conforms to the shared epilepsy final common pathway.",
+          "role": "consequence",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Recurrent Unprovoked Seizures",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:30813884",
+              "reference_title": "Further corroboration of distinct functional features in SCN2A variants causing intellectual disability or epileptic phenotypes.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Deleterious variants in the voltage-gated sodium channel type 2 (Nav1.2) lead to a broad spectrum of phenotypes ranging from benign familial neonatal-infantile epilepsy (BFNIE), severe developmental and epileptic encephalopathy (DEE) and intellectual disability (ID) to autism spectrum disorders (ASD).",
+              "explanation": "Defines the clinical endpoint of the pathograph: seizures plus developmental impairment across a spectrum from benign epilepsy to DEE, intellectual disability, and autism."
+            },
+            {
+              "reference": "PMID:31904126",
+              "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "There is increasing evidence that an important phenotype linked to the gene is autism and intellectual disability without epilepsy or with rare seizures in later childhood.",
+              "explanation": "Supports the arm-dependence of the endpoint: the loss-of-function arm can present as autism and intellectual disability with little or no epilepsy."
+            }
+          ]
+        }
+      ],
+      "phenotypes": [
+        {
+          "name": "Focal Seizures",
+          "description": "Focal-onset seizures occur across the SCN2A spectrum. In the early-onset group they present as epilepsy of infancy with migrating focal seizures; in the late-onset group as focal epilepsies with an electrical status epilepticus during slow sleep-like EEG pattern.",
+          "phenotype_term": {
+            "preferred_term": "Focal-onset seizure",
+            "term": {
+              "id": "HP:0007359",
+              "label": "Focal-onset seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Other known phenotypes include Ohtahara syndrome, epilepsy of infancy with migrating focal seizures, and intellectual disability or autism without epilepsy.",
+              "explanation": "A 201-patient SCN2A series documents focal-seizure phenotypes (including epilepsy of infancy with migrating focal seizures)."
+            },
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "focal epilepsies with an electrical status epilepticus during slow sleep-like EEG pattern (six patients)",
+              "explanation": "Focal epilepsies were also identified as a distinct phenotype within the later-onset SCN2A group."
+            }
+          ]
+        },
+        {
+          "name": "Epileptic Spasms",
+          "description": "Epileptic spasms occur in a subset of patients.",
+          "phenotype_term": {
+            "preferred_term": "Epileptic spasm",
+            "term": {
+              "id": "HP:0011097",
+              "label": "Epileptic spasm"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "West syndrome constitutes a common phenotype with a major recurring mutation (p.Arg853Gln: two new and four previously reported children)",
+              "explanation": "West syndrome (infantile epileptic spasms syndrome) is reported as a common SCN2A phenotype, supporting epileptic spasms as a recognized feature."
+            }
+          ]
+        },
+        {
+          "name": "Epileptic Encephalopathy",
+          "description": "The epilepsy is accompanied by a developmental and epileptic encephalopathy.",
+          "phenotype_term": {
+            "preferred_term": "Epileptic encephalopathy",
+            "term": {
+              "id": "HP:0200134",
+              "label": "Epileptic encephalopathy"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:31904126",
+              "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Phenotypes include benign (self-limited) neonatal and infantile epilepsy and more severe developmental and epileptic encephalopathies also presenting in early infancy.",
+              "explanation": "Confirms developmental and epileptic encephalopathy as a core SCN2A phenotype presenting in early infancy."
+            }
+          ]
+        },
+        {
+          "name": "Global Developmental Delay",
+          "description": "Global developmental delay and intellectual disability are typical, particularly in the loss-of-function group.",
+          "phenotype_term": {
+            "preferred_term": "Global developmental delay",
+            "term": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28256214",
+              "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Variants in the SCN2A gene that disrupt the encoded neuronal sodium channel NaV1.2 are important risk factors for autism spectrum disorder (ASD), developmental delay, and infantile seizures.",
+              "explanation": "Names developmental delay as one of the core phenotypes associated with disruptive SCN2A variants."
+            }
+          ]
+        },
+        {
+          "name": "Intellectual Disability",
+          "description": "Intellectual disability is typical, particularly in the loss-of-function group, and can be severe.",
+          "phenotype_term": {
+            "preferred_term": "Intellectual disability",
+            "term": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:31904126",
+              "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "other missense or truncating, loss of function variants present with later-onset epilepsies or intellectual disability only",
+              "explanation": "Ties intellectual disability specifically to the loss-of-function arm, as described for this phenotype."
+            },
+            {
+              "reference": "PMID:30813884",
+              "reference_title": "Further corroboration of distinct functional features in SCN2A variants causing intellectual disability or epileptic phenotypes.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "complete loss-of-function variants lead to ID without seizures",
+              "explanation": "Patient-derived variants with complete loss of Nav1.2 function were found in individuals with intellectual disability and no seizures."
+            }
+          ]
+        },
+        {
+          "name": "Autistic Behavior",
+          "description": "Autism spectrum features are strongly associated with the loss-of-function group, sometimes without prominent epilepsy.",
+          "phenotype_term": {
+            "preferred_term": "Autistic behavior",
+            "term": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:29691040",
+              "reference_title": "Progress in Understanding and Treating SCN2A-Mediated Disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "identified SCN2A dysfunction as a leading cause of infantile seizures, autism spectrum disorder, and intellectual disability",
+              "explanation": "SCN2A is established as a leading cause of autism spectrum disorder, supporting autistic behavior as a core phenotype."
+            },
+            {
+              "reference": "PMID:28256214",
+              "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "This functional characterization thus identifies SCN2A mutation and NaV1.2 dysfunction as the most frequently observed ASD risk factor detectable by exome sequencing",
+              "explanation": "Quantifies the strength of the autism association and links it to the loss-of-function arm characterized in the same study."
+            }
+          ]
+        },
+        {
+          "name": "Migrating Focal Seizures",
+          "description": "Epilepsy of infancy with migrating focal seizures (EIMFS) is one of the recognized early-onset SCN2A epilepsy syndromes.",
+          "phenotype_term": {
+            "preferred_term": "Migrating focal seizure",
+            "term": {
+              "id": "HP:0032786",
+              "label": "Migrating focal seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Other known phenotypes include Ohtahara syndrome, epilepsy of infancy with migrating focal seizures, and intellectual disability or autism without epilepsy.",
+              "explanation": "A 201-patient SCN2A series lists epilepsy of infancy with migrating focal seizures among the recognized phenotypes of the disorder."
+            }
+          ]
+        },
+        {
+          "name": "Continuous Spike and Waves During Slow Sleep",
+          "description": "An electrical status epilepticus in sleep (ESES)-like EEG pattern was documented in a subset of the later-onset group.",
+          "phenotype_term": {
+            "preferred_term": "Continuous spike and waves during slow sleep",
+            "term": {
+              "id": "HP:0031491",
+              "label": "Continuous spike and waves during slow sleep"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "focal epilepsies with an electrical status epilepticus during slow sleep-like EEG pattern (six patients)",
+              "explanation": "Six patients in the later-onset SCN2A group showed an electrical status epilepticus during slow sleep-like EEG pattern."
+            }
+          ]
+        },
+        {
+          "name": "Generalized Myoclonic-Atonic Seizures",
+          "description": "Myoclonic-atonic epilepsy is one of the distinct phenotypes seen within the later-onset SCN2A group.",
+          "phenotype_term": {
+            "preferred_term": "Generalized myoclonic-atonic seizure",
+            "term": {
+              "id": "HP:0011170",
+              "label": "Generalized myoclonic-atonic seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "distinct phenotypes can be seen within the late onset group, including myoclonic-atonic epilepsy (two patients)",
+              "explanation": "Myoclonic-atonic epilepsy is reported as a distinct phenotype within the later-onset (loss-of-function) SCN2A group."
+            }
+          ]
+        },
+        {
+          "name": "Neonatal Seizures",
+          "description": "Seizures with neonatal onset occur in the early-onset, gain-of-function arm, spanning self-limited neonatal epilepsy through severe encephalopathy.",
+          "phenotype_term": {
+            "preferred_term": "Neonatal seizure",
+            "term": {
+              "id": "HP:0032807",
+              "label": "Neonatal seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:31904126",
+              "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Phenotypes include benign (self-limited) neonatal and infantile epilepsy and more severe developmental and epileptic encephalopathies also presenting in early infancy.",
+              "explanation": "Establishes neonatal-onset epilepsy as part of the SCN2A phenotypic spectrum, at both the self-limited and encephalopathic ends."
+            }
+          ]
+        }
+      ],
+      "prevalence": [
+        {
+          "population": "Denmark",
+          "measure_type": "BIRTH_PREVALENCE",
+          "prevalence_class": "BAND_1_9_PER_100000",
+          "rate_per_100000": 1.3,
+          "notes": "Danish population data give a disease frequency of approximately 1/78,608 live births (~1.3 per 100,000). Estimates are strongly ascertainment-dependent and are rising with expanded genetic testing.",
+          "evidence": [
+            {
+              "reference": "PMID:37776663",
+              "reference_title": "Frequency of SCN2A-related disorder in the regional epilepsy centre of brescia between 2002 and 2021.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "SCN2A gene pathogenic variants are associated with a wide phenotypic spectrum, encompassing epilepsy, developmental delay, and autism spectrum disorder. Researches conducted in Denmark have revealed a disease frequency of approximately 1/78,608 (0.0012%) live births in this population.",
+              "explanation": "The Danish estimate of approximately one affected live birth in 78,608 concerns the broad SCN2A-related disease spectrum, including epilepsy, developmental delay and autism. It does not isolate developmental and epileptic encephalopathy alone."
+            }
+          ]
+        },
+        {
+          "population": "Brescia province, Italy",
+          "measure_type": "BIRTH_PREVALENCE",
+          "prevalence_class": "BAND_1_9_PER_100000",
+          "rate_per_100000": 4.7,
+          "notes": "A regional Italian birth-cohort study (Brescia, 2002-2021) found 11 SCN2A cases among 232,678 live births (0.0047%, ~4.7 per 100,000) - about three to four times the Danish estimate, illustrating how ascertainment and testing practice drive these figures.",
+          "evidence": [
+            {
+              "reference": "PMID:37776663",
+              "reference_title": "Frequency of SCN2A-related disorder in the regional epilepsy centre of brescia between 2002 and 2021.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "A frequency of 11/23,2678 births (0.0047%) was found.",
+              "explanation": "Reports the Brescia regional birth frequency of SCN2A-related disorder."
+            },
+            {
+              "reference": "PMID:37776663",
+              "reference_title": "Frequency of SCN2A-related disorder in the regional epilepsy centre of brescia between 2002 and 2021.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "More studies are needed to further delineate the frequency of SCN2A pathogenic variant in Italian population.",
+              "explanation": "The authors themselves flag the uncertainty of these ascertainment-limited frequency estimates."
+            }
+          ]
+        }
+      ],
+      "genetic": [
+        {
+          "name": "SCN2A",
+          "gene_term": {
+            "preferred_term": "SCN2A",
+            "term": {
+              "id": "hgnc:10588",
+              "label": "SCN2A"
+            }
+          },
+          "relationship_type": "CAUSATIVE",
+          "variant_origin": "GERMLINE",
+          "notes": "SCN2A encodes the voltage-gated sodium channel Nav1.2. Most DEE variants are de novo. The functional consequence is genotype-dependent: gain-of-function variants cause early-onset (typically before three months) seizures responsive to sodium-channel blockers, whereas loss-of-function variants cause later-onset epilepsy and/or autism in which sodium-channel blockers can worsen seizures.",
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "truncating mutations were exclusively seen in patients with late onset epilepsies and lack of response to sodium channel blockers",
+              "explanation": "Truncating (loss-of-function) SCN2A mutations mapped exclusively to late-onset epilepsy with poor sodium-channel-blocker response."
+            }
+          ]
+        }
+      ],
+      "treatments": [
+        {
+          "name": "Sodium-Channel-Blocking Antiseizure Medication",
+          "description": "Sodium-channel blockers (e.g., phenytoin, carbamazepine, oxcarbazepine, lacosamide) are often effective in the early-onset gain-of-function group by countering the increased sodium current, but can paradoxically worsen seizures in the later-onset loss-of-function group - making functional variant classification central to treatment.",
+          "therapeutic_modality": "SMALL_MOLECULE",
+          "target_mechanisms": [
+            {
+              "target": "Increased Nav1.2 Sodium Current (Gain of Function)",
+              "treatment_effect": "INHIBITS",
+              "description": "Sodium-channel blockers reduce the increased Nav1.2 current in the gain-of-function arm.",
+              "evidence": [
+                {
+                  "reference": "PMID:31904126",
+                  "reference_title": "Phenotypic spectrum and genetics of SCN2A-related disorders, treatment options, and outcomes in epilepsy and beyond.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "HUMAN_CLINICAL",
+                  "snippet": "Sodium channel blockers may be effective antiepileptic medications in gain of function, neonatal and infantile presentations.",
+                  "explanation": "Explicitly matches the drug class to the gain-of-function mechanism node it targets."
+                },
+                {
+                  "reference": "PMID:28379373",
+                  "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "HUMAN_CLINICAL",
+                  "snippet": "a good response to sodium channel blockers clinically was found to be associated with a relatively small gain-of-function",
+                  "explanation": "Links the degree of Nav1.2 gain of function to the clinical response to the inhibiting drug, supporting the mechanism-target relationship."
+                }
+              ]
+            }
+          ],
+          "treatment_term": {
+            "preferred_term": "Pharmacotherapy",
+            "term": {
+              "id": "NCIT:C15986",
+              "label": "Pharmacotherapy"
+            },
+            "therapeutic_agent": [
+              {
+                "preferred_term": "phenytoin",
+                "term": {
+                  "id": "CHEBI:8107",
+                  "label": "phenytoin"
+                }
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "the use of sodium channel blockers was often associated with clinically relevant seizure reduction or seizure freedom in children with early infantile epilepsies (<3 months)",
+              "explanation": "Sodium-channel blockers reduced seizures or achieved freedom in early-infantile (gain-of-function) SCN2A epilepsy."
+            },
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "sodium channel blockers were rarely effective in epilepsies with later onset (≥3 months) and sometimes induced seizure worsening",
+              "explanation": "In later-onset (loss-of-function) SCN2A epilepsy the same drugs were rarely effective and sometimes worsened seizures - the key precision caveat."
+            }
+          ]
+        },
+        {
+          "name": "Broad-Spectrum Antiseizure Medication and Ketogenic Diet",
+          "description": "Broad-spectrum agents (e.g., levetiracetam, valproate, benzodiazepines) and the ketogenic diet are used, particularly in the later-onset loss-of-function group where sodium-channel blockers are avoided. Evidence for a specific non-sodium-channel-blocker regimen in SCN2A is limited; the rationale is largely the avoidance of sodium-channel blockade in the loss-of-function arm.",
+          "treatment_term": {
+            "preferred_term": "Pharmacotherapy",
+            "term": {
+              "id": "NCIT:C15986",
+              "label": "Pharmacotherapy"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "sodium channel blockers were rarely effective in epilepsies with later onset (≥3 months) and sometimes induced seizure worsening",
+              "explanation": "Provides the rationale for using non-sodium-channel-blocking agents in the later-onset (loss-of-function) group."
+            },
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "whereas other antiepileptic drugs were less effective",
+              "explanation": "Important caveat: in the early-infantile (gain-of-function) group, non-sodium-channel-blocking antiseizure drugs performed worse than sodium channel blockers, so this option is arm-specific rather than general."
+            }
+          ]
+        },
+        {
+          "name": "Elsunersen (SCN2A-Directed Antisense Oligonucleotide)",
+          "description": "Elsunersen (PRAX-222) is an investigational antisense oligonucleotide that lowers SCN2A expression by RNase H-mediated transcript knockdown, designed for the gain-of-function, early-onset arm; it holds FDA Breakthrough Therapy designation and is in clinical trials.",
+          "therapeutic_modality": "ANTISENSE_OLIGONUCLEOTIDE",
+          "oligonucleotide_details": {
+            "oligonucleotide_mechanism": "RNASE_H_KNOCKDOWN",
+            "target_gene": {
+              "preferred_term": "SCN2A",
+              "term": {
+                "id": "hgnc:10588",
+                "label": "SCN2A"
+              }
+            },
+            "target_transcript": "SCN2A mRNA"
+          },
+          "target_mechanisms": [
+            {
+              "target": "Increased Nav1.2 Sodium Current (Gain of Function)",
+              "treatment_effect": "INHIBITS",
+              "description": "Knocking down SCN2A lowers Nav1.2, countering the gain-of-function current.",
+              "evidence": [
+                {
+                  "reference": "PMID:34850743",
+                  "reference_title": "Antisense oligonucleotide therapy reduces seizures and extends life span in an SCN2A gain-of-function epilepsy model.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "Biophysical gain of function in SCN2A is seen in some patients with early seizure onset developmental and epileptic encephalopathy (DEE). In these cases, targeted reduction in SCN2A expression could substantially improve clinical outcomes.",
+                  "explanation": "States the mechanism-target rationale: lowering SCN2A expression to counter the gain-of-function Nav1.2 node."
+                }
+              ]
+            }
+          ],
+          "treatment_term": {
+            "preferred_term": "Pharmacotherapy",
+            "term": {
+              "id": "NCIT:C15986",
+              "label": "Pharmacotherapy"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:34850743",
+              "reference_title": "Antisense oligonucleotide therapy reduces seizures and extends life span in an SCN2A gain-of-function epilepsy model.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Administration of the ASO to Q/+ mice reduced spontaneous seizures and significantly extended life span.",
+              "explanation": "Preclinical proof of concept for the RNase H gapmer ASO knockdown strategy that elsunersen (PRAX-222) implements in the gain-of-function arm."
+            },
+            {
+              "reference": "PMID:34850743",
+              "reference_title": "Antisense oligonucleotide therapy reduces seizures and extends life span in an SCN2A gain-of-function epilepsy model.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "A human SCN2A gapmer ASO could likewise impact the lives of patients with SCN2A gain-of-function DEE.",
+              "explanation": "Explicitly frames the human gapmer ASO (the elsunersen approach) as the translational target of this preclinical result; efficacy in patients is not yet established."
+            }
+          ]
+        }
+      ],
+      "clinical_trials": [
+        {
+          "name": "NCT05737784",
+          "phase": "PHASE_I",
+          "status": "RECRUITING",
+          "description": "EMBRAVE: a seamless Phase 1/2 trial of the SCN2A-directed antisense oligonucleotide PRAX-222 (elsunersen) in children with early-onset (gain-of-function) SCN2A-DEE.",
+          "target_phenotypes": [
+            {
+              "preferred_term": "Focal-onset seizure",
+              "term": {
+                "id": "HP:0007359",
+                "label": "Focal-onset seizure"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "clinicaltrials:NCT05737784",
+              "reference_title": "A Seamless, Clinical Trial to Investigate the Safety and Efficacy of Multiple Doses of PRAX-222 in Pediatric Participants With Early Onset SCN2A Developmental and Epileptic Encephalopathy",
+              "supports": "SUPPORT",
+              "snippet": "The goal of this trial is to learn about the effect of PRAX-222 in pediatric participants with early onset SCN2A developmental and epileptic encephalopathy",
+              "explanation": "A clinical trial of the SCN2A-directed ASO PRAX-222 (elsunersen) in early-onset (gain-of-function) SCN2A-DEE, the mechanism-matched precision therapy."
+            }
+          ]
+        }
+      ],
+      "datasets": [
+
+      ],
+      "discussions": [
+        {
+          "discussion_id": "scn2a-functional-classification-for-treatment",
+          "kind": "KNOWLEDGE_GAP",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)",
+            "pathophysiology#Decreased Nav1.2 Sodium Current (Loss of Function)"
+          ],
+          "prompt": "Because sodium-channel blockers help gain-of-function SCN2A epilepsy but can worsen loss-of-function forms, treatment hinges on knowing the functional consequence of a variant. How reliably can gain versus loss of function be inferred at the bedside from age at onset (before versus after three months) and variant type, and how quickly can functional assays resolve ambiguous (e.g., missense, VUS) variants to guide drug choice?",
+          "rationale": "Onset age and truncating status are useful proxies but not perfect, and many missense variants are of uncertain effect; a wrong inference can select a drug that worsens seizures. A fast, validated functional-classification pathway would directly change management.",
+          "evidence": [
+            {
+              "reference": "PMID:28379373",
+              "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "sodium channel blockers were rarely effective in epilepsies with later onset (≥3 months) and sometimes induced seizure worsening",
+              "explanation": "Demonstrates the opposite treatment response by arm, motivating rapid functional classification."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "scn2a-functional-assay-pipeline",
+              "name": "Rapid functional-classification pipeline",
+              "description": "Benchmark high-throughput electrophysiology and predictive models against clinical response to sodium-channel blockers across a large SCN2A variant set to establish a rapid gain/loss classification that guides therapy.",
+              "readouts": [
+                {
+                  "name": "Predicted gain/loss versus clinical drug response",
+                  "target": "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)"
+                }
+              ],
+              "decision_criterion": "A classifier that predicts drug response better than onset age alone would support its clinical use.",
+              "would_support": [
+                "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)",
+                "pathophysiology#Decreased Nav1.2 Sodium Current (Loss of Function)"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "scn2a-precision-therapy-aso",
+          "kind": "KNOWLEDGE_GAP",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)"
+          ],
+          "prompt": "Antisense-oligonucleotide and other gene-directed strategies that lower or raise Nav1.2 are in development for SCN2A disorders. Can allele- or direction-specific approaches safely correct the gain-of-function arm (lowering Nav1.2) and the loss-of-function arm (raising Nav1.2) without tipping the opposite way, and in what developmental window must they act?",
+          "rationale": "Because the two arms need opposite corrections, a one-size intervention is unsafe; the therapeutic window and the reversibility of the encephalopathy once established are open questions central to precision therapy.",
+          "evidence": [
+            {
+              "reference": "PMID:34850743",
+              "reference_title": "Antisense oligonucleotide therapy reduces seizures and extends life span in an SCN2A gain-of-function epilepsy model.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Across a range of behavioral tests, Scn2a ASO-treated Q/+ mice were largely indistinguishable from WT mice, suggesting treatment is well tolerated.",
+              "explanation": "Shows that direction-specific Nav1.2 lowering was tolerated in a gain-of-function model, the starting point for the open question of whether such approaches are safe without tipping toward the opposite arm."
+            },
+            {
+              "reference": "PMID:29691040",
+              "reference_title": "Progress in Understanding and Treating SCN2A-Mediated Disorders.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "raises the possibility that ligands that selectively enhance or diminish channel function may improve symptoms",
+              "explanation": "Frames the direction-specific therapeutic strategy (enhancing versus diminishing Nav1.2) that this knowledge gap interrogates."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "scn2a-directional-therapy-model",
+              "name": "Direction-specific Nav1.2 modulation study",
+              "description": "Test gain-lowering (e.g., ASO knockdown) and loss-restoring approaches in genotype-matched SCN2A models across developmental stages, measuring seizure, network, and behavioral outcomes and off-target excitability.",
+              "readouts": [
+                {
+                  "name": "Outcome of directional Nav1.2 modulation by arm and timing",
+                  "target": "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)"
+                }
+              ],
+              "would_support": [
+                "pathophysiology#Increased Nav1.2 Sodium Current (Gain of Function)"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "scn2a-lof-autism-mechanism",
+          "kind": "KNOWLEDGE_GAP",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Decreased Nav1.2 Sodium Current (Loss of Function)"
+          ],
+          "prompt": "Loss-of-function SCN2A variants produce autism and intellectual disability, sometimes with little or no epilepsy. How does reduced Nav1.2 current in developing excitatory neurons translate into autism and cognitive impairment independent of seizures, and does this reflect impaired dendritic excitability and synaptic maturation?",
+          "rationale": "The seizure-independent neurodevelopmental phenotype of Nav1.2 loss of function is mechanistically distinct from the epileptogenic arm and is only partially understood, yet it defines the prognosis and therapeutic targets for a large share of SCN2A patients.",
+          "evidence": [
+            {
+              "reference": "PMID:31230762",
+              "reference_title": "The Autism-Associated Gene Scn2a Contributes to Dendritic Excitability and Synaptic Function in the Prefrontal Cortex.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "The link between an axonal sodium channel and ASD, a disorder typically attributed to synaptic or transcriptional dysfunction, is unclear.",
+              "explanation": "States the open question this knowledge gap captures: how an axonal sodium channel defect produces autism."
+            },
+            {
+              "reference": "PMID:31230762",
+              "reference_title": "The Autism-Associated Gene Scn2a Contributes to Dendritic Excitability and Synaptic Function in the Prefrontal Cortex.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "These results reveal a novel dendritic function for NaV1.2, providing insight into cellular mechanisms probably underlying circuit and behavioral dysfunction in ASD.",
+              "explanation": "Supports the proposed dendritic-excitability/synaptic-maturation explanation named in the prompt, while the authors' hedged wording shows it remains a partial answer."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "scn2a-lof-neurodevelopment",
+              "name": "Nav1.2 loss-of-function neurodevelopmental study",
+              "description": "Use human neurons and animal models with SCN2A loss-of-function variants to link reduced Nav1.2 current to dendritic excitability, synaptic maturation, and behavioral phenotypes independent of overt seizures.",
+              "readouts": [
+                {
+                  "name": "Dendritic/synaptic phenotype and behavior with Nav1.2 loss",
+                  "target": "pathophysiology#Decreased Nav1.2 Sodium Current (Loss of Function)"
+                }
+              ],
+              "would_support": [
+                "pathophysiology#Decreased Nav1.2 Sodium Current (Loss of Function)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "STXBP1_Encephalopathy.yaml",
+    "record": {
+      "name": "STXBP1 Encephalopathy",
+      "creation_date": "2026-07-06T00:00:00Z",
+      "description": "A developmental and epileptic encephalopathy caused by de novo heterozygous loss-of-function variants in STXBP1, which encodes Munc18-1 (syntaxin-binding protein 1), a Sec1/Munc18 protein essential for synaptic vesicle release. Munc18-1 chaperones syntaxin-1 and templates assembly of the neuronal SNARE complex that drives Ca2+-triggered synaptic vesicle fusion, so its haploinsufficiency reduces neurotransmitter release across cortical synapses. Affected individuals present in infancy with epilepsy — frequently Ohtahara syndrome (early infantile epileptic encephalopathy with burst-suppression) or West syndrome, or a nonsyndromic early-onset epileptic encephalopathy — together with severe-to-profound intellectual disability. Movement disorders (tremor, dystonia, ataxia) and autistic features are common, and STXBP1 encephalopathy is now understood as a complex neurodevelopmental disorder in which cognitive impairment and seizures are partly independent, rather than a primary epileptic encephalopathy. It is one of the SNAREopathies and one of the synaptic vesicle cycle disorders.",
+      "category": "Mendelian",
+      "parents": [
+        "Neurodevelopmental Disorder",
+        "Epileptic Encephalopathy"
+      ],
+      "disease_term": {
+        "preferred_term": "STXBP1 encephalopathy",
+        "term": {
+          "id": "MONDO:0012812",
+          "label": "developmental and epileptic encephalopathy, 4"
+        }
+      },
+      "inheritance": [
+        {
+          "name": "Autosomal Dominant (De Novo)",
+          "inheritance_term": {
+            "preferred_term": "Autosomal dominant inheritance",
+            "term": {
+              "id": "HP:0000006",
+              "label": "Autosomal dominant inheritance"
+            }
+          },
+          "description": "Nearly all cases arise from de novo heterozygous STXBP1 variants; the disorder acts through haploinsufficiency, so a single loss-of-function allele is sufficient to cause disease.",
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "De novo STXBP1 mutations are among the most frequent causes of epilepsy and encephalopathy.",
+              "explanation": "Establishes the de novo dominant genetic basis of STXBP1 encephalopathy in a large patient cohort."
+            },
+            {
+              "reference": "PMID:27905812",
+              "reference_title": "STXBP1 Encephalopathy with Epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "STXBP1 encephalopathy with epilepsy is an autosomal dominant disorder typically caused by a de novo pathogenic variant.",
+              "explanation": "The GeneReviews genetic-counseling section confirms autosomal dominant inheritance arising typically from a de novo pathogenic variant."
+            }
+          ]
+        }
+      ],
+      "prevalence": [
+        {
+          "population": "Worldwide",
+          "measure_type": "UNKNOWN",
+          "prevalence_class": "RARE",
+          "notes": "STXBP1 encephalopathy is one of the more frequently identified single-gene causes of developmental and epileptic encephalopathy, but it remains individually rare and a precise population prevalence has not been firmly established."
+        }
+      ],
+      "references": [
+        {
+          "reference": "PMID:18469812",
+          "title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy."
+        },
+        {
+          "reference": "PMID:26865513",
+          "title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy."
+        },
+        {
+          "reference": "PMID:32559416",
+          "title": "SNAREopathies: Diversity in Mechanisms and Symptoms."
+        },
+        {
+          "reference": "PMID:27905812",
+          "title": "STXBP1 Encephalopathy with Epilepsy.",
+          "tags": [
+            "GeneReviews"
+          ]
+        }
+      ],
+      "pathophysiology": [
+        {
+          "name": "STXBP1 Haploinsufficiency and Munc18-1 Deficiency",
+          "conforms_to": "synaptic_vesicle_cycle#Synaptic Vesicle Cycle Protein Deficiency",
+          "description": "De novo heterozygous loss-of-function variants (nonsense, frameshift, splice-site, whole-gene/partial deletions) and destabilizing missense variants in STXBP1 reduce the functional dose of Munc18-1, an evolutionarily conserved Sec1/Munc18 protein essential for synaptic vesicle release. Missense variants render the protein thermolabile and prone to aggregation/degradation, so both truncating and missense mechanisms converge on haploinsufficiency of Munc18-1 at presynaptic terminals.",
+          "role": "trigger",
+          "cell_types": [
+            {
+              "preferred_term": "neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "synaptic vesicle cycle",
+              "term": {
+                "id": "GO:0099504",
+                "label": "synaptic vesicle cycle"
+              },
+              "modifier": "ABNORMAL"
+            }
+          ],
+          "locations": [
+            {
+              "preferred_term": "brain",
+              "term": {
+                "id": "UBERON:0000955",
+                "label": "brain"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "STXBP1 (also known as MUNC18-1) is an evolutionally conserved neuronal Sec1/Munc-18 (SM) protein that is essential in synaptic vesicle release in several species.",
+              "explanation": "Establishes STXBP1/Munc18-1 as a synaptic-vesicle-release protein, the vesicle-cycle component whose deficiency defines this disorder."
+            },
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "These findings suggest that haploinsufficiency of STXBP1 causes EIEE.",
+              "explanation": "Identifies haploinsufficiency as the disease mechanism, the trigger modeled by this node."
+            },
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Circular dichroism melting experiments revealed that a mutant form of the protein was significantly thermolabile compared to wild type.",
+              "explanation": "Demonstrates that a disease missense variant destabilizes Munc18-1, supporting protein instability as a route to haploinsufficiency."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Impaired Syntaxin-1 Chaperoning and SNARE-Mediated Vesicle Fusion",
+              "causal_link_type": "DIRECT"
+            },
+            {
+              "target": "Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "intermediate_mechanisms": [
+                "Impaired SNARE-mediated synaptic vesicle fusion."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Impaired Syntaxin-1 Chaperoning and SNARE-Mediated Vesicle Fusion",
+          "conforms_to": "synaptic_vesicle_cycle#Impaired Calcium-Triggered SNARE-Mediated Vesicle Fusion",
+          "description": "Munc18-1 binds syntaxin-1 and templates assembly of the neuronal SNARE complex (syntaxin-1, SNAP-25, synaptobrevin-2/VAMP2) that mediates Ca2+-triggered synaptic vesicle fusion. Reduced Munc18-1 dose, and disease variants with impaired syntaxin binding, compromise SNARE-complex assembly and the vesicle fusion step. In the Munc18-1 null model, loss of this protein abolishes neurotransmitter secretion, demonstrating that Munc18-1 is indispensable for the fusion reaction.",
+          "role": "central_effector",
+          "cell_types": [
+            {
+              "preferred_term": "neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "calcium-dependent activation of synaptic vesicle fusion",
+              "term": {
+                "id": "GO:0099502",
+                "label": "calcium-dependent activation of synaptic vesicle fusion"
+              },
+              "modifier": "DECREASED"
+            },
+            {
+              "preferred_term": "synaptic vesicle exocytosis",
+              "term": {
+                "id": "GO:0016079",
+                "label": "synaptic vesicle exocytosis"
+              },
+              "modifier": "DECREASED"
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Furthermore, binding of the mutant protein to syntaxin was impaired.",
+              "explanation": "Shows a disease variant impairs Munc18-1 binding to syntaxin-1, the interaction that licenses SNARE-mediated fusion."
+            },
+            {
+              "reference": "PMID:10657302",
+              "reference_title": "Synaptic assembly of the brain in the absence of neurotransmitter secretion.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Deletion of a single protein, Munc18-1, in mice leads to a complete loss of neurotransmitter secretion from synaptic vesicles throughout development.",
+              "explanation": "The Munc18-1 null mouse demonstrates that Munc18-1 is required for the vesicle-fusion/neurotransmitter-release step this node models."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+              "causal_link_type": "DIRECT"
+            }
+          ]
+        },
+        {
+          "name": "Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+          "conforms_to": "synaptic_vesicle_cycle#Neurotransmitter Release Failure and Synaptic Transmission Deficit",
+          "description": "Impaired SNARE-mediated fusion reduces Ca2+-evoked neurotransmitter release and disturbs chemical synaptic transmission across cortical circuits. Because Munc18-1 is required at both excitatory and inhibitory synapses, the net effect is a disturbance of cortical excitatory/inhibitory balance that both drives seizures and impairs the activity-dependent synaptic signaling needed for normal neurodevelopment.",
+          "role": "effector",
+          "cell_types": [
+            {
+              "preferred_term": "glutamatergic neuron",
+              "term": {
+                "id": "CL:0000679",
+                "label": "glutamatergic neuron"
+              }
+            },
+            {
+              "preferred_term": "GABAergic neuron",
+              "term": {
+                "id": "CL:0000617",
+                "label": "GABAergic neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "neurotransmitter secretion",
+              "term": {
+                "id": "GO:0007269",
+                "label": "neurotransmitter secretion"
+              },
+              "modifier": "DECREASED"
+            },
+            {
+              "preferred_term": "chemical synaptic transmission",
+              "term": {
+                "id": "GO:0007268",
+                "label": "chemical synaptic transmission"
+              },
+              "modifier": "ABNORMAL"
+            }
+          ],
+          "locations": [
+            {
+              "preferred_term": "neocortex",
+              "term": {
+                "id": "UBERON:0001950",
+                "label": "neocortex"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "STXBP1-E may be conceptualized as a complex neurodevelopmental disorder rather than a primary epileptic encephalopathy.",
+              "explanation": "Supports the view that the synaptic-transmission deficit produces a broad neurodevelopmental phenotype, not seizures alone."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Cortical Excitation-Inhibition Imbalance and Seizures",
+              "causal_link_type": "DIRECT"
+            },
+            {
+              "target": "Impaired Synaptic Network Development",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "intermediate_mechanisms": [
+                "Reduced activity-dependent synaptic signaling during brain development."
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cortical Excitation-Inhibition Imbalance and Seizures",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Neuronal Hyperexcitability and Hypersynchrony",
+          "description": "Reduced and imbalanced neurotransmitter release destabilizes cortical excitatory/inhibitory balance, producing neuronal hyperexcitability and hypersynchronous discharges. Clinically this manifests as early-onset epilepsy, frequently as Ohtahara syndrome with a burst-suppression EEG or as West syndrome with epileptic spasms, and as a nonsyndromic early-onset epileptic encephalopathy with epileptic spasms or tonic seizures.",
+          "role": "amplifier",
+          "cell_types": [
+            {
+              "preferred_term": "neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "chemical synaptic transmission",
+              "term": {
+                "id": "GO:0007268",
+                "label": "chemical synaptic transmission"
+              },
+              "modifier": "ABNORMAL"
+            }
+          ],
+          "locations": [
+            {
+              "preferred_term": "neocortex",
+              "term": {
+                "id": "UBERON:0001950",
+                "label": "neocortex"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "While one-third of patients presented with Ohtahara syndrome (21%) or West syndrome (9.5%), the majority has a nonsyndromic early-onset epilepsy and encephalopathy (53%) with epileptic spasms or tonic seizures as main seizure type.",
+              "explanation": "Documents the epilepsy syndromes and seizure types produced by the cortical excitability disturbance."
+            },
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Early infantile epileptic encephalopathy with suppression-burst (EIEE), also known as Ohtahara syndrome, is one of the most severe and earliest forms of epilepsy.",
+              "explanation": "Anchors the Ohtahara-syndrome / burst-suppression presentation to STXBP1 disease."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Epilepsy",
+              "causal_link_type": "DIRECT"
+            },
+            {
+              "target": "EEG Abnormality",
+              "causal_link_type": "DIRECT"
+            }
+          ]
+        },
+        {
+          "name": "Impaired Synaptic Network Development",
+          "description": "Reduced activity-dependent synaptic transmission during a critical developmental window impairs maturation of cortical networks, producing severe global developmental delay, intellectual disability, absent or limited speech, autistic features, and movement disorders. In STXBP1 disease the cognitive impairment is largely independent of seizure burden. In the Munc18-1 null model, synapses initially assemble but neurons subsequently degenerate, indicating a maintenance/neurodegenerative component in the extreme loss-of-function state.",
+          "role": "effector",
+          "cell_types": [
+            {
+              "preferred_term": "neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "chemical synaptic transmission",
+              "term": {
+                "id": "GO:0007268",
+                "label": "chemical synaptic transmission"
+              },
+              "modifier": "DECREASED"
+            }
+          ],
+          "locations": [
+            {
+              "preferred_term": "brain",
+              "term": {
+                "id": "UBERON:0000955",
+                "label": "brain"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "All patients have intellectual disability (ID), which is mostly severe to profound (88%).",
+              "explanation": "Establishes severe-to-profound intellectual disability as a universal outcome of the impaired synaptic-network development."
+            },
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "We found no correlation between severity of seizures and severity of ID",
+              "explanation": "Supports the partial independence of the developmental/cognitive impairment from the seizure burden."
+            },
+            {
+              "reference": "PMID:10657302",
+              "reference_title": "Synaptic assembly of the brain in the absence of neurotransmitter secretion.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "After assembly is completed, neurons undergo apoptosis, leading to widespread neurodegeneration.",
+              "explanation": "The Munc18-1 null model shows a neurodegenerative/maintenance component when neurotransmitter secretion is lost, relevant to the severe developmental outcome."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Severe Global Developmental Delay",
+              "causal_link_type": "DIRECT"
+            },
+            {
+              "target": "Intellectual Disability",
+              "causal_link_type": "DIRECT"
+            },
+            {
+              "target": "Autistic Behavior",
+              "causal_link_type": "INDIRECT_UNKNOWN_INTERMEDIATES"
+            },
+            {
+              "target": "Movement Disorder",
+              "causal_link_type": "INDIRECT_UNKNOWN_INTERMEDIATES"
+            }
+          ]
+        }
+      ],
+      "phenotypes": [
+        {
+          "name": "Epilepsy",
+          "category": "Clinical",
+          "description": "Early-onset epilepsy affecting the great majority of patients, ranging from Ohtahara syndrome and West syndrome to nonsyndromic early-onset epileptic encephalopathy.",
+          "diagnostic": true,
+          "phenotype_term": {
+            "preferred_term": "Epileptic encephalopathy",
+            "term": {
+              "id": "HP:0200134",
+              "label": "Epileptic encephalopathy"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Ninety-five percent of patients have epilepsy.",
+              "explanation": "Quantifies epilepsy as a near-universal feature of STXBP1 encephalopathy."
+            }
+          ]
+        },
+        {
+          "name": "Epileptic Spasms",
+          "category": "Clinical",
+          "description": "Epileptic spasms (including infantile spasms in West syndrome) are a common seizure type in STXBP1 encephalopathy.",
+          "phenotype_term": {
+            "preferred_term": "Epileptic spasm",
+            "term": {
+              "id": "HP:0011097",
+              "label": "Epileptic spasm"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "the majority has a nonsyndromic early-onset epilepsy and encephalopathy (53%) with epileptic spasms or tonic seizures as main seizure type.",
+              "explanation": "Documents epileptic spasms as a main seizure type in the disorder."
+            }
+          ]
+        },
+        {
+          "name": "Tonic Seizures",
+          "category": "Clinical",
+          "description": "Tonic seizures are one of the main seizure types in the nonsyndromic early-onset epileptic encephalopathy presentation.",
+          "phenotype_term": {
+            "preferred_term": "Tonic seizure",
+            "term": {
+              "id": "HP:0032792",
+              "label": "Tonic seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "with epileptic spasms or tonic seizures as main seizure type.",
+              "explanation": "Documents tonic seizures as a main seizure type."
+            }
+          ]
+        },
+        {
+          "name": "EEG with Burst Suppression",
+          "category": "Clinical",
+          "description": "A burst-suppression EEG pattern characterizes the Ohtahara-syndrome (early infantile epileptic encephalopathy with suppression-burst) presentation.",
+          "phenotype_term": {
+            "preferred_term": "EEG with burst suppression",
+            "term": {
+              "id": "HP:0010851",
+              "label": "EEG with burst suppression"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Early infantile epileptic encephalopathy with suppression-burst (EIEE), also known as Ohtahara syndrome, is one of the most severe and earliest forms of epilepsy.",
+              "explanation": "The Ohtahara-syndrome (suppression-burst) presentation is the discovery phenotype for STXBP1."
+            }
+          ]
+        },
+        {
+          "name": "Severe to Profound Intellectual Disability",
+          "category": "Clinical",
+          "description": "Intellectual disability is present in all patients and is mostly severe to profound, with little correlation to seizure severity.",
+          "diagnostic": true,
+          "phenotype_term": {
+            "preferred_term": "Profound intellectual disability",
+            "term": {
+              "id": "HP:0002187",
+              "label": "Profound intellectual disability"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "All patients have intellectual disability (ID), which is mostly severe to profound (88%).",
+              "explanation": "Quantifies severe-to-profound intellectual disability as universal."
+            }
+          ]
+        },
+        {
+          "name": "Severe Global Developmental Delay",
+          "category": "Clinical",
+          "description": "Severe global developmental delay is characteristic, with markedly delayed or absent developmental milestones.",
+          "phenotype_term": {
+            "preferred_term": "Severe global developmental delay",
+            "term": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Most patients have severe to profound ID with little correlation among seizure onset, seizure severity, and the degree of ID.",
+              "explanation": "Supports severe global developmental impairment independent of seizure severity."
+            }
+          ]
+        },
+        {
+          "name": "Autistic Behavior",
+          "category": "Clinical",
+          "description": "Autistic features are a frequent neurologic comorbidity in STXBP1 encephalopathy.",
+          "phenotype_term": {
+            "preferred_term": "Autistic behavior",
+            "term": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Neurologic comorbidities including autistic features and movement disorders are frequent.",
+              "explanation": "Documents autistic features as a frequent comorbidity."
+            }
+          ]
+        },
+        {
+          "name": "Movement Disorder",
+          "category": "Clinical",
+          "description": "Movement disorders — including tremor, dystonia, ataxia, and prominent extrapyramidal features in some adults — are frequent.",
+          "phenotype_term": {
+            "preferred_term": "Abnormality of movement",
+            "term": {
+              "id": "HP:0100022",
+              "label": "Abnormality of movement"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Neurologic comorbidities including autistic features and movement disorders are frequent.",
+              "explanation": "Documents movement disorders as a frequent comorbidity."
+            },
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "We also report 2 previously unreported adult patients with prominent extrapyramidal features.",
+              "explanation": "Documents prominent extrapyramidal movement features in adult patients."
+            }
+          ]
+        },
+        {
+          "name": "Tremor",
+          "category": "Clinical",
+          "description": "Tremor is a recurrent component of the movement-disorder spectrum in STXBP1 encephalopathy.",
+          "phenotype_term": {
+            "preferred_term": "Tremor",
+            "term": {
+              "id": "HP:0001337",
+              "label": "Tremor"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Neurologic comorbidities including autistic features and movement disorders are frequent.",
+              "explanation": "Tremor is part of the frequent movement-disorder comorbidity; the cohort documents the broader movement-disorder category."
+            }
+          ]
+        },
+        {
+          "name": "Hypotonia",
+          "category": "Clinical",
+          "description": "Abnormal muscle tone, including axial hypotonia, is a recognized neurologic feature of STXBP1 encephalopathy, occurring alongside the movement-disorder spectrum (dystonia, ataxia) and, in some individuals, coexisting spasticity.",
+          "phenotype_term": {
+            "preferred_term": "Hypotonia",
+            "term": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:27905812",
+              "reference_title": "STXBP1 Encephalopathy with Epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Other neurologic findings include abnormal tone, movement disorders (especially ataxia and dystonia), and behavioral issues and autism spectrum disorder.",
+              "explanation": "The GeneReviews chapter lists abnormal muscle tone among the core neurologic findings of STXBP1 encephalopathy."
+            },
+            {
+              "reference": "PMID:32815282",
+              "reference_title": "De novo STXBP1 mutation in a child with developmental delay and spasticity reveals a major structural alteration in the interface with syntaxin 1A.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Through exome sequencing of a child with developmental delay, hypotonia, and spasticity, we found a novel de novo insertion mutation of three nucleotides in the STXBP1 coding region",
+              "explanation": "A molecularly confirmed STXBP1 case presenting with hypotonia, documenting hypotonia within the phenotypic spectrum."
+            }
+          ]
+        }
+      ],
+      "genetic": [
+        {
+          "name": "STXBP1",
+          "gene_term": {
+            "preferred_term": "STXBP1",
+            "term": {
+              "id": "hgnc:11444",
+              "label": "STXBP1"
+            }
+          },
+          "association": "Loss-of-Function Mutations",
+          "presence": "Positive",
+          "variant_origin": "GERMLINE",
+          "inheritance": [
+            {
+              "name": "Autosomal Dominant (De Novo)",
+              "inheritance_term": {
+                "preferred_term": "Autosomal dominant inheritance",
+                "term": {
+                  "id": "HP:0000006",
+                  "label": "Autosomal dominant inheritance"
+                }
+              }
+            }
+          ],
+          "notes": "De novo heterozygous STXBP1 variants act through haploinsufficiency. The spectrum includes nonsense, frameshift, and splice-site variants, intragenic and whole-gene deletions, and destabilizing missense variants that reduce Munc18-1 protein stability and/or syntaxin-1 binding.",
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "four unrelated individuals with EIEE had heterozygous missense mutations in the gene encoding syntaxin binding protein 1 (STXBP1).",
+              "explanation": "Original identification of heterozygous STXBP1 variants as the cause of early infantile epileptic encephalopathy."
+            },
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "De novo STXBP1 mutations are among the most frequent causes of epilepsy and encephalopathy.",
+              "explanation": "Confirms de novo STXBP1 variants as a leading genetic cause in a large cohort."
+            }
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "name": "STXBP1 Molecular Diagnosis",
+          "description": "Diagnosis is established by identifying a heterozygous pathogenic or likely pathogenic STXBP1 variant (sequence variant or copy-number deletion), typically de novo, in an infant or child with early-onset epileptic encephalopathy and severe developmental impairment. Parental testing confirms de novo status.",
+          "diagnosis_term": {
+            "preferred_term": "molecular genetic testing",
+            "term": {
+              "id": "NCIT:C19770",
+              "label": "Molecular Analysis"
+            },
+            "qualifiers": [
+              {
+                "predicate": {
+                  "preferred_term": "has participant",
+                  "term": {
+                    "id": "RO:0000057",
+                    "label": "has participant"
+                  }
+                },
+                "value": {
+                  "preferred_term": "STXBP1",
+                  "term": {
+                    "id": "hgnc:11444",
+                    "label": "STXBP1"
+                  }
+                }
+              }
+            ]
+          },
+          "results": "A heterozygous pathogenic STXBP1 loss-of-function variant establishes the diagnosis.",
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "four unrelated individuals with EIEE had heterozygous missense mutations in the gene encoding syntaxin binding protein 1 (STXBP1).",
+              "explanation": "Molecular identification of STXBP1 variants established the genetic diagnosis."
+            },
+            {
+              "reference": "PMID:27905812",
+              "reference_title": "STXBP1 Encephalopathy with Epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "The diagnosis is established in a proband with a heterozygous STXBP1 pathogenic variant identified by molecular genetic testing.",
+              "explanation": "The GeneReviews chapter defines the molecular-genetic-testing basis for establishing the diagnosis."
+            }
+          ]
+        },
+        {
+          "name": "EEG and Seizure Phenotyping",
+          "description": "EEG documents the encephalopathic background and epilepsy syndrome — burst-suppression in Ohtahara syndrome, hypsarrhythmia in West syndrome, or multifocal epileptiform activity — and guides antiseizure treatment.",
+          "diagnosis_term": {
+            "preferred_term": "electroencephalography",
+            "term": {
+              "id": "NCIT:C38054",
+              "label": "Electroencephalography"
+            }
+          },
+          "results": "A burst-suppression or hypsarrhythmic pattern supports the epileptic encephalopathy.",
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Early infantile epileptic encephalopathy with suppression-burst (EIEE), also known as Ohtahara syndrome, is one of the most severe and earliest forms of epilepsy.",
+              "explanation": "The suppression-burst EEG pattern is the defining electrophysiologic feature of the Ohtahara presentation."
+            }
+          ]
+        },
+        {
+          "name": "Brain MRI",
+          "description": "Brain MRI is used to exclude structural and metabolic causes of neonatal or infantile epileptic encephalopathy; findings in STXBP1 encephalopathy are frequently normal or nonspecific.",
+          "diagnosis_term": {
+            "preferred_term": "magnetic resonance imaging procedure",
+            "term": {
+              "id": "NCIT:C16809",
+              "label": "Magnetic Resonance Imaging"
+            }
+          },
+          "results": "Usually normal or nonspecific; used mainly to exclude structural causes."
+        }
+      ],
+      "differential_diagnoses": [
+        {
+          "name": "Other SNAREopathies and synaptic vesicle cycle disorders",
+          "description": "Developmental and epileptic encephalopathies caused by other synaptic vesicle cycle / SNARE-machinery genes (e.g. UNC13A, SNAP25, STX1B, VAMP2, SYT1, DNM1) overlap through early-onset epilepsy, hypotonia, and developmental impairment and are distinguished by molecular testing.",
+          "distinguishing_features": [
+            "A de novo heterozygous STXBP1 loss-of-function variant favors this disorder.",
+            "A variant in a different vesicle-cycle gene favors the corresponding SNAREopathy."
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:32559416",
+              "reference_title": "SNAREopathies: Diversity in Mechanisms and Symptoms.",
+              "supports": "SUPPORT",
+              "evidence_source": "OTHER",
+              "snippet": "Human pathogenic mutations have now been reported for all eight core components, but patients are diagnosed with very different neurodevelopmental syndromes.",
+              "explanation": "Establishes the family of SNAREopathies that constitutes the molecular differential diagnosis."
+            }
+          ]
+        },
+        {
+          "name": "Other early-onset developmental and epileptic encephalopathies",
+          "description": "DEEs from ion-channel and other genes (e.g. KCNQ2, SCN2A, CDKL5, ARX) can present with Ohtahara or West syndrome and are distinguished by genetic testing.",
+          "distinguishing_features": [
+            "A pathogenic STXBP1 variant favors this disorder.",
+            "A causal variant in another DEE gene favors that diagnosis."
+          ]
+        }
+      ],
+      "animal_models": [
+        {
+          "species": "Mouse (Mus musculus)",
+          "genotype": "Munc18-1 (Stxbp1) knockout",
+          "description": "Munc18-1 null mice show a complete loss of neurotransmitter secretion from synaptic vesicles throughout development; the brain assembles morphologically but neurons subsequently undergo apoptosis with widespread neurodegeneration, demonstrating that Munc18-1 is essential for synaptic transmission and for maintenance of established synapses.",
+          "evidence": [
+            {
+              "reference": "PMID:10657302",
+              "reference_title": "Synaptic assembly of the brain in the absence of neurotransmitter secretion.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Deletion of a single protein, Munc18-1, in mice leads to a complete loss of neurotransmitter secretion from synaptic vesicles throughout development.",
+              "explanation": "The Munc18-1 knockout establishes the presynaptic release requirement whose partial loss (haploinsufficiency) underlies human STXBP1 encephalopathy."
+            }
+          ]
+        }
+      ],
+      "progression": [
+        {
+          "phase": "Infancy",
+          "notes": "Onset is typically in the first months of life with epileptic encephalopathy (often Ohtahara or West syndrome) and evolving severe developmental impairment.",
+          "evidence": [
+            {
+              "reference": "PMID:18469812",
+              "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Early infantile epileptic encephalopathy with suppression-burst (EIEE), also known as Ohtahara syndrome, is one of the most severe and earliest forms of epilepsy.",
+              "explanation": "Documents the early-infantile onset of the epileptic encephalopathy."
+            }
+          ]
+        },
+        {
+          "phase": "Childhood to Adulthood",
+          "notes": "Seizures may evolve in type and, in some patients, become less prominent, while severe-to-profound intellectual disability persists and movement disorders, including prominent extrapyramidal features in some adults, become apparent.",
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "We also report 2 previously unreported adult patients with prominent extrapyramidal features.",
+              "explanation": "Documents persistence into adulthood with prominent extrapyramidal movement features."
+            }
+          ]
+        }
+      ],
+      "treatments": [
+        {
+          "name": "Antiseizure Medication",
+          "description": "Seizures are managed with antiseizure medications; response is variable and often incomplete. Agents used for the associated epilepsy syndromes include levetiracetam and, for epileptic/infantile spasms, vigabatrin. No agent corrects the underlying Munc18-1 deficiency.",
+          "therapeutic_modality": "SMALL_MOLECULE",
+          "treatment_term": {
+            "preferred_term": "Pharmacotherapy",
+            "term": {
+              "id": "NCIT:C15986",
+              "label": "Pharmacotherapy"
+            },
+            "therapeutic_agent": [
+              {
+                "preferred_term": "levetiracetam",
+                "term": {
+                  "id": "CHEBI:6437",
+                  "label": "levetiracetam"
+                }
+              },
+              {
+                "preferred_term": "vigabatrin",
+                "term": {
+                  "id": "CHEBI:63638",
+                  "label": "vigabatrin"
+                }
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "reference": "PMID:27905812",
+              "reference_title": "STXBP1 Encephalopathy with Epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "The most commonly used anti-seizure medications (ASMs) are phenobarbital, valproic acid, and vigabatrin. About 20% of individuals require more than one ASM and approximately 25% are refractory to ASM therapy.",
+              "explanation": "The GeneReviews management section documents first-line ASM choices and the substantial rate of pharmacoresistance in STXBP1 encephalopathy."
+            }
+          ]
+        },
+        {
+          "name": "Supportive and Developmental Care",
+          "description": "Multidisciplinary supportive care — developmental therapies, feeding and respiratory support, and management of movement disorders — is the mainstay given the severe neurodevelopmental impairment.",
+          "treatment_term": {
+            "preferred_term": "Supportive Care",
+            "term": {
+              "id": "NCIT:C15747",
+              "label": "Supportive Care"
+            }
+          }
+        },
+        {
+          "name": "Genetic Counseling",
+          "description": "Genetic counseling addresses the de novo dominant mechanism and the generally low recurrence risk, with attention to the rare possibility of parental mosaicism.",
+          "treatment_term": {
+            "preferred_term": "genetic counseling",
+            "term": {
+              "id": "NCIT:C15240",
+              "label": "Genetic Counseling"
+            }
+          }
+        }
+      ],
+      "discussions": [
+        {
+          "discussion_id": "gap_stxbp1_haploinsufficiency_vs_dominant_negative",
+          "prompt": "Is STXBP1 encephalopathy a pure loss-of-dose (haploinsufficiency) disorder, or do destabilized missense variants act dominant-negatively by aggregating and co-depleting wild-type Munc18-1, and does the answer differ by variant class with direct consequences for therapy (gene/dosage restoration versus chemical-chaperone/proteostasis approaches)?",
+          "kind": "CONTROVERSY",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#STXBP1 Haploinsufficiency and Munc18-1 Deficiency",
+            "pathophysiology#Impaired Syntaxin-1 Chaperoning and SNARE-Mediated Vesicle Fusion"
+          ],
+          "rationale": "The entry models both truncating and missense variants as converging on Munc18-1 haploinsufficiency, and an allelic-series mouse study concludes that impaired protein stability plus haploinsufficiency explain the disease. A competing biochemical model finds that missense mutants aggregate and sequester wild-type Munc18-1 below hemizygous levels, i.e. an additional dominant-negative effect. The two models are not merely academic: pure haploinsufficiency motivates gene-dosage or expression-restoration strategies, whereas a dominant-negative aggregation mechanism motivates chemical-chaperone/proteostasis rescue and possibly allele-specific knockdown. Which mechanism dominates, and whether it is variant-dependent, remains unresolved.",
+          "evidence": [
+            {
+              "reference": "PMID:30266908",
+              "reference_title": "Mechanism-based rescue of Munc18-1 dysfunction in varied encephalopathies by chemical chaperones.",
+              "supports": "SUPPORT",
+              "evidence_source": "IN_VITRO",
+              "snippet": "Aggregates of mutant Munc18-1 incorporate wild-type Munc18-1, depleting functional Munc18-1 levels beyond hemizygous levels.",
+              "explanation": "Provides the biochemical basis for a dominant-negative (aggregation and wild-type co-depletion) mechanism, the alternative to pure haploinsufficiency."
+            },
+            {
+              "reference": "PMID:29538625",
+              "reference_title": "Protein instability, haploinsufficiency, and cortical hyper-excitability underlie STXBP1 encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "impaired protein stability and STXBP1 haploinsufficiency explain STXBP1-encephalopathy and that, therefore, Stxbp1+/- mice provide a valid mouse model.",
+              "explanation": "Supports the competing haploinsufficiency-only interpretation, in which Stxbp1+/- (loss-of-dose) alone reproduces the disease."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_stxbp1_lof_vs_dn_allelic_series",
+              "name": "STXBP1 loss-of-function versus dominant-negative allelic-series test",
+              "description": "In a shared neuronal background, express an allelic series of STXBP1 variants (truncating, deletion, and multiple missense) on both null and heterozygous (wild-type-present) backgrounds and measure whether the variant lowers functional Munc18-1 below the hemizygous level and whether chemical chaperones (4-phenylbutyrate, trehalose) restore protein level and release. A variant that depletes wild-type Munc18-1 and impairs release below hemizygous levels indicates a dominant-negative component.",
+              "experiment_type": {
+                "preferred_term": "allelic-series gain/loss-of-function experiment"
+              },
+              "perturbations": [
+                {
+                  "name": "STXBP1 variant expression on null versus heterozygous background",
+                  "target": "pathophysiology#STXBP1 Haploinsufficiency and Munc18-1 Deficiency",
+                  "genes": [
+                    {
+                      "preferred_term": "STXBP1",
+                      "term": {
+                        "id": "hgnc:11444",
+                        "label": "STXBP1"
+                      }
+                    }
+                  ],
+                  "description": "Introduce each STXBP1 variant on a Munc18-1 null background (isolated variant function) and on a wild-type-present background (test for wild-type co-depletion), with and without chemical-chaperone treatment."
+                }
+              ],
+              "readouts": [
+                {
+                  "name": "Munc18-1 protein level and synaptic vesicle release",
+                  "target": "pathophysiology#Impaired Syntaxin-1 Chaperoning and SNARE-Mediated Vesicle Fusion",
+                  "biological_processes": [
+                    {
+                      "preferred_term": "synaptic vesicle exocytosis",
+                      "term": {
+                        "id": "GO:0016079",
+                        "label": "synaptic vesicle exocytosis"
+                      },
+                      "modifier": "DECREASED"
+                    },
+                    {
+                      "preferred_term": "neurotransmitter secretion",
+                      "term": {
+                        "id": "GO:0007269",
+                        "label": "neurotransmitter secretion"
+                      },
+                      "modifier": "DECREASED"
+                    }
+                  ],
+                  "assays": [
+                    {
+                      "preferred_term": "immunoblot assay"
+                    },
+                    {
+                      "preferred_term": "patch-clamp recording"
+                    }
+                  ],
+                  "direction": "NEGATIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Wild-type STXBP1",
+                  "description": "Wild-type Munc18-1 expressed on the same backgrounds."
+                },
+                {
+                  "name": "Vehicle versus chemical chaperone",
+                  "description": "Matched untreated versus chemical-chaperone-treated conditions."
+                }
+              ],
+              "decision_criterion": "A dominant-negative component is supported if a variant reduces functional Munc18-1 and release below hemizygous levels on a wild-type-present background and is rescued by chemical chaperones; pure haploinsufficiency is supported if variants have no effect beyond loss of dose.",
+              "would_support": [
+                "pathophysiology#STXBP1 Haploinsufficiency and Munc18-1 Deficiency",
+                "pathophysiology#Impaired Syntaxin-1 Chaperoning and SNARE-Mediated Vesicle Fusion"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "gap_stxbp1_genotype_phenotype_modifiers",
+          "prompt": "Why do STXBP1 variants produce a phenotypic spectrum ranging from classic early-onset epileptic encephalopathy to intellectual disability without epilepsy to a movement-disorder-predominant picture, and what genetic, variant-level, or network modifiers determine which arm dominates in a given patient?",
+          "kind": "OPEN_QUESTION",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Cortical Excitation-Inhibition Imbalance and Seizures",
+            "pathophysiology#Impaired Synaptic Network Development"
+          ],
+          "rationale": "The entry already notes that cognitive impairment and seizures are partly independent, and cohort data find no correlation between seizure severity and the degree of intellectual disability. This dissociation implies that the epilepsy arm and the developmental/cognitive (and movement-disorder) arms are separably modifiable, yet no variant-class, residual-protein-level, cell-type (excitatory versus inhibitory), or modifier-gene predictor reliably explains why one arm dominates. Resolving this is prerequisite to prognostic counseling and to arm-specific therapy.",
+          "evidence": [
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "We found no correlation between severity of seizures and severity of ID",
+              "explanation": "Documents the clinical dissociation between the seizure arm and the cognitive arm that the modifier question seeks to explain."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_stxbp1_genotype_phenotype_stratification",
+              "name": "STXBP1 genotype-phenotype and modifier stratification study",
+              "description": "In a deeply phenotyped STXBP1 cohort, stratify patients by variant class (truncating, deletion, missense) and estimated residual Munc18-1 level and test whether these, together with polygenic background and candidate modifier loci, predict the dominant phenotypic arm (epilepsy-predominant, intellectual-disability-without-epilepsy, or movement-disorder-predominant).",
+              "experiment_type": {
+                "preferred_term": "genotype-phenotype correlation study"
+              },
+              "perturbations": [
+                {
+                  "name": "Variant-class and residual-dose stratification",
+                  "target": "pathophysiology#Impaired Synaptic Network Development",
+                  "genes": [
+                    {
+                      "preferred_term": "STXBP1",
+                      "term": {
+                        "id": "hgnc:11444",
+                        "label": "STXBP1"
+                      }
+                    }
+                  ],
+                  "description": "Group patients by STXBP1 variant class and modeled residual protein dose rather than introducing a perturbation, as an observational human study."
+                }
+              ],
+              "readouts": [
+                {
+                  "name": "Dominant phenotypic arm and network phenotype",
+                  "target": "pathophysiology#Cortical Excitation-Inhibition Imbalance and Seizures",
+                  "biological_processes": [
+                    {
+                      "preferred_term": "chemical synaptic transmission",
+                      "term": {
+                        "id": "GO:0007268",
+                        "label": "chemical synaptic transmission"
+                      },
+                      "modifier": "ABNORMAL"
+                    }
+                  ],
+                  "assays": [
+                    {
+                      "preferred_term": "electroencephalography"
+                    }
+                  ],
+                  "direction": "POSITIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Variant-class comparison groups",
+                  "description": "Truncating, deletion, and missense groups compared against one another."
+                }
+              ],
+              "decision_criterion": "A modifier is supported if variant class, residual protein level, or a modifier locus significantly predicts the dominant phenotypic arm across the cohort after correction for multiple testing.",
+              "would_support": [
+                "pathophysiology#Cortical Excitation-Inhibition Imbalance and Seizures",
+                "pathophysiology#Impaired Synaptic Network Development"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "gap_stxbp1_mouse_model_fidelity",
+          "prompt": "Does the Stxbp1+/- mouse, which reproduces spike-wave/spasm EEG activity and mild cognitive changes, capture the severity and developmental trajectory of human STXBP1 encephalopathy — in particular the severe-to-profound intellectual disability and Ohtahara/West-syndrome-level epileptic encephalopathy — or does it under-represent the human disease?",
+          "kind": "HUMAN_MODEL_MISMATCH",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+            "pathophysiology#Impaired Synaptic Network Development"
+          ],
+          "rationale": "Model evidence clearly exists: Stxbp1+/- mice recapitulate the seizure/spasm EEG phenotype and show impaired cognition, hyperactivity, and anxiety-like behaviour, and the seizures respond to levetiracetam. The open question is translational fidelity — human patients almost universally have severe-to-profound intellectual disability and early catastrophic epileptic encephalopathy (Ohtahara/West syndrome), a severity that the comparatively mild murine cognitive and behavioural phenotype may not fully reproduce. Whether the mouse captures the human developmental trajectory, or whether human-specific cortical biology is required, gates its use for preclinical therapeutic testing.",
+          "evidence": [
+            {
+              "reference": "PMID:29538625",
+              "reference_title": "Protein instability, haploinsufficiency, and cortical hyper-excitability underlie STXBP1 encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Stxbp1+/- mice with different genomic backgrounds recapitulate the seizure/spasm phenotype observed in humans, characterized by myoclonic jerks and spike-wave discharges that were suppressed by the antiepileptic drug levetiracetam.",
+              "explanation": "Establishes that the mouse model reproduces the seizure component, confirming model evidence exists for the mismatch question."
+            },
+            {
+              "reference": "PMID:26865513",
+              "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "All patients have intellectual disability (ID), which is mostly severe to profound (88%).",
+              "explanation": "Documents the severe-to-profound human cognitive phenotype whose murine fidelity is the open translational question."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_stxbp1_mouse_human_trajectory_comparison",
+              "name": "STXBP1 mouse-to-human developmental-trajectory comparison",
+              "description": "Longitudinally phenotype Stxbp1+/- mice across postnatal development for EEG severity, learning/memory, and motor phenotypes, and compare the developmental trajectory and severity against matched human natural-history data and STXBP1 patient iPSC-derived cortical neuron/organoid synaptic readouts, to quantify where the mouse under-represents human severity.",
+              "experiment_type": {
+                "preferred_term": "cross-species developmental phenotyping experiment"
+              },
+              "perturbations": [
+                {
+                  "name": "Stxbp1 heterozygous loss of function",
+                  "target": "pathophysiology#Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+                  "genes": [
+                    {
+                      "preferred_term": "STXBP1",
+                      "term": {
+                        "id": "hgnc:11444",
+                        "label": "STXBP1"
+                      }
+                    }
+                  ],
+                  "description": "Stxbp1+/- mice and STXBP1 patient-variant human iPSC-derived neurons compared against wild-type and isogenic-corrected controls."
+                }
+              ],
+              "readouts": [
+                {
+                  "name": "Synaptic transmission and network activity across development",
+                  "target": "pathophysiology#Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+                  "biological_processes": [
+                    {
+                      "preferred_term": "chemical synaptic transmission",
+                      "term": {
+                        "id": "GO:0007268",
+                        "label": "chemical synaptic transmission"
+                      },
+                      "modifier": "ABNORMAL"
+                    },
+                    {
+                      "preferred_term": "neurotransmitter secretion",
+                      "term": {
+                        "id": "GO:0007269",
+                        "label": "neurotransmitter secretion"
+                      },
+                      "modifier": "DECREASED"
+                    }
+                  ],
+                  "assays": [
+                    {
+                      "preferred_term": "multielectrode array recording"
+                    },
+                    {
+                      "preferred_term": "electroencephalography"
+                    }
+                  ],
+                  "direction": "NEGATIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Wild-type littermate mice",
+                  "description": "Age-matched wild-type littermates across the same developmental windows."
+                },
+                {
+                  "name": "Isogenic-corrected human neurons",
+                  "description": "Patient iPSC lines in which the STXBP1 variant is corrected."
+                }
+              ],
+              "decision_criterion": "The mouse is a faithful model if its developmental severity trajectory matches human natural history and iPSC readouts; a mismatch is supported if murine phenotypes are substantially milder or follow a divergent trajectory despite equivalent loss of dose.",
+              "would_support": [
+                "pathophysiology#Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+                "pathophysiology#Impaired Synaptic Network Development"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+    "record": {
+      "name": "SYNGAP1-Related Developmental and Epileptic Encephalopathy",
+      "creation_date": "2026-07-17T00:00:00Z",
+      "category": "Mendelian",
+      "description": "SYNGAP1-related developmental and epileptic encephalopathy (also called SYNGAP1-related intellectual disability, MRD5) is an autosomal dominant neurodevelopmental disorder caused by haploinsufficiency of SYNGAP1, which encodes SynGAP - a Ras/Rap GTPase-activating protein highly enriched at excitatory postsynaptic densities. Essentially all affected individuals have developmental delay or intellectual disability; most (~84%) have generalized epilepsy, and about half have autism spectrum disorder or other behavioral problems. A characteristic subset has myoclonic-astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences. Because SynGAP restrains Ras-ERK signaling and AMPA-receptor insertion during synapse maturation, its reduction accelerates excitatory synapse maturation and tips cortical circuits toward excitation. Most cases arise de novo.",
+      "parents": [
+        "Epilepsy",
+        "Neurodevelopmental Disorder",
+        "Neurological Disease"
+      ],
+      "synonyms": [
+        "SYNGAP1-related intellectual disability",
+        "SYNGAP1-ID",
+        "Intellectual disability, autosomal dominant 5",
+        "MRD5",
+        "Epilepsy due to SYNGAP1 mutations"
+      ],
+      "disease_term": {
+        "preferred_term": "SYNGAP1-related developmental and epileptic encephalopathy",
+        "term": {
+          "id": "MONDO:0012960",
+          "label": "intellectual disability, autosomal dominant 5"
+        }
+      },
+      "mappings": {
+        "mondo_mappings": [
+          {
+            "term": {
+              "id": "MONDO:0012960",
+              "label": "intellectual disability, autosomal dominant 5"
+            },
+            "mapping_predicate": "skos:exactMatch",
+            "mapping_source": "MONDO",
+            "mapping_justification": "MONDO:0012960 (MRD5) is the SYNGAP1 disorder concept; \"SYNGAP1-related developmental and epileptic encephalopathy\" is an exact synonym."
+          }
+        ]
+      },
+      "inheritance": [
+        {
+          "name": "Autosomal dominant inheritance",
+          "inheritance_term": {
+            "preferred_term": "Autosomal dominant inheritance",
+            "term": {
+              "id": "HP:0000006",
+              "label": "Autosomal dominant inheritance"
+            }
+          },
+          "description": "SYNGAP1-related disorder is inherited in an autosomal dominant manner; most affected individuals have a de novo pathogenic variant.",
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "SYNGAP1-ID is inherited in an autosomal dominant manner.",
+              "explanation": "GeneReviews establishes autosomal dominant inheritance."
+            }
+          ]
+        }
+      ],
+      "pathophysiology": [
+        {
+          "name": "SYNGAP1 Haploinsufficiency",
+          "description": "A heterozygous loss-of-function variant in SYNGAP1 (or a 6p21.3 deletion encompassing it), usually de novo, reduces functional SynGAP protein to roughly half. This node captures the single concept of the initiating haploinsufficiency.",
+          "role": "trigger",
+          "gene": {
+            "preferred_term": "SYNGAP1",
+            "term": {
+              "id": "hgnc:11497",
+              "label": "SYNGAP1"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+              "explanation": "GeneReviews establishes heterozygous SYNGAP1 loss-of-function variants (or 6p21.3 deletion) as the molecular cause."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Reduced SynGAP at the Excitatory Postsynaptic Density",
+              "causal_link_type": "DIRECT",
+              "description": "Reduced SYNGAP1 dosage lowers SynGAP protein at excitatory synapses.",
+              "evidence": [
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "The expression of SYNGAP1 was reduced by 50% in Syngap1-/+ mice (Komiyama et al., 2002; Kim et al., 2003; Clement et al., 2012).",
+                  "explanation": "The review summarises three independent heterozygous mouse lines in which loss of one Syngap1 allele halves SynGAP protein, which is the dosage step this edge asserts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reduced SynGAP at the Excitatory Postsynaptic Density",
+          "description": "SynGAP is a Ras/Rap GTPase-activating protein highly concentrated at the postsynaptic density of excitatory (glutamatergic) synapses, where it restrains synaptic Ras signaling. Its reduction removes this brake. This node captures the single concept of the synaptic protein deficit.",
+          "role": "mediator",
+          "cell_types": [
+            {
+              "preferred_term": "Glutamatergic neuron",
+              "term": {
+                "id": "CL:0000679",
+                "label": "glutamatergic neuron"
+              }
+            }
+          ],
+          "molecular_functions": [
+            {
+              "preferred_term": "GTPase activator activity",
+              "term": {
+                "id": "GO:0005096",
+                "label": "GTPase activator activity"
+              },
+              "modifier": "DECREASED"
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:26912996",
+              "reference_title": "SYNGAP1: Mind the Gap.",
+              "supports": "SUPPORT",
+              "evidence_source": "OTHER",
+              "snippet": "SYNGAP1 is a negative regulator of Ras, Rap and of AMPA receptor trafficking to the postsynaptic membrane",
+              "explanation": "Establishes SynGAP as a synaptic brake that negatively regulates Ras/Rap signaling and AMPA-receptor trafficking; its loss disinhibits this pathway."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Dysregulated Ras Signaling and AMPA Receptor Trafficking",
+              "causal_link_type": "DIRECT",
+              "description": "Loss of SynGAP GAP activity dysregulates postsynaptic Ras signaling and AMPA-receptor trafficking.",
+              "evidence": [
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "However, due to Syngap1-/+ mutation, truncated SYGNAP1 fails to inhibit Ras activity, thereby facilitating conversion of inactive, GDP-bound Ras to an active, GTP-bound form and increasing the level of Ras activation.",
+                  "explanation": "States that reduced SynGAP releases its GAP brake on Ras, increasing active GTP-bound Ras. The review's next sentences connect this to ERK phosphorylation and AMPA receptor insertion."
+                },
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "Thus, increase in Ras activity elevates the level of phosphorylated ERK, which further facilitates the insertion of AMPARs to the postsynaptic membrane",
+                  "explanation": "Supplies the AMPA receptor trafficking half of the target node, downstream of the Ras disinhibition."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dysregulated Ras Signaling and AMPA Receptor Trafficking",
+          "description": "Without adequate SynGAP, Ras-ERK signaling at the synapse is disinhibited, increasing insertion of AMPA-type glutamate receptors and strengthening excitatory transmission. This node captures the single concept of the signaling and receptor-trafficking derangement.",
+          "role": "mediator",
+          "cell_types": [
+            {
+              "preferred_term": "Glutamatergic neuron",
+              "term": {
+                "id": "CL:0000679",
+                "label": "glutamatergic neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "Regulation of Ras protein signal transduction",
+              "term": {
+                "id": "GO:0046578",
+                "label": "regulation of Ras protein signal transduction"
+              },
+              "modifier": "INCREASED"
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Premature Excitatory Synapse and Dendritic Spine Maturation",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "description": "Enhanced Ras signaling and AMPA-receptor insertion accelerate excitatory synapse and dendritic spine maturation.",
+              "evidence": [
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "Thus, more stable form of actin combined with an increase in insertion of AMPAR into the postsynaptic membrane during development (PND14-16 in hippocampus in Hets) causes the dendritic spines to mature into mushroom shaped spines, which occurs earlier in Syngap1-/+ than in WT animals",
+                  "explanation": "Links the increased AMPA receptor insertion, together with Ras-driven actin stabilisation, to early maturation of mushroom-shaped spines in heterozygous mice."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Premature Excitatory Synapse and Dendritic Spine Maturation",
+          "description": "SynGAP normally paces the maturation of dendritic spines and excitatory synapses; its loss causes premature, accelerated maturation and an excess of strengthened excitatory synapses during development. This node captures the single concept of the accelerated synaptic maturation defect.",
+          "role": "mediator",
+          "cell_types": [
+            {
+              "preferred_term": "Glutamatergic neuron",
+              "term": {
+                "id": "CL:0000679",
+                "label": "glutamatergic neuron"
+              }
+            }
+          ],
+          "biological_processes": [
+            {
+              "preferred_term": "Dendritic spine development",
+              "term": {
+                "id": "GO:0060996",
+                "label": "dendritic spine development"
+              },
+              "modifier": "DYSREGULATED"
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:23141534",
+              "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "In the SYNGAP1 mouse model of ID/ASD, we found that dendritic spine synapses develop prematurely during the early postnatal period.",
+              "explanation": "The observation this node is built on - accelerated rather than merely abnormal spine maturation - measured in the Syngap1 heterozygous mouse. The same study found that inducing the mutation after the critical window had minimal effect, which is why the node is framed developmentally."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Cortical Excitation-Inhibition Imbalance",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "description": "Excess excitatory synaptic strength shifts cortical circuits toward excitation.",
+              "evidence": [
+                {
+                  "reference": "PMID:23141534",
+                  "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "Premature spine maturation dramatically enhanced excitability in the developing hippocampus, which corresponded with the emergence of behavioral abnormalities.",
+                  "explanation": "Primary mouse study showing that premature spine maturation increases excitability in the developing hippocampus, the shift toward excitation that this edge asserts."
+                },
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "This leads to elevated excitatory synaptic transmission causing Excitatory/Inhibitory (E/I) imbalance, particularly during the critical period of development.",
+                  "explanation": "The review names the consequence of the premature spine maturation described in its preceding sentence as an excitation-inhibition imbalance during the developmental critical period."
+                }
+              ]
+            },
+            {
+              "target": "Impaired Cognitive Development",
+              "causal_link_type": "INDIRECT_UNKNOWN_INTERMEDIATES",
+              "description": "Mistimed synaptic maturation disrupts the circuit refinement needed for cognition.",
+              "evidence": [
+                {
+                  "reference": "PMID:23141534",
+                  "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "snippet": "Inducing SYNGAP1 mutations after critical developmental windows closed had minimal impact on spine synapse function, whereas repairing these pathogenic mutations in adulthood did not improve behavior and cognition.",
+                  "explanation": "The timing experiments tie the cognitive deficit to the early developmental window in which spines mature prematurely. Disrupting SynGAP after that window spares synapse function, and restoring it later does not rescue cognition. Mouse data only."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cortical Excitation-Inhibition Imbalance",
+          "description": "The net effect is a shift of cortical circuits toward excitation over inhibition, lowering seizure threshold. This node captures the single concept of the excitation-inhibition imbalance and conforms to the shared epilepsy final common pathway.",
+          "role": "mediator",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Excitation-Inhibition Imbalance",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Neuronal Network Hyperexcitability",
+              "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+              "description": "The imbalance produces hyperexcitable, hypersynchronous networks.",
+              "evidence": [
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "Due to the altered E/I balance, humans, as well as Syngap1-/+ mice, are prone to epileptic seizures.",
+                  "explanation": "The review attributes seizure susceptibility in heterozygous mice and in patients to the altered excitation-inhibition balance. This is a synthesis statement, not a direct measurement of network hyperexcitability."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neuronal Network Hyperexcitability",
+          "description": "Cortical networks become hyperexcitable and prone to hypersynchronous, generalized discharges. This node captures the single concept of network hyperexcitability and conforms to the shared epilepsy final common pathway.",
+          "role": "central_effector",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Neuronal Hyperexcitability and Hypersynchrony",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:23141534",
+              "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Premature spine maturation dramatically enhanced excitability in the developing hippocampus, which corresponded with the emergence of behavioral abnormalities.",
+              "explanation": "Ties the upstream synaptic defect to measured hyperexcitability in the same animals, which is the edge this node sits on. Hippocampal rather than cortical, and in mouse, so it supports the mechanism without standing in for human cortical recordings."
+            }
+          ],
+          "downstream": [
+            {
+              "target": "Generalized Epilepsy",
+              "causal_link_type": "DIRECT",
+              "description": "Hypersynchronous networks generate the generalized seizures of the disorder.",
+              "evidence": [
+                {
+                  "reference": "PMID:26912996",
+                  "reference_title": "SYNGAP1: Mind the Gap.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "MODEL_ORGANISM",
+                  "quote_role": "REVIEW_SYNTHESIS",
+                  "snippet": "Accordingly, Syngap1-/+ mice are prone to audiogenic seizures and have reduced seizure threshold and altered electroencephalogram (EEG; Clement et al., 2012; Ozkan et al., 2014).",
+                  "explanation": "Heterozygous mice show a lowered seizure threshold and abnormal EEG, linking the hyperexcitable network state to seizures."
+                },
+                {
+                  "reference": "PMID:30541864",
+                  "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+                  "supports": "SUPPORT",
+                  "evidence_source": "HUMAN_CLINICAL",
+                  "snippet": "Of the 57 patients, 56 had epilepsy: generalized in 55, with focal seizures in 7 and infantile spasms in 1.",
+                  "explanation": "In the largest epileptology cohort, almost every patient's epilepsy is generalized. This is the generalized endpoint of the edge in humans. The mechanistic link comes from the mouse data above."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Generalized Epilepsy",
+          "description": "Most affected individuals develop generalized epilepsy, and a characteristic subset has myoclonic-astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences. This node captures the single concept of the seizure endpoint and conforms to the shared epilepsy final common pathway.",
+          "role": "consequence",
+          "conforms_to": "epilepsy_excitation_inhibition_imbalance#Recurrent Unprovoked Seizures",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+              "explanation": "GeneReviews documents the characteristic generalized epilepsy including the myoclonic-astatic (Doose) subset."
+            }
+          ]
+        },
+        {
+          "name": "Impaired Cognitive Development",
+          "description": "Developmental delay and intellectual disability, moderate to severe in most, are essentially universal. This node captures the single concept of the cognitive outcome.",
+          "role": "effector",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "is characterized by developmental delay (DD) or intellectual disability (ID) (100% of affected individuals), generalized epilepsy (~84%), and autism spectrum disorder (ASD) and other behavioral abnormalities",
+              "explanation": "GeneReviews documents developmental delay/intellectual disability in 100% of affected individuals."
+            }
+          ]
+        },
+        {
+          "name": "Autism and Behavioral Abnormalities",
+          "description": "About half of affected individuals have autism spectrum disorder or other behavioral abnormalities, including stereotypies. This node captures the single concept of the neurobehavioral outcome.",
+          "role": "effector",
+          "cell_types": [
+            {
+              "preferred_term": "Neuron",
+              "term": {
+                "id": "CL:0000540",
+                "label": "neuron"
+              }
+            }
+          ]
+        }
+      ],
+      "phenotypes": [
+        {
+          "name": "Global Developmental Delay",
+          "description": "Developmental delay is essentially universal.",
+          "phenotype_term": {
+            "preferred_term": "Global developmental delay",
+            "term": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "is characterized by developmental delay (DD) or intellectual disability (ID) (100% of affected individuals), generalized epilepsy (~84%), and autism spectrum disorder (ASD) and other behavioral abnormalities",
+              "explanation": "GeneReviews documents DD/ID in 100% of affected individuals."
+            }
+          ]
+        },
+        {
+          "name": "Intellectual Disability",
+          "description": "Intellectual disability, moderate to severe in most.",
+          "phenotype_term": {
+            "preferred_term": "Intellectual disability",
+            "term": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          }
+        },
+        {
+          "name": "Generalized-Onset Seizures",
+          "description": "Generalized epilepsy affects most individuals; the Doose (myoclonic-astatic) pattern is characteristic.",
+          "phenotype_term": {
+            "preferred_term": "Generalized-onset seizure",
+            "term": {
+              "id": "HP:0002197",
+              "label": "Generalized-onset seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+              "explanation": "GeneReviews documents the generalized epilepsy and its Doose subset."
+            }
+          ]
+        },
+        {
+          "name": "Myoclonic Seizures",
+          "description": "Myoclonic seizures occur, including myoclonic absences.",
+          "phenotype_term": {
+            "preferred_term": "Myoclonic seizure",
+            "term": {
+              "id": "HP:0032794",
+              "label": "Myoclonic seizure"
+            }
+          }
+        },
+        {
+          "name": "Absence Seizures",
+          "description": "Absence (including myoclonic absence) seizures occur.",
+          "phenotype_term": {
+            "preferred_term": "Absence seizure",
+            "term": {
+              "id": "HP:0002121",
+              "label": "Generalized non-motor (absence) seizure"
+            }
+          }
+        },
+        {
+          "name": "Autistic Behavior",
+          "description": "Autism spectrum disorder affects about half of individuals.",
+          "phenotype_term": {
+            "preferred_term": "Autistic behavior",
+            "term": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          }
+        },
+        {
+          "name": "Motor Stereotypies",
+          "description": "Stereotypic behaviors such as hand flapping occur.",
+          "phenotype_term": {
+            "preferred_term": "Motor stereotypy",
+            "term": {
+              "id": "HP:0000733",
+              "label": "Motor stereotypy"
+            }
+          }
+        },
+        {
+          "name": "Feeding Difficulties",
+          "description": "Feeding difficulties can be significant in some individuals.",
+          "phenotype_term": {
+            "preferred_term": "Feeding difficulties",
+            "term": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          }
+        },
+        {
+          "name": "Hypotonia",
+          "description": "Hypotonia is commonly present.",
+          "phenotype_term": {
+            "preferred_term": "Hypotonia",
+            "term": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          }
+        },
+        {
+          "name": "Eyelid Myoclonia with Absences",
+          "description": "Eyelid myoclonia with absences is a characteristic and frequent seizure type (~65%).",
+          "frequency": "FREQUENT",
+          "phenotype_term": {
+            "preferred_term": "Absence seizure with eyelid myoclonia",
+            "term": {
+              "id": "HP:0011149",
+              "label": "Absence seizure with eyelid myoclonia"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Seizure types included eyelid myoclonia with absences (65%), myoclonic seizures (34%), atypical (20%) and typical (18%) absences, and atonic seizures (14%), triggered by eating in 25%.",
+              "explanation": "Vlaskamp cohort quantifies eyelid myoclonia with absences in 65% of patients."
+            }
+          ]
+        },
+        {
+          "name": "Eating-Induced Seizures",
+          "description": "Seizures triggered by eating (reflex seizures) are a hallmark of the syndrome (~25%).",
+          "frequency": "OCCASIONAL",
+          "phenotype_term": {
+            "preferred_term": "Eating-induced seizure",
+            "term": {
+              "id": "HP:0020208",
+              "label": "Eating-induced seizure"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "Seizure types included eyelid myoclonia with absences (65%), myoclonic seizures (34%), atypical (20%) and typical (18%) absences, and atonic seizures (14%), triggered by eating in 25%.",
+              "explanation": "Vlaskamp cohort quantifies eating-triggered seizures in 25% of patients."
+            }
+          ]
+        },
+        {
+          "name": "High Pain Threshold",
+          "description": "A high pain threshold (reduced pain sensitivity) is a distinctive frequent feature (~72%).",
+          "frequency": "FREQUENT",
+          "phenotype_term": {
+            "preferred_term": "High pain threshold",
+            "term": {
+              "id": "HP:0007021",
+              "label": "Pain insensitivity"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+              "explanation": "Vlaskamp cohort quantifies high pain threshold in 72% of patients."
+            }
+          ]
+        },
+        {
+          "name": "Ataxia",
+          "description": "Ataxia or gait abnormalities are frequent (~51%).",
+          "frequency": "FREQUENT",
+          "phenotype_term": {
+            "preferred_term": "Ataxia",
+            "term": {
+              "id": "HP:0001251",
+              "label": "Ataxia"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+              "explanation": "Vlaskamp cohort quantifies ataxia or gait abnormalities in 51% of patients."
+            }
+          ]
+        },
+        {
+          "name": "Sleep Disturbance",
+          "description": "Sleep problems are frequent (~62%).",
+          "frequency": "FREQUENT",
+          "phenotype_term": {
+            "preferred_term": "Sleep disturbance",
+            "term": {
+              "id": "HP:0002360",
+              "label": "Sleep disturbance"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+              "explanation": "Vlaskamp cohort quantifies sleeping problems in 62% of patients."
+            }
+          ]
+        }
+      ],
+      "genetic": [
+        {
+          "name": "SYNGAP1",
+          "gene_term": {
+            "preferred_term": "SYNGAP1",
+            "term": {
+              "id": "hgnc:11497",
+              "label": "SYNGAP1"
+            }
+          },
+          "relationship_type": "CAUSATIVE",
+          "notes": "SYNGAP1 (6p21.32) encodes SynGAP, a synaptic Ras/Rap GTPase-activating protein. Disease is caused by heterozygous loss-of-function variants (~89%; nonsense, frameshift, splice, missense) or 6p21.3 deletions (~11%), acting by haploinsufficiency; most are de novo.",
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+              "explanation": "GeneReviews documents the SYNGAP1 variant classes and their proportions."
+            }
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "name": "SYNGAP1 Molecular Genetic Testing",
+          "description": "Diagnosis is established by molecular genetic testing identifying a heterozygous pathogenic SYNGAP1 variant (~89%) or a 6p21.3 deletion (~11%) in a proband with developmental delay or intellectual disability.",
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+              "explanation": "GeneReviews establishes molecular genetic testing as the confirmatory diagnostic method."
+            }
+          ]
+        }
+      ],
+      "prevalence": [
+        {
+          "population": "Worldwide",
+          "measure_type": "CASES_IN_LITERATURE",
+          "prevalence_class": "RARE",
+          "notes": "No precise population rate is established, but SYNGAP1-related disorder is recognized as one of the more common single-gene causes of intellectual disability with epilepsy; as of the GeneReviews summary more than 50 affected individuals had been reported, and modern registries include substantially larger cohorts.",
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "To date more than 50 individuals with SYNGAP1-ID have been reported.",
+              "explanation": "Provides a literature case count; no normalized population rate is asserted."
+            }
+          ]
+        }
+      ],
+      "treatments": [
+        {
+          "name": "Antiseizure Medication",
+          "description": "Epilepsy is managed with antiseizure medications; about half of affected individuals respond to a single agent while the remainder are pharmacoresistant. No SYNGAP1-specific ASM guideline exists.",
+          "treatment_term": {
+            "preferred_term": "Pharmacotherapy",
+            "term": {
+              "id": "NCIT:C15986",
+              "label": "Pharmacotherapy"
+            }
+          },
+          "evidence": [
+            {
+              "reference": "PMID:30789692",
+              "reference_title": "SYNGAP1-Related Intellectual Disability.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "In about 50% of affected individuals, the epilepsy responds to a single ASM; in the remainder it is pharmacoresistant.",
+              "explanation": "GeneReviews documents the mixed antiseizure-medication response."
+            }
+          ]
+        },
+        {
+          "name": "Developmental and Behavioral Supportive Care",
+          "description": "Developmental delay/intellectual disability and autism are managed with standard developmental, educational, and behavioral interventions; nasogastric/gastrostomy feeding may be needed for significant feeding issues.",
+          "treatment_term": {
+            "preferred_term": "supportive care",
+            "term": {
+              "id": "NCIT:C15747",
+              "label": "Supportive Care"
+            }
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "accession": "geo:GSE252400",
+          "title": "Epigenetic Modulation to perturb the SYNGAP1 Intellectual Disability (ID) that ameliorates synaptic and behavioural deficits",
+          "description": "Whole-hippocampal RNA sequencing across six arms - wild-type and Syngap1+/- mice each given saline, carrier nanosphere alone, or the nanosphere-conjugated p300/CBP acetyltransferase activator CSP-TTK21 - profiled after Morris water maze training. The design carries both the haploinsufficiency comparison and a pharmacological rescue arm, so it is usable for the SYNGAP1 loss-of-function transcriptome and for testing whether that transcriptome is reversible in the adult animal.",
+          "organism": {
+            "preferred_term": "house mouse",
+            "term": {
+              "id": "NCBITaxon:10090",
+              "label": "Mus musculus"
+            }
+          },
+          "data_type": "BULK_RNA_SEQ",
+          "sample_count": 18,
+          "genes": [
+            {
+              "preferred_term": "SYNGAP1",
+              "term": {
+                "id": "hgnc:11497",
+                "label": "SYNGAP1"
+              }
+            }
+          ],
+          "publication": "PMID:39878322",
+          "notes": "Found by a targeted GEO DataSets search for SYNGAP1; accession and metadata verified against NCBI E-utilities on 2026-08-27. Title, sample count, and organism are GEO's own values. Model-organism data - the gene descriptor is the human HGNC record for the disease gene; the mouse orthologue is Syngap1. GEO lists no linked PMID on the series; the publication recorded here is the paper reporting this experiment, matched on the series summary and design. This is the only SYNGAP1 disease dataset in GEO as of 2026-08-27 - a search across all fields returns seven other series, none of which studies SYNGAP1 loss of function."
+        }
+      ],
+      "discussions": [
+        {
+          "discussion_id": "gap_syngap1_developmental_window_adult_reversibility",
+          "prompt": "How much of the SYNGAP1-related phenotype is fixed by the developmental shortening of the critical period versus reversible in adulthood, and what is the treatment window for the emerging SYNGAP1-upregulating and gene therapies?",
+          "kind": "KNOWLEDGE_GAP",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Premature Excitatory Synapse and Dendritic Spine Maturation",
+            "pathophysiology#Impaired Cognitive Development"
+          ],
+          "rationale": "SynGAP paces synaptic maturation, and its loss causes premature spine maturation that shortens the developmental critical period, implying an early and possibly fixed contribution to intellectual disability. Yet re-expression of SynGAP in adult mice improves memory and seizure measures, suggesting some deficits remain reversible after development. How much of the human phenotype can be recovered by restoring SYNGAP1 dosage after diagnosis, and how wide the therapeutic window is, is decisive for the design and timing of the antisense-oligonucleotide and gene therapies now entering development.",
+          "evidence": [
+            {
+              "reference": "PMID:31025938",
+              "reference_title": "Re-expression of SynGAP protein in adulthood improves translatable measures of brain function and behavior.",
+              "supports": "SUPPORT",
+              "evidence_source": "MODEL_ORGANISM",
+              "snippet": "Adult restoration of SynGAP protein improved behavioral and electrophysiological measures of memory and seizure.",
+              "explanation": "Demonstrates partial adult reversibility in a mouse model, framing the open question of the human treatment window."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_syngap1_timed_restoration",
+              "name": "Timed SYNGAP1 restoration across development and adulthood",
+              "description": "In a conditional Syngap1 model, restore SynGAP at graded ages and measure recovery of network excitability, seizure susceptibility, and cognitive/behavioral endpoints as a function of restoration age.",
+              "experiment_type": {
+                "preferred_term": "timed gene-restoration experiment"
+              },
+              "readouts": [
+                {
+                  "name": "Recovery by restoration age",
+                  "target": "pathophysiology#Impaired Cognitive Development",
+                  "assays": [
+                    {
+                      "preferred_term": "behavioral assay"
+                    },
+                    {
+                      "preferred_term": "electroencephalography"
+                    }
+                  ],
+                  "direction": "POSITIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Never-restored and wild-type",
+                  "description": "Matched never-restored mutants and wild-type controls."
+                }
+              ],
+              "decision_criterion": "A treatment window is supported if recovery declines with later restoration age; broad reversibility is supported if late restoration still rescues endpoints.",
+              "would_support": [
+                "pathophysiology#Impaired Cognitive Development"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "gap_syngap1_dosage_upregulation_therapy",
+          "prompt": "Can boosting expression of the single functional SYNGAP1 allele (an upregulating antisense-oligonucleotide or gene-therapy strategy) restore sufficient SynGAP to be disease-modifying, and how precisely must dosage be controlled given the gene's dosage sensitivity?",
+          "kind": "EMERGING_HYPOTHESIS",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#SYNGAP1 Haploinsufficiency"
+          ],
+          "rationale": "SYNGAP1 disease is a haploinsufficiency: one functional copy is not enough. Because too little SynGAP causes disease, therapies that upregulate the remaining allele or add gene copies are attractive and are entering development, but SynGAP dosage is tightly constrained, and overshooting could have its own consequences. Whether dosage can be restored into a therapeutic range, and what biomarker confirms it, is the open translational question for this actively developing pipeline.",
+          "evidence": [
+            {
+              "reference": "PMID:39807402",
+              "reference_title": "Roadmap to advance therapeutics for SYNGAP1-related disorder: a patient organization perspective from SynGAP Research Fund.",
+              "supports": "SUPPORT",
+              "evidence_source": "OTHER",
+              "snippet": "one of many rare monogenic brain disorders without disease-modifying treatments",
+              "explanation": "Frames the current absence of disease-modifying therapy and the active dosage-restoration pipeline that this hypothesis concerns."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_syngap1_dosage_restoration_window",
+              "name": "SYNGAP1 dosage-restoration therapeutic window",
+              "description": "In patient iPSC-derived neurons and Syngap1 mice, titrate SYNGAP1 upregulation and measure the relationship between restored SynGAP level and normalization of synaptic and network phenotypes, defining the effective and safe dosage range.",
+              "experiment_type": {
+                "preferred_term": "dosage-titration experiment"
+              },
+              "readouts": [
+                {
+                  "name": "Phenotype normalization versus SynGAP level",
+                  "target": "pathophysiology#SYNGAP1 Haploinsufficiency",
+                  "assays": [
+                    {
+                      "preferred_term": "multielectrode array recording"
+                    },
+                    {
+                      "preferred_term": "immunoblot assay"
+                    }
+                  ],
+                  "direction": "POSITIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Untreated haploinsufficient and wild-type",
+                  "description": "Matched untreated mutant and wild-type references."
+                }
+              ],
+              "decision_criterion": "An upregulation strategy is supported if restoring SynGAP toward normal levels normalizes synaptic and network phenotypes within a controllable dosage range.",
+              "would_support": [
+                "pathophysiology#SYNGAP1 Haploinsufficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "discussion_id": "gap_syngap1_mechanism_to_phenotype",
+          "prompt": "Which downstream consequence of SynGAP loss (excitatory synapse over-strengthening, AMPA-receptor mis-trafficking, or inhibitory-circuit involvement) drives which arm of the phenotype - the generalized epilepsy, the intellectual disability, and the autism - and does the consistent developmental-delay-before-seizures sequence reflect distinct mechanisms?",
+          "kind": "KNOWLEDGE_GAP",
+          "status": "OPEN",
+          "attaches_to": [
+            "pathophysiology#Cortical Excitation-Inhibition Imbalance",
+            "pathophysiology#Impaired Cognitive Development"
+          ],
+          "rationale": "SynGAP haploinsufficiency perturbs excitatory synapse maturation, AMPA-receptor trafficking, and circuit excitation/inhibition balance, and the disorder combines epilepsy, intellectual disability, and autism. Developmental delay reliably precedes seizure onset. Whether these features share one substrate or arise from separable mechanisms - and whether targeting one (e.g., normalizing excitatory strength) would help all three - is unresolved and shapes what a therapy should be measured against.",
+          "evidence": [
+            {
+              "reference": "PMID:30541864",
+              "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "supports": "SUPPORT",
+              "evidence_source": "HUMAN_CLINICAL",
+              "snippet": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+              "explanation": "Characterizes the distinctive combined phenotype whose mechanistic partitioning is the open question."
+            }
+          ],
+          "proposed_experiments": [
+            {
+              "experiment_id": "exp_syngap1_celltype_specific_contributions",
+              "name": "Cell-type-specific contributions to epilepsy versus cognition",
+              "description": "Using cell-type-restricted Syngap1 manipulation (excitatory neurons versus interneurons), test which population's dysfunction produces the seizures versus the cognitive and autistic phenotypes.",
+              "experiment_type": {
+                "preferred_term": "cell-type-restricted manipulation experiment"
+              },
+              "readouts": [
+                {
+                  "name": "Phenotype by targeted cell type",
+                  "target": "pathophysiology#Cortical Excitation-Inhibition Imbalance",
+                  "assays": [
+                    {
+                      "preferred_term": "electroencephalography"
+                    },
+                    {
+                      "preferred_term": "behavioral assay"
+                    }
+                  ],
+                  "direction": "POSITIVE"
+                }
+              ],
+              "controls": [
+                {
+                  "name": "Pan-neuronal and wild-type",
+                  "description": "Pan-neuronal manipulation and wild-type as references."
+                }
+              ],
+              "decision_criterion": "A feature is assigned to a cell type if restricting the SynGAP deficit to that population reproduces it while sparing the others.",
+              "would_support": [
+                "pathophysiology#Cortical Excitation-Inhibition Imbalance"
+              ]
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "reference": "PMID:30789692",
+          "title": "SYNGAP1-Related Intellectual Disability.",
+          "tags": [
+            "GeneReviews"
+          ],
+          "findings": [
+
+          ]
+        }
+      ]
+    }
+  }
+]

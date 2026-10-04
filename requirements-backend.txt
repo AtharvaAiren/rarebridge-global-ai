@@ -1,0 +1,10 @@
+# RareBridge backend lane (Srinath). Python 3.10+; verified on Python 3.12.3.
+# Install from the repository root:  pip install -r requirements-backend.txt
+fastapi==0.142.2
+starlette==1.7.0
+pydantic==2.13.5
+uvicorn==0.54.0
+jsonschema==4.26.0     # overlay + AI extraction schema checks at load time
+# test-only
+pytest==9.1.1
+httpx==0.28.1          # required by fastapi.testclient

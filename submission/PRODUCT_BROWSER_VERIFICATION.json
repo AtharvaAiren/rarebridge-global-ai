@@ -1,0 +1,201 @@
+{
+  "checked_at": "2026-10-04T10:23:24.521Z",
+  "base_url": "http://127.0.0.1:18800",
+  "app_mode": "production frontend with same-origin real local FastAPI backend",
+  "passed": true,
+  "checks": [
+    {
+      "name": "fresh visit defaults to simple mode and genuine local API connection",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expert toggle exposes recorded disease identifiers",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "native guide dialog supports Escape and restores opener focus",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "contact entry starts with an honest empty condition scope",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "larger text and reduce-motion preferences apply and persist",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "signup/manage preview persists and removes a local profile without collecting a password",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "patient condition summary retains underlying research detail on demand",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "public contacts use actual recorded routes; discussion outline states nothing sent or booked",
+      "passed": true,
+      "details": {
+        "contacts": [
+          "CURE SYNGAP1",
+          "CHOP / Penn ENDD natural history study team",
+          "Stanford Medicine Children's Health synaptopathy team",
+          "Ingo Helbig, MD",
+          "Jillian L. McKee, MD, PhD"
+        ],
+        "public_urls": [
+          "https://curesyngap1.org/contact/",
+          "https://endd.med.upenn.edu/research/natural-history-study/",
+          "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+          "https://www.stxbp1disorders.org/starr",
+          "https://doi.org/10.1002/epi.70374"
+        ]
+      }
+    },
+    {
+      "name": "leaving a condition clears its public-contact scope",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "home/header/modal controls fit 320px, 390px and 768px including larger text",
+      "passed": true,
+      "details": {
+        "viewports": [
+          {
+            "width": 320,
+            "standard": {
+              "viewport": 320,
+              "document": 320
+            },
+            "large": {
+              "viewport": 320,
+              "document": 320
+            }
+          },
+          {
+            "width": 390,
+            "standard": {
+              "viewport": 390,
+              "document": 390
+            },
+            "large": {
+              "viewport": 390,
+              "document": 390
+            }
+          },
+          {
+            "width": 768,
+            "standard": {
+              "viewport": 768,
+              "document": 768
+            },
+            "large": {
+              "viewport": 768,
+              "document": 768
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot first visit contains empty real-run log and no measured ratio",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "pilot start requires complete run metadata",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "pilot timer pauses active work while wall time continues; quality gates completion and incomplete attempts stay visible",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "pilot CSV/JSON exports retain incomplete test attempts and mark clinical milestone unmeasured",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "synthetic pilot software run discarded with throwaway browser context; no measured evaluation results saved",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "no browser runtime errors during shell/pilot smoke",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "browser_errors": [],
+  "blocked_ai_requests": [],
+  "api_responses": [
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/diseases/MONDO%3A0012960/overview",
+      "status": 200
+    },
+    {
+      "path": "/api/graph",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/health",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    "frontend/screenshots/integrated-product-home-desktop.png",
+    "frontend/screenshots/integrated-product-settings-desktop.png",
+    "frontend/screenshots/integrated-product-account-preview-desktop.png",
+    "frontend/screenshots/integrated-product-condition-desktop.png",
+    "frontend/screenshots/integrated-product-contacts-preview-desktop.png",
+    "frontend/screenshots/integrated-product-home-mobile.png",
+    "frontend/screenshots/integrated-product-account-mobile.png",
+    "frontend/screenshots/integrated-product-impact-pilot-empty-desktop.png"
+  ],
+  "measurement_status": "Software checks only. No participant timing pilot or human brief-quality review was performed; no acceleration result was measured.",
+  "limits": [
+    "Desktop Chromium and emulated mobile viewports, not a physical phone.",
+    "AI endpoints blocked to avoid provider calls; no live AI generated by this test.",
+    "Account and appointment flows are explicitly local previews; no authentication or booking service tested."
+  ],
+  "build": {
+    "command": "npm --prefix frontend run build",
+    "node_version": "22.23.3",
+    "result": "passed"
+  },
+  "fixes_verified": [
+    "Mobile search grid has a zero minimum track width so it fits 320px.",
+    "Header navigation wraps at larger text size so it fits 320px.",
+    "Account button has an explicit accessible name when its visible text is hidden on mobile."
+  ]
+}

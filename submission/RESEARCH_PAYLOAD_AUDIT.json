@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "provider_destination": "https://api.anthropic.com/v1/messages",
+  "purpose": "The user requested a trained-model research scout and patient research assistant using their configured Claude API credits.",
+  "data_origins": [
+    "https://github.com/monarch-initiative/dismech",
+    "curation/atlas-overlay.json: public papers and institutional/program pages"
+  ],
+  "public_snapshot": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+  "license": "CC-BY-4.0",
+  "sources": {
+    "DISMECH:STXBP1_Encephalopathy.yaml": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+    "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+    "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+    "DOI:10.1002/epi.70374": "https://doi.org/10.1002/epi.70374",
+    "WEB:stxbp1-foundation-starr": "https://www.stxbp1disorders.org/starr",
+    "WEB:curesyngap1-prommis-blog": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+    "WEB:stanford-synaptopathy-research": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+    "WEB:curesyngap1-request-nhs-data": "https://curesyngap1.org/request-nhs-data/",
+    "WEB:globalgenes-rarex-stxbp1-2024": "https://globalgenes.org/press/global-genes-and-stxbp1-foundation-enter-partnership-to-use-rare-x-research-and-data-collection-platform-for-natural-history-study/"
+  },
+  "payload_chars": 32327,
+  "input_scope": "Disease-level public records; no patient records, local account profiles, lab chats, private documents or .env contents.",
+  "verification_questions": [
+    "What should we ask a researcher next?",
+    "What changes if a paper is hidden?"
+  ],
+  "limits": "This checks payload provenance and field selection, not biomedical correctness. Source claims retain their original review states."
+}

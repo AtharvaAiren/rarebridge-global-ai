@@ -1,0 +1,113 @@
+RareBridge — research-resource reuse for patient organizations
+
+PUBLIC DEMO
+https://rarebridge-global-ai.vercel.app
+SOURCE REPOSITORY
+https://github.com/AtharvaAiren/rarebridge-global-ai
+
+PROBLEM
+A rare-disease patient organization may find related diseases, publications and
+research teams without knowing whether a particular resource can serve its own
+study goal. Documented use, cohort fit, permissions and local capacity are
+different questions. A promising connection alone does not settle them.
+
+OUR USP
+Assess a specific resource for a specific target and proposed use, then turn its
+unresolved checks into a sourced collaboration proposal. Each result separates
+recorded support, unknowns and pending source review. A user can hide a publication
+and inspect exactly which checks depended on it; the exported brief preserves
+that current evidence state, practical questions and public collaborator route.
+
+PROTOTYPE SCOPE AND JOURNEY
+We cover STXBP1-, SYNGAP1- and SCN2A-related disorders with one goal: preparing a
+natural-history study, which tracks how a condition changes over time.
+The user searches a disease/gene/symptom/organization, follows an explained research
+connection, chooses a resource and opens its scoped checks. The published
+STARR/ProMMiS framework is our known STXBP1/SYNGAP1 anchor, not a new discovery.
+SCN2A applicability to that framework remains unanswered. A governed SYNGAP1
+dataset case demonstrates access requirements and finding an appropriate partner.
+
+The animated graph, patient/simple and doctor/expert views, source inspector,
+evidence hide/reset and current-state text/PDF brief form one inspectable workflow.
+Account/profile and appointment/discussion controls are clearly labeled local
+previews; they do not authenticate a cloud account, book a doctor or send outreach.
+
+ARCHITECTURE AND TRAINED MODEL
+React/TypeScript and SVG/d3-force serve the interface. FastAPI serves search,
+graph, assessments, sources and AI endpoints on the same public origin. Pinned
+DisMech records and an additive curation overlay provide source-linked graph
+context. A deterministic assessment engine controls scoped checks/outcomes.
+
+The existing pretrained Claude Sonnet 4.6 model (claude-sonnet-4-6) extracts pending
+claims from supplied public text, answers questions about the exact current view,
+explains checks and proposes research hypotheses using recorded graph edges and
+sources. We did not train or fine-tune a graph foundation model. Known routes
+remain labeled; biological leads and extracted claims stay pending and are never
+auto-imported into reviewed evidence. Output records genuine live/cached provenance.
+Source-binding guards constrain identifiers and recorded state, not medical truth.
+Claude use follows the team's reported organizer approval of Claude credits.
+
+SOURCE INTEGRITY AND VALIDATION
+DOI and PMID aliases identify one paper; repeated claims do not inflate study count.
+Hiding the framework paper changes two supported checks to unknown while the
+overall result can remain needs_information. An already-unknown check is not
+counted as newly changed. Source hiding changes a view, not graph records or biology.
+
+The current review log contains 58 rows: 20 human sign-offs preserved and 38 pending.
+We do not claim that all contacts or biological assertions have been reviewed.
+Imported AI-curated annotations, candidate inference and model hypotheses retain
+their qualifications. DisMech attribution/license and pinned snapshot reproduction
+are documented. No restricted participant data or measurement instrument is supplied.
+
+Verified local checks: 115 frontend, 129 AI, 53 API, 27 curation tests and 11
+foundation checks; graph browser 16/16, product/pilot 16/16, actual AI browser 9/9.
+Genuine live discovery and source-bound answers were recorded; browser cache
+replays retain their original response identities. The public app/JSON health
+and fresh public discovery/Q&A are verified; the actual public AI browser journey
+passed 9/9 with live responses. Public SFARI extraction produced two pending
+claims. Public hidden-source explanation passed all five recorded statuses and
+exact next questions, with no hidden-paper citations. The public release checker
+passed 11/11 runtime/provenance/workflow checks; all four AI operations have
+accepted genuine public results. These bindings do not validate medical meaning.
+The separate public-production product walkthrough is recorded at 60.00 seconds;
+the team video is produced at 2:15.01 with real public footage, accepted genuine
+live AI output, accurate credits and explicitly synthetic narration.
+Tests establish software/evidence bookkeeping, not clinical validity.
+
+NOVELTY BOUNDARY
+Disease graphs, resource directories, partner networks and measurement adaptation
+already exist. Our contribution is their integration into an inspectable,
+proposed-use workflow: candidate connection -> resource-specific assessment ->
+source-dependence test -> unresolved checks -> sourced collaboration action.
+We claim this demonstrated workflow and its review behavior, without claiming
+exclusive worldwide novelty or a newly discovered disease connection.
+
+MEANINGFUL MILESTONE AND CONDITIONAL 10X AMBITION
+The intended milestone is an expert-reviewed feasibility decision about adapting
+a research framework or accessing relevant research data. A brief is preparation
+for that decision, not the decision itself.
+
+No human timing pilot or measured 10x result exists yet. The functional timing
+page starts empty and supports two teammates in reversed order on identical
+sources/task/fictional constraints, with quality review, all failures and raw
+CSV/JSON logs. It measures brief preparation only.
+
+For a conditional milestone scenario, let D include discovery, preparation and
+follow-up work; let r be unchanged partner-response/expert-review time.
+Baseline time is D_manual + r; app time is D_app + r.
+A tenfold reduction requires:
+  (D_manual + r) / (D_app + r) >= 10
+  D_manual >= 10 * D_app + 9 * r
+
+Purely illustrative threshold, not observed evidence: if D_app=1 unit and r=1
+unit, D_manual must be at least 19 units to produce a 10x milestone ratio.
+These are abstract hypothetical units, not claimed hours or measured outcomes.
+If review/response dominates and is unchanged, faster drafting may produce only
+a small milestone improvement. Real stakeholder estimates and actual quality-
+controlled measurements are needed to establish whether 10x is achievable.
+
+IMPACT CLAIM
+RareBridge aims to reduce repeated discovery and make the first expert conversation
+more focused by exposing evidence gaps and preparing concrete next questions.
+We have not measured faster feasibility approval, study launch, treatment
+development or clinical benefit. Proposed reuse requires expert and access review.

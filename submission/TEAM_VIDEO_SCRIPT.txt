@@ -1,0 +1,52 @@
+RareBridge — team video, accurate credits and real product evidence
+Actual artifact: submission/team-video/RareBridge-team-video.mp4 (2:15.01).
+Verification: submission/team-video/VIDEO_VERIFICATION.json.
+Portal duration/format takes precedence.
+Encoder-ready content: submission/team-video/CONTENT.json
+Public app: https://rarebridge-global-ai.vercel.app
+Source repository:
+https://github.com/AtharvaAiren/rarebridge-global-ai
+
+The PS asks for a team video and separate one-minute patient/group walkthrough.
+It does not specify human faces/voices. Use accurate team-credit cards, real
+public product footage and explicitly synthetic narration; do not impersonate
+team voices or invent credentials. The actual one-minute walkthrough is separate.
+
+CREDITS
+Atharva — AI, integration and deployment
+Srinath — backend and frontend contributions
+Saanvi — evidence and curation
+Dhruv — evaluation and timing-tool work
+
+SEQUENCE (135 SECONDS)
+0–8: RareBridge intro card. Explain sourced questions and a practical collaboration
+plan for patient groups.
+8–68: the existing real-public 60-second product walkthrough, including its audio.
+It demonstrates the recorded route, scoped assessment, two-check source-hide test,
+reset, unknown SCN2A applicability and a sourced brief/export.
+68–78: actual accepted public question-answer screenshot, with its genuine
+live/cached label. Explain current sources and next questions.
+78–90: actual accepted public research-scout screenshot. Known interpretation and
+new proposed hypothesis stay separately labeled; both retain pending inference.
+90–120: real public Citizen dataset assessment/contact capture. Show documented
+academic-requester access route, research agreement/IRB submission, unanswered
+requester eligibility/prospective-fit checks and a public partner route.
+120–135: collaboration/impact card with all four accurate credits. "10x is a target.
+The pilot is ready; milestone gain is unmeasured."
+
+Three card copies and exact timed narration are in CONTENT.json. Use existing
+Claude Sonnet 4.6, not a newly trained model. Source binding is not clinical
+validation. Do not claim all 58 review rows are signed: 20 are human-signed and
+38 remain pending. Never relabel a cached result as live, show a rejected answer
+as accepted, imply dataset permission, book an appointment or send outreach.
+
+FINAL GATES
+- Confirm the final build/source freeze; the public hidden-source explanation
+  and 11/11 release checks already passed runtime/source binding.
+- Use accepted genuine public AI screenshots; preserve displayed provenance.
+- Match source publication and tested build; verify actual output length/audio.
+- Check portal video format/limit and upload/accessibility; retain final metadata.
+The encoder produced the separate team video above using real public product
+footage, accepted live AI output and accurate team credits. Its metadata records
+synthetic narration and no mocked responses. The one-minute MP4 remains a
+separate product walkthrough.

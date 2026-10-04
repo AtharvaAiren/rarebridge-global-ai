@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Collaboration brief: a document sheet on screen, the only thing in print.
+   ========================================================================== */
+
+body.has-brief { overflow: hidden; }
+
+.brief-sheet {
+  position: fixed; inset: 0; z-index: 30;
+  overflow-y: auto; overscroll-behavior: contain;
+  background: var(--rb-bg);
+  animation: brief-in var(--rb-dur-slow) var(--rb-ease-out) 1;
+}
+@keyframes brief-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.brief-sheet__bar {
+  position: sticky; top: 0; z-index: 1;
+  background: var(--rb-surface);
+  box-shadow: var(--rb-shadow-float);
+}
+.brief-sheet__bar-inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--rb-space-3);
+  max-width: var(--rb-content-max); margin-inline: auto;
+  padding: var(--rb-space-3) var(--rb-gutter);
+}
+.brief-sheet__bar-title { font-family: var(--rb-font-display); font-weight: var(--rb-weight-semibold); font-size: var(--rb-text-lg); }
+.brief-actions { display: flex; flex-wrap: wrap; gap: var(--rb-space-2); }
+.brief-sheet__status {
+  max-width: var(--rb-content-max); margin-inline: auto; padding: 0 var(--rb-gutter);
+  font-size: var(--rb-text-sm); color: var(--rb-text-muted);
+}
+.brief-sheet__status:not(:empty) { padding-bottom: var(--rb-space-2); }
+.brief-sheet__state { max-width: var(--rb-read-max); margin: var(--rb-space-8) auto 0; padding: 0 var(--rb-gutter); }
+.brief-sheet__close-alone { display: block; margin: var(--rb-space-4) auto; }
+.brief-sheet__page { padding: var(--rb-space-6) var(--rb-gutter) var(--rb-space-9); }
+
+/* The document floats like a page. */
+.brief {
+  max-width: 48rem; margin-inline: auto;
+  padding: clamp(1.25rem, 0.5rem + 4vw, 3.5rem);
+  background: var(--rb-surface);
+  border-radius: var(--rb-radius-lg);
+  box-shadow: var(--rb-shadow-float);
+}
+.brief__head { display: grid; gap: var(--rb-space-2); padding-bottom: var(--rb-space-5); border-bottom: 3px solid var(--rb-gold-500); }
+.brief__title { font-size: var(--rb-text-3xl); }
+.brief__title:focus { outline: none; }
+.brief__lead { font-size: var(--rb-text-lg); }
+.brief__muted { color: var(--rb-text-muted); }
+.brief__section { padding-block: var(--rb-space-5); border-bottom: 1px solid var(--rb-line); display: grid; gap: var(--rb-space-2); }
+.brief__section-title { font-family: var(--rb-font-display); font-size: var(--rb-text-xl); font-weight: var(--rb-weight-semibold); }
+.brief__note {
+  padding: var(--rb-space-3) var(--rb-space-4);
+  background: var(--rb-surface-warm); border-radius: var(--rb-radius-sm);
+}
+.brief__list { margin: 0; padding-left: 1.25rem; display: grid; gap: var(--rb-space-3); }
+.brief__rationale { display: block; color: var(--rb-text-muted); font-size: var(--rb-text-sm); }
+.brief__sources { margin: 0; padding-left: 1.75rem; display: grid; gap: var(--rb-space-2); font-size: var(--rb-text-sm); overflow-wrap: anywhere; }
+.brief__footer { padding-top: var(--rb-space-5); display: grid; gap: var(--rb-space-2); font-size: var(--rb-text-sm); color: var(--rb-text-muted); }
+.brief__disclaimer { font-weight: var(--rb-weight-medium); color: var(--rb-text); }
+.brief a { overflow-wrap: anywhere; }
+
+.brief-draft { display: grid; gap: var(--rb-space-2); }
+.brief-draft__text {
+  min-height: 18rem; padding: var(--rb-space-3) var(--rb-space-4);
+  font: var(--rb-weight-regular) var(--rb-text-base)/1.55 var(--rb-font-sans);
+  resize: vertical;
+}
+.brief__print-only { display: none; }
+.evidence__brief { display: grid; gap: var(--rb-space-1); justify-items: start; }
+
+/* ---------- Print: only the brief, in plain ink on white ---------- */
+@media print {
+  @page { margin: 16mm; }
+  :root { color-scheme: light; }
+  body.has-brief { overflow: visible; background: #FFFFFF; }
+  body.has-brief #root { display: none !important; }
+  .brief-sheet { position: static; overflow: visible; background: #FFFFFF; animation: none; }
+  .brief-sheet__bar, .brief__screen-only { display: none !important; }
+  .brief-sheet__page { padding: 0; }
+  .brief { max-width: none; padding: 0; box-shadow: none; border-radius: 0; background: #FFFFFF; color: #0D2236; }
+  .brief * { color: #0D2236 !important; }
+  .brief__muted, .brief__rationale, .brief__footer { color: #45596C !important; }
+  .brief__note { background: none; border: 1px solid #B9C7D4; }
+  .brief a { text-decoration: none; }
+  .brief__print-only { display: block; }
+  .brief__draft-print {
+    margin: 0; padding: 4mm; border: 1px solid #B9C7D4;
+    white-space: pre-wrap; font: 400 10.5pt/1.5 var(--rb-font-sans);
+  }
+  .brief__section-title { break-after: avoid-page; }
+  .brief__list li, .brief__sources li { break-inside: avoid; }
+  .brief__head { border-bottom-color: #0D2236; }
+}

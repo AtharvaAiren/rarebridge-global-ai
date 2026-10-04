@@ -1,0 +1,415 @@
+/* ==========================================================================
+   RareBridge Design Tokens  v1.0
+   Brand: navy #092F4C + helix gold #F8BB0A (sampled from the logo)
+   Fonts: Source Serif 4 (display, echoes the "RB" monogram)
+          Lexend (UI + body, high legibility)
+          No monospace, no all-caps tracked labels. IDs (genes, DOIs,
+          ontology codes) use Lexend 400 with tabular figures (.rb-id).
+
+   Load fonts in <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+
+   DESIGN RULES (for whoever implements this)
+   1. No boxes by default. Group content with whitespace, a tinted band
+      (.rb-band) or a hairline (.rb-rule). A border or shadow is reserved
+      for things that float (menus, dialogs, the search bar) or are inputs.
+   2. Professional and calm. Straight edges, generous whitespace, soft
+      radii. Flow comes from rhythm (consistent spacing, one reading column),
+      not from decorative shapes. No waves, blobs, gradients or illustrations.
+   3. Gold is light, never ink. Gold fills, underlines, rungs, focus rings
+      and active states. Text on gold is always navy. Gold text on a light
+      ground uses --rb-gold-ink.
+   4. Summary first, depth on demand. One idea per screen region; detail
+      opens in place (disclosure), not in a new box.
+   5. Sources sit beside claims. Every claim row carries a source chip.
+   6. Evidence status never relies on color alone: each state also has an
+      icon/shape and a text label (see --rb-evidence-* + .rb-chip).
+   7. Reading width caps at --rb-read-max. Touch targets >= 44px.
+   Breakpoints (use in @media, CSS vars cannot): 640px, 960px, 1280px.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ---------- Brand ---------- */
+  --rb-navy-950: #061E31;
+  --rb-navy-900: #092F4C; /* logo navy */
+  --rb-navy-800: #133D5E;
+  --rb-navy-700: #1F5078;
+  --rb-navy-600: #2D6694;
+  --rb-navy-500: #4A80AE;
+  --rb-navy-300: #9DB9D4;
+  --rb-navy-200: #C9D9E8;
+  --rb-navy-100: #E4EDF5;
+  --rb-navy-50:  #F2F6FA;
+
+  --rb-gold-500: #F8BB0A; /* logo gold */
+  --rb-gold-400: #FBCB3F;
+  --rb-gold-200: #FDE59A;
+  --rb-gold-100: #FEF3CF;
+  --rb-gold-ink: #8A6300; /* gold-family text on light grounds, 5.4:1 */
+
+  /* ---------- Semantic surfaces ---------- */
+  --rb-bg:            #F7F9FB;  /* app ground */
+  --rb-surface:       #FFFFFF;  /* raised / floating only */
+  --rb-surface-tint:  #EEF3F7;  /* fluid bands, sunk regions */
+  --rb-surface-warm:  var(--rb-gold-100); /* the one highlighted region per view */
+  --rb-surface-brand: var(--rb-navy-900); /* hero band, app bar on mobile */
+
+  /* ---------- Text ---------- */
+  --rb-text:          #0D2236;  /* 15.3:1 on bg */
+  --rb-text-muted:    #45596C;  /* 6.9:1 */
+  --rb-text-subtle:   #5E6F80;  /* 4.9:1, captions + meta, never smaller than 12px */
+  --rb-text-on-brand: #FFFFFF;
+  --rb-text-on-gold:  var(--rb-navy-900);
+  --rb-link:          var(--rb-navy-700);
+  --rb-link-hover:    var(--rb-navy-900);
+
+  /* ---------- Lines ---------- */
+  --rb-line:        #DCE4EC;   /* hairline separators */
+  --rb-line-strong: #B9C7D4;   /* input borders */
+  --rb-focus:       var(--rb-gold-500);
+
+  /* ---------- Evidence status (connections + claims) ---------- */
+  --rb-evidence-supported:     #1A6E55;  --rb-evidence-supported-bg:   #E3F3EC;
+  --rb-evidence-weaker:        #8A6300;  --rb-evidence-weaker-bg:      #FEF3CF;
+  --rb-evidence-unknown:       #56677A;  --rb-evidence-unknown-bg:     #EDF0F3;
+  --rb-evidence-contradicted:  #A8322A;  --rb-evidence-contradicted-bg:#FBE9E7;
+
+  /* Claim kind markers (shape carries meaning, color reinforces) */
+  --rb-claim-observation: var(--rb-navy-900); /* filled dot   */
+  --rb-claim-inference:   var(--rb-navy-500); /* hollow ring  */
+  --rb-claim-clinical:    var(--rb-gold-500); /* filled diamond, navy outline */
+
+  /* Graph (supporting view) */
+  --rb-graph-node-disease: var(--rb-navy-900);
+  --rb-graph-node-gene:    var(--rb-navy-500);
+  --rb-graph-node-asset:   var(--rb-gold-500);
+  --rb-graph-node-org:     #FFFFFF;
+  --rb-graph-edge:         var(--rb-navy-300);
+  --rb-graph-edge-active:  var(--rb-gold-500);
+
+  /* ---------- Typography ---------- */
+  --rb-font-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --rb-font-sans:    "Lexend", "Segoe UI", system-ui, sans-serif;
+
+  --rb-text-xs:   0.75rem;                                   /* 12  meta */
+  --rb-text-sm:   0.875rem;                                  /* 14  chips, captions */
+  --rb-text-base: 1rem;                                      /* 16  body */
+  --rb-text-lg:   1.125rem;                                  /* 18  lead body */
+  --rb-text-xl:   clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);    /* 20-24  h3 */
+  --rb-text-2xl:  clamp(1.5rem, 1.2rem + 1.2vw, 2rem);       /* 24-32  h2 */
+  --rb-text-3xl:  clamp(2rem, 1.5rem + 2vw, 2.75rem);        /* 32-44  h1 */
+  --rb-text-display: clamp(2.5rem, 1.8rem + 3vw, 3.75rem);   /* 40-60  hero */
+
+  --rb-weight-light: 300;
+  --rb-weight-regular: 400;
+  --rb-weight-medium: 500;
+  --rb-weight-semibold: 600;
+
+  --rb-leading-tight: 1.15;
+  --rb-leading-snug:  1.35;
+  --rb-leading-body:  1.6;
+
+  /* ---------- Space (4px base) ---------- */
+  --rb-space-1: 0.25rem;  /* 4  */
+  --rb-space-2: 0.5rem;   /* 8  */
+  --rb-space-3: 0.75rem;  /* 12 */
+  --rb-space-4: 1rem;     /* 16 */
+  --rb-space-5: 1.5rem;   /* 24 */
+  --rb-space-6: 2rem;     /* 32 */
+  --rb-space-7: 3rem;     /* 48 */
+  --rb-space-8: 4rem;     /* 64 */
+  --rb-space-9: 6rem;     /* 96 */
+  --rb-section-gap: clamp(3rem, 2rem + 4vw, 6rem);
+
+  /* ---------- Layout ---------- */
+  --rb-gutter:      clamp(1rem, 0.5rem + 3vw, 3rem);
+  --rb-content-max: 75rem;  /* 1200 */
+  --rb-read-max:    42rem;  /* ~68ch, all prose + claim lists */
+  --rb-rail-width:  17.5rem;/* desktop side rail */
+  --rb-appbar-h:    4rem;
+  --rb-tap-min:     2.75rem;/* 44px */
+
+  /* ---------- Shape ---------- */
+  --rb-radius-sm:   0.5rem;   /* chips inner, inputs on mobile */
+  --rb-radius-md:   0.875rem; /* buttons, inputs */
+  --rb-radius-lg:   1.5rem;   /* floating panels, bands */
+  --rb-radius-xl:   1.75rem;  /* bottom sheets */
+  --rb-radius-pill: 999px;
+
+  /* ---------- Elevation (only for floating things) ---------- */
+  --rb-shadow-float: 0 12px 32px -12px rgba(9, 47, 76, 0.22), 0 2px 6px -2px rgba(9, 47, 76, 0.08);
+  --rb-shadow-sheet: 0 -8px 32px -12px rgba(9, 47, 76, 0.25);
+
+  /* ---------- Motion ---------- */
+  --rb-ease-fluid: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --rb-ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --rb-dur-fast:   160ms;
+  --rb-dur-base:   280ms;
+  --rb-dur-slow:   480ms;
+}
+
+/* ---------- Dark theme ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --rb-bg: #071A2A;
+    --rb-surface: #0F2A40;
+    --rb-surface-tint: #0C2438;
+    --rb-surface-warm: #2A2410;
+    --rb-surface-brand: #0C2438;
+    --rb-text: #EAF0F6;
+    --rb-text-muted: #A9BBCC;
+    --rb-text-subtle: #8EA2B5;
+    --rb-link: #7FB0DA;
+    --rb-link-hover: #B5D2EC;
+    --rb-line: #1B3A54;
+    --rb-line-strong: #2C5070;
+    --rb-gold-ink: var(--rb-gold-400);
+    --rb-evidence-supported: #5FC7A0;   --rb-evidence-supported-bg: #0F3328;
+    --rb-evidence-weaker: #FBCB3F;      --rb-evidence-weaker-bg: #33290A;
+    --rb-evidence-unknown: #A9BBCC;     --rb-evidence-unknown-bg: #16304A;
+    --rb-evidence-contradicted: #F08C82;--rb-evidence-contradicted-bg: #3A1714;
+    --rb-claim-observation: #EAF0F6;
+    --rb-claim-inference: #7FB0DA;
+    --rb-graph-node-disease: #EAF0F6;
+    --rb-graph-node-org: #0F2A40;
+    --rb-graph-edge: #2C5070;
+    --rb-shadow-float: 0 12px 32px -12px rgba(0, 0, 0, 0.6);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --rb-bg: #071A2A;
+  --rb-surface: #0F2A40;
+  --rb-surface-tint: #0C2438;
+  --rb-surface-warm: #2A2410;
+  --rb-surface-brand: #0C2438;
+  --rb-text: #EAF0F6;
+  --rb-text-muted: #A9BBCC;
+  --rb-text-subtle: #8EA2B5;
+  --rb-link: #7FB0DA;
+  --rb-link-hover: #B5D2EC;
+  --rb-line: #1B3A54;
+  --rb-line-strong: #2C5070;
+  --rb-gold-ink: var(--rb-gold-400);
+  --rb-evidence-supported: #5FC7A0;   --rb-evidence-supported-bg: #0F3328;
+  --rb-evidence-weaker: #FBCB3F;      --rb-evidence-weaker-bg: #33290A;
+  --rb-evidence-unknown: #A9BBCC;     --rb-evidence-unknown-bg: #16304A;
+  --rb-evidence-contradicted: #F08C82;--rb-evidence-contradicted-bg: #3A1714;
+  --rb-claim-observation: #EAF0F6;
+  --rb-claim-inference: #7FB0DA;
+  --rb-graph-node-disease: #EAF0F6;
+  --rb-graph-node-org: #0F2A40;
+  --rb-graph-edge: #2C5070;
+  --rb-shadow-float: 0 12px 32px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--rb-bg);
+  color: var(--rb-text);
+  font-family: var(--rb-font-sans);
+  font-size: var(--rb-text-base);
+  font-weight: var(--rb-weight-light);
+  line-height: var(--rb-leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, .rb-display {
+  font-family: var(--rb-font-display);
+  font-weight: var(--rb-weight-semibold);
+  line-height: var(--rb-leading-tight);
+  letter-spacing: -0.01em;
+  color: var(--rb-text);
+  text-wrap: balance;
+  margin: 0;
+}
+h1 { font-size: var(--rb-text-3xl); }
+h2 { font-size: var(--rb-text-2xl); }
+h3, h4 {
+  font-family: var(--rb-font-sans);
+  font-weight: var(--rb-weight-medium);
+  line-height: var(--rb-leading-snug);
+  margin: 0;
+}
+h3 { font-size: var(--rb-text-xl); }
+h4 { font-size: var(--rb-text-lg); }
+.rb-display { font-size: var(--rb-text-display); }
+
+p { margin: 0; max-width: var(--rb-read-max); text-wrap: pretty; }
+strong, b { font-weight: var(--rb-weight-medium); }
+
+a {
+  color: var(--rb-link);
+  text-decoration: underline;
+  text-decoration-color: var(--rb-gold-500);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  transition: color var(--rb-dur-fast) var(--rb-ease-fluid);
+}
+a:hover { color: var(--rb-link-hover); }
+
+:focus-visible {
+  outline: 3px solid var(--rb-focus);
+  outline-offset: 2px;
+  border-radius: var(--rb-radius-sm);
+}
+
+/* Label: small section/field label. Sentence case, no letter-spacing, never uppercase */
+.rb-label {
+  font-family: var(--rb-font-sans);
+  font-size: var(--rb-text-sm);
+  font-weight: var(--rb-weight-medium);
+  line-height: 1.4;
+  color: var(--rb-text-muted);
+}
+.rb-lead { font-size: var(--rb-text-lg); color: var(--rb-text-muted); }
+.rb-meta { font-size: var(--rb-text-sm); color: var(--rb-text-subtle); }
+.rb-id   { font-family: var(--rb-font-sans); font-weight: var(--rb-weight-regular); font-variant-numeric: tabular-nums; color: var(--rb-link); } /* STXBP1, MONDO IDs, DOIs */
+
+/* ==========================================================================
+   Layout primitives
+   ========================================================================== */
+.rb-container { width: 100%; max-width: var(--rb-content-max); margin-inline: auto; padding-inline: var(--rb-gutter); }
+.rb-read      { max-width: var(--rb-read-max); }
+.rb-stack     { display: flex; flex-direction: column; gap: var(--rb-space-5); }
+.rb-cluster   { display: flex; flex-wrap: wrap; align-items: center; gap: var(--rb-space-2); }
+.rb-rule      { border: 0; border-top: 1px solid var(--rb-line); margin: 0; }
+
+/* Tinted band: the default way to group a section. No border. */
+.rb-band {
+  background: var(--rb-surface-tint);
+  border-radius: var(--rb-radius-lg);
+  padding: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
+}
+.rb-band--brand { background: var(--rb-surface-brand); color: var(--rb-text-on-brand); }
+.rb-band--brand h1, .rb-band--brand h2 { color: var(--rb-text-on-brand); }
+.rb-band--warm  { background: var(--rb-surface-warm); }
+
+/* Section: full-width block separated by space + hairline, not by a box */
+.rb-section { padding-block: var(--rb-section-gap); border-top: 1px solid var(--rb-line); }
+.rb-section:first-child { border-top: 0; }
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+/* Buttons */
+.rb-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--rb-space-2);
+  min-height: var(--rb-tap-min);
+  padding: 0 var(--rb-space-5);
+  border: 0; border-radius: var(--rb-radius-md);
+  font: var(--rb-weight-medium) var(--rb-text-base)/1 var(--rb-font-sans);
+  text-decoration: none; cursor: pointer;
+  transition: background-color var(--rb-dur-fast) var(--rb-ease-fluid), transform var(--rb-dur-fast) var(--rb-ease-fluid);
+}
+.rb-btn:active { transform: scale(0.98); }
+.rb-btn--primary { background: var(--rb-navy-900); color: #FFFFFF; }
+.rb-btn--primary:hover { background: var(--rb-navy-700); color: #FFFFFF; }
+.rb-btn--accent  { background: var(--rb-gold-500); color: var(--rb-navy-900); }  /* ONE per view: the next action */
+.rb-btn--accent:hover { background: var(--rb-gold-400); }
+.rb-btn--quiet   { background: transparent; color: var(--rb-link); padding-inline: var(--rb-space-3); }
+.rb-btn--quiet:hover { background: var(--rb-surface-tint); }
+.rb-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* Search: the single entry point (disease, gene, symptom, organization, mechanism) */
+.rb-search {
+  display: flex; align-items: center; gap: var(--rb-space-3);
+  min-height: 3.5rem; padding: 0 var(--rb-space-2) 0 var(--rb-space-5);
+  background: var(--rb-surface);
+  border: 1px solid var(--rb-line-strong);
+  border-radius: var(--rb-radius-md);
+  box-shadow: var(--rb-shadow-float);
+}
+.rb-search:focus-within { border-color: var(--rb-navy-700); outline: 3px solid var(--rb-focus); outline-offset: 2px; }
+.rb-search input {
+  flex: 1; min-width: 0; border: 0; background: transparent; outline: none;
+  font: var(--rb-weight-regular) var(--rb-text-lg)/1.2 var(--rb-font-sans); color: var(--rb-text);
+}
+.rb-search input::placeholder { color: var(--rb-text-subtle); }
+
+/* Inputs */
+.rb-field { display: flex; flex-direction: column; gap: var(--rb-space-2); }
+.rb-field label { font-size: var(--rb-text-sm); font-weight: var(--rb-weight-medium); color: var(--rb-text-muted); }
+.rb-input {
+  min-height: var(--rb-tap-min); padding: 0 var(--rb-space-4);
+  border: 1px solid var(--rb-line-strong); border-radius: var(--rb-radius-md);
+  background: var(--rb-surface); color: var(--rb-text);
+  font: var(--rb-weight-regular) var(--rb-text-base)/1.4 var(--rb-font-sans);
+}
+
+/* Chips: evidence status + sources. Always icon/shape + label, never color alone */
+.rb-chip {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  min-height: 1.75rem; padding: 0 0.7em;
+  border-radius: var(--rb-radius-pill);
+  font: var(--rb-weight-medium) var(--rb-text-sm)/1 var(--rb-font-sans);
+  white-space: nowrap;
+}
+.rb-chip--supported    { color: var(--rb-evidence-supported);    background: var(--rb-evidence-supported-bg); }
+.rb-chip--weaker       { color: var(--rb-evidence-weaker);       background: var(--rb-evidence-weaker-bg); }
+.rb-chip--unknown      { color: var(--rb-evidence-unknown);      background: var(--rb-evidence-unknown-bg); }
+.rb-chip--contradicted { color: var(--rb-evidence-contradicted); background: var(--rb-evidence-contradicted-bg); }
+.rb-chip--source {
+  color: var(--rb-link); background: transparent;
+  box-shadow: inset 0 0 0 1px var(--rb-line-strong);
+  font-weight: var(--rb-weight-regular);
+}
+
+/* Claim row: a line in a list, not a card. Marker shape = claim kind */
+.rb-claim {
+  display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); column-gap: var(--rb-space-3); row-gap: var(--rb-space-2);
+  padding-block: var(--rb-space-4);
+  border-top: 1px solid var(--rb-line);
+}
+.rb-claim > :not(.rb-marker) { grid-column: 2; }
+.rb-marker { width: 0.7rem; height: 0.7rem; margin-top: 0.45rem; justify-self: center; }
+.rb-marker--observation { border-radius: 50%; background: var(--rb-claim-observation); }
+.rb-marker--inference   { border-radius: 50%; box-shadow: inset 0 0 0 2px var(--rb-claim-inference); }
+.rb-marker--clinical    { transform: rotate(45deg); background: var(--rb-claim-clinical); box-shadow: 0 0 0 1.5px var(--rb-navy-900); border-radius: 2px; }
+
+/* Disclosure: depth on demand, opens in place */
+.rb-disclosure > summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: var(--rb-space-2);
+  min-height: var(--rb-tap-min); font-weight: var(--rb-weight-medium); color: var(--rb-link);
+}
+.rb-disclosure > summary::-webkit-details-marker { display: none; }
+.rb-disclosure > summary::after {
+  content: ""; width: 0.5rem; height: 0.5rem; margin-left: 0.25rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px); transition: transform var(--rb-dur-base) var(--rb-ease-fluid);
+}
+.rb-disclosure[open] > summary::after { transform: rotate(225deg); }
+
+/* Strength meter: thin helix-style rungs, 5 steps */
+.rb-rungs { display: inline-flex; gap: 3px; align-items: flex-end; height: 1rem; }
+.rb-rungs > i { width: 3px; height: 100%; border-radius: 2px; background: var(--rb-line-strong); }
+.rb-rungs > i.on { background: var(--rb-gold-500); }
+
+/* Floating layers */
+.rb-float { background: var(--rb-surface); border-radius: var(--rb-radius-lg); box-shadow: var(--rb-shadow-float); }
+.rb-sheet { background: var(--rb-surface); border-radius: var(--rb-radius-xl) var(--rb-radius-xl) 0 0; box-shadow: var(--rb-shadow-sheet); }
+
+/* Tabs / segmented: underline in gold, no boxed pills */
+.rb-tabs { display: flex; gap: var(--rb-space-5); border-bottom: 1px solid var(--rb-line); overflow-x: auto; }
+.rb-tab {
+  min-height: var(--rb-tap-min); padding: 0; border: 0; background: none; cursor: pointer;
+  font: var(--rb-weight-regular) var(--rb-text-base)/1 var(--rb-font-sans); color: var(--rb-text-muted);
+  border-bottom: 3px solid transparent; margin-bottom: -1px; white-space: nowrap;
+}
+.rb-tab[aria-selected="true"] { color: var(--rb-text); font-weight: var(--rb-weight-medium); border-bottom-color: var(--rb-gold-500); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

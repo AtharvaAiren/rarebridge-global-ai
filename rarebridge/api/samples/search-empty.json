@@ -1,0 +1,11 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "query": "not-in-this-slice",
+  "items": [],
+  "coverage": {
+    "disease_count": 3,
+    "scope_note": "Names, synonyms and IDs in a 3-disease slice (STXBP1, SYNGAP1, SCN2A; pinned DisMech snapshot plus curated overlay). Not a literature search; no match here does not mean nothing exists."
+  },
+  "total_matches": 0,
+  "limit": 10
+}

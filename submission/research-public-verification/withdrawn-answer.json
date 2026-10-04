@@ -1,0 +1,70 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "assessment_id": "framework-for-syngap1",
+  "withdrawn_source_ids": [
+    "DOI:10.1002/epi.70374"
+  ],
+  "answer": {
+    "text": "When a source is hidden, the checks that relied on it lose their supporting evidence. In this assessment, hiding the paper changed two check statuses: documented-framework and target-observed both dropped from supported to unknown. A third check, trial-endpoint, also lost an evidence item but its status did not change because it was already unknown before the source was hidden. The overall outcome stayed at needs_information throughout. In plain terms, the assessment no longer has recorded evidence that the selected framework is documented or that it has been used in SYNGAP1-related disorder. Those two questions now need to be re-established before planning can move forward. Suitability, permissions and feasibility require expert review.",
+    "cited_source_ids": [],
+    "check_ids": [
+      "documented-framework",
+      "target-observed",
+      "trial-endpoint"
+    ],
+    "followup_questions": [
+      {
+        "check_id": "documented-framework",
+        "question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "target-observed",
+        "question": "Do our proposed participants resemble the studied cohort?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      }
+    ],
+    "evidence_state": "insufficient_evidence",
+    "generation_mode": "live",
+    "mode": "patient",
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "response_id": "msg_011Cfh5yCuAebdo9E2HiW4bU",
+    "sources": {},
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5yCuAebdo9E2HiW4bU",
+      "request_id": "req_011Cfh5yCXqa3FnfybgaPX9e",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 1987,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 200,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "ddb820b2d03e93b56b18b4d0e16c31fc9219400e2449fb97d952df65118ef866",
+      "generated_at": "2026-10-04T11:04:27.327020+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "cache_saved": true,
+      "assessment_sha256": "bccf1f4a896e5639ffc7b6eb80bafd241c5f4c8fc352ab7ad64bb2cf6ff28515",
+      "context_sha256": "65d04acc8e52550c2b7a06c825a3daa99a11f65eb5a228a2702e65f9f8c3f789",
+      "source_binding": "reviewed_active_sources_of_selected_checks",
+      "followup_binding": "exact_recorded_questions_and_roles_of_selected_checks"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

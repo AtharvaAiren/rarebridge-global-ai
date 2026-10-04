@@ -1,0 +1,62 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "assessment_id": "framework-for-syngap1",
+  "withdrawn_source_ids": [
+    "DOI:10.1002/epi.70374"
+  ],
+  "answer": {
+    "text": "When you hide a paper in this view, the assessment loses whatever evidence that paper was providing. In this case, hiding the paper changed the status of two checks from supported to unknown: one asking whether a natural-history framework is documented, and one asking whether the framework was used in SYNGAP1. A third check about treatment responsiveness was already unknown, so losing the paper's evidence there did not change its status. That makes two checks with changed statuses, not three. The overall outcome stays needs_information either way, because several other checks were already unanswered. Hiding a paper does not mean the paper is retracted or invalid; it just means this view no longer has access to its evidence. No sources remain active and citable in the current assessment.",
+    "cited_source_ids": [],
+    "check_ids": [
+      "documented-framework",
+      "target-observed",
+      "trial-endpoint"
+    ],
+    "followup_questions": [
+      {
+        "check_id": "documented-framework",
+        "question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "target-observed",
+        "question": "Do our proposed participants resemble the studied cohort?",
+        "contact_role": "clinical investigator"
+      }
+    ],
+    "evidence_state": "insufficient_evidence",
+    "generation_mode": "cached",
+    "mode": "patient",
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "response_id": "msg_011Cfh1s4aUc9pxA8HTnPcdA",
+    "sources": {},
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh1s4aUc9pxA8HTnPcdA",
+      "request_id": "req_011Cfh1s4CegPtZuFzJk6WdH",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 1985,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 269,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "2867eb9dc97dfe03532d6c241f289f3e8c6622c0c53f7aa02f7e0bd545b7c1f2",
+      "generated_at": "2026-10-04T10:10:37.162549+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "assessment_sha256": "bccf1f4a896e5639ffc7b6eb80bafd241c5f4c8fc352ab7ad64bb2cf6ff28515",
+      "context_sha256": "65d04acc8e52550c2b7a06c825a3daa99a11f65eb5a228a2702e65f9f8c3f789"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

@@ -1,0 +1,221 @@
+RareBridge — prototype scope proposed for approval
+Prepared 4 October 2026. Planning document only; implementation has not started.
+This proposal supersedes earlier feature wishlists, not the stable handoff API.
+Budget baseline: the previously reported 17 hours, four people. Rebase the schedule
+against actual hours remaining when approval arrives.
+
+PRODUCT PROMISE
+Help a patient organization find an existing research resource, understand the
+conditions for its particular proposed use, and approach an appropriate partner
+with a sourced collaboration brief.
+
+Main user: patient-organization leader. Primary goal: prepare a natural-history
+study, which follows how a condition changes over time. Starting conditions:
+STXBP1-, SYNGAP1- and SCN2A-related disorders. These are demonstration cases,
+not gene-wide compatibility categories. The challenge explicitly permits a
+focused disease cluster.
+
+COMMITTED CONTENT BREADTH
+- Three disease records, their genes, selected mechanisms/processes and HPO
+  phenotype terms, stable identifiers and synonyms. Retain the imported graph
+  for inspection; select a compact useful route for the default display.
+- Six resource/program records: the published STARR/ProMMiS framework; STARR;
+  ProMMiS; SCN2A Clinical Trial Readiness Study; Inchstone outcome-measure
+  adaptation; Simons Searchlight longitudinal research-data access route.
+  The framework and its component studies are connected explicitly. They are
+  not presented as six independent discoveries or independent supporting papers.
+  A program record is not described as a downloadable validated instrument.
+- Four scoped target/resource assessments: framework for STXBP1; framework for
+  SYNGAP1; possible framework adaptation for SCN2A; Simons Searchlight data access
+  for a proposed SYNGAP1 natural-history project. Existing two bundles seed this.
+  Other cards have source-backed metadata and a clear 'not assessed for this use'
+  state; never attach a different disease's assessment to them.
+- Three verified patient-organization routes plus relevant study-team/shared-
+  initiative public routes. Link investigators only when sources establish their
+  role. A listed author is not automatically the current asset owner.
+- A small reviewed overlay sufficient for each displayed route and check.
+  Planning cap: roughly 10-15 decisive source pages/papers and 20-30 reviewed
+  assertions; these are effort bounds, not verified-content counts today.
+  Broader imported claims stay pending; source-count inflation is prohibited.
+- One two-variant SCN2A context card from one primary experimental paper is a
+  time-boxed enhancement: preserve variant, experimental model and measured
+  effect. Include only if reviewed by hour 6. No universal SCN2A gain/loss label.
+- Existing imported model/dataset metadata may remain inspectable as unreviewed
+  records, but no lab-model reuse assessment or therapeutic workflow is promised.
+
+FOUR USER VIEWS
+1. Find your starting point.
+   One search accepts disease/gene names, known synonyms, selected symptoms,
+   mechanisms and curated organizations. All resolve into the same disease
+   journey. Plain-language summary, exact community and collection coverage are
+   visible. Unknown queries produce a helpful empty state.
+2. Understand connections and existing resources.
+   Compact graph plus readable path cards: disease -> gene/mechanism/phenotype
+   -> related condition -> study/resource -> organization/investigator.
+   Compute candidate relationships from recorded shared graph features. State
+   the actual feature, source and review status. Published connections and
+   inferred research leads are separate labels, not separate applications.
+   Broad shared symptoms provide weaker clues than specific documented links.
+   Rankings prioritize reviewed, goal-relevant routes and expose the reason;
+   they do not represent clinical probability. Show six resource/program cards
+   with type, purpose, source, known access conditions and assessed/unassessed
+   status. Related resources remain available without implying suitability.
+3. Check this resource for this proposed use.
+   Show disease, subgroup/proposed use as documented in the bundle and one goal.
+   Four assessment bundles answer recorded disease coverage, measurement/cohort
+   fit, access/materials and local expertise/equipment questions. Fixed curated
+   cases prevent arbitrary form changes from silently retaining old evidence.
+   Expose supported, refuted, conflicting, unknown and unreviewed checks. Each
+   missing check has a concrete next question and responsible collaborator role.
+   A source drawer shows original URL, publication/retrieval dates where known,
+   narrow assertion, review status and evidence/model context. Hide/reset one
+   publication across DOI/PMID aliases to show dependency changes. Explain a
+   changed check even if the overall outcome remains 'needs information'.
+4. Prepare the next action.
+   Editable collaboration brief with resource, proposed use, explained route,
+   known differences, supporting sources, required open checks, public partner
+   routes, next research milestone and draft message. Export as plain text or
+   browser print/save PDF. Export the currently displayed assessment, including
+   withheld sources. The app prepares a message for review; it does not send it.
+
+AI CAPABILITIES INCLUDED
+Actual OpenAI integration is part of the core, because challenge-track prizes
+require it. Use schema-constrained extraction from a supplied public abstract or
+source excerpt with its identifier/URL. Validate IDs, citations, snippets and
+allowed relationships; show the source-linked candidate claims in a small
+evidence-import panel, marked pending. Reconcile known names to existing IDs.
+Generate a plain-language explanation and draft brief using the deterministic
+assessment and provided sources. The model cannot promote scientific assertions
+or overwrite check outcomes. Schema compliance does not establish factual truth.
+Record model, request/response provenance and source version/hash as available.
+Cache genuine successful responses and label live/cached/unavailable states.
+Required demo: one real extraction preview and one grounded explanation.
+No unrestricted biomedical chatbot, arbitrary URL crawler or autonomous agent.
+
+WHAT WE REUSE
+1. Local DisMech snapshot, graph builder, canonical IDs and metadata. Keep
+   Monarch/DisMech attribution, pinned commit and CC-BY-4.0 content terms.
+2. Our existing assessment.py source/check/alias/withdrawal logic and software
+   tests. Candidate matching remains separate from applicability assessment.
+3. Existing official study/program pages for asset metadata and public routes.
+   Simons/SFARI institutional affiliation, agreement and IRB approval/exemption
+   are useful documented access checks. Data suitability still needs review.
+4. The patient-advocate/researcher collaboration and measurement-adaptation
+   workflow already demonstrated by Inchstone. Credit that effort and connect
+   users to it; do not claim we invented cross-condition measure adaptation.
+5. HPO/MONDO identifiers already present and transparent shared-term matching,
+   rather than a fresh ontology pipeline or foundation-model training project.
+6. Current OpenAI Structured Outputs guidance for bounded extraction.
+
+Reuse means metadata, permitted data/code and useful workflow patterns. It does
+not mean copying proprietary product code, restricted participant data or
+copyrighted measurement instruments. Current availability/recruitment is stated
+only when a dated official source establishes it.
+
+OPTIONAL UPGRADE GATE
+One extra integration only, with a maximum total budget of 60 minutes, after the
+complete cached journey works and before hour 10. Priority: an already-running
+lab checkpoint that recognizes our IDs; otherwise a single BioMCP article/study
+lookup. Keep its result behind the existing candidate/data interfaces. If no
+checkpoint recognizes the target vocabulary, skip it. Semsimian semantic matching
+is deferred unless a teammate already has a working ontology setup. No training,
+full PrimeKG import, broad database integration or dependence on the lab repo.
+The prototype works without the RTX GPU or the optional integration.
+
+DEFENSIBLE DIFFERENTIATION
+Disease maps, resource catalogues, evidence tracing, research roadmaps, outcome-
+measure adaptation and partner matching already exist. Our prototype connects
+these into one inspectable, proposed-use-specific journey. Users can see why a
+resource surfaced, what is supported for their use, which publication matters,
+what needs checking, who could resolve it, and a sourced proposal to approach them.
+This is a demonstrated workflow contribution, not a world-first scientific claim.
+The STXBP1/SYNGAP1 shared framework is a known validation case. A graph-derived
+proposed lead is labelled as a lead, not an unrecognized discovery or treatment.
+
+ARCHITECTURE AND PARALLEL OWNERSHIP
+React/TypeScript frontend; FastAPI backend; local JSON snapshot and additive
+curation overlay; current rule engine; a small OpenAI service. Existing API
+contract remains the baseline. Add an optional resource catalogue field where
+needed without altering assessed-opportunity semantics. No database is required.
+
+Srinath: rarebridge/api/, rarebridge/services/, API tests and backend dependencies.
+  Search, graph selection/candidate matching, source resolver, assessment API,
+  overlay loading, AI-service wiring. First functioning API by hour 2.
+Saanvi: frontend/.
+  Four views, fixtures behind a replaceable client, graph/source drawers,
+  source withdrawal, import preview, editable action brief and print/text export.
+  First fixture journey by hour 2, real API journey by hour 4.
+Dhruv: curation/, evaluation/.
+  Reviewed asset metadata, four bundles, organization/researcher routes, source
+  logs and a small frozen audit set. First reviewed anchor by hour 2; main
+  overlay by hour 6. Variant context only if it fits that gate.
+Atharva + coding assistant: rarebridge/ai/, integration, setup, root README,
+  optional adapter, impact argument, demo/pitch and submission assembly.
+  Verify an actual OpenAI API key/credits and runtime access in the first hour.
+  Never paste secrets into team prompts, repository or the browser.
+
+TIMELINE FROM APPROVAL
+0-0.5h: compare actual remaining time with baseline; confirm owners/contracts;
+  check Python/Node/OpenAI access and repository setup. Current machine lacks
+  Node/npm and backend dependencies; setup is scheduled, not assumed complete.
+0.5-2h: independent API/UI/data/AI work; one reviewed graph/resource/contact route.
+2-4h: integrate first real-data disease -> resource -> checks -> partner -> export.
+4-7h: complete resource overlay, four assessments, actual OpenAI extraction and
+  explanation, evidence drawer and explained candidate route.
+7-10h: complete source withdrawal, uncertain-target/governed-data scenarios,
+  useful no-result/error handling and brief accuracy. Optional upgrade only if
+  it passes its gate. Continue integration, not additional disease coverage.
+10-12h: frozen source/rule cases, integration checks, timing pilot, clean startup
+  rehearsal and README. Feature freeze by hour 12.
+12-14h: important fixes, polish, pitch claims and mandatory public deployment.
+  User's updated submission constraint requires a public HTTPS application.
+  Local execution is useful for development checks but is not the submission target.
+14-17h: team video, separate one-minute walkthrough, source repository/README,
+  submission fields/uploads and buffer. Check the portal's actual formats/limits.
+
+PASS CONDITIONS AND SUBMISSION
+Demonstrate three scenarios: documented shared-framework route; additional
+unknown SCN2A applicability of that same framework; a governed-resource route
+where access requirements create a concrete researcher-collaboration task.
+Also show one graph-generated candidate research lead with sources/qualifiers.
+Use 6-10 frozen source/rule questions to inspect citation support, pending claims,
+target/context mismatch, source aliasing and withdrawal. Include unknown queries,
+DOI IDs containing '/', API/model failures and export of current state. Existing
+software tests passing is not clinical validation. Synthetic conflict examples
+may be used in tests but must not masquerade as real contradictory literature.
+Measure manual and app-assisted preparation on the same source set and report
+the actual result. Name the larger milestone: reaching an expert-reviewed
+feasibility decision about adapting a natural-history framework. Explain the
+baseline/proposed route and assumptions behind possible 10x acceleration; do not
+equate faster brief preparation with a proven faster study launch or cure.
+Deliver a working publicly hosted prototype, source repository,
+README with architecture/setup/data reproduction/attribution/limitations, team
+video and one-minute walkthrough. Save a repeatable genuine OpenAI output.
+
+CUT ORDER IF ACTUAL TIME IS SHORTER
+Cut optional integrations and variant enhancement first, then decorative graph
+effects and extra metadata depth. Keep at least the known-framework case, honest
+SCN2A gap, concrete public collaborator, evidence inspection/withdrawal, actual
+OpenAI use, export and submission package. Protect the final 2-3 submission hours.
+Defer extra diseases/goals, funding/investor scouting, drug recommendations,
+automated trial eligibility, patient accounts/data collection, direct outreach,
+multiuser editing and server-side PDF generation.
+
+PRIMARY REFERENCES
+Challenge: source-notes/global AI PS.txt
+DisMech: https://github.com/monarch-initiative/dismech
+Evidence model: https://github.com/monarch-initiative/dismech/blob/main/docs/explanation/evidence-model.md
+Shared framework: https://doi.org/10.1002/epi.70374
+STARR: https://www.stxbp1disorders.org/starr
+ProMMiS: https://curesyngap1.org/resources/studies/syngap1-prommis/
+SCN2A resources: https://www.scn2a.org/research/clinical-trials-and-research-opportunities-2/
+Inchstone: https://inchstoneproject.org/inchstone-results-new/
+Simons data/biospecimens: https://www.simonssearchlight.org/data-biospecimens/
+SFARI access: https://www.sfari.org/resource/sfari-base/
+OpenAI: https://developers.openai.com/api/docs/guides/structured-outputs
+BioMCP: https://github.com/genomoncology/biomcp
+
+APPROVAL BOUNDARY
+This is the proposed scope. Only read-only research and this planning document
+were produced this turn. Start implementation once the user approves it, and
+rebase the timeline immediately rather than assuming the old 17-hour clock.

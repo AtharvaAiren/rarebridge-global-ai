@@ -1,0 +1,2121 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "sources": {
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+    },
+    "DOI:10.64898/2026.01.30.26344887": {
+      "title": "A Prospective Natural History Study Protocol for Clinical Trial Readiness in Synaptic Disorders (medRxiv preprint v1)",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.01.30.26344887v1.full.pdf",
+      "aliases": [],
+      "published_on": "2026-02-02",
+      "source_kind": "preprint",
+      "note": "Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "version_of": "DOI:10.1002/epi.70374"
+    },
+    "WEB:stxbp1-foundation-starr": {
+      "title": "STARR study page, STXBP1 Foundation",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "organization_webpage",
+      "note": "Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page."
+    },
+    "WEB:stxbp1-foundation-home": {
+      "title": "STXBP1 Foundation home page",
+      "url": "https://www.stxbp1disorders.org/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "organization_webpage",
+      "note": "Read on 2026-10-04. Lists a 30 Sep 2026 news item on STARR continuing through June 2028; the item itself could not be opened (HTTP 429)."
+    },
+    "WEB:curesyngap1-prommis-blog": {
+      "title": "Four Stories, One Purpose: Our Visits to CHOP (CURE SYNGAP1 blog)",
+      "url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+      "aliases": [],
+      "published_on": "2026-03-26",
+      "source_kind": "organization_webpage",
+      "note": "Official CURE SYNGAP1 blog post describing ProMMiS sites and how families register. Read on 2026-10-04."
+    },
+    "WEB:curesyngap1-request-nhs-data": {
+      "title": "Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "aliases": [],
+      "published_on": "2023-03-01",
+      "source_kind": "organization_webpage",
+      "note": "Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset."
+    },
+    "WEB:endd-natural-history-study": {
+      "title": "Natural History Study, ENDD Center (Penn Medicine / CHOP)",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "institution_webpage",
+      "note": "Study team page for the STXBP1 and SYNGAP1 natural history studies. Read via search snippet on 2026-10-04; full page not opened."
+    },
+    "WEB:stanford-synaptopathy-research": {
+      "title": "Synaptopathy Research and Innovation, Stanford Medicine Children's Health",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "institution_webpage",
+      "note": "Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'."
+    },
+    "WEB:globalgenes-rarex-stxbp1-2024": {
+      "title": "Global Genes and STXBP1 Foundation partnership to use RARE-X for the natural history study (press release)",
+      "url": "https://globalgenes.org/press/global-genes-and-stxbp1-foundation-enter-partnership-to-use-rare-x-research-and-data-collection-platform-for-natural-history-study/",
+      "aliases": [],
+      "published_on": "2024-07-24",
+      "source_kind": "press_release",
+      "note": "Read via search snippet on 2026-10-04."
+    }
+  },
+  "nodes": [
+    {
+      "id": "DOI:10.1002/epi.70374",
+      "type": "publication",
+      "label": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "study:starr",
+      "type": "study",
+      "label": "STARR natural history study (STXBP1-RD)",
+      "aliases": [
+        "STXBP1 Clinical Trial Ready",
+        "STARR"
+      ],
+      "registry_ids_reported": [
+        "NCT06555965"
+      ],
+      "registry_note": "NCT ID is reported by the STXBP1 Foundation STARR page; the registry record itself was not machine-readable in our check.",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "study:prommis",
+      "type": "study",
+      "label": "ProMMiS natural history study (SYNGAP1-RD)",
+      "aliases": [
+        "ProMMiS",
+        "PRoMiSS"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "type": "asset",
+      "label": "STARR / ProMMiS natural-history framework",
+      "asset_type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending"
+    },
+    {
+      "id": "asset:seizure-history-reconstruction",
+      "type": "asset",
+      "label": "Medical-record seizure history reconstruction method",
+      "asset_type": "measurement_method",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "asset:starr-prommis-qeeg-protocol",
+      "type": "asset",
+      "label": "Quantitative EEG acquisition protocol (resting state, VEP, AEP)",
+      "asset_type": "biomarker_acquisition_protocol",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "type": "asset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "asset_type": "dataset",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "review_status": "pending"
+    },
+    {
+      "id": "asset:simons-searchlight-prom-data",
+      "type": "asset",
+      "label": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)",
+      "asset_type": "registry_dataset",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "asset:rare-x-prom-collection",
+      "type": "asset",
+      "label": "RARE-X caregiver-reported outcome collection (used by STARR/ProMMiS)",
+      "asset_type": "data_collection_platform",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending"
+    },
+    {
+      "id": "org:stxbp1-foundation",
+      "type": "organization",
+      "label": "STXBP1 Foundation",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "org:cure-syngap1",
+      "type": "organization",
+      "label": "CURE SYNGAP1",
+      "url": "https://curesyngap1.org/contact/",
+      "review_status": "source_checked"
+    },
+    {
+      "id": "team:chop-endd-nhs",
+      "type": "study_team",
+      "label": "CHOP / Penn ENDD natural history study team",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "review_status": "pending"
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "type": "researcher",
+      "label": "Ingo Helbig, MD",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "review_status": "pending"
+    },
+    {
+      "id": "researcher:jillian-mckee",
+      "type": "researcher",
+      "label": "Jillian L. McKee, MD, PhD",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending"
+    },
+    {
+      "id": "team:stanford-synaptopathy",
+      "type": "study_team",
+      "label": "Stanford Medicine Children's Health synaptopathy team",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "review_status": "pending"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:overlay:paper-describes-starr",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "study:starr",
+      "relation": "describes_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper describes the STARR protocol for STXBP1-RD (Methods, Study Organization & Management).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:paper-describes-prommis",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "study:prommis",
+      "relation": "describes_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper describes the ProMMiS protocol for SYNGAP1-RD (Methods, Study Organization & Management).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:stxbp1-studied-in-starr",
+      "source": "MONDO:0012812",
+      "target": "study:starr",
+      "relation": "studied_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "STXBP1-RD participants are enrolled in STARR (164 enrolled per preprint Recruitment section).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:syngap1-studied-in-prommis",
+      "source": "MONDO:0012960",
+      "target": "study:prommis",
+      "relation": "studied_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "SYNGAP1-RD participants are enrolled in ProMMiS (159 enrolled per preprint Recruitment section).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:framework-covers-starr",
+      "source": "DOI:10.1002/epi.70374#framework",
+      "target": "study:starr",
+      "relation": "framework_used_by",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "One published framework covers both studies.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:framework-covers-prommis",
+      "source": "DOI:10.1002/epi.70374#framework",
+      "target": "study:prommis",
+      "relation": "framework_used_by",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "One published framework covers both studies.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:syngap1-stxbp1-shared-framework",
+      "source": "MONDO:0012960",
+      "target": "MONDO:0012812",
+      "relation": "shares_published_study_framework_with",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "Inferred connection for navigation: both diseases have cohorts in the same published natural-history framework. This is a shared study method, not shared biology, treatment response or proof that results transfer; the paper reports disease-specific developmental and seizure patterns.",
+      "claim_origin": "inferred"
+    },
+    {
+      "id": "edge:overlay:stxbp1-foundation-partners-starr",
+      "source": "org:stxbp1-foundation",
+      "target": "study:starr",
+      "relation": "partners_on_study",
+      "provenance": {
+        "source_url": "https://www.stxbp1disorders.org/starr",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr",
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Foundation page says STARR is funded by the STXBP1 Foundation; the paper says outcome measures were selected with the foundation.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:cure-syngap1-partners-prommis",
+      "source": "org:cure-syngap1",
+      "target": "study:prommis",
+      "relation": "partners_on_study",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "WEB:curesyngap1-prommis-blog",
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "CURE SYNGAP1 describes ProMMiS as powered by CURE SYNGAP1; the paper says outcome measures were selected with CURE SYNGAP1.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:endd-coordinates-starr",
+      "source": "team:chop-endd-nhs",
+      "target": "study:starr",
+      "relation": "coordinates_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "CHOP is the prime site and data coordinating centre (paper Methods).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:endd-coordinates-prommis",
+      "source": "team:chop-endd-nhs",
+      "target": "study:prommis",
+      "relation": "coordinates_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "CHOP is the prime site and data coordinating centre (paper Methods).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:helbig-leads-starr",
+      "source": "researcher:ingo-helbig",
+      "target": "study:starr",
+      "relation": "leads_study",
+      "provenance": {
+        "source_url": "https://www.stxbp1disorders.org/starr",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "Foundation page names him multi-site Principal Investigator of STARR.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:mckee-authors-paper",
+      "source": "researcher:jillian-mckee",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "corresponding_author_of",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as corresponding author on the preprint title page.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:helbig-authors-paper",
+      "source": "researcher:ingo-helbig",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "corresponding_author_of",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as corresponding author on the preprint title page.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:stanford-site-starr",
+      "source": "team:stanford-synaptopathy",
+      "target": "study:starr",
+      "relation": "study_site_for",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as a STARR site in the paper and on its own page.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:stanford-site-prommis",
+      "source": "team:stanford-synaptopathy",
+      "target": "study:prommis",
+      "relation": "study_site_for",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as a ProMMiS site in the paper and on its own page (spelled PRoMiSS there).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:seizure-method-used-starr",
+      "source": "asset:seizure-history-reconstruction",
+      "target": "study:starr",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Seizure history reconstruction is part of the protocol (Methods).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:seizure-method-used-prommis",
+      "source": "asset:seizure-history-reconstruction",
+      "target": "study:prommis",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Seizure history reconstruction is part of the protocol; expanded PELHS scale added for SYNGAP1.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:qeeg-used-starr",
+      "source": "asset:starr-prommis-qeeg-protocol",
+      "target": "study:starr",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:qeeg-used-prommis",
+      "source": "asset:starr-prommis-qeeg-protocol",
+      "target": "study:prommis",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:citizen-dataset-covers-syngap1",
+      "source": "asset:curesyngap1-citizen-nhs-dataset",
+      "target": "MONDO:0012960",
+      "relation": "dataset_covers_disease",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/request-nhs-data/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:curesyngap1-request-nhs-data"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The data request page describes SYNGAP1 patient records available to researchers.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:cure-syngap1-offers-citizen-dataset",
+      "source": "org:cure-syngap1",
+      "target": "asset:curesyngap1-citizen-nhs-dataset",
+      "relation": "provides_access_route_to",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/request-nhs-data/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:curesyngap1-request-nhs-data"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The page invites academic researchers to request access via agreement and IRB.",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:searchlight-used-by-paper",
+      "source": "asset:simons-searchlight-prom-data",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "used_as_comparison_data_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper combined Simons Searchlight data with prospective data (Preliminary Results).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:rarex-used-starr",
+      "source": "asset:rare-x-prom-collection",
+      "target": "study:starr",
+      "relation": "platform_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:globalgenes-rarex-stxbp1-2024"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "PROMs are administered through RARE-X (paper Methods; 2024 press release).",
+      "claim_origin": "recorded"
+    },
+    {
+      "id": "edge:overlay:rarex-used-prommis",
+      "source": "asset:rare-x-prom-collection",
+      "target": "study:prommis",
+      "relation": "platform_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper states PROMs for the natural history study are administered through RARE-X.",
+      "claim_origin": "recorded"
+    }
+  ],
+  "assets": [
+    {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "label": "STARR / ProMMiS natural-history framework",
+      "type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "access_status": "Published description only. Permission to adopt the protocol, its instrument licences and staff/equipment needs are not checked.",
+      "description": "Multi-site prospective natural history protocol for STXBP1-RD (STARR) and SYNGAP1-RD (ProMMiS): clinician-administered developmental measures, caregiver-reported measures, seizure-history reconstruction and quantitative EEG, with CHOP as prime site and data coordinating centre.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "owner_status": "Study team documented (CHOP-led consortium). Ownership of protocol materials not established.",
+      "proposed_use": "A patient organization planning a natural history study reviews which framework components could inform its own protocol.",
+      "documented_context": "Studied in STXBP1-RD and SYNGAP1-RD cohorts only. The authors state an aim to generalize the framework to other DEEs; that extension is not demonstrated in this paper.",
+      "unverified": [
+        "instrument licensing",
+        "protocol document access",
+        "fit for other diseases or age ranges",
+        "site capacity"
+      ],
+      "public_researcher_routes": [
+        {
+          "name": "STARR study team via STXBP1 Foundation STARR page",
+          "url": "https://www.stxbp1disorders.org/starr"
+        },
+        {
+          "name": "ENDD Center natural history study page (CHOP / Penn)",
+          "url": "https://endd.med.upenn.edu/research/natural-history-study/"
+        }
+      ]
+    },
+    {
+      "id": "asset:seizure-history-reconstruction",
+      "label": "Medical-record seizure history reconstruction method",
+      "type": "measurement_method",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "access_status": "Method described in the paper and earlier cited work. Coding manual or templates not checked.",
+      "description": "Month-by-month seizure type and frequency reconstructed from medical records and family interviews, seizure types coded with HPO terms and frequency mapped to the PELHS scale, with two extra levels added for very high SYNGAP1 seizure frequency.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "owner_status": "Developed and applied by the CHOP/ENDD team per the paper; no public toolkit confirmed.",
+      "proposed_use": "Collect seizure history with less family burden than daily diaries when planning a natural history study.",
+      "documented_context": "Applied to 107 STXBP1-RD and 100 SYNGAP1-RD individuals in the preliminary analysis (preprint figures). The paper notes many seizures are uncountable, which limits seizure counts as trial endpoints.",
+      "unverified": [
+        "availability of coding templates",
+        "training needed",
+        "validity outside these cohorts"
+      ]
+    },
+    {
+      "id": "asset:starr-prommis-qeeg-protocol",
+      "label": "Quantitative EEG acquisition protocol (resting state, VEP, AEP)",
+      "type": "biomarker_acquisition_protocol",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "access_status": "Acquisition settings described in the paper. Analysis pipeline code availability not checked.",
+      "description": "128-channel resting EEG with visual and auditory evoked potentials every 6 months, artifact removal by automated ICA and spectral analysis.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "owner_status": "CHOP/ENDD study team per the paper.",
+      "proposed_use": "Plan exploratory EEG biomarker collection alongside clinical outcome measures.",
+      "documented_context": "The paper calls biomarker work an initial, exploratory step; evoked-potential results are not reported there. Not a validated endpoint.",
+      "unverified": [
+        "equipment requirements at other sites",
+        "pipeline availability",
+        "biomarker validity"
+      ]
+    },
+    {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "type": "dataset",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "access_status": "Documented access route for academic researchers: Researcher Agreement with Citizen Health plus an IRB submission. Access for a patient organization without an academic partner is not stated.",
+      "description": "De-identified, standardized summaries of participating patients' medical records, including genetic and EEG results; the page states data for over 100 patients with a confirmed P/LP SYNGAP1 diagnosis.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "WEB:curesyngap1-request-nhs-data"
+      ],
+      "owner_status": "Offered by CURE SYNGAP1 and Citizen Health per their page.",
+      "proposed_use": "Retrospective baseline data to inform which outcomes a prospective SYNGAP1 study should measure.",
+      "documented_context": "Retrospective, record-derived data; not a prospective protocol. Patient count is as stated on the page, not independently checked.",
+      "unverified": [
+        "current patient count",
+        "eligibility of non-academic requesters",
+        "data fields relevant to the chosen outcomes"
+      ],
+      "public_researcher_routes": [
+        {
+          "name": "CURE SYNGAP1 data request page",
+          "url": "https://curesyngap1.org/request-nhs-data/"
+        }
+      ]
+    },
+    {
+      "id": "asset:simons-searchlight-prom-data",
+      "label": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)",
+      "type": "registry_dataset",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "access_status": "Use reported in the paper only. Access conditions not checked; Simons Searchlight's own pages not reviewed.",
+      "description": "The paper combined existing Simons Searchlight data (STXBP1 n=67, SYNGAP1 n=39 in the preprint) with prospective RARE-X data to check feasibility of caregiver-reported measures such as the Vineland-3.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "owner_status": "Simons Searchlight (registry operator); not confirmed from the operator's own pages.",
+      "proposed_use": "Comparison data for planning caregiver-reported outcome measures.",
+      "documented_context": "Counts come from the preprint text and may differ in the published version.",
+      "unverified": [
+        "access process",
+        "current data volume",
+        "permitted uses"
+      ]
+    },
+    {
+      "id": "asset:rare-x-prom-collection",
+      "label": "RARE-X caregiver-reported outcome collection (used by STARR/ProMMiS)",
+      "type": "data_collection_platform",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "access_status": "Paper states PROMs moved to RARE-X from year two once licensing agreements were finalized. Terms for another organization not checked.",
+      "description": "Third-party platform through which the studies administer parent-reported outcome measures; a 2024 press release describes the STXBP1 Foundation partnership with Global Genes for STARR.",
+      "goal_ids": [
+        "natural_history"
+      ],
+      "target_disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:globalgenes-rarex-stxbp1-2024"
+      ],
+      "owner_status": "Global Genes (RARE-X) per press release.",
+      "proposed_use": "Remote collection of caregiver-reported measures for a new natural history study.",
+      "documented_context": "The paper reports variable caregiver completion rates despite support.",
+      "unverified": [
+        "licensing cost and terms",
+        "which instruments are licensed on the platform"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "org:stxbp1-foundation",
+      "label": "STXBP1 Foundation",
+      "kind": "organization",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "role": "Parent-led patient organization; funds STARR and co-selected its outcome measures. The STARR page lists a research inbox for study questions.",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "source_checked",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812"
+      ]
+    },
+    {
+      "id": "org:cure-syngap1",
+      "label": "CURE SYNGAP1",
+      "kind": "organization",
+      "url": "https://curesyngap1.org/contact/",
+      "role": "Patient organization; supports ProMMiS and co-selected its outcome measures; runs a researcher data-request route for a retrospective SYNGAP1 dataset.",
+      "source_ids": [
+        "WEB:curesyngap1-prommis-blog",
+        "WEB:curesyngap1-request-nhs-data",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "source_checked",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012960"
+      ]
+    },
+    {
+      "id": "team:chop-endd-nhs",
+      "label": "CHOP / Penn ENDD natural history study team",
+      "kind": "study_team",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "role": "Prime site and data coordinating centre for STARR and ProMMiS per the paper; the ENDD page gives a study contact route.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:endd-natural-history-study"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ]
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "label": "Ingo Helbig, MD",
+      "kind": "researcher",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "role": "Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ]
+    },
+    {
+      "id": "researcher:jillian-mckee",
+      "label": "Jillian L. McKee, MD, PhD",
+      "kind": "researcher",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "role": "Corresponding (first) author of the framework paper. A potential collaborator.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ]
+    },
+    {
+      "id": "team:stanford-synaptopathy",
+      "label": "Stanford Medicine Children's Health synaptopathy team",
+      "kind": "study_team",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "role": "Study site for STARR and ProMMiS per the paper and its own page.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ]
+    }
+  ],
+  "assessment_bundles": [
+    {
+      "id": "framework-for-stxbp1",
+      "target_disease": {
+        "id": "MONDO:0012812",
+        "label": "STXBP1-related disorder"
+      },
+      "goal": "Plan a natural-history study using an existing assessment framework",
+      "goal_id": "natural_history",
+      "asset": {
+        "id": "DOI:10.1002/epi.70374#framework",
+        "label": "STARR / ProMMiS natural-history framework",
+        "type": "published_study_framework",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Published description only. Permission to adopt the protocol, its instrument licences and staff/equipment needs are not checked.",
+        "public_researcher_routes": [
+          {
+            "name": "STARR study team via STXBP1 Foundation STARR page",
+            "url": "https://www.stxbp1disorders.org/starr"
+          },
+          {
+            "name": "ENDD Center natural history study page (CHOP / Penn)",
+            "url": "https://endd.med.upenn.edu/research/natural-history-study/"
+          }
+        ]
+      },
+      "sources": {
+        "DOI:10.1002/epi.70374": {
+          "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+          "url": "https://doi.org/10.1002/epi.70374",
+          "aliases": [
+            "PMID:42446932"
+          ],
+          "published_on": "2026-07-14",
+          "source_kind": "human_observational_study",
+          "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+        },
+        "WEB:stxbp1-foundation-starr": {
+          "title": "STARR study page, STXBP1 Foundation",
+          "url": "https://www.stxbp1disorders.org/starr",
+          "aliases": [],
+          "published_on": null,
+          "source_kind": "organization_webpage",
+          "note": "Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page."
+        }
+      },
+      "coverage": "Checks one published framework and the STXBP1 Foundation STARR page for an STXBP1 target. Pending human source review. Does not search all natural-history studies, and does not confirm current recruitment.",
+      "checks": [
+        {
+          "id": "documented-framework",
+          "category": "research",
+          "required": true,
+          "question": "Is an existing natural-history framework documented?",
+          "evidence": [
+            {
+              "source_id": "DOI:10.1002/epi.70374",
+              "polarity": "support",
+              "review_status": "source_checked",
+              "rationale": "Methods describe the STARR and ProMMiS protocols, sites and assessments.",
+              "evidence_type": "human_observational"
+            }
+          ],
+          "next_question": "Which protocol components can be shared with our group?",
+          "contact_role": "study coordinator"
+        },
+        {
+          "id": "target-observed",
+          "category": "research",
+          "required": true,
+          "question": "Does this paper report use in STXBP1-related disorder?",
+          "evidence": [
+            {
+              "source_id": "DOI:10.1002/epi.70374",
+              "polarity": "support",
+              "review_status": "source_checked",
+              "rationale": "STARR is the STXBP1-RD arm; the preprint reports 164 STXBP1-RD participants enrolled.",
+              "evidence_type": "human_observational"
+            }
+          ],
+          "next_question": "Do our proposed participants resemble the studied STXBP1 cohort (age range, severity, variant types)?",
+          "contact_role": "clinical investigator"
+        },
+        {
+          "id": "implementation-access",
+          "category": "access",
+          "required": true,
+          "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+          "evidence": [
+            {
+              "source_id": "DOI:10.1002/epi.70374",
+              "polarity": "uncertain",
+              "review_status": "source_checked",
+              "rationale": "The paper says caregiver measures moved to RARE-X only once licensing agreements were finalized, and several instruments are commercially published. This shows licences matter; it does not say what our group would need.",
+              "evidence_type": "human_observational"
+            }
+          ],
+          "next_question": "Can we access the protocol and instrument materials, and which licences, trained staff and equipment (e.g. 128-channel EEG) are required?",
+          "contact_role": "study coordinator"
+        },
+        {
+          "id": "local-feasibility",
+          "category": "implementation",
+          "required": true,
+          "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+          "evidence": [],
+          "next_question": "Which components need adapting to our cohort and local study capacity? The paper notes in-person visits limit families who cannot travel.",
+          "contact_role": "clinical investigator"
+        },
+        {
+          "id": "patient-org-involvement",
+          "category": "community",
+          "required": false,
+          "question": "Is an STXBP1 patient organization documented as a partner in designing this framework?",
+          "evidence": [
+            {
+              "source_id": "DOI:10.1002/epi.70374",
+              "polarity": "support",
+              "review_status": "source_checked",
+              "rationale": "Outcome measures were selected and reviewed with the STXBP1 Foundation (Methods).",
+              "evidence_type": "human_observational"
+            },
+            {
+              "source_id": "WEB:stxbp1-foundation-starr",
+              "polarity": "support",
+              "review_status": "source_checked",
+              "rationale": "Foundation page states it funds STARR.",
+              "evidence_type": "other"
+            }
+          ],
+          "next_question": "Would the STXBP1 Foundation share what they learned from co-designing STARR?",
+          "contact_role": "patient organization research lead"
+        },
+        {
+          "id": "current-enrollment",
+          "category": "status",
+          "required": false,
+          "question": "Is STARR currently enrolling?",
+          "evidence": [
+            {
+              "source_id": "WEB:stxbp1-foundation-starr",
+              "polarity": "uncertain",
+              "review_status": "source_checked",
+              "rationale": "The undated foundation page says all five listed sites are enrolling; the page date is unknown, so current status needs confirmation.",
+              "evidence_type": "other"
+            }
+          ],
+          "next_question": "Is STARR enrolling now, and at which sites?",
+          "contact_role": "study coordinator"
+        },
+        {
+          "id": "trial-endpoint",
+          "category": "research",
+          "required": false,
+          "question": "Has responsiveness to treatment been established by this paper?",
+          "evidence": [
+            {
+              "source_id": "DOI:10.1002/epi.70374",
+              "polarity": "uncertain",
+              "review_status": "source_checked",
+              "rationale": "Authors say longitudinal data are still needed, and countable seizures were present in only about a quarter of the STXBP1 cohort up to age 10.",
+              "evidence_type": "human_observational"
+            }
+          ],
+          "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+          "contact_role": "outcome-measure researcher"
+        }
+      ]
+    },
+    {
+      "id": "citizen-dataset-for-syngap1",
+      "target_disease": {
+        "id": "MONDO:0012960",
+        "label": "SYNGAP1-related disorder"
+      },
+      "goal": "Use existing retrospective data to inform outcome selection for a natural-history study",
+      "goal_id": "natural_history",
+      "asset": {
+        "id": "asset:curesyngap1-citizen-nhs-dataset",
+        "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+        "type": "dataset",
+        "url": "https://curesyngap1.org/request-nhs-data/",
+        "access_status": "Documented access route for academic researchers: Researcher Agreement with Citizen Health plus an IRB submission. Access for a patient organization without an academic partner is not stated.",
+        "public_researcher_routes": [
+          {
+            "name": "CURE SYNGAP1 data request page",
+            "url": "https://curesyngap1.org/request-nhs-data/"
+          }
+        ]
+      },
+      "sources": {
+        "WEB:curesyngap1-request-nhs-data": {
+          "title": "Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1",
+          "url": "https://curesyngap1.org/request-nhs-data/",
+          "aliases": [],
+          "published_on": "2023-03-01",
+          "source_kind": "organization_webpage",
+          "note": "Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset."
+        }
+      },
+      "coverage": "Checks one organization page describing a dataset and its access route. Pending human source review. Data contents and current volume were not inspected.",
+      "checks": [
+        {
+          "id": "dataset-documented",
+          "category": "research",
+          "required": true,
+          "question": "Is a SYNGAP1 dataset with a documented access route described?",
+          "evidence": [
+            {
+              "source_id": "WEB:curesyngap1-request-nhs-data",
+              "polarity": "support",
+              "review_status": "source_checked",
+              "rationale": "The page describes de-identified record summaries for SYNGAP1 patients with confirmed P/LP diagnoses.",
+              "evidence_type": "other"
+            }
+          ],
+          "next_question": "Which data fields and time ranges does the dataset include?",
+          "contact_role": "patient organization research lead"
+        },
+        {
+          "id": "requester-eligibility",
+          "category": "access",
+          "required": true,
+          "question": "Can our group (a patient organization) request access directly?",
+          "evidence": [
+            {
+              "source_id": "WEB:curesyngap1-request-nhs-data",
+              "polarity": "uncertain",
+              "review_status": "source_checked",
+              "rationale": "The page addresses academic researchers and requires a researcher agreement plus an IRB submission; it does not say whether a patient organization can apply.",
+              "evidence_type": "other"
+            }
+          ],
+          "next_question": "Do we need an academic partner with an IRB to request this data, and who could act as that partner?",
+          "contact_role": "patient organization research lead"
+        },
+        {
+          "id": "fit-for-prospective-planning",
+          "category": "research",
+          "required": true,
+          "question": "Does retrospective record data cover the outcomes our prospective study would measure?",
+          "evidence": [],
+          "next_question": "Which of our planned outcome domains (motor, communication, behaviour, sleep, seizures) are recorded in the dataset?",
+          "contact_role": "clinical investigator"
+        }
+      ]
+    }
+  ],
+  "disease_synonyms": {
+    "MONDO:0012812": [
+      "STXBP1-RD",
+      "STXBP1-related disorder",
+      "STXBP1-related disorders",
+      "STXBP1 encephalopathy"
+    ],
+    "MONDO:0012960": [
+      "SYNGAP1-RD",
+      "SYNGAP1-related disorder",
+      "SYNGAP1-related intellectual disability"
+    ]
+  },
+  "review_log": [
+    {
+      "claim_or_check_id": "framework-for-stxbp1/documented-framework",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Abstract (Methods); Methods: Study Organization & Management",
+      "assertion_checked": "Paper describes multi-centre prospective protocols STARR (STXBP1-RD) and ProMMiS (SYNGAP1-RD).",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/target-observed",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Recruitment",
+      "assertion_checked": "164 individuals with STXBP1-RD enrolled.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read); counts may be updated in the published version."
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/implementation-access",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Developmental and parent-reported outcome measures; References 35, 36, 64",
+      "assertion_checked": "PROMs administered via RARE-X from year two once licensing agreements were finalized; several instruments cite commercial publishers.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read); does not establish what another group would need. Licence terms not checked."
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/local-feasibility",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Discussion (in-person assessment limitation)",
+      "assertion_checked": "No evidence recorded; Discussion notes in-person visits may limit participation.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Recorded as context for the next question, not as evidence."
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/patient-org-involvement",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Developmental and parent-reported outcome measures",
+      "assertion_checked": "Measures selected in collaboration with the STXBP1 Foundation and CURE SYNGAP1; meetings reviewed the selection.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/patient-org-involvement",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "Section: What is STARR?",
+      "assertion_checked": "STARR is funded by the STXBP1 Foundation (FLOURISH campaign) and the ENDD Center.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Undated organization page."
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/current-enrollment",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "Section: How Can I Join STARR",
+      "assertion_checked": "Page lists 5 sites and states all are enrolling.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Undated page. The preprint lists 6 STARR sites including Rush; the page lists 5 without Rush. Treat as a dated discrepancy, not a contradiction about the study."
+    },
+    {
+      "claim_or_check_id": "framework-for-stxbp1/trial-endpoint",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preliminary Results (countable seizures); Discussion",
+      "assertion_checked": "Countable seizures in about 25% of the STXBP1 cohort up to age 10; longitudinal assessment still needed.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "citizen-dataset-for-syngap1/dataset-documented",
+      "source_id": "WEB:curesyngap1-request-nhs-data",
+      "source_location": "Main text",
+      "assertion_checked": "De-identified record summaries incl. genetic and EEG results; over 100 patients; all with confirmed P/LP diagnosis.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Patient count is the page's own statement; page last modified 2025-10-31."
+    },
+    {
+      "claim_or_check_id": "citizen-dataset-for-syngap1/requester-eligibility",
+      "source_id": "WEB:curesyngap1-request-nhs-data",
+      "source_location": "Main text",
+      "assertion_checked": "Addressed to academic researchers; requires Researcher Agreement and Cat 8 IRB template submission.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Silence on patient-organization requesters is recorded as unknown, not as a refusal."
+    },
+    {
+      "claim_or_check_id": "edge:overlay:syngap1-stxbp1-shared-framework",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Results: disease-specific patterns; Figure 3 legend",
+      "assertion_checked": "Both cohorts are in one framework; paper reports distinct developmental and seizure patterns between the two disorders.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Inferred navigation edge. Must not be shown as shared biology or treatment transfer."
+    },
+    {
+      "claim_or_check_id": "edge:overlay:helbig-leads-starr",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "Section: STARR Study Leadership",
+      "assertion_checked": "Ingo Helbig, MD is the multi-site Principal Investigator.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Undated organization page."
+    },
+    {
+      "claim_or_check_id": "edge:overlay:cure-syngap1-partners-prommis",
+      "source_id": "WEB:curesyngap1-prommis-blog",
+      "source_location": "Section: About the ProMMiS study",
+      "assertion_checked": "ProMMiS powered by CURE SYNGAP1; sites CHOP, CHCO (Colorado) and Stanford.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Blog post dated 2026-03-26."
+    },
+    {
+      "claim_or_check_id": "edge:overlay:endd-coordinates-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Study Organization & Management",
+      "assertion_checked": "CHOP is the prime site and Data Coordinating Center for both studies.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "asset:seizure-history-reconstruction",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Seizure history reconstruction; Preliminary Results",
+      "assertion_checked": "Month-by-month reconstruction, HPO-coded seizure types, PELHS scale with two added levels; 107 STXBP1 and 100 SYNGAP1 in preliminary analysis.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "asset:starr-prommis-qeeg-protocol",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Methods: Quantitative EEG; Discussion (biomarkers)",
+      "assertion_checked": "128-channel EEG, VEP/AEP, ICA artifact removal; biomarker work described as initial.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read)"
+    },
+    {
+      "claim_or_check_id": "asset:simons-searchlight-prom-data",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preliminary Results: Parent-reported outcomes; Figure 4 legend",
+      "assertion_checked": "Simons Searchlight data for STXBP1 (n=67) and SYNGAP1 (n=39) combined with RARE-X data.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "preprint v1 (published version not read); operator's own pages not reviewed."
+    },
+    {
+      "claim_or_check_id": "asset:rare-x-prom-collection",
+      "source_id": "WEB:globalgenes-rarex-stxbp1-2024",
+      "source_location": "Press release body (search snippet)",
+      "assertion_checked": "Global Genes and STXBP1 Foundation partnership to use RARE-X for the STARR natural history study, launched July 2024.",
+      "review_status": "pending",
+      "checked_by": "AI pre-check (Claude) for Saanvi; awaiting human confirmation",
+      "checked_on": "2026-10-04",
+      "caveat": "Read via search snippet only; full page not opened."
+    },
+    {
+      "claim_or_check_id": "org:stxbp1-foundation",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "Section: STARR Study Leadership",
+      "assertion_checked": "Page lists a research email for STARR questions and a general info email.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Contact route exists as of check date."
+    },
+    {
+      "claim_or_check_id": "org:cure-syngap1",
+      "source_id": "WEB:curesyngap1-prommis-blog",
+      "source_location": "Section: Interested in participating?",
+      "assertion_checked": "Families register via the ProMMiS page; questions go to a named staff inbox.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "We store the organization contact page, not personal inboxes."
+    },
+    {
+      "claim_or_check_id": "team:chop-endd-nhs",
+      "source_id": "WEB:endd-natural-history-study",
+      "source_location": "Search snippet of page",
+      "assertion_checked": "Page states Ingo Helbig leads the NHS for STXBP1 and SYNGAP1 and gives a study inbox.",
+      "review_status": "pending",
+      "checked_by": "AI pre-check (Claude) for Saanvi; awaiting human confirmation",
+      "checked_on": "2026-10-04",
+      "caveat": "Full page not opened; snippet only."
+    },
+    {
+      "claim_or_check_id": "study:starr",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "Section: How Can I Join STARR",
+      "assertion_checked": "Page reports the ClinicalTrials.gov ID NCT06555965.",
+      "review_status": "source_checked",
+      "checked_by": "Srinath",
+      "checked_on": "2026-10-04",
+      "caveat": "Registry page was not machine-readable; status there not checked."
+    },
+    {
+      "claim_or_check_id": "edge:overlay:paper-describes-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation DOI:10.1002/epi.70374 --describes_study--> study:starr. The paper describes the STARR protocol for STXBP1-RD (Methods, Study Organization & Management).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:83a4e040b0a4cab3538bd25b",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:paper-describes-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation DOI:10.1002/epi.70374 --describes_study--> study:prommis. The paper describes the ProMMiS protocol for SYNGAP1-RD (Methods, Study Organization & Management).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:d2db4726112b7e04f60c56e1",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stxbp1-studied-in-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Recruitment",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation MONDO:0012812 --studied_in--> study:starr. STXBP1-RD participants are enrolled in STARR (164 enrolled per preprint Recruitment section).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:1b17170c8c33b2dc707bc9ee",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:syngap1-studied-in-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Recruitment",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation MONDO:0012960 --studied_in--> study:prommis. SYNGAP1-RD participants are enrolled in ProMMiS (159 enrolled per preprint Recruitment section).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:33cacf4ab23378452d9c9430",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:framework-covers-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation DOI:10.1002/epi.70374#framework --framework_used_by--> study:starr. One published framework covers both studies.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:b9bf44a1149c58ae3ef5fe07",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:framework-covers-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation DOI:10.1002/epi.70374#framework --framework_used_by--> study:prommis. One published framework covers both studies.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:32714af73676ee47bdbc42a0",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stxbp1-foundation-partners-starr",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "STARR page: What is STARR?; public page route",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation org:stxbp1-foundation --partners_on_study--> study:starr. Foundation page says STARR is funded by the STXBP1 Foundation; the paper says outcome measures were selected with the foundation.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:stxbp1-foundation-starr",
+      "review_entry_id": "pending-review:e37a7e978837548f3abefc31",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stxbp1-foundation-partners-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Developmental and parent-reported outcome measures",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation org:stxbp1-foundation --partners_on_study--> study:starr. Foundation page says STARR is funded by the STXBP1 Foundation; the paper says outcome measures were selected with the foundation.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:02a7cd29c27a9289f4053d84",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:endd-coordinates-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation team:chop-endd-nhs --coordinates_study--> study:prommis. CHOP is the prime site and data coordinating centre (paper Methods).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:d461e8f0003606df60bf9af4",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:mckee-authors-paper",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 title page and correspondence block",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation researcher:jillian-mckee --corresponding_author_of--> DOI:10.1002/epi.70374. Listed as corresponding author on the preprint title page.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:3f0450b67ff61bf1103ac16c",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:helbig-authors-paper",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 title page and correspondence block",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation researcher:ingo-helbig --corresponding_author_of--> DOI:10.1002/epi.70374. Listed as corresponding author on the preprint title page.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:35d2c88d6ab8fde5b2dd28fa",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stanford-site-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation team:stanford-synaptopathy --study_site_for--> study:starr. Listed as a STARR site in the paper and on its own page.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:23e5f6c9ff8c03fc99791b85",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stanford-site-starr",
+      "source_id": "WEB:stanford-synaptopathy-research",
+      "source_location": "Original curation search snippet; full-page source verification pending",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation team:stanford-synaptopathy --study_site_for--> study:starr. Listed as a STARR site in the paper and on its own page.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:stanford-synaptopathy-research",
+      "review_entry_id": "pending-review:a27f2f1e0f4e45fa175ce0ad",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stanford-site-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation team:stanford-synaptopathy --study_site_for--> study:prommis. Listed as a ProMMiS site in the paper and on its own page (spelled PRoMiSS there).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:b51e7b04848c1691d4efc658",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:stanford-site-prommis",
+      "source_id": "WEB:stanford-synaptopathy-research",
+      "source_location": "Original curation search snippet; full-page source verification pending",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation team:stanford-synaptopathy --study_site_for--> study:prommis. Listed as a ProMMiS site in the paper and on its own page (spelled PRoMiSS there).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:stanford-synaptopathy-research",
+      "review_entry_id": "pending-review:859299b14ff7652f79892fec",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:seizure-method-used-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Seizure history reconstruction",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:seizure-history-reconstruction --method_used_in--> study:starr. Seizure history reconstruction is part of the protocol (Methods).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:156d7cb49c8a882b1f321429",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:seizure-method-used-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Seizure history reconstruction",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:seizure-history-reconstruction --method_used_in--> study:prommis. Seizure history reconstruction is part of the protocol; expanded PELHS scale added for SYNGAP1.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:8095b4b68341880bd8eae459",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:qeeg-used-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Quantitative EEG; Discussion (biomarkers)",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:starr-prommis-qeeg-protocol --method_used_in--> study:starr. Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:7c65f40e93eea70f7ea3e793",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:qeeg-used-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Quantitative EEG; Discussion (biomarkers)",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:starr-prommis-qeeg-protocol --method_used_in--> study:prommis. Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:bdda42336e3eb1f762f06985",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:citizen-dataset-covers-syngap1",
+      "source_id": "WEB:curesyngap1-request-nhs-data",
+      "source_location": "Data-request page main text: dataset description and researcher access requirements",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:curesyngap1-citizen-nhs-dataset --dataset_covers_disease--> MONDO:0012960. The data request page describes SYNGAP1 patient records available to researchers.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:curesyngap1-request-nhs-data",
+      "review_entry_id": "pending-review:382ce97a6b92efb0986b1bd2",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:cure-syngap1-offers-citizen-dataset",
+      "source_id": "WEB:curesyngap1-request-nhs-data",
+      "source_location": "Data-request page main text: dataset description and researcher access requirements",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation org:cure-syngap1 --provides_access_route_to--> asset:curesyngap1-citizen-nhs-dataset. The page invites academic researchers to request access via agreement and IRB.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:curesyngap1-request-nhs-data",
+      "review_entry_id": "pending-review:b6c8c2b58f9f57084877fe74",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:searchlight-used-by-paper",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Preliminary Results: Parent-reported outcomes; Figure 4 legend",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:simons-searchlight-prom-data --used_as_comparison_data_in--> DOI:10.1002/epi.70374. The paper combined Simons Searchlight data with prospective data (Preliminary Results).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:1ebdf6d46cd0e61aca26f15f",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:rarex-used-starr",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Developmental and parent-reported outcome measures",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:rare-x-prom-collection --platform_used_in--> study:starr. PROMs are administered through RARE-X (paper Methods; 2024 press release).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:1faaf20ccd5095270e58005d",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:rarex-used-starr",
+      "source_id": "WEB:globalgenes-rarex-stxbp1-2024",
+      "source_location": "Original curation search snippet; full-page source verification pending",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:rare-x-prom-collection --platform_used_in--> study:starr. PROMs are administered through RARE-X (paper Methods; 2024 press release).",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Read via search snippet on 2026-10-04. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "WEB:globalgenes-rarex-stxbp1-2024",
+      "review_entry_id": "pending-review:ffbd6d9d9ca3ae64b5f8f8ad",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "edge:overlay:rarex-used-prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Developmental and parent-reported outcome measures",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Recorded relation asset:rare-x-prom-collection --platform_used_in--> study:prommis. The paper states PROMs for the natural history study are administered through RARE-X.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "edges"
+      ],
+      "review_facets": [
+        "recorded_relationship"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:0a8736840fd10f1f911b585f",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "DOI:10.1002/epi.70374",
+      "source_id": "DOI:10.1002/epi.70374",
+      "source_location": "Inherited publication metadata (title, DOI and PMID); published text not read by this curation lane",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: A prospective natural history study protocol for clinical trial readiness in synaptic disorders (publication, ID DOI:10.1002/epi.70374). Recorded aliases: PMID:42446932.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Publication identifiers and date were inherited from the base source record; no published-text review is claimed. Existing source note (context, not a sign-off of this assertion): One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:424f09502077e7dbf2716584",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "study:prommis",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: ProMMiS natural history study (SYNGAP1-RD) (study, ID study:prommis). Recorded aliases: ProMMiS, PRoMiSS.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:7377a2bce20e6c93c853aa32",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "study:prommis",
+      "source_id": "WEB:curesyngap1-prommis-blog",
+      "source_location": "Blog post: About the ProMMiS study; study naming and site information",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: ProMMiS natural history study (SYNGAP1-RD) (study, ID study:prommis). Recorded aliases: ProMMiS, PRoMiSS.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Official CURE SYNGAP1 blog post describing ProMMiS sites and how families register. Read on 2026-10-04.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "WEB:curesyngap1-prommis-blog",
+      "review_entry_id": "pending-review:a0c66be21d10b19c1a2fe3fb",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "study:prommis",
+      "source_id": "WEB:stanford-synaptopathy-research",
+      "source_location": "Original curation search snippet; full-page source verification pending",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: ProMMiS natural history study (SYNGAP1-RD) (study, ID study:prommis). Recorded aliases: ProMMiS, PRoMiSS.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "WEB:stanford-synaptopathy-research",
+      "review_entry_id": "pending-review:caacf6cf1fb998b0a934cff5",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "DOI:10.1002/epi.70374#framework",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: STARR / ProMMiS natural-history framework (asset, ID DOI:10.1002/epi.70374#framework). Resource description to verify: Multi-site prospective natural history protocol for STXBP1-RD (STARR) and SYNGAP1-RD (ProMMiS): clinician-administered developmental measures, caregiver-reported measures, seizure-history reconstruction and quantitative EEG, with CHOP as prime site and data coordinating centre.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:4a42e25cf1f98162fbfa3305",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "asset:curesyngap1-citizen-nhs-dataset",
+      "source_id": "WEB:curesyngap1-request-nhs-data",
+      "source_location": "Data-request page main text: dataset description and researcher access requirements",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1) (asset, ID asset:curesyngap1-citizen-nhs-dataset). Resource description to verify: De-identified, standardized summaries of participating patients' medical records, including genetic and EEG results; the page states data for over 100 patients with a confirmed P/LP SYNGAP1 diagnosis.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset.",
+      "record_groups": [
+        "nodes"
+      ],
+      "review_facets": [
+        "node_identity"
+      ],
+      "cited_source_id": "WEB:curesyngap1-request-nhs-data",
+      "review_entry_id": "pending-review:ebcb7695db6447c7e839de5c",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "researcher:ingo-helbig",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 title page and correspondence block; public discovery route still needs checking",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: Ingo Helbig, MD (researcher, ID researcher:ingo-helbig). Recorded collaborator role: Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials. Public discovery route to verify: https://www.stxbp1disorders.org/starr. This route is not confirmation of current availability or ownership.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "nodes",
+        "contacts"
+      ],
+      "review_facets": [
+        "node_identity",
+        "contact_role",
+        "public_route"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:55da1fc56b98005f533e1ab8",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "researcher:ingo-helbig",
+      "source_id": "WEB:stxbp1-foundation-starr",
+      "source_location": "STARR page: STARR Study Leadership; public page route",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: Ingo Helbig, MD (researcher, ID researcher:ingo-helbig). Recorded collaborator role: Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials. Public discovery route to verify: https://www.stxbp1disorders.org/starr. This route is not confirmation of current availability or ownership.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "nodes",
+        "contacts"
+      ],
+      "review_facets": [
+        "node_identity",
+        "contact_role",
+        "public_route"
+      ],
+      "cited_source_id": "WEB:stxbp1-foundation-starr",
+      "review_entry_id": "pending-review:41be8a69dd3c83dc59281db6",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "researcher:jillian-mckee",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 title page and correspondence block; public discovery route still needs checking",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: Jillian L. McKee, MD, PhD (researcher, ID researcher:jillian-mckee). Recorded collaborator role: Corresponding (first) author of the framework paper. A potential collaborator. Public discovery route to verify: https://doi.org/10.1002/epi.70374. This route is not confirmation of current availability or ownership.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version.",
+      "record_groups": [
+        "nodes",
+        "contacts"
+      ],
+      "review_facets": [
+        "node_identity",
+        "contact_role",
+        "public_route"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:f014b675858cbfabe26a84bf",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "team:stanford-synaptopathy",
+      "source_id": "DOI:10.64898/2026.01.30.26344887",
+      "source_location": "Preprint v1 Methods: Study Organization & Management; relevant study description",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: Stanford Medicine Children's Health synaptopathy team (study_team, ID team:stanford-synaptopathy). Recorded collaborator role: Study site for STARR and ProMMiS per the paper and its own page. Public discovery route to verify: https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html. This route is not confirmation of current availability or ownership.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. This pointer is for the medRxiv preprint version_of DOI:10.1002/epi.70374; the published article was not read by this curation lane. Confirm the relevant preprint wording and check the published version separately; versions are not independent evidence. Existing source note (context, not a sign-off of this assertion): Earlier, not peer-reviewed version of DOI:10.1002/epi.70374. It is the text we could read; the published version was not accessed. It is NOT independent evidence: claims cite the published paper and the review log records that the preprint wording was read. Wording or numbers may differ in the published version. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "nodes",
+        "contacts"
+      ],
+      "review_facets": [
+        "node_identity",
+        "contact_role",
+        "public_route"
+      ],
+      "cited_source_id": "DOI:10.1002/epi.70374",
+      "review_entry_id": "pending-review:7e5381cb2f6dd9ede90b0c0e",
+      "prepared_from": "existing_curation_metadata_only"
+    },
+    {
+      "claim_or_check_id": "team:stanford-synaptopathy",
+      "source_id": "WEB:stanford-synaptopathy-research",
+      "source_location": "Original curation search snippet; full-page source verification pending",
+      "assertion_checked": "Pending assertion to verify (not yet checked): Node identity: Stanford Medicine Children's Health synaptopathy team (study_team, ID team:stanford-synaptopathy). Recorded collaborator role: Study site for STARR and ProMMiS per the paper and its own page. Public discovery route to verify: https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html. This route is not confirmation of current availability or ownership.",
+      "review_status": "pending",
+      "checked_by": "Pending review pointer; no human reviewer",
+      "checked_on": "",
+      "caveat": "Pending review pointer generated only from existing curation metadata; no new source was read and no human sign-off is implied. Source checking is narrow factual review, not clinical validation, resource compatibility or permission to use a resource. Existing source note (context, not a sign-off of this assertion): Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'. This is one source pointer for a multi-source assertion; verify the part supported by each source before signing the shared record ID.",
+      "record_groups": [
+        "nodes",
+        "contacts"
+      ],
+      "review_facets": [
+        "node_identity",
+        "contact_role",
+        "public_route"
+      ],
+      "cited_source_id": "WEB:stanford-synaptopathy-research",
+      "review_entry_id": "pending-review:b00f0f4f08dadc9e08e24bba",
+      "prepared_from": "existing_curation_metadata_only"
+    }
+  ],
+  "coverage_note": "Curated slice built on 2026-10-04: one published framework (read as its medRxiv preprint), two patient organizations, two study sites/teams, two researchers, six assets and two new assessment bundles. EVERY record is pending human source review; an AI assistant drafted them. Not a literature search. Missing items here are not evidence they do not exist."
+}

@@ -1,0 +1,195 @@
+{
+  "checked_at": "2026-10-04T10:06:31.720Z",
+  "base_url": "http://127.0.0.1:18800/",
+  "app_mode": "production frontend with same-origin real local FastAPI backend",
+  "provider_calls": "AI endpoints were blocked; no AI generation requested",
+  "passed": true,
+  "checks": [
+    {
+      "name": "opening uses real staged node motion",
+      "passed": true,
+      "details": {
+        "settlingIndicator": 1
+      }
+    },
+    {
+      "name": "opening graph settles into static readable geometry",
+      "passed": true,
+      "details": {
+        "nodeCount": 13,
+        "resource": [
+          "STARR / ProMMiS natural-history framework"
+        ]
+      }
+    },
+    {
+      "name": "shared study framework trace follows recorded multi-edge route",
+      "passed": true,
+      "details": {
+        "steps": 4,
+        "reached": 4,
+        "goldEdges": 4,
+        "review": [
+          "Source check pending",
+          "Source check pending",
+          "Source check pending",
+          "Source check pending",
+          "Source check pending"
+        ]
+      }
+    },
+    {
+      "name": "pause freezes trace and geometry while retaining controls",
+      "passed": true,
+      "details": {
+        "reachedAtPause": 1,
+        "reachedAfterWait": 1
+      }
+    },
+    {
+      "name": "zoom remains interactive while motion is paused",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "source hiding fades dependent records and preserves layout",
+      "passed": true,
+      "details": {
+        "hiddenEdges": 15,
+        "hiddenNodes": 1,
+        "opacity": "0.14",
+        "status": "1 source hidden in this view · 2 checks changed",
+        "beforeTally": "2 supported · 3 open",
+        "afterTally": "0 supported · 5 open",
+        "changedChecks": 2,
+        "outcomeText": "Overall result unchanged with the hidden source."
+      }
+    },
+    {
+      "name": "patient evidence progressively discloses depth",
+      "passed": true,
+      "details": {
+        "openDetails": 1,
+        "totalDetails": 11,
+        "requiredQuestionRows": 5
+      }
+    },
+    {
+      "name": "showing source restores original visual dependencies without layout churn",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "opening second resource binds graph anchor to Citizen dataset",
+      "passed": true,
+      "details": {
+        "resource": [
+          "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+        ],
+        "hash": "#/disease/MONDO%3A0012960?goal=natural_history&evidence=citizen-dataset-for-syngap1",
+        "graphRequests": [
+          "/api/graph?assessment_id=framework-for-syngap1&disease_id=MONDO%3A0012960&max_nodes=40",
+          "/api/graph?assessment_id=citizen-dataset-for-syngap1&disease_id=MONDO%3A0012960&max_nodes=40"
+        ]
+      }
+    },
+    {
+      "name": "selected resource remains after closing evidence",
+      "passed": true,
+      "details": {
+        "resource": [
+          "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+        ],
+        "inspectorResource": [
+          "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+        ]
+      }
+    },
+    {
+      "name": "selection highlights the chosen resource and focuses its camera",
+      "passed": true,
+      "details": {
+        "focusedResource": [
+          "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+        ],
+        "selectedInspector": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+      }
+    },
+    {
+      "name": "drag responds then settles without continuous jitter",
+      "passed": true,
+      "details": {
+        "before": "translate(760.1 113.3)",
+        "after": "translate(708.8 85.1)"
+      }
+    },
+    {
+      "name": "resizing desktop into portrait refits the selected resource and keeps anchor labels in frame",
+      "passed": true,
+      "details": {
+        "anchorPositions": [
+          {
+            "role": "disease",
+            "transform": "translate(330.0 230.0)"
+          },
+          {
+            "role": "resource",
+            "transform": "translate(320.0 760.0)"
+          }
+        ],
+        "anchorLabels": [
+          {
+            "text": "Your diseaseSYNGAP1-related disorder",
+            "within": true
+          },
+          {
+            "text": "Selected resourceSYNGAP1 retrospecti…",
+            "within": true
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390
+      }
+    },
+    {
+      "name": "product reduce-motion preference controls the graph",
+      "passed": true,
+      "details": {
+        "htmlSetting": "true"
+      }
+    },
+    {
+      "name": "native reduced motion skips birth and route animation",
+      "passed": true,
+      "details": {
+        "stableBeforeTrace": true,
+        "steps": 4,
+        "reached": 4
+      }
+    },
+    {
+      "name": "reduced-motion map remains interactive",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "browser_errors": [],
+  "blocked_ai_requests": [],
+  "api_request_count": 11,
+  "screenshots": [
+    "frontend/screenshots/integrated-graph-opening-desktop.png",
+    "frontend/screenshots/integrated-graph-trace-desktop.png",
+    "frontend/screenshots/integrated-graph-hidden-source-desktop.png",
+    "frontend/screenshots/integrated-graph-citizen-resource-desktop.png",
+    "frontend/screenshots/integrated-graph-selected-resource-desktop.png",
+    "frontend/screenshots/integrated-graph-mobile.png",
+    "frontend/screenshots/integrated-graph-reduced-motion-desktop.png"
+  ],
+  "limits": [
+    "These checks validate browser behavior and current records; they do not establish scientific transferability or clinical correctness.",
+    "Public deployment and live AI were not exercised by this graph check."
+  ]
+}

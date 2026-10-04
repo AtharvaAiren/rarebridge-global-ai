@@ -1,0 +1,229 @@
+{
+  "schema_version": "rarebridge.brief.v1",
+  "assessment_id": "framework-for-syngap1",
+  "target_disease": {
+    "id": "MONDO:0012960",
+    "label": "SYNGAP1-related disorder"
+  },
+  "goal": "Plan a natural-history study using an existing assessment framework",
+  "asset": {
+    "id": "DOI:10.1002/epi.70374#framework",
+    "label": "STARR / ProMMiS natural-history framework",
+    "type": "published_study_framework",
+    "url": "https://doi.org/10.1002/epi.70374",
+    "access_status": "Implementation permissions and resources not checked"
+  },
+  "outcome": "needs_information",
+  "outcome_explanation": "More information is needed before a feasibility decision.",
+  "proposed_use": "Explore whether STARR / ProMMiS natural-history framework can support this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.",
+  "target_subgroup": null,
+  "recorded_support": [
+    {
+      "check_id": "documented-framework",
+      "question": "Is an existing natural-history framework documented?",
+      "required": true,
+      "category": "research",
+      "status": "supported",
+      "supporting_source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "refuting_source_ids": [],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "recorded_evidence": [
+        {
+          "source_id": "DOI:10.1002/epi.70374",
+          "polarity": "support",
+          "review_status": "source_checked",
+          "rationale": "The methods describe STARR and ProMMiS protocols."
+        }
+      ],
+      "next_question": "Which protocol components can be shared with our group?",
+      "contact_role": "study coordinator",
+      "fact_origin": "recorded_assessment"
+    },
+    {
+      "check_id": "target-observed",
+      "question": "Does this paper report use in SYNGAP1?",
+      "required": true,
+      "category": "research",
+      "status": "supported",
+      "supporting_source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "refuting_source_ids": [],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "recorded_evidence": [
+        {
+          "source_id": "DOI:10.1002/epi.70374",
+          "polarity": "support",
+          "review_status": "source_checked",
+          "rationale": "SYNGAP1 is a studied cohort."
+        }
+      ],
+      "next_question": "Do our proposed participants resemble the studied cohort?",
+      "contact_role": "clinical investigator",
+      "fact_origin": "recorded_assessment"
+    }
+  ],
+  "unanswered_checks": [
+    {
+      "check_id": "implementation-access",
+      "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+      "required": true,
+      "category": "access",
+      "status": "unknown",
+      "supporting_source_ids": [],
+      "refuting_source_ids": [],
+      "source_ids": [],
+      "recorded_evidence": [],
+      "next_question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+      "contact_role": "study coordinator",
+      "fact_origin": "recorded_assessment"
+    },
+    {
+      "check_id": "local-feasibility",
+      "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+      "required": true,
+      "category": "implementation",
+      "status": "unknown",
+      "supporting_source_ids": [],
+      "refuting_source_ids": [],
+      "source_ids": [],
+      "recorded_evidence": [],
+      "next_question": "Which components need adapting to our cohort and local study capacity?",
+      "contact_role": "clinical investigator",
+      "fact_origin": "recorded_assessment"
+    },
+    {
+      "check_id": "trial-endpoint",
+      "question": "Has responsiveness to treatment been established by this paper?",
+      "required": false,
+      "category": "research",
+      "status": "unknown",
+      "supporting_source_ids": [],
+      "refuting_source_ids": [],
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "recorded_evidence": [
+        {
+          "source_id": "DOI:10.1002/epi.70374",
+          "polarity": "uncertain",
+          "review_status": "source_checked",
+          "rationale": "Further longitudinal validation is discussed."
+        }
+      ],
+      "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+      "contact_role": "outcome-measure researcher",
+      "fact_origin": "recorded_assessment"
+    }
+  ],
+  "followup_questions": [
+    {
+      "check_id": "implementation-access",
+      "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+      "contact_role": "study coordinator",
+      "reason": "unknown",
+      "required": true,
+      "question_origin": "proposed_followup"
+    },
+    {
+      "check_id": "local-feasibility",
+      "question": "Which components need adapting to our cohort and local study capacity?",
+      "contact_role": "clinical investigator",
+      "reason": "unknown",
+      "required": true,
+      "question_origin": "proposed_followup"
+    },
+    {
+      "check_id": "trial-endpoint",
+      "question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+      "contact_role": "outcome-measure researcher",
+      "reason": "unknown",
+      "required": false,
+      "question_origin": "proposed_followup"
+    }
+  ],
+  "documented_differences": [],
+  "excluded_differences": [],
+  "sources": {
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+    }
+  },
+  "excluded_sources": [],
+  "public_collaborator_routes": [
+    {
+      "id": null,
+      "label": "Jillian L. McKee",
+      "url": "https://orcid.org/0000-0001-9724-0403",
+      "kind": "researcher",
+      "role": "Recorded public researcher route; ownership and availability unconfirmed",
+      "source_ids": [],
+      "review_status": "pending",
+      "last_checked": null,
+      "source_backed": false,
+      "status_for_brief": "unreviewed",
+      "availability": "Current ownership, availability and willingness to collaborate require confirmation."
+    },
+    {
+      "id": null,
+      "label": "Ingo Helbig",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "kind": "researcher",
+      "role": "Recorded public researcher route; ownership and availability unconfirmed",
+      "source_ids": [],
+      "review_status": "pending",
+      "last_checked": null,
+      "source_backed": false,
+      "status_for_brief": "unreviewed",
+      "availability": "Current ownership, availability and willingness to collaborate require confirmation."
+    }
+  ],
+  "excluded_collaborator_routes": [],
+  "coverage": "This demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.",
+  "assumptions": [
+    "Proposed participants, subgroup, sites and local capacity require confirmation unless explicitly recorded.",
+    "Publication or public-web access does not grant permission to use study materials, datasets or licensed instruments.",
+    "Recorded support is scoped to each check; it does not establish treatment benefit or approval to implement the resource."
+  ],
+  "next_milestone": {
+    "id": "expert_reviewed_natural_history_feasibility_decision",
+    "status": "proposed",
+    "description": "An expert-reviewed natural-history feasibility decision: agree the target population, assess this resource and alternatives, resolve access and implementation requirements, and record whether to proceed, adapt the scope, or seek another resource.",
+    "success_criteria": [
+      "Unresolved required checks reviewed with appropriate collaborators.",
+      "Proposed population and study capacity explicitly scoped.",
+      "Access conditions and any outstanding approvals identified.",
+      "Decision and remaining questions documented."
+    ]
+  },
+  "generation_mode": "none",
+  "draft_origin": "deterministic_template",
+  "explanation_text": null,
+  "provenance": {
+    "assessment_state": "after",
+    "data_origin": "curated",
+    "assessment_sha256": "688aa57006905e8e06d66a4a38f450bedc67cdd57c23763cb9083b39a12ae47e",
+    "generation_mode": "none",
+    "model": null,
+    "validation": null,
+    "ai_rejection_reason": null,
+    "distinct_sources_used": 1,
+    "withdrawn_source_ids": [],
+    "source_coverage": "Distinct source records used for checks or routes; no claim of a complete literature search."
+  },
+  "draft_message": "Subject: Research feasibility discussion — SYNGAP1-related disorder\n\nHello,\n\n[Organization name] is exploring this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.\nWe would like expert guidance on the proposed use of STARR / ProMMiS natural-history framework.\nMore information is needed before a feasibility decision.\n\nThe recorded evidence supports these specific checks:\n- Is an existing natural-history framework documented? [1]\n- Does this paper report use in SYNGAP1? [1]\n\nQuestions we would like to resolve:\n1. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?\n2. Which components need adapting to our cohort and local study capacity?\n3. What additional validation is needed before selecting a treatment-trial endpoint? (additional question)\n\nOur proposed next milestone is an expert-reviewed natural-history feasibility decision, with an agreed scope and remaining requirements.\nCould you help resolve these questions or direct us to the appropriate team?\n\nBest wishes,\n[Your name / organization]",
+  "text_export": "RareBridge — collaboration brief\n\nTarget: SYNGAP1-related disorder (MONDO:0012960)\nGoal: Plan a natural-history study using an existing assessment framework\nResource: STARR / ProMMiS natural-history framework (DOI:10.1002/epi.70374#framework)\nResource link: https://doi.org/10.1002/epi.70374\nRecorded outcome: needs_information\nMore information is needed before a feasibility decision.\nAccess: Implementation permissions and resources not checked\n\nProposed use (proposal, not an established result):\nExplore whether STARR / ProMMiS natural-history framework can support this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.\nTarget subgroup: Not specified\n\nRecorded support:\n- Is an existing natural-history framework documented? — supported [1]\n  Recorded rationale: The methods describe STARR and ProMMiS protocols. [1]\n- Does this paper report use in SYNGAP1? — supported [1]\n  Recorded rationale: SYNGAP1 is a studied cohort. [1]\n\nUnresolved or negative checks:\n- Have permissions, materials and implementation resources been confirmed for our proposed study? — unknown (required)\n- Has the framework been assessed for our group's age range, travel constraints and study sites? — unknown (required)\n- Has responsiveness to treatment been established by this paper? — unknown (additional) [1]\n  Recorded uncertain rationale (source_checked): Further longitudinal validation is discussed. [1]\n\nQuestions for collaboration (proposed next actions):\n1. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required? — ask a study coordinator.\n2. Which components need adapting to our cohort and local study capacity? — ask a clinical investigator.\n3. What additional validation is needed before selecting a treatment-trial endpoint? — ask a outcome-measure researcher.\n\nPublic collaborator routes:\n- Jillian L. McKee: https://orcid.org/0000-0001-9724-0403 (unreviewed)\n  Recorded public researcher route; ownership and availability unconfirmed. Current ownership, availability and willingness to collaborate require confirmation.\n- Ingo Helbig: https://doi.org/10.1002/epi.70374 (unreviewed)\n  Recorded public researcher route; ownership and availability unconfirmed. Current ownership, availability and willingness to collaborate require confirmation.\n\nProposed next milestone:\nAn expert-reviewed natural-history feasibility decision: agree the target population, assess this resource and alternatives, resolve access and implementation requirements, and record whether to proceed, adapt the scope, or seek another resource.\n\nSources used (distinct records; aliases counted once):\n[1] A prospective natural history study protocol for clinical trial readiness in synaptic disorders — https://doi.org/10.1002/epi.70374 (DOI:10.1002/epi.70374)\n\nCoverage:\nThis demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.\n\nAssumptions and limits:\n- Proposed participants, subgroup, sites and local capacity require confirmation unless explicitly recorded.\n- Publication or public-web access does not grant permission to use study materials, datasets or licensed instruments.\n- Recorded support is scoped to each check; it does not establish treatment benefit or approval to implement the resource.\n\nData origin: curated\nDraft generation: none (deterministic_template)\n\nDraft message — review before use:\nSubject: Research feasibility discussion — SYNGAP1-related disorder\n\nHello,\n\n[Organization name] is exploring this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.\nWe would like expert guidance on the proposed use of STARR / ProMMiS natural-history framework.\nMore information is needed before a feasibility decision.\n\nThe recorded evidence supports these specific checks:\n- Is an existing natural-history framework documented? [1]\n- Does this paper report use in SYNGAP1? [1]\n\nQuestions we would like to resolve:\n1. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?\n2. Which components need adapting to our cohort and local study capacity?\n3. What additional validation is needed before selecting a treatment-trial endpoint? (additional question)\n\nOur proposed next milestone is an expert-reviewed natural-history feasibility decision, with an agreed scope and remaining requirements.\nCould you help resolve these questions or direct us to the appropriate team?\n\nBest wishes,\n[Your name / organization]\n"
+}

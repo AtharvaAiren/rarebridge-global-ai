@@ -1,0 +1,3868 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "nodes": [
+    {
+      "id": "MONDO:0012960",
+      "type": "disease",
+      "label": "SYNGAP1-Related Developmental and Epileptic Encephalopathy",
+      "synonyms": [
+        "SYNGAP1-related intellectual disability",
+        "SYNGAP1-ID",
+        "Intellectual disability, autosomal dominant 5",
+        "MRD5",
+        "Epilepsy due to SYNGAP1 mutations"
+      ],
+      "review_status": "pending",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "type": "asset",
+      "label": "STARR / ProMMiS natural-history framework",
+      "asset_type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "DOI:10.1002/epi.70374",
+      "type": "publication",
+      "label": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "org:cure-syngap1",
+      "type": "organization",
+      "label": "CURE SYNGAP1",
+      "url": "https://curesyngap1.org/contact/",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "team:chop-endd-nhs",
+      "type": "study_team",
+      "label": "CHOP / Penn ENDD natural history study team",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "team:stanford-synaptopathy",
+      "type": "study_team",
+      "label": "Stanford Medicine Children's Health synaptopathy team",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "type": "researcher",
+      "label": "Ingo Helbig, MD",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "researcher:jillian-mckee",
+      "type": "researcher",
+      "label": "Jillian L. McKee, MD, PhD",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "MONDO:0012812",
+      "type": "disease",
+      "label": "STXBP1 Encephalopathy",
+      "synonyms": [],
+      "review_status": "pending",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "MONDO:0013388",
+      "type": "disease",
+      "label": "SCN2A-Related Developmental and Epileptic Encephalopathy",
+      "synonyms": [
+        "DEE11",
+        "SCN2A encephalopathy",
+        "SCN2A-related epilepsy"
+      ],
+      "review_status": "pending",
+      "provenance": {
+        "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "study:prommis",
+      "type": "study",
+      "label": "ProMMiS natural history study (SYNGAP1-RD)",
+      "aliases": [
+        "ProMMiS",
+        "PRoMiSS"
+      ],
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "study:starr",
+      "type": "study",
+      "label": "STARR natural history study (STXBP1-RD)",
+      "aliases": [
+        "STXBP1 Clinical Trial Ready",
+        "STARR"
+      ],
+      "registry_ids_reported": [
+        "NCT06555965"
+      ],
+      "registry_note": "NCT ID is reported by the STXBP1 Foundation STARR page; the registry record itself was not machine-readable in our check.",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "org:stxbp1-foundation",
+      "type": "organization",
+      "label": "STXBP1 Foundation",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "claim:764dd4899b82772c21b9",
+      "type": "claim",
+      "label": "SYNGAP1 association",
+      "upstream_record": {
+        "name": "SYNGAP1",
+        "gene_term": {
+          "preferred_term": "SYNGAP1",
+          "term": {
+            "id": "hgnc:11497",
+            "label": "SYNGAP1"
+          }
+        },
+        "relationship_type": "CAUSATIVE",
+        "notes": "SYNGAP1 (6p21.32) encodes SynGAP, a synaptic Ras/Rap GTPase-activating protein. Disease is caused by heterozygous loss-of-function variants (~89%; nonsense, frameshift, splice, missense) or 6p21.3 deletions (~11%), acting by haploinsufficiency; most are de novo.",
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+            "explanation": "GeneReviews documents the SYNGAP1 variant classes and their proportions."
+          }
+        ]
+      },
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "hgnc:11497",
+      "type": "gene",
+      "label": "SYNGAP1",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:47f04d980d5c5362cb6c",
+      "type": "claim",
+      "label": "STXBP1 association",
+      "upstream_record": {
+        "name": "STXBP1",
+        "gene_term": {
+          "preferred_term": "STXBP1",
+          "term": {
+            "id": "hgnc:11444",
+            "label": "STXBP1"
+          }
+        },
+        "association": "Loss-of-Function Mutations",
+        "presence": "Positive",
+        "variant_origin": "GERMLINE",
+        "inheritance": [
+          {
+            "name": "Autosomal Dominant (De Novo)",
+            "inheritance_term": {
+              "preferred_term": "Autosomal dominant inheritance",
+              "term": {
+                "id": "HP:0000006",
+                "label": "Autosomal dominant inheritance"
+              }
+            }
+          }
+        ],
+        "notes": "De novo heterozygous STXBP1 variants act through haploinsufficiency. The spectrum includes nonsense, frameshift, and splice-site variants, intragenic and whole-gene deletions, and destabilizing missense variants that reduce Munc18-1 protein stability and/or syntaxin-1 binding.",
+        "evidence": [
+          {
+            "reference": "PMID:18469812",
+            "reference_title": "De novo mutations in the gene encoding STXBP1 (MUNC18-1) cause early infantile epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "four unrelated individuals with EIEE had heterozygous missense mutations in the gene encoding syntaxin binding protein 1 (STXBP1).",
+            "explanation": "Original identification of heterozygous STXBP1 variants as the cause of early infantile epileptic encephalopathy."
+          },
+          {
+            "reference": "PMID:26865513",
+            "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "De novo STXBP1 mutations are among the most frequent causes of epilepsy and encephalopathy.",
+            "explanation": "Confirms de novo STXBP1 variants as a leading genetic cause in a large cohort."
+          }
+        ]
+      },
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "hgnc:11444",
+      "type": "gene",
+      "label": "STXBP1",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:69c2a5ba5b8e3558265f",
+      "type": "claim",
+      "label": "SCN2A association",
+      "upstream_record": {
+        "name": "SCN2A",
+        "gene_term": {
+          "preferred_term": "SCN2A",
+          "term": {
+            "id": "hgnc:10588",
+            "label": "SCN2A"
+          }
+        },
+        "relationship_type": "CAUSATIVE",
+        "variant_origin": "GERMLINE",
+        "notes": "SCN2A encodes the voltage-gated sodium channel Nav1.2. Most DEE variants are de novo. The functional consequence is genotype-dependent: gain-of-function variants cause early-onset (typically before three months) seizures responsive to sodium-channel blockers, whereas loss-of-function variants cause later-onset epilepsy and/or autism in which sodium-channel blockers can worsen seizures.",
+        "evidence": [
+          {
+            "reference": "PMID:28379373",
+            "reference_title": "Genetic and phenotypic heterogeneity suggest therapeutic implications in SCN2A-related disorders.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "truncating mutations were exclusively seen in patients with late onset epilepsies and lack of response to sodium channel blockers",
+            "explanation": "Truncating (loss-of-function) SCN2A mutations mapped exclusively to late-onset epilepsy with poor sodium-channel-blocker response."
+          }
+        ]
+      },
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "hgnc:10588",
+      "type": "gene",
+      "label": "SCN2A",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:8b5992479dbfd66c5c6a",
+      "type": "claim",
+      "label": "Cortical Excitation-Inhibition Imbalance",
+      "upstream_record": {
+        "name": "Cortical Excitation-Inhibition Imbalance",
+        "description": "The net effect is a shift of cortical circuits toward excitation over inhibition, lowering seizure threshold. This node captures the single concept of the excitation-inhibition imbalance and conforms to the shared epilepsy final common pathway.",
+        "role": "mediator",
+        "conforms_to": "epilepsy_excitation_inhibition_imbalance#Excitation-Inhibition Imbalance",
+        "cell_types": [
+          {
+            "preferred_term": "Neuron",
+            "term": {
+              "id": "CL:0000540",
+              "label": "neuron"
+            }
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Neuronal Network Hyperexcitability",
+            "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+            "description": "The imbalance produces hyperexcitable, hypersynchronous networks.",
+            "evidence": [
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "Due to the altered E/I balance, humans, as well as Syngap1-/+ mice, are prone to epileptic seizures.",
+                "explanation": "The review attributes seizure susceptibility in heterozygous mice and in patients to the altered excitation-inhibition balance. This is a synthesis statement, not a direct measurement of network hyperexcitability."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "CL:0000540",
+      "type": "cell_type",
+      "label": "neuron",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:e54d6427d01535332295",
+      "type": "claim",
+      "label": "SYNGAP1 Haploinsufficiency",
+      "upstream_record": {
+        "name": "SYNGAP1 Haploinsufficiency",
+        "description": "A heterozygous loss-of-function variant in SYNGAP1 (or a 6p21.3 deletion encompassing it), usually de novo, reduces functional SynGAP protein to roughly half. This node captures the single concept of the initiating haploinsufficiency.",
+        "role": "trigger",
+        "gene": {
+          "preferred_term": "SYNGAP1",
+          "term": {
+            "id": "hgnc:11497",
+            "label": "SYNGAP1"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+            "explanation": "GeneReviews establishes heterozygous SYNGAP1 loss-of-function variants (or 6p21.3 deletion) as the molecular cause."
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Reduced SynGAP at the Excitatory Postsynaptic Density",
+            "causal_link_type": "DIRECT",
+            "description": "Reduced SYNGAP1 dosage lowers SynGAP protein at excitatory synapses.",
+            "evidence": [
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "The expression of SYNGAP1 was reduced by 50% in Syngap1-/+ mice (Komiyama et al., 2002; Kim et al., 2003; Clement et al., 2012).",
+                "explanation": "The review summarises three independent heterozygous mouse lines in which loss of one Syngap1 allele halves SynGAP protein, which is the dosage step this edge asserts."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:cdca127a6a7f64237b4d",
+      "type": "claim",
+      "label": "Dysregulated Ras Signaling and AMPA Receptor Trafficking",
+      "upstream_record": {
+        "name": "Dysregulated Ras Signaling and AMPA Receptor Trafficking",
+        "description": "Without adequate SynGAP, Ras-ERK signaling at the synapse is disinhibited, increasing insertion of AMPA-type glutamate receptors and strengthening excitatory transmission. This node captures the single concept of the signaling and receptor-trafficking derangement.",
+        "role": "mediator",
+        "cell_types": [
+          {
+            "preferred_term": "Glutamatergic neuron",
+            "term": {
+              "id": "CL:0000679",
+              "label": "glutamatergic neuron"
+            }
+          }
+        ],
+        "biological_processes": [
+          {
+            "preferred_term": "Regulation of Ras protein signal transduction",
+            "term": {
+              "id": "GO:0046578",
+              "label": "regulation of Ras protein signal transduction"
+            },
+            "modifier": "INCREASED"
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Premature Excitatory Synapse and Dendritic Spine Maturation",
+            "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+            "description": "Enhanced Ras signaling and AMPA-receptor insertion accelerate excitatory synapse and dendritic spine maturation.",
+            "evidence": [
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "Thus, more stable form of actin combined with an increase in insertion of AMPAR into the postsynaptic membrane during development (PND14-16 in hippocampus in Hets) causes the dendritic spines to mature into mushroom shaped spines, which occurs earlier in Syngap1-/+ than in WT animals",
+                "explanation": "Links the increased AMPA receptor insertion, together with Ras-driven actin stabilisation, to early maturation of mushroom-shaped spines in heterozygous mice."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "GO:0046578",
+      "type": "process",
+      "label": "regulation of Ras protein signal transduction",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:4ba43f92711398b8f86d",
+      "type": "claim",
+      "label": "Reduced SynGAP at the Excitatory Postsynaptic Density",
+      "upstream_record": {
+        "name": "Reduced SynGAP at the Excitatory Postsynaptic Density",
+        "description": "SynGAP is a Ras/Rap GTPase-activating protein highly concentrated at the postsynaptic density of excitatory (glutamatergic) synapses, where it restrains synaptic Ras signaling. Its reduction removes this brake. This node captures the single concept of the synaptic protein deficit.",
+        "role": "mediator",
+        "cell_types": [
+          {
+            "preferred_term": "Glutamatergic neuron",
+            "term": {
+              "id": "CL:0000679",
+              "label": "glutamatergic neuron"
+            }
+          }
+        ],
+        "molecular_functions": [
+          {
+            "preferred_term": "GTPase activator activity",
+            "term": {
+              "id": "GO:0005096",
+              "label": "GTPase activator activity"
+            },
+            "modifier": "DECREASED"
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:26912996",
+            "reference_title": "SYNGAP1: Mind the Gap.",
+            "supports": "SUPPORT",
+            "evidence_source": "OTHER",
+            "snippet": "SYNGAP1 is a negative regulator of Ras, Rap and of AMPA receptor trafficking to the postsynaptic membrane",
+            "explanation": "Establishes SynGAP as a synaptic brake that negatively regulates Ras/Rap signaling and AMPA-receptor trafficking; its loss disinhibits this pathway."
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Dysregulated Ras Signaling and AMPA Receptor Trafficking",
+            "causal_link_type": "DIRECT",
+            "description": "Loss of SynGAP GAP activity dysregulates postsynaptic Ras signaling and AMPA-receptor trafficking.",
+            "evidence": [
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "However, due to Syngap1-/+ mutation, truncated SYGNAP1 fails to inhibit Ras activity, thereby facilitating conversion of inactive, GDP-bound Ras to an active, GTP-bound form and increasing the level of Ras activation.",
+                "explanation": "States that reduced SynGAP releases its GAP brake on Ras, increasing active GTP-bound Ras. The review's next sentences connect this to ERK phosphorylation and AMPA receptor insertion."
+              },
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "Thus, increase in Ras activity elevates the level of phosphorylated ERK, which further facilitates the insertion of AMPARs to the postsynaptic membrane",
+                "explanation": "Supplies the AMPA receptor trafficking half of the target node, downstream of the Ras disinhibition."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "CL:0000679",
+      "type": "cell_type",
+      "label": "glutamatergic neuron",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:0167c950a7f88c32465c",
+      "type": "claim",
+      "label": "Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+      "upstream_record": {
+        "name": "Reduced Neurotransmitter Release and Synaptic Transmission Deficit",
+        "conforms_to": "synaptic_vesicle_cycle#Neurotransmitter Release Failure and Synaptic Transmission Deficit",
+        "description": "Impaired SNARE-mediated fusion reduces Ca2+-evoked neurotransmitter release and disturbs chemical synaptic transmission across cortical circuits. Because Munc18-1 is required at both excitatory and inhibitory synapses, the net effect is a disturbance of cortical excitatory/inhibitory balance that both drives seizures and impairs the activity-dependent synaptic signaling needed for normal neurodevelopment.",
+        "role": "effector",
+        "cell_types": [
+          {
+            "preferred_term": "glutamatergic neuron",
+            "term": {
+              "id": "CL:0000679",
+              "label": "glutamatergic neuron"
+            }
+          },
+          {
+            "preferred_term": "GABAergic neuron",
+            "term": {
+              "id": "CL:0000617",
+              "label": "GABAergic neuron"
+            }
+          }
+        ],
+        "biological_processes": [
+          {
+            "preferred_term": "neurotransmitter secretion",
+            "term": {
+              "id": "GO:0007269",
+              "label": "neurotransmitter secretion"
+            },
+            "modifier": "DECREASED"
+          },
+          {
+            "preferred_term": "chemical synaptic transmission",
+            "term": {
+              "id": "GO:0007268",
+              "label": "chemical synaptic transmission"
+            },
+            "modifier": "ABNORMAL"
+          }
+        ],
+        "locations": [
+          {
+            "preferred_term": "neocortex",
+            "term": {
+              "id": "UBERON:0001950",
+              "label": "neocortex"
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:26865513",
+            "reference_title": "STXBP1 encephalopathy: A neurodevelopmental disorder including epilepsy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "STXBP1-E may be conceptualized as a complex neurodevelopmental disorder rather than a primary epileptic encephalopathy.",
+            "explanation": "Supports the view that the synaptic-transmission deficit produces a broad neurodevelopmental phenotype, not seizures alone."
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Cortical Excitation-Inhibition Imbalance and Seizures",
+            "causal_link_type": "DIRECT"
+          },
+          {
+            "target": "Impaired Synaptic Network Development",
+            "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+            "intermediate_mechanisms": [
+              "Reduced activity-dependent synaptic signaling during brain development."
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:027d9ec581d3001a8ad4",
+      "type": "claim",
+      "label": "Hypotonia",
+      "upstream_record": {
+        "name": "Hypotonia",
+        "description": "Hypotonia is commonly present.",
+        "phenotype_term": {
+          "preferred_term": "Hypotonia",
+          "term": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0001252",
+      "type": "phenotype",
+      "label": "Hypotonia",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:10d0a797e2b0b5bc780d",
+      "type": "claim",
+      "label": "Hypotonia",
+      "upstream_record": {
+        "name": "Hypotonia",
+        "category": "Clinical",
+        "description": "Abnormal muscle tone, including axial hypotonia, is a recognized neurologic feature of STXBP1 encephalopathy, occurring alongside the movement-disorder spectrum (dystonia, ataxia) and, in some individuals, coexisting spasticity.",
+        "phenotype_term": {
+          "preferred_term": "Hypotonia",
+          "term": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:27905812",
+            "reference_title": "STXBP1 Encephalopathy with Epilepsy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "Other neurologic findings include abnormal tone, movement disorders (especially ataxia and dystonia), and behavioral issues and autism spectrum disorder.",
+            "explanation": "The GeneReviews chapter lists abnormal muscle tone among the core neurologic findings of STXBP1 encephalopathy."
+          },
+          {
+            "reference": "PMID:32815282",
+            "reference_title": "De novo STXBP1 mutation in a child with developmental delay and spasticity reveals a major structural alteration in the interface with syntaxin 1A.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "Through exome sequencing of a child with developmental delay, hypotonia, and spasticity, we found a novel de novo insertion mutation of three nucleotides in the STXBP1 coding region",
+            "explanation": "A molecularly confirmed STXBP1 case presenting with hypotonia, documenting hypotonia within the phenotypic spectrum."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:f13db7ee6b60dbd49f5a",
+      "type": "claim",
+      "label": "Global Developmental Delay",
+      "upstream_record": {
+        "name": "Global Developmental Delay",
+        "description": "Developmental delay is essentially universal.",
+        "phenotype_term": {
+          "preferred_term": "Global developmental delay",
+          "term": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "is characterized by developmental delay (DD) or intellectual disability (ID) (100% of affected individuals), generalized epilepsy (~84%), and autism spectrum disorder (ASD) and other behavioral abnormalities",
+            "explanation": "GeneReviews documents DD/ID in 100% of affected individuals."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0001263",
+      "type": "phenotype",
+      "label": "Global developmental delay",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:6b4d367c3a09ac57f6a0",
+      "type": "claim",
+      "label": "Global Developmental Delay",
+      "upstream_record": {
+        "name": "Global Developmental Delay",
+        "description": "Global developmental delay and intellectual disability are typical, particularly in the loss-of-function group.",
+        "phenotype_term": {
+          "preferred_term": "Global developmental delay",
+          "term": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:28256214",
+            "reference_title": "Opposing Effects on Na(V)1.2 Function Underlie Differences Between SCN2A Variants Observed in Individuals With Autism Spectrum Disorder or Infantile Seizures.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "Variants in the SCN2A gene that disrupt the encoded neuronal sodium channel NaV1.2 are important risk factors for autism spectrum disorder (ASD), developmental delay, and infantile seizures.",
+            "explanation": "Names developmental delay as one of the core phenotypes associated with disruptive SCN2A variants."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "type": "asset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "asset_type": "dataset",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "asset:rare-x-prom-collection",
+      "type": "asset",
+      "label": "RARE-X caregiver-reported outcome collection (used by STARR/ProMMiS)",
+      "asset_type": "data_collection_platform",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "pending",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "asset:seizure-history-reconstruction",
+      "type": "asset",
+      "label": "Medical-record seizure history reconstruction method",
+      "asset_type": "measurement_method",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "asset:simons-searchlight-prom-data",
+      "type": "asset",
+      "label": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)",
+      "asset_type": "registry_dataset",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "asset:starr-prommis-qeeg-protocol",
+      "type": "asset",
+      "label": "Quantitative EEG acquisition protocol (resting state, VEP, AEP)",
+      "asset_type": "biomarker_acquisition_protocol",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "review_status": "source_checked",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "asset:e375ed4859f211c50386",
+      "type": "asset",
+      "label": "Epigenetic Modulation to perturb the SYNGAP1 Intellectual Disability (ID) that ameliorates synaptic and behavioural deficits",
+      "asset_type": "datasets",
+      "upstream_record": {
+        "accession": "geo:GSE252400",
+        "title": "Epigenetic Modulation to perturb the SYNGAP1 Intellectual Disability (ID) that ameliorates synaptic and behavioural deficits",
+        "description": "Whole-hippocampal RNA sequencing across six arms - wild-type and Syngap1+/- mice each given saline, carrier nanosphere alone, or the nanosphere-conjugated p300/CBP acetyltransferase activator CSP-TTK21 - profiled after Morris water maze training. The design carries both the haploinsufficiency comparison and a pharmacological rescue arm, so it is usable for the SYNGAP1 loss-of-function transcriptome and for testing whether that transcriptome is reversible in the adult animal.",
+        "organism": {
+          "preferred_term": "house mouse",
+          "term": {
+            "id": "NCBITaxon:10090",
+            "label": "Mus musculus"
+          }
+        },
+        "data_type": "BULK_RNA_SEQ",
+        "sample_count": 18,
+        "genes": [
+          {
+            "preferred_term": "SYNGAP1",
+            "term": {
+              "id": "hgnc:11497",
+              "label": "SYNGAP1"
+            }
+          }
+        ],
+        "publication": "PMID:39878322",
+        "notes": "Found by a targeted GEO DataSets search for SYNGAP1; accession and metadata verified against NCBI E-utilities on 2026-08-27. Title, sample count, and organism are GEO's own values. Model-organism data - the gene descriptor is the human HGNC record for the disease gene; the mouse orthologue is Syngap1. GEO lists no linked PMID on the series; the publication recorded here is the paper reporting this experiment, matched on the series summary and design. This is the only SYNGAP1 disease dataset in GEO as of 2026-08-27 - a search across all fields returns seven other series, none of which studies SYNGAP1 loss of function."
+      },
+      "access_status": "not_checked",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:3fc344ca39f77810b584",
+      "type": "claim",
+      "label": "Neuronal Network Hyperexcitability",
+      "upstream_record": {
+        "name": "Neuronal Network Hyperexcitability",
+        "description": "Cortical networks become hyperexcitable and prone to hypersynchronous, generalized discharges. This node captures the single concept of network hyperexcitability and conforms to the shared epilepsy final common pathway.",
+        "role": "central_effector",
+        "conforms_to": "epilepsy_excitation_inhibition_imbalance#Neuronal Hyperexcitability and Hypersynchrony",
+        "cell_types": [
+          {
+            "preferred_term": "Neuron",
+            "term": {
+              "id": "CL:0000540",
+              "label": "neuron"
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:23141534",
+            "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+            "supports": "SUPPORT",
+            "evidence_source": "MODEL_ORGANISM",
+            "snippet": "Premature spine maturation dramatically enhanced excitability in the developing hippocampus, which corresponded with the emergence of behavioral abnormalities.",
+            "explanation": "Ties the upstream synaptic defect to measured hyperexcitability in the same animals, which is the edge this node sits on. Hippocampal rather than cortical, and in mouse, so it supports the mechanism without standing in for human cortical recordings."
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Generalized Epilepsy",
+            "causal_link_type": "DIRECT",
+            "description": "Hypersynchronous networks generate the generalized seizures of the disorder.",
+            "evidence": [
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "Accordingly, Syngap1-/+ mice are prone to audiogenic seizures and have reduced seizure threshold and altered electroencephalogram (EEG; Clement et al., 2012; Ozkan et al., 2014).",
+                "explanation": "Heterozygous mice show a lowered seizure threshold and abnormal EEG, linking the hyperexcitable network state to seizures."
+              },
+              {
+                "reference": "PMID:30541864",
+                "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+                "supports": "SUPPORT",
+                "evidence_source": "HUMAN_CLINICAL",
+                "snippet": "Of the 57 patients, 56 had epilepsy: generalized in 55, with focal seizures in 7 and infantile spasms in 1.",
+                "explanation": "In the largest epileptology cohort, almost every patient's epilepsy is generalized. This is the generalized endpoint of the edge in humans. The mechanistic link comes from the mouse data above."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:fabb8b0a95e4d6fe87e5",
+      "type": "claim",
+      "label": "Autism and Behavioral Abnormalities",
+      "upstream_record": {
+        "name": "Autism and Behavioral Abnormalities",
+        "description": "About half of affected individuals have autism spectrum disorder or other behavioral abnormalities, including stereotypies. This node captures the single concept of the neurobehavioral outcome.",
+        "role": "effector",
+        "cell_types": [
+          {
+            "preferred_term": "Neuron",
+            "term": {
+              "id": "CL:0000540",
+              "label": "neuron"
+            }
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "GO:0005096",
+      "type": "function",
+      "label": "GTPase activator activity",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:3a82b1529b5c64f80502",
+      "type": "claim",
+      "label": "Generalized Epilepsy",
+      "upstream_record": {
+        "name": "Generalized Epilepsy",
+        "description": "Most affected individuals develop generalized epilepsy, and a characteristic subset has myoclonic-astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences. This node captures the single concept of the seizure endpoint and conforms to the shared epilepsy final common pathway.",
+        "role": "consequence",
+        "conforms_to": "epilepsy_excitation_inhibition_imbalance#Recurrent Unprovoked Seizures",
+        "cell_types": [
+          {
+            "preferred_term": "Neuron",
+            "term": {
+              "id": "CL:0000540",
+              "label": "neuron"
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+            "explanation": "GeneReviews documents the characteristic generalized epilepsy including the myoclonic-astatic (Doose) subset."
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:c98f8adcb3f532073c7d",
+      "type": "claim",
+      "label": "Impaired Cognitive Development",
+      "upstream_record": {
+        "name": "Impaired Cognitive Development",
+        "description": "Developmental delay and intellectual disability, moderate to severe in most, are essentially universal. This node captures the single concept of the cognitive outcome.",
+        "role": "effector",
+        "cell_types": [
+          {
+            "preferred_term": "Neuron",
+            "term": {
+              "id": "CL:0000540",
+              "label": "neuron"
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "is characterized by developmental delay (DD) or intellectual disability (ID) (100% of affected individuals), generalized epilepsy (~84%), and autism spectrum disorder (ASD) and other behavioral abnormalities",
+            "explanation": "GeneReviews documents developmental delay/intellectual disability in 100% of affected individuals."
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:8db248998c1e8f693a28",
+      "type": "claim",
+      "label": "Premature Excitatory Synapse and Dendritic Spine Maturation",
+      "upstream_record": {
+        "name": "Premature Excitatory Synapse and Dendritic Spine Maturation",
+        "description": "SynGAP normally paces the maturation of dendritic spines and excitatory synapses; its loss causes premature, accelerated maturation and an excess of strengthened excitatory synapses during development. This node captures the single concept of the accelerated synaptic maturation defect.",
+        "role": "mediator",
+        "cell_types": [
+          {
+            "preferred_term": "Glutamatergic neuron",
+            "term": {
+              "id": "CL:0000679",
+              "label": "glutamatergic neuron"
+            }
+          }
+        ],
+        "biological_processes": [
+          {
+            "preferred_term": "Dendritic spine development",
+            "term": {
+              "id": "GO:0060996",
+              "label": "dendritic spine development"
+            },
+            "modifier": "DYSREGULATED"
+          }
+        ],
+        "evidence": [
+          {
+            "reference": "PMID:23141534",
+            "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+            "supports": "SUPPORT",
+            "evidence_source": "MODEL_ORGANISM",
+            "snippet": "In the SYNGAP1 mouse model of ID/ASD, we found that dendritic spine synapses develop prematurely during the early postnatal period.",
+            "explanation": "The observation this node is built on - accelerated rather than merely abnormal spine maturation - measured in the Syngap1 heterozygous mouse. The same study found that inducing the mutation after the critical window had minimal effect, which is why the node is framed developmentally."
+          }
+        ],
+        "downstream": [
+          {
+            "target": "Cortical Excitation-Inhibition Imbalance",
+            "causal_link_type": "INDIRECT_KNOWN_INTERMEDIATES",
+            "description": "Excess excitatory synaptic strength shifts cortical circuits toward excitation.",
+            "evidence": [
+              {
+                "reference": "PMID:23141534",
+                "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "snippet": "Premature spine maturation dramatically enhanced excitability in the developing hippocampus, which corresponded with the emergence of behavioral abnormalities.",
+                "explanation": "Primary mouse study showing that premature spine maturation increases excitability in the developing hippocampus, the shift toward excitation that this edge asserts."
+              },
+              {
+                "reference": "PMID:26912996",
+                "reference_title": "SYNGAP1: Mind the Gap.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "quote_role": "REVIEW_SYNTHESIS",
+                "snippet": "This leads to elevated excitatory synaptic transmission causing Excitatory/Inhibitory (E/I) imbalance, particularly during the critical period of development.",
+                "explanation": "The review names the consequence of the premature spine maturation described in its preceding sentence as an excitation-inhibition imbalance during the developmental critical period."
+              }
+            ]
+          },
+          {
+            "target": "Impaired Cognitive Development",
+            "causal_link_type": "INDIRECT_UNKNOWN_INTERMEDIATES",
+            "description": "Mistimed synaptic maturation disrupts the circuit refinement needed for cognition.",
+            "evidence": [
+              {
+                "reference": "PMID:23141534",
+                "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+                "supports": "SUPPORT",
+                "evidence_source": "MODEL_ORGANISM",
+                "snippet": "Inducing SYNGAP1 mutations after critical developmental windows closed had minimal impact on spine synapse function, whereas repairing these pathogenic mutations in adulthood did not improve behavior and cognition.",
+                "explanation": "The timing experiments tie the cognitive deficit to the early developmental window in which spines mature prematurely. Disrupting SynGAP after that window spares synapse function, and restoring it later does not rescue cognition. Mouse data only."
+              }
+            ]
+          }
+        ]
+      },
+      "claim_type": "mechanism",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "GO:0060996",
+      "type": "process",
+      "label": "dendritic spine development",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:906786d7aa75d8de4ca2",
+      "type": "claim",
+      "label": "Ataxia",
+      "upstream_record": {
+        "name": "Ataxia",
+        "description": "Ataxia or gait abnormalities are frequent (~51%).",
+        "frequency": "FREQUENT",
+        "phenotype_term": {
+          "preferred_term": "Ataxia",
+          "term": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30541864",
+            "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+            "explanation": "Vlaskamp cohort quantifies ataxia or gait abnormalities in 51% of patients."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0001251",
+      "type": "phenotype",
+      "label": "Ataxia",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:657e3106a62d24cf4a3f",
+      "type": "claim",
+      "label": "Autistic Behavior",
+      "upstream_record": {
+        "name": "Autistic Behavior",
+        "description": "Autism spectrum disorder affects about half of individuals.",
+        "phenotype_term": {
+          "preferred_term": "Autistic behavior",
+          "term": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0000729",
+      "type": "phenotype",
+      "label": "Autistic behavior",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:23f7f88a76fccd1b4342",
+      "type": "claim",
+      "label": "Myoclonic Seizures",
+      "upstream_record": {
+        "name": "Myoclonic Seizures",
+        "description": "Myoclonic seizures occur, including myoclonic absences.",
+        "phenotype_term": {
+          "preferred_term": "Myoclonic seizure",
+          "term": {
+            "id": "HP:0032794",
+            "label": "Myoclonic seizure"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0032794",
+      "type": "phenotype",
+      "label": "Myoclonic seizure",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:2231908606f2b8e46312",
+      "type": "claim",
+      "label": "Sleep Disturbance",
+      "upstream_record": {
+        "name": "Sleep Disturbance",
+        "description": "Sleep problems are frequent (~62%).",
+        "frequency": "FREQUENT",
+        "phenotype_term": {
+          "preferred_term": "Sleep disturbance",
+          "term": {
+            "id": "HP:0002360",
+            "label": "Sleep disturbance"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30541864",
+            "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+            "explanation": "Vlaskamp cohort quantifies sleeping problems in 62% of patients."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0002360",
+      "type": "phenotype",
+      "label": "Sleep disturbance",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:9629f8e38943c7c533af",
+      "type": "claim",
+      "label": "Absence Seizures",
+      "upstream_record": {
+        "name": "Absence Seizures",
+        "description": "Absence (including myoclonic absence) seizures occur.",
+        "phenotype_term": {
+          "preferred_term": "Absence seizure",
+          "term": {
+            "id": "HP:0002121",
+            "label": "Generalized non-motor (absence) seizure"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0002121",
+      "type": "phenotype",
+      "label": "Generalized non-motor (absence) seizure",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:3b62e9bd5bed0030f103",
+      "type": "claim",
+      "label": "Eating-Induced Seizures",
+      "upstream_record": {
+        "name": "Eating-Induced Seizures",
+        "description": "Seizures triggered by eating (reflex seizures) are a hallmark of the syndrome (~25%).",
+        "frequency": "OCCASIONAL",
+        "phenotype_term": {
+          "preferred_term": "Eating-induced seizure",
+          "term": {
+            "id": "HP:0020208",
+            "label": "Eating-induced seizure"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30541864",
+            "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "Seizure types included eyelid myoclonia with absences (65%), myoclonic seizures (34%), atypical (20%) and typical (18%) absences, and atonic seizures (14%), triggered by eating in 25%.",
+            "explanation": "Vlaskamp cohort quantifies eating-triggered seizures in 25% of patients."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0020208",
+      "type": "phenotype",
+      "label": "Eating-induced seizure",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:6faea270c3a219437316",
+      "type": "claim",
+      "label": "Intellectual Disability",
+      "upstream_record": {
+        "name": "Intellectual Disability",
+        "description": "Intellectual disability, moderate to severe in most.",
+        "phenotype_term": {
+          "preferred_term": "Intellectual disability",
+          "term": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0001249",
+      "type": "phenotype",
+      "label": "Intellectual disability",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:a8a64c85ff681fbff324",
+      "type": "claim",
+      "label": "Generalized-Onset Seizures",
+      "upstream_record": {
+        "name": "Generalized-Onset Seizures",
+        "description": "Generalized epilepsy affects most individuals; the Doose (myoclonic-astatic) pattern is characteristic.",
+        "phenotype_term": {
+          "preferred_term": "Generalized-onset seizure",
+          "term": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30789692",
+            "reference_title": "SYNGAP1-Related Intellectual Disability.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+            "explanation": "GeneReviews documents the generalized epilepsy and its Doose subset."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0002197",
+      "type": "phenotype",
+      "label": "Generalized-onset seizure",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:9485a34afc34028916c0",
+      "type": "claim",
+      "label": "Feeding Difficulties",
+      "upstream_record": {
+        "name": "Feeding Difficulties",
+        "description": "Feeding difficulties can be significant in some individuals.",
+        "phenotype_term": {
+          "preferred_term": "Feeding difficulties",
+          "term": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0011968",
+      "type": "phenotype",
+      "label": "Feeding difficulties",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:a1028cf4af6715168006",
+      "type": "claim",
+      "label": "Motor Stereotypies",
+      "upstream_record": {
+        "name": "Motor Stereotypies",
+        "description": "Stereotypic behaviors such as hand flapping occur.",
+        "phenotype_term": {
+          "preferred_term": "Motor stereotypy",
+          "term": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          }
+        }
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0000733",
+      "type": "phenotype",
+      "label": "Motor stereotypy",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:450e5d493061e35e5d73",
+      "type": "claim",
+      "label": "Eyelid Myoclonia with Absences",
+      "upstream_record": {
+        "name": "Eyelid Myoclonia with Absences",
+        "description": "Eyelid myoclonia with absences is a characteristic and frequent seizure type (~65%).",
+        "frequency": "FREQUENT",
+        "phenotype_term": {
+          "preferred_term": "Absence seizure with eyelid myoclonia",
+          "term": {
+            "id": "HP:0011149",
+            "label": "Absence seizure with eyelid myoclonia"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30541864",
+            "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "Seizure types included eyelid myoclonia with absences (65%), myoclonic seizures (34%), atypical (20%) and typical (18%) absences, and atonic seizures (14%), triggered by eating in 25%.",
+            "explanation": "Vlaskamp cohort quantifies eyelid myoclonia with absences in 65% of patients."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0011149",
+      "type": "phenotype",
+      "label": "Absence seizure with eyelid myoclonia",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "claim:31b519596518d6f2d402",
+      "type": "claim",
+      "label": "High Pain Threshold",
+      "upstream_record": {
+        "name": "High Pain Threshold",
+        "description": "A high pain threshold (reduced pain sensitivity) is a distinctive frequent feature (~72%).",
+        "frequency": "FREQUENT",
+        "phenotype_term": {
+          "preferred_term": "High pain threshold",
+          "term": {
+            "id": "HP:0007021",
+            "label": "Pain insensitivity"
+          }
+        },
+        "evidence": [
+          {
+            "reference": "PMID:30541864",
+            "reference_title": "SYNGAP1 encephalopathy: A distinctive generalized developmental and epileptic encephalopathy.",
+            "supports": "SUPPORT",
+            "evidence_source": "HUMAN_CLINICAL",
+            "snippet": "high pain threshold (72%); eating problems, including oral aversion (68%); hypotonia (67%); sleeping problems (62%); autism spectrum disorder (54%); and ataxia or gait abnormalities (51%).",
+            "explanation": "Vlaskamp cohort quantifies high pain threshold in 72% of patients."
+          }
+        ]
+      },
+      "claim_type": "phenotype",
+      "review_status": "pending",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "HP:0007021",
+      "type": "phenotype",
+      "label": "Pain insensitivity",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "PMID:30789692",
+      "type": "publication",
+      "label": "SYNGAP1-Related Intellectual Disability.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30789692/",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:67ceb654951b8f119f5f",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:30789692",
+        "reference_title": "SYNGAP1-Related Intellectual Disability.",
+        "supports": "SUPPORT",
+        "evidence_source": "HUMAN_CLINICAL",
+        "snippet": "The diagnosis of SYNGAP1-ID is established in a proband with developmental delay or intellectual disability in whom molecular genetic testing identifies either a heterozygous pathogenic variant in SYNGAP1 (~89%) or a deletion of 6p21.3 (~11%).",
+        "explanation": "GeneReviews establishes heterozygous SYNGAP1 loss-of-function variants (or 6p21.3 deletion) as the molecular cause."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:30789692",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "PMID:23141534",
+      "type": "publication",
+      "label": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23141534/",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:9927793177bcae23d0a7",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:23141534",
+        "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+        "supports": "SUPPORT",
+        "evidence_source": "MODEL_ORGANISM",
+        "snippet": "Premature spine maturation dramatically enhanced excitability in the developing hippocampus, which corresponded with the emergence of behavioral abnormalities.",
+        "explanation": "Ties the upstream synaptic defect to measured hyperexcitability in the same animals, which is the edge this node sits on. Hippocampal rather than cortical, and in mouse, so it supports the mechanism without standing in for human cortical recordings."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:23141534",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "PMID:26912996",
+      "type": "publication",
+      "label": "SYNGAP1: Mind the Gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26912996/",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:393215978aa34d093a54",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:26912996",
+        "reference_title": "SYNGAP1: Mind the Gap.",
+        "supports": "SUPPORT",
+        "evidence_source": "OTHER",
+        "snippet": "SYNGAP1 is a negative regulator of Ras, Rap and of AMPA receptor trafficking to the postsynaptic membrane",
+        "explanation": "Establishes SynGAP as a synaptic brake that negatively regulates Ras/Rap signaling and AMPA-receptor trafficking; its loss disinhibits this pathway."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:26912996",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:a35bfdc9c797ddf0b5c0",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:30789692",
+        "reference_title": "SYNGAP1-Related Intellectual Disability.",
+        "supports": "SUPPORT",
+        "evidence_source": "HUMAN_CLINICAL",
+        "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+        "explanation": "GeneReviews documents the characteristic generalized epilepsy including the myoclonic-astatic (Doose) subset."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:30789692",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:51ef53f8470bb21b57b5",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:30789692",
+        "reference_title": "SYNGAP1-Related Intellectual Disability.",
+        "supports": "SUPPORT",
+        "evidence_source": "HUMAN_CLINICAL",
+        "snippet": "is characterized by developmental delay (DD) or intellectual disability (ID) (100% of affected individuals), generalized epilepsy (~84%), and autism spectrum disorder (ASD) and other behavioral abnormalities",
+        "explanation": "GeneReviews documents developmental delay/intellectual disability in 100% of affected individuals."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:30789692",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:2ee2156dbba5c7be4a16",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:23141534",
+        "reference_title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+        "supports": "SUPPORT",
+        "evidence_source": "MODEL_ORGANISM",
+        "snippet": "In the SYNGAP1 mouse model of ID/ASD, we found that dendritic spine synapses develop prematurely during the early postnatal period.",
+        "explanation": "The observation this node is built on - accelerated rather than merely abnormal spine maturation - measured in the Syngap1 heterozygous mouse. The same study found that inducing the mutation after the critical window had minimal effect, which is why the node is framed developmentally."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:23141534",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "evidence:b8fe04f5a4b44df49df4",
+      "type": "evidence",
+      "label": "SUPPORT",
+      "upstream_record": {
+        "reference": "PMID:30789692",
+        "reference_title": "SYNGAP1-Related Intellectual Disability.",
+        "supports": "SUPPORT",
+        "evidence_source": "HUMAN_CLINICAL",
+        "snippet": "a subset of individuals with epilepsy have myoclonic astatic epilepsy (Doose syndrome) or epilepsy with myoclonic absences.",
+        "explanation": "GeneReviews documents the generalized epilepsy and its Doose subset."
+      },
+      "review_status": "pending",
+      "publication_id": "PMID:30789692",
+      "origin": "dismech_snapshot"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:00a04960b7d26035f1fc",
+      "source": "claim:3fc344ca39f77810b584",
+      "target": "CL:0000540",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:024bbc76af98cf0f8378",
+      "source": "claim:a1028cf4af6715168006",
+      "target": "HP:0000733",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:02b0242c944035b26547",
+      "source": "evidence:393215978aa34d093a54",
+      "target": "claim:4ba43f92711398b8f86d",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:0a6800142137ffbd8c1e",
+      "source": "MONDO:0012960",
+      "target": "claim:906786d7aa75d8de4ca2",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:0f45f82dfa1fd3b9d45c",
+      "source": "claim:31b519596518d6f2d402",
+      "target": "HP:0007021",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:10064bf5726bec5452a8",
+      "source": "PMID:23141534",
+      "target": "evidence:2ee2156dbba5c7be4a16",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:131af417047c0ecaf0eb",
+      "source": "MONDO:0012960",
+      "target": "claim:8b5992479dbfd66c5c6a",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:185e9bcd85e6dcd5ffd1",
+      "source": "claim:a8a64c85ff681fbff324",
+      "target": "HP:0002197",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:18da059249bbdd2ad870",
+      "source": "claim:4ba43f92711398b8f86d",
+      "target": "CL:0000679",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:1acafdd0759c2dcd37df",
+      "source": "claim:8b5992479dbfd66c5c6a",
+      "target": "CL:0000540",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:1ad213a443a74792f9ec",
+      "source": "MONDO:0012960",
+      "target": "claim:e54d6427d01535332295",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:1e20c15cb4253a802192",
+      "source": "MONDO:0012960",
+      "target": "claim:657e3106a62d24cf4a3f",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:23380a9412f747d0e0b6",
+      "source": "claim:8db248998c1e8f693a28",
+      "target": "GO:0060996",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "biological_processes",
+      "modifier": "DYSREGULATED",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:28dab0169d31f122c9ca",
+      "source": "MONDO:0012960",
+      "target": "claim:23f7f88a76fccd1b4342",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:2d80a7fa789a58318bdb",
+      "source": "MONDO:0012960",
+      "target": "claim:cdca127a6a7f64237b4d",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:2f922f39d5e44ba6df62",
+      "source": "MONDO:0012960",
+      "target": "claim:2231908606f2b8e46312",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:3cecd88578f5b8e61078",
+      "source": "claim:23f7f88a76fccd1b4342",
+      "target": "HP:0032794",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:3e83454d48fa920d41d3",
+      "source": "PMID:30789692",
+      "target": "evidence:67ceb654951b8f119f5f",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:405ed1771dd4699a3ccf",
+      "source": "evidence:9927793177bcae23d0a7",
+      "target": "claim:3fc344ca39f77810b584",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:42f73bc9180b9eb6b203",
+      "source": "MONDO:0012960",
+      "target": "claim:764dd4899b82772c21b9",
+      "relation": "has_gene_association_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record states a gene association for this disease. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:44e012931b769a569e0e",
+      "source": "claim:3b62e9bd5bed0030f103",
+      "target": "HP:0020208",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:48a1df6e3d8fefbaf9e1",
+      "source": "claim:fabb8b0a95e4d6fe87e5",
+      "target": "CL:0000540",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:507ea2abdfb08cdc77ad",
+      "source": "PMID:26912996",
+      "target": "evidence:393215978aa34d093a54",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:5c2aa147aa17217cf4c8",
+      "source": "claim:450e5d493061e35e5d73",
+      "target": "HP:0011149",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:5f9015d56f4d6bac4ec1",
+      "source": "evidence:a35bfdc9c797ddf0b5c0",
+      "target": "claim:3a82b1529b5c64f80502",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:6a4ae165a0567e523e43",
+      "source": "claim:657e3106a62d24cf4a3f",
+      "target": "HP:0000729",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:6b0eb2ed48170221eb69",
+      "source": "claim:4ba43f92711398b8f86d",
+      "target": "GO:0005096",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "molecular_functions",
+      "modifier": "DECREASED",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:6bdb86be56021ae06578",
+      "source": "MONDO:0012960",
+      "target": "claim:9629f8e38943c7c533af",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:704fdd81ea93159dd714",
+      "source": "MONDO:0012960",
+      "target": "claim:3b62e9bd5bed0030f103",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7520aec26cf99710153f",
+      "source": "claim:3a82b1529b5c64f80502",
+      "target": "CL:0000540",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7575c386e52d6b56a579",
+      "source": "claim:6faea270c3a219437316",
+      "target": "HP:0001249",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:782506dfca2259f09ea7",
+      "source": "PMID:30789692",
+      "target": "evidence:51ef53f8470bb21b57b5",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7848e5ca300bc7853f2b",
+      "source": "PMID:30789692",
+      "target": "evidence:b8fe04f5a4b44df49df4",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:79c30461727f8fbe5bbb",
+      "source": "MONDO:0013388",
+      "target": "claim:6b4d367c3a09ac57f6a0",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7ab1326871c30d8f3bae",
+      "source": "MONDO:0012960",
+      "target": "claim:027d9ec581d3001a8ad4",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7bda8d84ac4e0d44896e",
+      "source": "evidence:2ee2156dbba5c7be4a16",
+      "target": "claim:8db248998c1e8f693a28",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:7c83f04d27d96e1db14d",
+      "source": "MONDO:0012960",
+      "target": "claim:6faea270c3a219437316",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:83f37d7409e6a734c813",
+      "source": "MONDO:0012812",
+      "target": "claim:47f04d980d5c5362cb6c",
+      "relation": "has_gene_association_claim",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record states a gene association for this disease. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:8d9a1ac0ef095f3c3b31",
+      "source": "claim:2231908606f2b8e46312",
+      "target": "HP:0002360",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:8eda6a736087a6c00b64",
+      "source": "claim:47f04d980d5c5362cb6c",
+      "target": "hgnc:11444",
+      "relation": "mentions_gene",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The association claim names this gene. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:8f3781f1b21d33ea279d",
+      "source": "MONDO:0012960",
+      "target": "claim:3fc344ca39f77810b584",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:92af98baa9f7b66f8ef4",
+      "source": "MONDO:0012812",
+      "target": "claim:10d0a797e2b0b5bc780d",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:9379b688338ceae5b7b2",
+      "source": "MONDO:0012960",
+      "target": "claim:fabb8b0a95e4d6fe87e5",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:943258cdba705939e156",
+      "source": "MONDO:0012960",
+      "target": "claim:4ba43f92711398b8f86d",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:94e5338e81ad847824b8",
+      "source": "MONDO:0012960",
+      "target": "claim:a8a64c85ff681fbff324",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:97ff225bf0aae061070c",
+      "source": "evidence:51ef53f8470bb21b57b5",
+      "target": "claim:c98f8adcb3f532073c7d",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:9e557e5add7af368136d",
+      "source": "claim:764dd4899b82772c21b9",
+      "target": "hgnc:11497",
+      "relation": "mentions_gene",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The association claim names this gene. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:a2c7d5299f8af60d2395",
+      "source": "claim:10d0a797e2b0b5bc780d",
+      "target": "HP:0001252",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:a687a9e43ce0e143b36a",
+      "source": "MONDO:0012960",
+      "target": "claim:9485a34afc34028916c0",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:ac8e4b6057ee00af750a",
+      "source": "claim:c98f8adcb3f532073c7d",
+      "target": "CL:0000540",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:add01f1f5e4c038bf5cc",
+      "source": "PMID:30789692",
+      "target": "evidence:a35bfdc9c797ddf0b5c0",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:ae2c994781f653f721d9",
+      "source": "MONDO:0012960",
+      "target": "claim:a1028cf4af6715168006",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:b002fc4e7006ef32a352",
+      "source": "PMID:23141534",
+      "target": "evidence:9927793177bcae23d0a7",
+      "relation": "contains_evidence",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record cites this publication for the claim. RareBridge has not checked that the publication supports it.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:b46a8f6804c30480bfaf",
+      "source": "claim:cdca127a6a7f64237b4d",
+      "target": "GO:0046578",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "biological_processes",
+      "modifier": "INCREASED",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:b503cc3e35db8ff55ab9",
+      "source": "MONDO:0012960",
+      "target": "claim:3a82b1529b5c64f80502",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:b594a80ac037eac488b0",
+      "source": "MONDO:0012812",
+      "target": "claim:0167c950a7f88c32465c",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:b94c6948af46ac0d595b",
+      "source": "MONDO:0012960",
+      "target": "asset:e375ed4859f211c50386",
+      "relation": "has_reported_asset",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream record reports this research asset. Availability, owner and access were not checked.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:ba7d60042b5649471e4b",
+      "source": "claim:cdca127a6a7f64237b4d",
+      "target": "CL:0000679",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:bc8bbd372e4f4ed57c52",
+      "source": "MONDO:0012960",
+      "target": "claim:c98f8adcb3f532073c7d",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:c4e2e9a80de650eeb071",
+      "source": "claim:027d9ec581d3001a8ad4",
+      "target": "HP:0001252",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:c704ef0c2379b4a2037a",
+      "source": "claim:69c2a5ba5b8e3558265f",
+      "target": "hgnc:10588",
+      "relation": "mentions_gene",
+      "provenance": {
+        "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The association claim names this gene. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:c9ab6d00d19b226f1659",
+      "source": "claim:9485a34afc34028916c0",
+      "target": "HP:0011968",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:cb3dceedee7d9a95f9af",
+      "source": "evidence:67ceb654951b8f119f5f",
+      "target": "claim:e54d6427d01535332295",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:cf53de24e6f3a3f3aaf2",
+      "source": "MONDO:0012960",
+      "target": "claim:450e5d493061e35e5d73",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:cf99f1e7aaf2dc97947c",
+      "source": "evidence:b8fe04f5a4b44df49df4",
+      "target": "claim:a8a64c85ff681fbff324",
+      "relation": "annotates_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "polarity": "SUPPORT",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Upstream evidence label 'SUPPORT'. Upstream evidence label attached to the claim. The label comes from DisMech's AI-assisted curation.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:d192c384bc01d36b88b8",
+      "source": "claim:8db248998c1e8f693a28",
+      "target": "CL:0000679",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:dc61fe398b3be1ae008a",
+      "source": "MONDO:0012960",
+      "target": "claim:31b519596518d6f2d402",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:dcab8751f99185ad37ba",
+      "source": "MONDO:0012960",
+      "target": "claim:f13db7ee6b60dbd49f5a",
+      "relation": "has_phenotype_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record lists this phenotype for the disease. Imported; frequency and population not reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:dd1ebe0c87a832c746c4",
+      "source": "claim:0167c950a7f88c32465c",
+      "target": "CL:0000679",
+      "relation": "annotated_with",
+      "provenance": {
+        "source_file": "STXBP1_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "annotation_field": "cell_types",
+      "modifier": null,
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The mechanism claim is annotated with this ontology term in the upstream record. An annotation, not a measured finding.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:e5411154cda9e20d97a1",
+      "source": "claim:9629f8e38943c7c533af",
+      "target": "HP:0002121",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:e9715b361d93c103ccb6",
+      "source": "MONDO:0012960",
+      "target": "claim:8db248998c1e8f693a28",
+      "relation": "has_mechanism_claim",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record proposes this mechanism for the disease. Imported hypothesis, pending source review.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:eae913bf939fc9a0b366",
+      "source": "claim:906786d7aa75d8de4ca2",
+      "target": "HP:0001251",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:f8715ede46ba73089959",
+      "source": "claim:f13db7ee6b60dbd49f5a",
+      "target": "HP:0001263",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:f9d4ef9a8d79cfadd7c3",
+      "source": "claim:6b4d367c3a09ac57f6a0",
+      "target": "HP:0001263",
+      "relation": "mentions_phenotype",
+      "provenance": {
+        "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The phenotype claim maps to this ontology term. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:fe333f01f1a59f42f4c7",
+      "source": "MONDO:0013388",
+      "target": "claim:69c2a5ba5b8e3558265f",
+      "relation": "has_gene_association_claim",
+      "provenance": {
+        "source_file": "SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "content_license": "CC-BY-4.0",
+        "retrieved_on": "2026-10-04"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "imported",
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The upstream DisMech record states a gene association for this disease. Imported; not independently reviewed.",
+      "origin": "dismech_snapshot"
+    },
+    {
+      "id": "edge:overlay:paper-describes-starr",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "study:starr",
+      "relation": "describes_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper describes the STARR protocol for STXBP1-RD (Methods, Study Organization & Management).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:paper-describes-prommis",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "study:prommis",
+      "relation": "describes_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper describes the ProMMiS protocol for SYNGAP1-RD (Methods, Study Organization & Management).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:stxbp1-studied-in-starr",
+      "source": "MONDO:0012812",
+      "target": "study:starr",
+      "relation": "studied_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "STXBP1-RD participants are enrolled in STARR (164 enrolled per preprint Recruitment section).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:syngap1-studied-in-prommis",
+      "source": "MONDO:0012960",
+      "target": "study:prommis",
+      "relation": "studied_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "SYNGAP1-RD participants are enrolled in ProMMiS (159 enrolled per preprint Recruitment section).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:framework-covers-starr",
+      "source": "DOI:10.1002/epi.70374#framework",
+      "target": "study:starr",
+      "relation": "framework_used_by",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "One published framework covers both studies.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:framework-covers-prommis",
+      "source": "DOI:10.1002/epi.70374#framework",
+      "target": "study:prommis",
+      "relation": "framework_used_by",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "One published framework covers both studies.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:syngap1-stxbp1-shared-framework",
+      "source": "MONDO:0012960",
+      "target": "MONDO:0012812",
+      "relation": "shares_published_study_framework_with",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "Inferred connection for navigation: both diseases have cohorts in the same published natural-history framework. This is a shared study method, not shared biology, treatment response or proof that results transfer; the paper reports disease-specific developmental and seizure patterns.",
+      "claim_origin": "inferred",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:stxbp1-foundation-partners-starr",
+      "source": "org:stxbp1-foundation",
+      "target": "study:starr",
+      "relation": "partners_on_study",
+      "provenance": {
+        "source_url": "https://www.stxbp1disorders.org/starr",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr",
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Foundation page says STARR is funded by the STXBP1 Foundation; the paper says outcome measures were selected with the foundation.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:cure-syngap1-partners-prommis",
+      "source": "org:cure-syngap1",
+      "target": "study:prommis",
+      "relation": "partners_on_study",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "WEB:curesyngap1-prommis-blog",
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "CURE SYNGAP1 describes ProMMiS as powered by CURE SYNGAP1; the paper says outcome measures were selected with CURE SYNGAP1.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:endd-coordinates-starr",
+      "source": "team:chop-endd-nhs",
+      "target": "study:starr",
+      "relation": "coordinates_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "CHOP is the prime site and data coordinating centre (paper Methods).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:endd-coordinates-prommis",
+      "source": "team:chop-endd-nhs",
+      "target": "study:prommis",
+      "relation": "coordinates_study",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "CHOP is the prime site and data coordinating centre (paper Methods).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:helbig-leads-starr",
+      "source": "researcher:ingo-helbig",
+      "target": "study:starr",
+      "relation": "leads_study",
+      "provenance": {
+        "source_url": "https://www.stxbp1disorders.org/starr",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "confidence_label": "Source checked (narrow factual review; not clinical validation)",
+      "explanation": "Foundation page names him multi-site Principal Investigator of STARR.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:mckee-authors-paper",
+      "source": "researcher:jillian-mckee",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "corresponding_author_of",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as corresponding author on the preprint title page.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:helbig-authors-paper",
+      "source": "researcher:ingo-helbig",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "corresponding_author_of",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as corresponding author on the preprint title page.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:stanford-site-starr",
+      "source": "team:stanford-synaptopathy",
+      "target": "study:starr",
+      "relation": "study_site_for",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as a STARR site in the paper and on its own page.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:stanford-site-prommis",
+      "source": "team:stanford-synaptopathy",
+      "target": "study:prommis",
+      "relation": "study_site_for",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Listed as a ProMMiS site in the paper and on its own page (spelled PRoMiSS there).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:seizure-method-used-starr",
+      "source": "asset:seizure-history-reconstruction",
+      "target": "study:starr",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Seizure history reconstruction is part of the protocol (Methods).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:seizure-method-used-prommis",
+      "source": "asset:seizure-history-reconstruction",
+      "target": "study:prommis",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Seizure history reconstruction is part of the protocol; expanded PELHS scale added for SYNGAP1.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:qeeg-used-starr",
+      "source": "asset:starr-prommis-qeeg-protocol",
+      "target": "study:starr",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:qeeg-used-prommis",
+      "source": "asset:starr-prommis-qeeg-protocol",
+      "target": "study:prommis",
+      "relation": "method_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "Quantitative EEG is collected every 6 months (Methods; Discussion).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:citizen-dataset-covers-syngap1",
+      "source": "asset:curesyngap1-citizen-nhs-dataset",
+      "target": "MONDO:0012960",
+      "relation": "dataset_covers_disease",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/request-nhs-data/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:curesyngap1-request-nhs-data"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The data request page describes SYNGAP1 patient records available to researchers.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:cure-syngap1-offers-citizen-dataset",
+      "source": "org:cure-syngap1",
+      "target": "asset:curesyngap1-citizen-nhs-dataset",
+      "relation": "provides_access_route_to",
+      "provenance": {
+        "source_url": "https://curesyngap1.org/request-nhs-data/",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "WEB:curesyngap1-request-nhs-data"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The page invites academic researchers to request access via agreement and IRB.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:searchlight-used-by-paper",
+      "source": "asset:simons-searchlight-prom-data",
+      "target": "DOI:10.1002/epi.70374",
+      "relation": "used_as_comparison_data_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper combined Simons Searchlight data with prospective data (Preliminary Results).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:rarex-used-starr",
+      "source": "asset:rare-x-prom-collection",
+      "target": "study:starr",
+      "relation": "platform_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:globalgenes-rarex-stxbp1-2024"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "PROMs are administered through RARE-X (paper Methods; 2024 press release).",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "edge:overlay:rarex-used-prommis",
+      "source": "asset:rare-x-prom-collection",
+      "target": "study:prommis",
+      "relation": "platform_used_in",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "curation_lane": "curation/build_overlay.py"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "confidence_label": "Unassessed — source review pending",
+      "explanation": "The paper states PROMs for the natural history study are administered through RARE-X.",
+      "claim_origin": "recorded",
+      "origin": "curation_overlay"
+    },
+    {
+      "id": "assessment:framework-for-syngap1:scope",
+      "source": "MONDO:0012960",
+      "target": "DOI:10.1002/epi.70374#framework",
+      "relation": "assessment_scope",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "derived_from": "assessment bundle framework-for-syngap1"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "claim_origin": "recorded",
+      "confidence_label": "Assessment outcome: needs_information (not an approval)",
+      "explanation": "Scoped assessment framework-for-syngap1 for 'Plan a natural-history study using an existing assessment framework'. Supported checks: documented-framework, target-observed. Open required checks: implementation-access, local-feasibility. Records what cited sources show; it is not permission to reuse the asset.",
+      "assessment_id": "framework-for-syngap1",
+      "assessment_outcome": "needs_information"
+    },
+    {
+      "id": "assessment:framework-for-syngap1:documented-framework:0",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "DOI:10.1002/epi.70374#framework",
+      "relation": "evidence_for_check",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "derived_from": "assessment bundle framework-for-syngap1"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "claim_origin": "recorded",
+      "confidence_label": "Narrow source fact checked (not clinical validation)",
+      "explanation": "The methods describe STARR and ProMMiS protocols. (check 'Is an existing natural-history framework documented?': supported; evidence polarity support).",
+      "assessment_id": "framework-for-syngap1",
+      "check_id": "documented-framework",
+      "check_status": "supported",
+      "polarity": "support"
+    },
+    {
+      "id": "assessment:framework-for-syngap1:target-observed:0",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "DOI:10.1002/epi.70374#framework",
+      "relation": "evidence_for_check",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "derived_from": "assessment bundle framework-for-syngap1"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "claim_origin": "recorded",
+      "confidence_label": "Narrow source fact checked (not clinical validation)",
+      "explanation": "SYNGAP1 is a studied cohort. (check 'Does this paper report use in SYNGAP1?': supported; evidence polarity support).",
+      "assessment_id": "framework-for-syngap1",
+      "check_id": "target-observed",
+      "check_status": "supported",
+      "polarity": "support"
+    },
+    {
+      "id": "assessment:framework-for-syngap1:trial-endpoint:0",
+      "source": "DOI:10.1002/epi.70374",
+      "target": "DOI:10.1002/epi.70374#framework",
+      "relation": "evidence_for_check",
+      "provenance": {
+        "source_url": "https://doi.org/10.1002/epi.70374",
+        "retrieved_on": "2026-10-04",
+        "derived_from": "assessment bundle framework-for-syngap1"
+      },
+      "review_status": "source_checked",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "claim_origin": "recorded",
+      "confidence_label": "Narrow source fact checked (not clinical validation)",
+      "explanation": "Further longitudinal validation is discussed. (check 'Has responsiveness to treatment been established by this paper?': unknown; evidence polarity uncertain).",
+      "assessment_id": "framework-for-syngap1",
+      "check_id": "trial-endpoint",
+      "check_status": "unknown",
+      "polarity": "uncertain"
+    },
+    {
+      "id": "inferred:shared-annotations:MONDO:0012812:MONDO:0012960",
+      "source": "MONDO:0012960",
+      "target": "MONDO:0012812",
+      "relation": "candidate_shared_annotations",
+      "provenance": {
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+        "retrieved_on": "2026-10-04",
+        "derivation": "idf_weighted_jaccard_shared_annotations_v1"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml",
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "inferred",
+      "confidence_label": "Inferred navigation link — source review pending",
+      "candidate_score": 0.0465,
+      "explanation": "Ranking candidate from 4 shared upstream annotations (score 0.0465, a ranking aid only). Does not establish shared biology, asset compatibility or treatment applicability."
+    },
+    {
+      "id": "inferred:shared-annotations:MONDO:0012960:MONDO:0013388",
+      "source": "MONDO:0012960",
+      "target": "MONDO:0013388",
+      "relation": "candidate_shared_annotations",
+      "provenance": {
+        "source_url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "retrieved_on": "2026-10-04",
+        "derivation": "idf_weighted_jaccard_shared_annotations_v1"
+      },
+      "review_status": "pending",
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml"
+      ],
+      "claim_origin": "inferred",
+      "confidence_label": "Inferred navigation link — source review pending",
+      "candidate_score": 0.058,
+      "explanation": "Ranking candidate from 4 shared upstream annotations (score 0.058, a ranking aid only). Does not establish shared biology, asset compatibility or treatment applicability."
+    }
+  ],
+  "sources": {
+    "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml": {
+      "title": "DisMech AI-curated disease record (SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml)",
+      "url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "ai_curated_record",
+      "note": "Imported annotation, pending independent source review. Disease Mechanisms Knowledge Base (DisMech), Monarch Initiative contributors, CC-BY-4.0. Snapshot commit 3426c0eec2ade9297b6aadefe95e5dc7cd3806e6.",
+      "content_license": "CC-BY-4.0",
+      "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+    },
+    "DISMECH:STXBP1_Encephalopathy.yaml": {
+      "title": "DisMech AI-curated disease record (STXBP1_Encephalopathy.yaml)",
+      "url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/STXBP1_Encephalopathy.yaml",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "ai_curated_record",
+      "note": "Imported annotation, pending independent source review. Disease Mechanisms Knowledge Base (DisMech), Monarch Initiative contributors, CC-BY-4.0. Snapshot commit 3426c0eec2ade9297b6aadefe95e5dc7cd3806e6.",
+      "content_license": "CC-BY-4.0",
+      "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+    },
+    "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml": {
+      "title": "DisMech AI-curated disease record (SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml)",
+      "url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "ai_curated_record",
+      "note": "Imported annotation, pending independent source review. Disease Mechanisms Knowledge Base (DisMech), Monarch Initiative contributors, CC-BY-4.0. Snapshot commit 3426c0eec2ade9297b6aadefe95e5dc7cd3806e6.",
+      "content_license": "CC-BY-4.0",
+      "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+    },
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+    },
+    "PMID:23141534": {
+      "title": "Pathogenic SYNGAP1 mutations impair cognitive development by disrupting maturation of dendritic spine synapses.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23141534/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "publication_cited_by_upstream_record",
+      "note": "Cited by an upstream DisMech record. RareBridge has not checked that this publication supports the attached claim."
+    },
+    "PMID:26912996": {
+      "title": "SYNGAP1: Mind the Gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26912996/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "publication_cited_by_upstream_record",
+      "note": "Cited by an upstream DisMech record. RareBridge has not checked that this publication supports the attached claim."
+    },
+    "PMID:30789692": {
+      "title": "SYNGAP1-Related Intellectual Disability.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30789692/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "publication_cited_by_upstream_record",
+      "note": "Cited by an upstream DisMech record. RareBridge has not checked that this publication supports the attached claim."
+    },
+    "WEB:curesyngap1-prommis-blog": {
+      "title": "Four Stories, One Purpose: Our Visits to CHOP (CURE SYNGAP1 blog)",
+      "url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+      "aliases": [],
+      "published_on": "2026-03-26",
+      "source_kind": "organization_webpage",
+      "note": "Official CURE SYNGAP1 blog post describing ProMMiS sites and how families register. Read on 2026-10-04."
+    },
+    "WEB:curesyngap1-request-nhs-data": {
+      "title": "Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "aliases": [],
+      "published_on": "2023-03-01",
+      "source_kind": "organization_webpage",
+      "note": "Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset."
+    },
+    "WEB:globalgenes-rarex-stxbp1-2024": {
+      "title": "Global Genes and STXBP1 Foundation partnership to use RARE-X for the natural history study (press release)",
+      "url": "https://globalgenes.org/press/global-genes-and-stxbp1-foundation-enter-partnership-to-use-rare-x-research-and-data-collection-platform-for-natural-history-study/",
+      "aliases": [],
+      "published_on": "2024-07-24",
+      "source_kind": "press_release",
+      "note": "Read via search snippet on 2026-10-04."
+    },
+    "WEB:stanford-synaptopathy-research": {
+      "title": "Synaptopathy Research and Innovation, Stanford Medicine Children's Health",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "institution_webpage",
+      "note": "Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'."
+    },
+    "WEB:stxbp1-foundation-starr": {
+      "title": "STARR study page, STXBP1 Foundation",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "organization_webpage",
+      "note": "Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page."
+    }
+  },
+  "coverage": {
+    "scope_note": "Showing 80 of 235 nodes and 106 of 346 edges, chosen by explanatory relevance to SYNGAP1-Related Developmental and Epileptic Encephalopathy and assessment framework-for-syngap1. 7 further relevant nodes are hidden by max_nodes=80; hidden is not absent. Imported DisMech edges remain pending review; confidence labels are qualitative, not probabilities.",
+    "truncated": true,
+    "total_nodes": 235,
+    "total_edges": 346,
+    "shown_nodes": 80,
+    "shown_edges": 106,
+    "relevant_nodes_available": 87,
+    "omitted_relevant_nodes": 7,
+    "skipped_groups": [
+      "upstream evidence"
+    ],
+    "max_nodes": 80
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

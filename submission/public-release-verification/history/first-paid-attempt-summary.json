@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-10-04T11:04:20.482681+00:00",
+  "base_url": "https://rarebridge-global-ai.vercel.app",
+  "scope": "Public runtime, provenance and workflow checks; not biomedical or clinical validation.",
+  "checks": [
+    {
+      "name": "anonymous_live_health",
+      "passed": true,
+      "details": {
+        "anonymous_access": true,
+        "counts": {
+          "total_nodes": 235,
+          "total_edges": 346,
+          "diseases": 3,
+          "assessments": 4,
+          "sources": 30
+        },
+        "data_snapshot": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+      }
+    },
+    {
+      "name": "assessment_citizen-dataset-for-syngap1",
+      "passed": true,
+      "details": {
+        "assessment_id": "citizen-dataset-for-syngap1",
+        "outcome": "needs_information",
+        "checks": 3
+      }
+    },
+    {
+      "name": "assessment_framework-for-scn2a",
+      "passed": true,
+      "details": {
+        "assessment_id": "framework-for-scn2a",
+        "outcome": "needs_information",
+        "checks": 5
+      }
+    },
+    {
+      "name": "assessment_framework-for-stxbp1",
+      "passed": true,
+      "details": {
+        "assessment_id": "framework-for-stxbp1",
+        "outcome": "needs_information",
+        "checks": 7
+      }
+    },
+    {
+      "name": "assessment_framework-for-syngap1",
+      "passed": true,
+      "details": {
+        "assessment_id": "framework-for-syngap1",
+        "outcome": "needs_information",
+        "checks": 5
+      }
+    },
+    {
+      "name": "canonical_source_hiding",
+      "passed": true,
+      "details": {
+        "canonical_source": "DOI:10.1002/epi.70374",
+        "changed_checks": 2,
+        "nondestructive_reset": true
+      }
+    },
+    {
+      "name": "unknown_disease_safe",
+      "passed": true,
+      "details": {
+        "status": 404,
+        "code": "unknown_disease"
+      }
+    },
+    {
+      "name": "graph_pending_provenance",
+      "passed": false,
+      "reason": "Public graph removed or promoted inferred candidate relationships."
+    },
+    {
+      "name": "actual_public_export",
+      "passed": true,
+      "details": {
+        "passed": true,
+        "actual_download": true,
+        "download_name": "rarebridge-brief-starr-prommis-natural-history-framework-2026-10-04.txt",
+        "changed_checks": 2,
+        "blocked_ai_requests": 0,
+        "browser_errors": [],
+        "pdf_scope": "Headless print layout; OS dialog not tested"
+      }
+    },
+    {
+      "name": "genuine_hidden_source_explanation",
+      "passed": false,
+      "reason": "Public endpoint returned HTTP 502 (generation_invalid)."
+    },
+    {
+      "name": "genuine_public_excerpt_extraction",
+      "passed": true,
+      "details": {
+        "generation_mode": "live",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
+        "claims": 2,
+        "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+        "literal_excerpt_chars": 107,
+        "import_status": "not_imported",
+        "independent_identity_check": "shipped_registry_catalogue"
+      }
+    },
+    {
+      "name": "model_requests_leave_registry_unchanged",
+      "passed": true,
+      "details": {
+        "unchanged": true
+      }
+    }
+  ],
+  "paid_ai_requested": true,
+  "paid_requests_attempted": 2,
+  "passed": false,
+  "paid_ai_verified": false
+}

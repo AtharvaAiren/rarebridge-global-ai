@@ -1,0 +1,124 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "discovery": {
+    "hypotheses": [
+      {
+        "target_disease_id": "MONDO:0012812",
+        "label": "Known shared natural-history framework between SYNGAP1-Related DEE and STXBP1 Encephalopathy: open question on qEEG comparability across cohorts",
+        "rationale": "SYNGAP1-Related DEE (ProMMiS) and STXBP1 Encephalopathy (STARR) are already enrolled under a single published natural-history framework using shared methods including quantitative EEG and seizure-history reconstruction. The open adaptation question is whether qEEG biomarker trajectories collected under this shared protocol are directly comparable across the two disease cohorts given their distinct proposed synaptic mechanisms. Suitability, permissions and feasibility require expert review.",
+        "basis_edge_ids": [
+          "edge:overlay:syngap1-stxbp1-shared-framework",
+          "edge:overlay:qeeg-used-prommis",
+          "edge:overlay:qeeg-used-starr",
+          "edge:overlay:seizure-method-used-prommis",
+          "edge:overlay:seizure-method-used-starr"
+        ],
+        "unresolved_questions": [
+          "Are the qEEG acquisition and processing parameters sufficiently harmonised between ProMMiS and STARR to support cross-cohort biomarker comparisons?",
+          "Do the distinct proposed excitation-inhibition mechanism claims for SYNGAP1-Related DEE and STXBP1 Encephalopathy predict distinguishable qEEG signatures, and is this unanswered in the current source pack?"
+        ],
+        "proposed_next_step": "Convene the coordinating study team to audit qEEG protocol parameter alignment between ProMMiS and STARR and determine whether a pre-specified cross-cohort analysis plan is feasible and appropriate for expert review.",
+        "basis_kind": "known_route",
+        "review_status": "pending",
+        "claim_origin": "inferred",
+        "source_ids": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "id": "research-lead:2df499c73815244f8799"
+      },
+      {
+        "target_disease_id": "MONDO:0013388",
+        "label": "Proposed hypothesis: could the ProMMiS seizure-history reconstruction method be adapted for a SYNGAP1-Related DEE / SCN2A-Related DEE comparative natural-history study?",
+        "rationale": "SYNGAP1-Related DEE has an established seizure-history reconstruction method used in ProMMiS. Both SYNGAP1-Related DEE and SCN2A-Related DEE carry imported claims of absence seizures and autistic behaviour as phenotypes, suggesting potentially overlapping outcome domains. Whether the ProMMiS seizure-history method could be adapted to characterise natural seizure trajectories in SCN2A-Related DEE is unanswered in the current source pack. Suitability, permissions and feasibility require expert review.",
+        "basis_edge_ids": [
+          "edge:overlay:seizure-method-used-prommis",
+          "edge:overlay:syngap1-studied-in-prommis",
+          "edge:e5411154cda9e20d97a1",
+          "edge:6b78be26dbbe0b5b13ba",
+          "edge:fe333f01f1a59f42f4c7"
+        ],
+        "unresolved_questions": [
+          "Is the seizure-history reconstruction method used in ProMMiS applicable to the gain-of-function and loss-of-function variant subgroups seen in SCN2A-Related DEE, which may have divergent seizure trajectories?",
+          "Are there existing natural-history data collection efforts for SCN2A-Related DEE that would need to be assessed for compatibility before any method adaptation is considered, and is this unanswered in the current source pack?"
+        ],
+        "proposed_next_step": "Identify and consult experts in SCN2A-Related DEE natural history to assess whether the ProMMiS seizure-history reconstruction protocol could be evaluated for feasibility in an SCN2A-Related DEE cohort, with appropriate protocol and governance review.",
+        "basis_kind": "proposed_hypothesis",
+        "review_status": "pending",
+        "claim_origin": "inferred",
+        "source_ids": [
+          "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+          "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+          "DOI:10.1002/epi.70374"
+        ],
+        "id": "research-lead:e652bb7d424b576dce3a"
+      }
+    ],
+    "generation_mode": "live",
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "response_id": "msg_011Cfh5wF8JVEqTdHCL6qaiX",
+    "sources": {
+      "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml": {
+        "title": "DisMech AI-curated disease record (SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml)",
+        "url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "aliases": [],
+        "published_on": null,
+        "source_kind": "ai_curated_record",
+        "note": "Imported annotation, pending independent source review. Disease Mechanisms Knowledge Base (DisMech), Monarch Initiative contributors, CC-BY-4.0. Snapshot commit 3426c0eec2ade9297b6aadefe95e5dc7cd3806e6.",
+        "content_license": "CC-BY-4.0",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+      },
+      "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml": {
+        "title": "DisMech AI-curated disease record (SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml)",
+        "url": "https://github.com/monarch-initiative/dismech/blob/3426c0eec2ade9297b6aadefe95e5dc7cd3806e6/kb/disorders/SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "aliases": [],
+        "published_on": null,
+        "source_kind": "ai_curated_record",
+        "note": "Imported annotation, pending independent source review. Disease Mechanisms Knowledge Base (DisMech), Monarch Initiative contributors, CC-BY-4.0. Snapshot commit 3426c0eec2ade9297b6aadefe95e5dc7cd3806e6.",
+        "content_license": "CC-BY-4.0",
+        "snapshot_commit": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6"
+      },
+      "DOI:10.1002/epi.70374": {
+        "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "aliases": [
+          "PMID:42446932"
+        ],
+        "published_on": "2026-07-14",
+        "source_kind": "human_observational_study",
+        "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+      }
+    },
+    "coverage_note": "Three-disease registry slice; imported biology is pending review. No literature search, clinical proof or newly trained graph model is implied.",
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5wF8JVEqTdHCL6qaiX",
+      "request_id": "req_011Cfh5wDzLzQeTZWy4puauF",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 13325,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 913,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "780b26a93404aa42a2fed51b51222911bf0d651443fe469dbb06b6dd7e6c1a08",
+      "generated_at": "2026-10-04T11:04:14.520249+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "cache_saved": true,
+      "context_sha256": "86ad669a1adda22502e3c680cd303ed65dd63271efff9460bf177f35e78dd0d8",
+      "inference_kind": "pretrained_language_model_on_registry_context",
+      "source_binding": "canonical_sources_of_selected_registry_basis_edges"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay",
+  "import_status": "not_imported"
+}

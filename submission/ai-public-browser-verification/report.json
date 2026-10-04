@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-04T11:14:51.532Z",
+  "base_url": "https://rarebridge-global-ai.vercel.app",
+  "passed": true,
+  "checks": [
+    {
+      "name": "patient question displays genuine provider answer with eligible citations and recorded next questions",
+      "passed": true,
+      "details": {
+        "generation_mode": "live",
+        "cited_source_ids": [
+          "DOI:10.1002/epi.70374"
+        ]
+      }
+    },
+    {
+      "name": "hiding a source removes old AI prose and shows two actual changed checks",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "new answer uses current hidden-source state and cites no hidden paper",
+      "passed": true,
+      "details": {
+        "generation_mode": "live"
+      }
+    },
+    {
+      "name": "switching reading mode invalidates the old answer",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "downloaded brief retains current missing checks and hidden canonical source",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "Chromium generates the actual print-layout PDF",
+      "passed": true,
+      "details": {
+        "scope": "Headless PDF output; OS print dialog was not tested"
+      }
+    },
+    {
+      "name": "reset restores evidence and keeps the assistant state tied to its request key",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "model-generated research leads render sources, unresolved questions and pending inference labels",
+      "passed": true,
+      "details": {
+        "hypotheses": 2,
+        "generation_mode": "live"
+      }
+    },
+    {
+      "name": "full-registry scout prose is hidden during the source-withdrawn inspection",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "browser_errors": [],
+  "genuine_provider_results": [
+    {
+      "operation": "ask",
+      "mode": "live",
+      "response_id": "msg_011Cfh6iifkxtdRfBL7PdrAJ"
+    },
+    {
+      "operation": "ask-withdrawn",
+      "mode": "live",
+      "response_id": "msg_011Cfh6jLLcWCW3XSzPtdvb2"
+    },
+    {
+      "operation": "discover",
+      "mode": "live",
+      "response_id": "msg_011Cfh6k3Zqw28nyCC4v6Zir"
+    }
+  ],
+  "limits": [
+    "Public browser journey was checked without Vercel authentication.",
+    "Generation/citation checks do not establish biomedical truth.",
+    "Headless PDF generation does not test a real OS print dialog."
+  ]
+}

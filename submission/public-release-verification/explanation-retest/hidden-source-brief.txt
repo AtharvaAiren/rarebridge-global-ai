@@ -1,0 +1,114 @@
+Collaboration brief: STARR / ProMMiS natural-history framework
+==============================================================
+Prepared 4 October 2026
+
+GOAL
+----
+Plan a natural-history study for SYNGAP1-related disorder (SYNGAP1-related disorder).
+A natural-history study follows how a condition changes over time in the people who have it. It shows what typically happens and helps prepare the measurements that future treatment trials will need.
+
+RESOURCE
+--------
+STARR / ProMMiS natural-history framework
+https://doi.org/10.1002/epi.70374
+Access: Implementation permissions and resources not checked
+Overall: Questions still open
+2 checks changed with one source hidden; the overall result did not change. This shows dependence on recorded publications, not biological causality. An unchanged overall outcome can still conceal loss of support for an individual check.
+
+WHAT THE SOURCES SUPPORT
+------------------------
+No check is supported by the sources in this view.
+
+OPEN CHECKS
+-----------
+- Is an existing natural-history framework documented? (Information missing)
+  Next question: Which protocol components can be shared with our group?
+  Who could answer: study coordinator
+- Does this paper report use in SYNGAP1? (Information missing)
+  Next question: Do our proposed participants resemble the studied cohort?
+  Who could answer: clinical investigator
+- Have permissions, materials and implementation resources been confirmed for our proposed study? (Information missing)
+  Next question: Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?
+  Who could answer: study coordinator
+- Has the framework been assessed for our group's age range, travel constraints and study sites? (Information missing)
+  Next question: Which components need adapting to our cohort and local study capacity?
+  Who could answer: clinical investigator
+- Has responsiveness to treatment been established by this paper? (Information missing, not required)
+  Next question: What additional validation is needed before selecting a treatment-trial endpoint?
+  Who could answer: outcome-measure researcher
+
+RELEVANT DIFFERENCES AND LIMITS
+-------------------------------
+- Studied in STXBP1-RD and SYNGAP1-RD cohorts only. The authors state an aim to generalize the framework to other DEEs; that extension is not demonstrated in this paper.
+- Study team documented (CHOP-led consortium). Ownership of protocol materials not established.
+- Not yet checked: instrument licensing; protocol document access; fit for other diseases or age ranges; site capacity.
+
+PROPOSED NEXT STEP
+------------------
+Send the open questions below to a study coordinator through one of the public routes listed, and decide together which parts of the resource could inform your study. Nothing here confirms access, permission or suitability.
+
+PUBLIC CONTACT ROUTES
+---------------------
+- CURE SYNGAP1 (organization; Fact checked against source)
+  Patient organization; supports ProMMiS and co-selected its outcome measures; runs a researcher data-request route for a retrospective SYNGAP1 dataset.
+  https://curesyngap1.org/contact/
+- CHOP / Penn ENDD natural history study team (study team; Source check pending)
+  Prime site and data coordinating centre for STARR and ProMMiS per the paper; the ENDD page gives a study contact route.
+  https://endd.med.upenn.edu/research/natural-history-study/
+- Stanford Medicine Children's Health synaptopathy team (study team; Source check pending)
+  Study site for STARR and ProMMiS per the paper and its own page.
+  https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html
+- Ingo Helbig, MD (researcher; Source check pending)
+  Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials.
+  https://www.stxbp1disorders.org/starr
+- Jillian L. McKee, MD, PhD (researcher; Source check pending)
+  Corresponding (first) author of the framework paper. A potential collaborator.
+  https://doi.org/10.1002/epi.70374
+  Every source for this contact is hidden in this view.
+
+DRAFT MESSAGE (REVIEW BEFORE SENDING)
+-------------------------------------
+Dear study coordinator,
+
+I lead a patient organization for SYNGAP1-related disorder. We are planning a natural-history study and found the STARR / ProMMiS natural-history framework, described in "A prospective natural history study protocol for clinical trial readiness in synaptic disorders" (https://doi.org/10.1002/epi.70374).
+
+We would like to understand whether parts of it could inform our own study. Our open questions are:
+1. Which protocol components can be shared with our group?
+2. Do our proposed participants resemble the studied cohort?
+3. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?
+4. Which components need adapting to our cohort and local study capacity?
+
+Could you tell us who the right person is to discuss this, or point us to the relevant materials?
+
+Thank you,
+[Your name]
+[Your organization]
+
+SOURCES
+-------
+[1] A prospective natural history study protocol for clinical trial readiness in synaptic disorders (2026-07-14) (hidden in this view)
+    https://doi.org/10.1002/epi.70374 (also PMID:42446932)
+[2] Four Stories, One Purpose: Our Visits to CHOP (CURE SYNGAP1 blog) (2026-03-26)
+    https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/
+[3] Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1 (2023-03-01)
+    https://curesyngap1.org/request-nhs-data/
+[4] Natural History Study, ENDD Center (Penn Medicine / CHOP)
+    https://endd.med.upenn.edu/research/natural-history-study/
+[5] Synaptopathy Research and Innovation, Stanford Medicine Children's Health
+    https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html
+[6] STARR study page, STXBP1 Foundation
+    https://www.stxbp1disorders.org/starr
+
+SOURCES HIDDEN IN THIS VIEW
+---------------------------
+This brief reflects the assessment with these sources hidden:
+- A prospective natural history study protocol for clinical trial readiness in synaptic disorders (DOI:10.1002/epi.70374)
+
+ABOUT THIS BRIEF
+----------------
+Built from the recorded assessment and its sources. No AI-generated text.
+Live data from the local RareBridge service (dismech_snapshot+curation_overlay).
+This demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.
+A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied.
+
+Prepared with RareBridge from a three-disease demonstration collection. Not medical advice. Statuses describe what cited sources say, not clinical validation. Prepared 4 October 2026.

@@ -1,0 +1,78 @@
+RareBridge — collaboration brief
+
+Target: SYNGAP1-related disorder (MONDO:0012960)
+Goal: Plan a natural-history study using an existing assessment framework
+Resource: STARR / ProMMiS natural-history framework (DOI:10.1002/epi.70374#framework)
+Resource publication link withheld with the excluded evidence.
+Recorded outcome: needs_information
+More information is needed before a feasibility decision.
+Access: Implementation permissions and resources not checked
+
+Proposed use (proposal, not an established result):
+Explore whether STARR / ProMMiS natural-history framework can support this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.
+Target subgroup: Not specified
+
+Recorded support:
+No supported checks remain in this recorded assessment.
+
+Unresolved or negative checks:
+- Is an existing natural-history framework documented? — unknown (required)
+- Does this paper report use in SYNGAP1? — unknown (required)
+- Have permissions, materials and implementation resources been confirmed for our proposed study? — unknown (required)
+- Has the framework been assessed for our group's age range, travel constraints and study sites? — unknown (required)
+- Has responsiveness to treatment been established by this paper? — unknown (additional)
+
+Questions for collaboration (proposed next actions):
+1. Which protocol components can be shared with our group? — ask a study coordinator.
+2. Do our proposed participants resemble the studied cohort? — ask a clinical investigator.
+3. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required? — ask a study coordinator.
+4. Which components need adapting to our cohort and local study capacity? — ask a clinical investigator.
+5. What additional validation is needed before selecting a treatment-trial endpoint? — ask a outcome-measure researcher.
+
+Public collaborator routes:
+- Jillian L. McKee: https://orcid.org/0000-0001-9724-0403 (unreviewed)
+  Recorded public researcher route; ownership and availability unconfirmed. Current ownership, availability and willingness to collaborate require confirmation.
+1 recorded route(s) withheld because their backing was excluded or the public route was invalid.
+
+Proposed next milestone:
+An expert-reviewed natural-history feasibility decision: agree the target population, assess this resource and alternatives, resolve access and implementation requirements, and record whether to proceed, adapt the scope, or seek another resource.
+
+Sources used (distinct records; aliases counted once):
+No active source is cited in this brief.
+
+Excluded sources (not supporting this brief):
+- A prospective natural history study protocol for clinical trial readiness in synaptic disorders (DOI:10.1002/epi.70374) — withdrawn for this assessment view.
+
+Coverage:
+This demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.
+
+Assumptions and limits:
+- Proposed participants, subgroup, sites and local capacity require confirmation unless explicitly recorded.
+- Publication or public-web access does not grant permission to use study materials, datasets or licensed instruments.
+- Recorded support is scoped to each check; it does not establish treatment benefit or approval to implement the resource.
+
+Data origin: curated
+Draft generation: none (deterministic_template)
+
+Draft message — review before use:
+Subject: Research feasibility discussion — SYNGAP1-related disorder
+
+Hello,
+
+[Organization name] is exploring this goal for SYNGAP1-related disorder: Plan a natural-history study using an existing assessment framework.
+We would like expert guidance on the proposed use of STARR / ProMMiS natural-history framework.
+More information is needed before a feasibility decision.
+
+Questions we would like to resolve:
+1. Which protocol components can be shared with our group?
+2. Do our proposed participants resemble the studied cohort?
+3. Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?
+4. Which components need adapting to our cohort and local study capacity?
+5. What additional validation is needed before selecting a treatment-trial endpoint? (additional question)
+
+Our proposed next milestone is an expert-reviewed natural-history feasibility decision, with an agreed scope and remaining requirements.
+Could you help resolve these questions or direct us to the appropriate team?
+
+Best wishes,
+[Your name / organization]
+

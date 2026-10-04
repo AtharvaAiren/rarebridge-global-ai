@@ -1,0 +1,311 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "before": {
+    "assessment_id": "citizen-dataset-for-syngap1",
+    "target_disease": {
+      "id": "MONDO:0012960",
+      "label": "SYNGAP1-related disorder"
+    },
+    "goal": "Use existing retrospective data to inform outcome selection for a natural-history study",
+    "asset": {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "type": "dataset",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "access_status": "Documented access route for academic researchers: Researcher Agreement with Citizen Health plus an IRB submission. Access for a patient organization without an academic partner is not stated.",
+      "public_researcher_routes": [
+        {
+          "name": "CURE SYNGAP1 data request page",
+          "url": "https://curesyngap1.org/request-nhs-data/"
+        }
+      ]
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "dataset-documented",
+        "question": "Is a SYNGAP1 dataset with a documented access route described?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "WEB:curesyngap1-request-nhs-data"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "WEB:curesyngap1-request-nhs-data",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The page describes de-identified record summaries for SYNGAP1 patients with confirmed P/LP diagnoses.",
+            "evidence_type": "other"
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Which data fields and time ranges does the dataset include?",
+        "contact_role": "patient organization research lead"
+      },
+      {
+        "id": "requester-eligibility",
+        "question": "Can our group (a patient organization) request access directly?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "WEB:curesyngap1-request-nhs-data",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "The page addresses academic researchers and requires a researcher agreement plus an IRB submission; it does not say whether a patient organization can apply.",
+            "evidence_type": "other"
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Do we need an academic partner with an IRB to request this data, and who could act as that partner?",
+        "contact_role": "patient organization research lead"
+      },
+      {
+        "id": "fit-for-prospective-planning",
+        "question": "Does retrospective record data cover the outcomes our prospective study would measure?",
+        "required": true,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which of our planned outcome domains (motor, communication, behaviour, sleep, seizures) are recorded in the dataset?",
+        "contact_role": "clinical investigator"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "requester-eligibility",
+        "question": "Do we need an academic partner with an IRB to request this data, and who could act as that partner?",
+        "contact_role": "patient organization research lead",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "fit-for-prospective-planning",
+        "question": "Which of our planned outcome domains (motor, communication, behaviour, sleep, seizures) are recorded in the dataset?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "after": {
+    "assessment_id": "citizen-dataset-for-syngap1",
+    "target_disease": {
+      "id": "MONDO:0012960",
+      "label": "SYNGAP1-related disorder"
+    },
+    "goal": "Use existing retrospective data to inform outcome selection for a natural-history study",
+    "asset": {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "type": "dataset",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "access_status": "Documented access route for academic researchers: Researcher Agreement with Citizen Health plus an IRB submission. Access for a patient organization without an academic partner is not stated.",
+      "public_researcher_routes": [
+        {
+          "name": "CURE SYNGAP1 data request page",
+          "url": "https://curesyngap1.org/request-nhs-data/"
+        }
+      ]
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "dataset-documented",
+        "question": "Is a SYNGAP1 dataset with a documented access route described?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "WEB:curesyngap1-request-nhs-data"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "WEB:curesyngap1-request-nhs-data",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The page describes de-identified record summaries for SYNGAP1 patients with confirmed P/LP diagnoses.",
+            "evidence_type": "other"
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Which data fields and time ranges does the dataset include?",
+        "contact_role": "patient organization research lead"
+      },
+      {
+        "id": "requester-eligibility",
+        "question": "Can our group (a patient organization) request access directly?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "WEB:curesyngap1-request-nhs-data",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "The page addresses academic researchers and requires a researcher agreement plus an IRB submission; it does not say whether a patient organization can apply.",
+            "evidence_type": "other"
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Do we need an academic partner with an IRB to request this data, and who could act as that partner?",
+        "contact_role": "patient organization research lead"
+      },
+      {
+        "id": "fit-for-prospective-planning",
+        "question": "Does retrospective record data cover the outcomes our prospective study would measure?",
+        "required": true,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which of our planned outcome domains (motor, communication, behaviour, sleep, seizures) are recorded in the dataset?",
+        "contact_role": "clinical investigator"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "requester-eligibility",
+        "question": "Do we need an academic partner with an IRB to request this data, and who could act as that partner?",
+        "contact_role": "patient organization research lead",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "fit-for-prospective-planning",
+        "question": "Which of our planned outcome domains (motor, communication, behaviour, sleep, seizures) are recorded in the dataset?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "changed_checks": [],
+  "sources": {
+    "WEB:curesyngap1-request-nhs-data": {
+      "title": "Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "aliases": [],
+      "published_on": "2023-03-01",
+      "source_kind": "organization_webpage",
+      "note": "Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:curesyngap1-prommis-blog": {
+      "title": "Four Stories, One Purpose: Our Visits to CHOP (CURE SYNGAP1 blog)",
+      "url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+      "aliases": [],
+      "published_on": "2026-03-26",
+      "source_kind": "organization_webpage",
+      "note": "Official CURE SYNGAP1 blog post describing ProMMiS sites and how families register. Read on 2026-10-04.",
+      "withdrawn_in_this_view": false
+    },
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review.",
+      "withdrawn_in_this_view": false
+    }
+  },
+  "coverage": "Checks one organization page describing a dataset and its access route. Pending human source review. Data contents and current volume were not inspected.",
+  "contacts": [
+    {
+      "id": "org:cure-syngap1",
+      "label": "CURE SYNGAP1",
+      "kind": "organization",
+      "url": "https://curesyngap1.org/contact/",
+      "role": "Patient organization; supports ProMMiS and co-selected its outcome measures; runs a researcher data-request route for a retrospective SYNGAP1 dataset.",
+      "source_ids": [
+        "WEB:curesyngap1-prommis-blog",
+        "WEB:curesyngap1-request-nhs-data",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "source_checked",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "additional_routes": [
+        {
+          "name": "CURE SYNGAP1 data request page",
+          "url": "https://curesyngap1.org/request-nhs-data/",
+          "listed_by": "asset record in assessment citizen-dataset-for-syngap1",
+          "review_status": "pending"
+        }
+      ],
+      "all_sources_withdrawn": false
+    }
+  ],
+  "explanation": {
+    "generation_mode": "none",
+    "text": null,
+    "cited_source_ids": [],
+    "model": null
+  },
+  "goal_id": "natural_history",
+  "goal_id_inferred": false,
+  "interpretation": "No source is withdrawn; this is the recorded support.",
+  "withdrawn_source_ids_applied": [],
+  "withdrawn_source_ids_ignored": [],
+  "source_roles": {
+    "WEB:curesyngap1-request-nhs-data": [
+      "assessment_evidence",
+      "contact_route"
+    ],
+    "WEB:curesyngap1-prommis-blog": [
+      "contact_route"
+    ],
+    "DOI:10.1002/epi.70374": [
+      "contact_route"
+    ]
+  },
+  "asset_context": {
+    "description": "De-identified, standardized summaries of participating patients' medical records, including genetic and EEG results; the page states data for over 100 patients with a confirmed P/LP SYNGAP1 diagnosis.",
+    "documented_context": "Retrospective, record-derived data; not a prospective protocol. Patient count is as stated on the page, not independently checked.",
+    "unverified": [
+      "current patient count",
+      "eligibility of non-academic requesters",
+      "data fields relevant to the chosen outcomes"
+    ],
+    "owner_status": "Offered by CURE SYNGAP1 and Citizen Health per their page.",
+    "proposed_use": "Retrospective baseline data to inform which outcomes a prospective SYNGAP1 study should measure.",
+    "goal_ids": [
+      "natural_history"
+    ],
+    "target_disease_ids": [
+      "MONDO:0012960"
+    ],
+    "source_ids": [
+      "WEB:curesyngap1-request-nhs-data"
+    ],
+    "access_status": "Documented access route for academic researchers: Researcher Agreement with Citizen Health plus an IRB submission. Access for a patient organization without an academic partner is not stated."
+  },
+  "review_summary": {
+    "evidence_items": 2,
+    "pending": 0,
+    "source_checked": 2,
+    "note": "'source_checked' means a person checked a narrow factual assertion against the cited source. It is not clinical validation or permission to reuse an asset."
+  },
+  "bundle_origin": "curation_overlay",
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

@@ -1,0 +1,75 @@
+{
+  "note": "Demo mode answers a request only if its key is listed here. Regenerate with npm run capture-fixtures.",
+  "entries": [
+    {
+      "key": "GET /api/health",
+      "file": "health.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/search?limit=10&q=syngap1",
+      "file": "search-syngap1.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/search?limit=10&q=not-in-this-slice",
+      "file": "search-empty.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/diseases/MONDO%3A0012960/overview?goal=natural_history",
+      "file": "overview-syngap1.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/diseases/MONDO%3A0012812/overview?goal=natural_history",
+      "file": "overview-stxbp1.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/diseases/MONDO%3A0013388/overview?goal=natural_history",
+      "file": "overview-scn2a.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"framework-for-syngap1\",\"withdrawn_source_ids\":[]}",
+      "file": "assessment-syngap1.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"framework-for-syngap1\",\"withdrawn_source_ids\":[\"DOI:10.1002/epi.70374\"]}",
+      "file": "assessment-syngap1-withdrawn.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"framework-for-stxbp1\",\"withdrawn_source_ids\":[]}",
+      "file": "assessment-stxbp1.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"framework-for-scn2a\",\"withdrawn_source_ids\":[]}",
+      "file": "assessment-scn2a.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"framework-for-scn2a\",\"withdrawn_source_ids\":[\"DOI:10.1002/epi.70374\"]}",
+      "file": "assessment-scn2a-withdrawn.json",
+      "status": 200
+    },
+    {
+      "key": "POST /api/assessments/evaluate {\"assessment_id\":\"nope\",\"withdrawn_source_ids\":[]}",
+      "file": "error-unknown-assessment.json",
+      "status": 404
+    },
+    {
+      "key": "GET /api/graph?assessment_id=framework-for-syngap1&disease_id=MONDO%3A0012960&max_nodes=40",
+      "file": "graph-syngap1.json",
+      "status": 200
+    },
+    {
+      "key": "GET /api/sources/DOI%3A10.1002%2Fepi.70374",
+      "file": "source-anchor.json",
+      "status": 200
+    }
+  ]
+}

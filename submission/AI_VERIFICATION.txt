@@ -1,0 +1,138 @@
+RareBridge — actual AI verification
+Updated 4 October 2026
+
+MODEL AND SCOPE
+Provider: Anthropic. Model: claude-sonnet-4-6 (existing trained Claude Sonnet 4.6).
+No new knowledge-graph model was trained or fine-tuned. The model uses the local
+source-linked graph/assessment context; it does not replace deterministic checks.
+Generated hypotheses/extractions remain pending and are not auto-imported.
+
+The user reported organizer approval of Claude credits. Retain that approval;
+this document does not independently guarantee prize eligibility or claim a
+successful OpenAI generation. Provider credentials remain server-side and are
+not included here. The earlier Claude workspace-required error is resolved.
+
+CURRENT SOFTWARE CHECKS — PASSED
+129 AI tests; 53 API tests; 27 curation tests; 11 foundation checks; 115 frontend
+tests. Graph browser 16/16, product/pilot browser 16/16 and actual AI browser 9/9
+passed against the integrated local production app. Software and source-binding
+checks do not establish biomedical truth or clinically valid transferability.
+
+ACTUAL RESEARCH DISCOVERY — PASSED
+Artifact: submission/research-live-verification/discovery.json
+Summary: submission/research-live-verification/summary.json
+Generation mode in that API artifact: live
+Response ID: msg_011Cfh49xGBH8VVFyjyXgkEf
+Requested/returned model: claude-sonnet-4-6
+Accepted result: two leads, with recorded basis edge IDs and source IDs.
+One is an AI interpretation of a known route; the other is a proposed research
+hypothesis. Both keep review_status=pending and claim_origin=inferred. They
+suggest questions/partner checks, not a newly established biological connection,
+approved resource transfer or treatment claim.
+
+Earlier genuine discovery attempts timed out or failed output/state validation.
+They were not presented as successful results. The accepted final response above
+passed application-side structure/reference/scope checks; those guards cannot
+independently verify the medical meaning of every generated sentence.
+
+ACTUAL QUESTION ANSWERS — PASSED
+Artifacts:
+submission/research-live-verification/patient-answer.json
+submission/research-live-verification/withdrawn-answer.json
+
+Normal view:
+  Response ID msg_011Cfh1rWRSzWxtZXDVubs5m
+  Current verification generation_mode=cached, from genuine earlier generation.
+  Cites one canonical paper: DOI:10.1002/epi.70374.
+  Directs the organization to the recorded access and local-fit questions.
+
+Hidden-source view:
+  Response ID msg_011Cfh1s4aUc9pxA8HTnPcdA
+  Current verification generation_mode=cached, from genuine earlier generation.
+  No active source citation; evidence_state=insufficient_evidence.
+  Distinguishes two checks that changed supported -> unknown from three that were
+  already unknown, including the endpoint/treatment-responsiveness check.
+  Overall outcome remains needs_information. Hiding is a view test, not retraction.
+
+DOI:10.1002/epi.70374 and PMID:42446932 remain one paper. No withdrawn paper is
+cited as active evidence. A different reading mode, question, assessment or
+source state requires its matching request; old prose is invalidated.
+
+ACTUAL AI BROWSER — 9/9 PASSED
+Report: submission/ai-browser-verification/report.json
+Local production URL tested: http://127.0.0.1:18800
+Genuine saved responses were replayed and labeled cached. Their IDs match the
+accepted discovery/answer records above. These browser checks made no claim that
+a cached response was generated live during capture.
+
+Verified: active-source question answer; old prose removed on source hide; answer
+for current hidden state; reading-mode invalidation; current-state text brief;
+actual Chromium print-layout PDF; reset binding; two pending source-linked leads;
+full-registry scout prose hidden during a source-withdrawn assessment view.
+The scout reads the full registry, so its leads are unavailable in that hidden
+view; the assessment assistant still explains the exact current view.
+
+Artifacts:
+submission/ai-browser-verification/hidden-source-brief.txt
+submission/ai-browser-verification/hidden-source-brief.pdf
+The PDF is real headless Chromium output. A real operating-system print dialog
+and physical-phone interactions were not tested by this check.
+
+EARLIER EXTRACTION/EXPLANATION AND KEYLESS REPLAY — PASSED
+Earlier genuine source extraction produced one pending claim/preview edge.
+Normal and withdrawn SYNGAP1 explanations passed current-assessment binding:
+one distinct paper cited before hiding and none after hiding; two checks lost
+support while the outcome remained needs_information. Matching briefs accepted
+their grounded explanations/drafts. Three genuine responses were:
+  msg_011Cfg5QokV8YNSAn88MnL6p
+  msg_011Cfg62r3QBwnj8k5ZxZS6Z
+  msg_011Cfg651B8GdkVoWURFDNRo
+The final historical smoke modes were cached/live/live. A separate keyless smoke
+replayed all three as cached with identical response IDs. Rejected output was
+not accepted as runtime evidence or represented as genuine successful generation.
+
+Historical workspace artifacts are in rarebridge/ai/runs/live-smoke/ and
+rarebridge/ai/runs/cache-smoke/. Runtime caches/runs are excluded from the clean
+release archive. A fresh environment does not have these exact cache matches;
+use a configured provider or deliberately supplied matching genuine responses.
+Changed prompts, source catalogues, model/provider or assessment state invalidate
+earlier matches. Current accepted API/browser records above are included evidence.
+
+PUBLIC DEPLOYMENT BOUNDARY
+Public stable app: https://rarebridge-global-ai.vercel.app
+Anonymous HTML/JSON API health are verified; health reports all four capabilities.
+Earlier public Q&A returned 502 generation_invalid; rejected outputs were not
+accepted. After the binding fix/redeploy, fresh public API calls passed:
+  discovery: msg_011Cfh5wF8JVEqTdHCL6qaiX, live, two pending leads.
+  normal answer: msg_011Cfh5xmmaCp8qrbtzSmxxK, live.
+  withdrawn answer: msg_011Cfh5yCuAebdo9E2HiW4bU, live, no hidden-paper citation.
+Summary: submission/research-public-verification/summary.json.
+
+Actual public browser verification passed 9/9 without Vercel authentication and
+with zero page errors. Its fresh live response IDs are:
+  ask: msg_011Cfh6iifkxtdRfBL7PdrAJ
+  ask-withdrawn: msg_011Cfh6jLLcWCW3XSzPtdvb2
+  discover: msg_011Cfh6k3Zqw28nyCC4v6Zir
+Report: submission/ai-public-browser-verification/report.json.
+The public browser verifies eligible source citation, hidden-source/mode
+invalidation, two-check change, pending leads and actual current-state text/PDF.
+Different questions can legitimately have no supported/eligible source citation.
+
+Public SFARI excerpt extraction also passed with two pending/not-imported claims:
+submission/public-release-verification/extraction-sfari-public.json.
+Response ID: msg_011Cfh61sdsmg4XooVfsRQq8, live.
+The previously rejected /api/ai/explain hidden-source operation passed after the
+fix/redeploy. Response ID: msg_011Cfh6jb8MqcjRHc647Nn2z, live. All five recorded
+check statuses, exact next questions and zero hidden-paper citations were checked.
+The public release checker passed 11/11, including nondestructive canonical
+source hiding, all four assessments, unknown-disease failure, real export and
+an unchanged evidence registry after model requests. Report:
+submission/public-release-verification/explanation-retest/summary.json.
+All four AI operations therefore have accepted genuine public results. Manual
+prose review remains necessary: an unknown state can predate source hiding, and
+correct schema/status bindings do not prove every summary sentence is accurate.
+A capability boolean is not proof of a successful model operation. Local and
+public verification reports remain explicitly distinguished.
+
+No clinical validation, permissions approval or measured impact follows from
+these checks. No measured 10x result exists. New biological leads remain pending.

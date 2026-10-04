@@ -1,0 +1,109 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "assessment_id": "framework-for-syngap1",
+  "withdrawn_source_ids": [
+    "DOI:10.1002/epi.70374"
+  ],
+  "explanation": {
+    "generation_mode": "live",
+    "text": "This assessment was created to explore whether the STARR / ProMMiS natural-history framework could be used as the basis for planning a natural-history study in SYNGAP1-related disorder. The overall outcome is 'needs information,' meaning there are unresolved questions across every check that must be answered before the plan can move forward. Importantly, the one source that had been linked to this assessment — the publication associated with the proposed framework — has since been hidden from the current view. Because that source is no longer active, none of the checks have any reviewed evidence supporting them at this time. This does not mean the research was cancelled or retracted; it simply means that in the current state of this assessment, no source is available to draw on. All five checks are therefore recorded as 'unknown,' and four of them require follow-up. Expert review is needed before any decisions can be made. Suitability, permissions and feasibility still require expert review.\n\nThis check asks whether an existing natural-history framework is properly documented. In this assessment view, one source that previously provided support for this check has been hidden, leaving no reviewed active evidence. As a result, the check is recorded as 'unknown' — meaning documentation support is unavailable in this current view and would need to be confirmed through direct contact with the study team. A follow-up question is required: which protocol components can be shared with your group?\nThis check asks whether the framework has been reported for use specifically in people with SYNGAP1-related disorder — in other words, whether the studied population in the original work resembles the group you are planning to study. One source that previously contributed to this check has been hidden, leaving no reviewed active evidence. The check is recorded as 'unknown.' A follow-up question is required: do your proposed participants resemble the cohort that was studied in the original work? This question should be directed to a clinical investigator.\nThis check asks whether permissions, materials and implementation resources have been confirmed for your proposed study — for example, whether you can access the protocol, the assessment instruments, and the staffing or equipment needed to run it. No source was ever linked to this check, and none has been hidden; the gap reflects the fact that this practical information simply has not been gathered yet. The check is recorded as 'unknown.' A follow-up question is required: can your group access the protocol and instrument materials, and what permissions, staff and equipment would be required? This question should be directed to a study coordinator.\nThis check asks whether the framework has been assessed for fit with your group's specific circumstances — such as the age range of your participants, travel constraints families may face, and the study sites you intend to use. No source was ever linked to this check, and none has been hidden; this reflects an existing gap in gathered information. The check is recorded as 'unknown.' A follow-up question is required: which components of the framework would need to be adapted to your cohort and your local study capacity? This question should be directed to a clinical investigator.\nThis check asks whether the framework's measures have been shown to respond to treatment — a property that would be needed if you later wanted to use those measures as endpoints in a treatment trial. One source that previously contributed to this check has been hidden, leaving no reviewed active evidence. The check is recorded as 'unknown.' This check is marked as not required for the current planning goal, but if a treatment trial is considered in future, additional validation would need to be explored. The recorded open question is: what additional validation would be needed before selecting a treatment-trial endpoint?\n\nQuestions for the next discussion:\n- Which protocol components can be shared with our group? (study coordinator)\n- Do our proposed participants resemble the studied cohort? (clinical investigator)\n- Can we access the protocol and instrument materials, and what permissions, staff and equipment are required? (study coordinator)\n- Which components need adapting to our cohort and local study capacity? (clinical investigator)",
+    "cited_source_ids": [],
+    "model": "claude-sonnet-4-6",
+    "assessment_id": "framework-for-syngap1",
+    "draft_message": "Dear Study / Research Team,\n\nWe are a patient organization exploring whether the STARR / ProMMiS natural-history framework might serve as the basis for a natural-history study in SYNGAP1-related disorder. We are at an early planning stage and have several unresolved questions that we hope you may be able to help us address.\n\nSpecifically, we would like to ask:\n\n1. Which protocol components of the framework can be shared with our group, and what would that process involve?\n2. We would welcome your scientific perspective on whether the population studied in the original work resembles the participants we are considering — we are still defining the participant scope and would value your input on how our group compares to the studied cohort.\n3. Can our group access the protocol and instrument materials? What permissions, staffing or equipment would be required to implement this framework?\n4. Are there components of the framework that would likely need adapting to suit a different cohort or a different local study capacity?\n\nWe recognize that answering these questions will require input from your study coordinators and clinical investigators, and we are happy to arrange a conversation at a time that suits your team.\n\nPlease note that we are not assuming compatibility or readiness — suitability, permissions and feasibility still require expert review, and we are seeking your guidance as part of that process.\n\nThank you for considering our inquiry. We look forward to hearing from you.\n\nSincerely,\n[Your name and organization]",
+    "check_explanations": [
+      {
+        "check_id": "documented-framework",
+        "status": "unknown",
+        "explanation": "This check asks whether an existing natural-history framework is properly documented. In this assessment view, one source that previously provided support for this check has been hidden, leaving no reviewed active evidence. As a result, the check is recorded as 'unknown' — meaning documentation support is unavailable in this current view and would need to be confirmed through direct contact with the study team. A follow-up question is required: which protocol components can be shared with your group?",
+        "source_ids": []
+      },
+      {
+        "check_id": "target-observed",
+        "status": "unknown",
+        "explanation": "This check asks whether the framework has been reported for use specifically in people with SYNGAP1-related disorder — in other words, whether the studied population in the original work resembles the group you are planning to study. One source that previously contributed to this check has been hidden, leaving no reviewed active evidence. The check is recorded as 'unknown.' A follow-up question is required: do your proposed participants resemble the cohort that was studied in the original work? This question should be directed to a clinical investigator.",
+        "source_ids": []
+      },
+      {
+        "check_id": "implementation-access",
+        "status": "unknown",
+        "explanation": "This check asks whether permissions, materials and implementation resources have been confirmed for your proposed study — for example, whether you can access the protocol, the assessment instruments, and the staffing or equipment needed to run it. No source was ever linked to this check, and none has been hidden; the gap reflects the fact that this practical information simply has not been gathered yet. The check is recorded as 'unknown.' A follow-up question is required: can your group access the protocol and instrument materials, and what permissions, staff and equipment would be required? This question should be directed to a study coordinator.",
+        "source_ids": []
+      },
+      {
+        "check_id": "local-feasibility",
+        "status": "unknown",
+        "explanation": "This check asks whether the framework has been assessed for fit with your group's specific circumstances — such as the age range of your participants, travel constraints families may face, and the study sites you intend to use. No source was ever linked to this check, and none has been hidden; this reflects an existing gap in gathered information. The check is recorded as 'unknown.' A follow-up question is required: which components of the framework would need to be adapted to your cohort and your local study capacity? This question should be directed to a clinical investigator.",
+        "source_ids": []
+      },
+      {
+        "check_id": "trial-endpoint",
+        "status": "unknown",
+        "explanation": "This check asks whether the framework's measures have been shown to respond to treatment — a property that would be needed if you later wanted to use those measures as endpoints in a treatment trial. One source that previously contributed to this check has been hidden, leaving no reviewed active evidence. The check is recorded as 'unknown.' This check is marked as not required for the current planning goal, but if a treatment trial is considered in future, additional validation would need to be explored. The recorded open question is: what additional validation would be needed before selecting a treatment-trial endpoint?",
+        "source_ids": []
+      }
+    ],
+    "next_steps": [
+      {
+        "check_id": "documented-framework",
+        "question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "target-observed",
+        "question": "Do our proposed participants resemble the studied cohort?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      }
+    ],
+    "validation": {
+      "status": "passed",
+      "checks": [
+        "schema",
+        "status_alignment",
+        "citation_scope",
+        "required_followups"
+      ],
+      "meaning": "Structural and recorded-evidence consistency checks; not scientific or clinical validation."
+    },
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh6jb8MqcjRHc647Nn2z",
+      "request_id": "req_011Cfh6jammzmEBEKD3NM5CY",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 2263,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1176,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "df7dcd10e1118673482713257c9ac9a5544d93179058598f5a3e278d4da8e19d",
+      "generated_at": "2026-10-04T11:14:48.500545+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "cache_saved": true,
+      "assessment_sha256": "bccf1f4a896e5639ffc7b6eb80bafd241c5f4c8fc352ab7ad64bb2cf6ff28515",
+      "source_binding": "reviewed_active_sources_of_recorded_checks",
+      "status_binding": "exact_recorded_check_statuses",
+      "followup_binding": "exact_required_recorded_questions_and_roles"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

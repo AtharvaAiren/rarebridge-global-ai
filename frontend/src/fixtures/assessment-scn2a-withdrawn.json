@@ -1,0 +1,339 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "before": {
+    "assessment_id": "framework-for-scn2a",
+    "target_disease": {
+      "id": "MONDO:0013388",
+      "label": "SCN2A-related disorder"
+    },
+    "goal": "Plan a natural-history study using an existing assessment framework",
+    "asset": {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "label": "STARR / ProMMiS natural-history framework",
+      "type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "public_researcher_routes": [
+        {
+          "name": "Jillian L. McKee",
+          "url": "https://orcid.org/0000-0001-9724-0403"
+        },
+        {
+          "name": "Ingo Helbig",
+          "url": "https://doi.org/10.1002/epi.70374"
+        }
+      ],
+      "access_status": "Implementation permissions and resources not checked"
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "documented-framework",
+        "question": "Is an existing natural-history framework documented?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The methods describe STARR and ProMMiS protocols."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "target-observed",
+        "question": "Does this paper report use in SCN2A?",
+        "required": true,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "The reported cohorts are STXBP1 and SYNGAP1. This source does not establish SCN2A applicability."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "What pilot evidence would establish feasibility in the relevant SCN2A subgroup?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "implementation-access",
+        "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "local-feasibility",
+        "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+        "required": true,
+        "category": "implementation",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "trial-endpoint",
+        "question": "Has responsiveness to treatment been established by this paper?",
+        "required": false,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "Further longitudinal validation is discussed."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+        "contact_role": "outcome-measure researcher"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "target-observed",
+        "question": "What pilot evidence would establish feasibility in the relevant SCN2A subgroup?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "after": {
+    "assessment_id": "framework-for-scn2a",
+    "target_disease": {
+      "id": "MONDO:0013388",
+      "label": "SCN2A-related disorder"
+    },
+    "goal": "Plan a natural-history study using an existing assessment framework",
+    "asset": {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "label": "STARR / ProMMiS natural-history framework",
+      "type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "public_researcher_routes": [
+        {
+          "name": "Jillian L. McKee",
+          "url": "https://orcid.org/0000-0001-9724-0403"
+        },
+        {
+          "name": "Ingo Helbig",
+          "url": "https://doi.org/10.1002/epi.70374"
+        }
+      ],
+      "access_status": "Implementation permissions and resources not checked"
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "documented-framework",
+        "question": "Is an existing natural-history framework documented?",
+        "required": true,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The methods describe STARR and ProMMiS protocols."
+          }
+        ],
+        "next_question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "target-observed",
+        "question": "Does this paper report use in SCN2A?",
+        "required": true,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "The reported cohorts are STXBP1 and SYNGAP1. This source does not establish SCN2A applicability."
+          }
+        ],
+        "next_question": "What pilot evidence would establish feasibility in the relevant SCN2A subgroup?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "implementation-access",
+        "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "local-feasibility",
+        "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+        "required": true,
+        "category": "implementation",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "trial-endpoint",
+        "question": "Has responsiveness to treatment been established by this paper?",
+        "required": false,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "Further longitudinal validation is discussed."
+          }
+        ],
+        "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+        "contact_role": "outcome-measure researcher"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "documented-framework",
+        "question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "target-observed",
+        "question": "What pilot evidence would establish feasibility in the relevant SCN2A subgroup?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [
+      "DOI:10.1002/epi.70374"
+    ],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "changed_checks": [
+    {
+      "check_id": "documented-framework",
+      "before": "supported",
+      "after": "unknown",
+      "remaining_support": []
+    }
+  ],
+  "sources": {
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review."
+    }
+  },
+  "coverage": "This demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.",
+  "contacts": [
+    {
+      "id": "researcher:jillian-l.-mckee",
+      "label": "Jillian L. McKee",
+      "kind": "researcher",
+      "url": "https://orcid.org/0000-0001-9724-0403",
+      "role": "Published study investigator; current ownership/availability not established",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "source_checked",
+      "last_checked": null
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "label": "Ingo Helbig",
+      "kind": "researcher",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "role": "Published study investigator; current ownership/availability not established",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "source_checked",
+      "last_checked": null
+    }
+  ],
+  "explanation": {
+    "generation_mode": "none",
+    "text": null,
+    "cited_source_ids": [],
+    "model": null
+  },
+  "data_origin": "mock"
+}

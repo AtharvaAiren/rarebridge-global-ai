@@ -1,0 +1,109 @@
+Atharva + coding assistant — lead-lane implementation handoff
+
+IMPLEMENTED
+- Standard-library OpenAI Responses and Anthropic Messages clients with strict
+  extraction/explanation schemas, bounded inputs, async backend functions and
+  safe errors.
+- Known-identity resolution and canonical source aliases; literal source excerpt,
+  endpoint, status, citation and follow-up consistency validation.
+- Extraction response includes graph_preview with pending-only nodes/edges.
+  No automatic merge into the curated graph or promotion to source_checked.
+- Plain-language explanations, reviewable draft messages and genuine-response
+  cache bound to provider, model, prompt/schema and exact source/assessment state.
+- Deterministic collaboration brief adapter, JSON/text exports, withdrawn-source
+  handling and live/cached/none generation labels.
+- CLI doctor/extract/explain/brief/smoke commands; offline workspace checker.
+- Root README, setup template, wiring guide, video scripts and impact worksheet.
+
+MAIN FILES FOR INTEGRATION
+rarebridge/ai/service.py:
+  async extract_source(payload) -> shared extraction response + graph_preview
+  async explain_assessment(assessment, sources) -> Explanation + draft/provenance
+  capabilities() -> actual configuration/cache availability
+  AIServiceError -> status_code and to_dict() for an HTTP error response
+rarebridge/ai/brief.py:
+  build_collaboration_brief(assessment_response, explanation=None) -> brief JSON
+  Uses the current after result and contains text_export.
+rarebridge/ai/INTEGRATION.txt: exact backend wiring and CLI examples.
+
+VALIDATED OFFLINE
+99 AI-lane tests passed, including Anthropic transport, cross-provider cache
+isolation and current-assessment brief binding, plus the existing foundation's
+11 checks. Offline tests and genuine provider verification are recorded
+separately; neither establishes biomedical validity.
+Simulated provider output exists only in unit tests/temporary directories;
+it is never shipped as a genuine cache or runtime AI example. CLI brief exports
+for SYNGAP1, withdrawn SYNGAP1 and SCN2A are in rarebridge/ai/examples/ and explicitly
+deterministic. Graph import/source alias integrity passed the workspace checker.
+
+GENUINE PROVIDER VERIFICATION
+The user reported organizer approval to use Claude credits and added an Anthropic
+key locally. The active provider is anthropic with model claude-sonnet-4-6.
+The earlier workspace-required failure is resolved; the current configured
+workspace works. Genuine Claude extraction, SYNGAP1 explanation and withdrawn-
+source explanation passed. The final auto smoke used cached extraction, live
+SYNGAP1 explanation and a live withdrawn-source explanation. All three have
+actual Anthropic msg_ IDs in rarebridge/ai/runs/live-smoke/run-summary.json.
+The extraction produced one pending claim and one pending preview edge. Source
+withdrawal changed two checks, while before/after outcomes remained
+needs_information. The withdrawn publication is the canonical
+DOI:10.1002/epi.70374, including its PMID alias.
+Keyless genuine-cache verification also passed: all three modes were cached,
+the same three response IDs were preserved, current-state drafts passed checks,
+and citations changed from one canonical DOI to zero after withdrawal.
+See rarebridge/ai/runs/cache-smoke/run-summary.json and
+submission/AI_VERIFICATION.txt for the recorded evidence.
+Validation covers structure, source binding and recorded assessment consistency;
+the extracted claim still requires factual review and remains pending.
+This is user-reported authorization, not an independent eligibility guarantee.
+Earlier OpenAI requests reached its endpoint but failed with exhausted credits;
+they did not generate valid model output. Keep that billing failure distinct from
+a temporary rate limit. Only the selected provider's key is required; funding an
+OpenAI account is no longer the only route to complete AI verification.
+To repeat with the selected provider configured:
+  python3 -m rarebridge.ai smoke --mode live --output-dir rarebridge/ai/runs/live-smoke
+To repeat genuine cache replay:
+  python3 -m rarebridge.ai smoke --mode cache --output-dir rarebridge/ai/runs/cache-smoke
+Both outputs record generation modes, response IDs, pending claims, withdrawal
+effects and current-state briefs. A fresh live smoke performs three requests;
+the recorded completed auto run used matching genuine caches where available.
+Successful outputs are cached only after consistency checks pass. Claude response
+provenance uses provider=anthropic and a msg_ ID; OpenAI uses provider=openai and
+a resp_ ID. Provider/model/source/current-assessment identity binds the cache;
+neither provider's outputs can masquerade as the other's.
+
+FOR SRINATH
+The backend is imported and connected to the AI layer. 46 API tests passed.
+The bridge preserves validated drafts, provenance, current-state hashes and
+public-safe failure status codes. The local API is running at 127.0.0.1:8000.
+Frontend integration remains to be done; see rarebridge/api/INTEGRATION_NOTES.txt.
+
+FOR SAANVI
+The extraction response's graph_preview is ready for the pending import panel.
+Explanation baseline fields still match the shared contract; optional draft_message
+and provenance are additive. Brief composition is available to the backend/lead,
+while your client-side printable export remains the agreed frontend deliverable.
+Hide/reset source state must determine what is displayed/exported. Display cached
+and pending labels faithfully; do not put an API key in the browser.
+
+FOR DHRUV
+The supplied curation/evaluation package and Srinath's signed JSON are integrated.
+Missing review coverage was repaired with 36 pending pointers; all existing
+20 signatures and record fields were preserved. Source sign-off remains human.
+The builder now refuses signed-file overwrite. The engine audit reproduces its
+original pending draft in memory and passes 6/6 without altering current data.
+New extraction still previews pending evidence only.
+
+NEXT INTEGRATION GATE
+Receive the frontend, integrate the browser journey and verify export against the
+current assessment. API/overlay verification passed and is recorded in
+submission/INTEGRATION_VERIFICATION.json; full browser integration and the timing
+pilot remain pending. Preserve exact-input cache labels; adding the overlay
+extends the extraction identity catalogue, so old extraction caches may not
+match the new request. Freeze features before recording and use real pilot times.
+
+PACKAGE BOUNDARY
+lead-ai-handoff.zip contains our owned code/docs/config template and deterministic
+examples. It excludes .env, credentials, cache/runs, bytecode, source-notes and
+all teammate-owned folders. Apply it to the workspace containing the shared
+foundation; it is an integration package, not a standalone complete application.

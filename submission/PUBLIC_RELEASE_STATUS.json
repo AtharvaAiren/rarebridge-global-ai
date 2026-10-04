@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-10-04T11:20:30.397080+00:00",
+  "scope": "Aggregate of recorded public runtime, provenance, portable startup and produced-video checks. Not biomedical, permissions or impact validation.",
+  "public_demo_url": "https://rarebridge-global-ai.vercel.app",
+  "source_repository_url": "https://github.com/AtharvaAiren/rarebridge-global-ai",
+  "source_publication_status": "Public source push in progress; publication agent records the actual commit after push.",
+  "runtime_code_status": "Frozen with 129 AI and 53 API tests passed; final cloud redeploy of a prose-only prompt refinement is in progress.",
+  "software_tests": {
+    "frontend": 115,
+    "ai": 129,
+    "api": 53,
+    "curation": 27,
+    "foundation": 11,
+    "basis": "Completed checks reported by integration lanes; this aggregate does not rerun tests."
+  },
+  "browser_checks": {
+    "local_graph": {
+      "passed": 16,
+      "total": 16,
+      "report": "submission/GRAPH_BROWSER_VERIFICATION.json"
+    },
+    "local_product_pilot_controls": {
+      "passed": 16,
+      "total": 16,
+      "report": "submission/PRODUCT_BROWSER_VERIFICATION.json"
+    },
+    "local_ai": {
+      "passed": 9,
+      "total": 9,
+      "report": "submission/ai-browser-verification/report.json"
+    },
+    "public_ai": {
+      "passed": 9,
+      "total": 9,
+      "report": "submission/ai-public-browser-verification/report.json",
+      "checked_at": "2026-10-04T11:14:51.532Z",
+      "generation_mode": "live",
+      "browser_errors": []
+    }
+  },
+  "public_release_checks": {
+    "passed": 11,
+    "total": 11,
+    "report": "submission/public-release-verification/explanation-retest/summary.json",
+    "checked_at": "2026-10-04T11:14:17.911134+00:00",
+    "scope": "Public runtime, provenance and workflow checks; not biomedical or clinical validation."
+  },
+  "portable_startup": {
+    "passed": 8,
+    "total": 8,
+    "report": "submission/PORTABLE_STARTUP_VERIFICATION.json"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-6",
+    "existing_pretrained_model": true,
+    "new_training": false
+  },
+  "accepted_public_ai": [
+    {
+      "operation": "ask",
+      "mode": "live",
+      "response_id": "msg_011Cfh6iifkxtdRfBL7PdrAJ"
+    },
+    {
+      "operation": "ask-withdrawn",
+      "mode": "live",
+      "response_id": "msg_011Cfh6jLLcWCW3XSzPtdvb2"
+    },
+    {
+      "operation": "discover",
+      "mode": "live",
+      "response_id": "msg_011Cfh6k3Zqw28nyCC4v6Zir"
+    },
+    {
+      "operation": "extract",
+      "mode": "live",
+      "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
+      "claims_pending": 2,
+      "import_status": "not_imported"
+    },
+    {
+      "operation": "explain-withdrawn",
+      "mode": "live",
+      "response_id": "msg_011Cfh6jb8MqcjRHc647Nn2z",
+      "recorded_check_statuses": 5,
+      "cited_source_ids": []
+    }
+  ],
+  "curation": {
+    "review_rows": 58,
+    "preserved_human_signoffs": 20,
+    "pending_rows": 38,
+    "source_review_log_sha256": "c05383a5c9c05570c8ee80fa935a2369b5d4b0ce1e6f8616da7ddf0bacb15277",
+    "overlay_sha256": "d88faddae5e6bef762ffb29d2bfd97e5a0a7c0849bbaf3034192b0607dacaa0a",
+    "signed_records_rebuilt": false
+  },
+  "videos": [
+    {
+      "kind": "one-minute product walkthrough",
+      "path": "submission/walkthrough/RareBridge-60s-walkthrough.mp4",
+      "duration": "00:01:00.00",
+      "verification": "submission/walkthrough/VIDEO_VERIFICATION.json"
+    },
+    {
+      "kind": "team video",
+      "path": "submission/team-video/RareBridge-team-video.mp4",
+      "duration": "00:02:15.01",
+      "verification": "submission/team-video/VIDEO_VERIFICATION.json"
+    }
+  ],
+  "narration_disclosure": "macOS Samantha synthesized narration; accurate team credits, no impersonated voices or fabricated human faces.",
+  "impact": {
+    "human_timing_pilot_measured": false,
+    "measured_10x": false,
+    "milestone_acceleration_measured": false,
+    "pilot_tool_url": "https://rarebridge-global-ai.vercel.app/impact-pilot.html"
+  },
+  "remaining": [
+    "Confirm the last cloud deployment and any final recorded prose check.",
+    "Record actual published source commit and clean release archive.",
+    "Upload or provide accessible required videos, complete portal fields and preserve submission receipt.",
+    "Measure a quality-controlled manual/app pilot before reporting an empirical speed ratio."
+  ],
+  "claim_boundaries": [
+    "Generated biological leads/extractions stay pending and are not auto-imported.",
+    "Source/schema/status binding is not semantic medical truth.",
+    "Hiding the canonical framework source changes two checks; three were already unknown.",
+    "No approved resource reuse, dataset access, clinical benefit, new trained graph model or exclusive worldwide novelty is claimed."
+  ]
+}

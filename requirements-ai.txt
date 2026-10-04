@@ -1,0 +1,4 @@
+# Python 3.10+ standard library only.
+# The AI service calls the configured provider REST API directly:
+# OpenAI Responses or Anthropic Messages. No provider SDK is required.
+# Teammate backend/frontend dependencies are installed separately.

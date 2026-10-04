@@ -1,0 +1,75 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "assessment_id": "framework-for-syngap1",
+  "withdrawn_source_ids": [],
+  "answer": {
+    "text": "Two things still need answers before your natural-history study can move forward, and those gaps point to the best next questions for a researcher.\n\nFirst, talk to a study coordinator and ask: Can we access the protocol and instrument materials, and what permissions, staff and equipment are required? This covers whether your group can actually get and use the tools described in the published framework.\n\nSecond, talk to a clinical investigator and ask: Which components need adapting to our cohort and local study capacity? This checks whether the framework fits your participants' age range, travel situation and study sites.\n\nBoth of these are flagged as required gaps in this assessment. The published paper confirms that a framework exists and that SYNGAP1 was a studied condition, but it does not confirm that your group has the access or local fit needed to run the study. Suitability, permissions and feasibility require expert review.",
+    "cited_source_ids": [
+      "DOI:10.1002/epi.70374"
+    ],
+    "check_ids": [
+      "implementation-access",
+      "local-feasibility",
+      "documented-framework",
+      "target-observed"
+    ],
+    "followup_questions": [
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      }
+    ],
+    "evidence_state": "recorded_evidence",
+    "generation_mode": "cached",
+    "mode": "patient",
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "response_id": "msg_011Cfh1rWRSzWxtZXDVubs5m",
+    "sources": {
+      "DOI:10.1002/epi.70374": {
+        "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "aliases": [
+          "PMID:42446932"
+        ],
+        "published_on": "2026-07-14",
+        "source_kind": "human_observational_study",
+        "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review.",
+        "withdrawn_in_this_view": false
+      }
+    },
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh1rWRSzWxtZXDVubs5m",
+      "request_id": "req_011Cfh1rW4sK268gkynjDDtV",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 2033,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 337,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "b148dec932327d1b8e7ae314792bdce50f55766572aedac8b2991554cb62e89a",
+      "generated_at": "2026-10-04T10:10:30.106552+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "assessment_sha256": "688aa57006905e8e06d66a4a38f450bedc67cdd57c23763cb9083b39a12ae47e",
+      "context_sha256": "7ec694fc209762221ee14be721be407895ef12fe71172970d009938256ad9cfb"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

@@ -1,0 +1,140 @@
+CURRENT INTEGRATION UPDATE — 4 October 2026
+
+The separate signed atlas-overlay.json and source-review-log.json supplied by
+Srinath superseded the original unsigned archive data. The lead imported them
+and appended missing review pointers without rebuilding the live overlay.
+All 22 original log rows, including 20 human signatures, and every original
+node/edge/contact/asset/source/bundle field remain unchanged.
+
+Current counts: 15 nodes, 25 edges, 6 assets, 6 contacts, 2 assessment bundles,
+58 review-log rows. Of the rows, 20 retain Srinath's sign-off and 38 are pending,
+including 36 new source-specific pointers. They cover the previously unlogged
+21 edges, seven nodes and three contacts (28 IDs because contacts share node IDs).
+All 25 edges, 15 nodes and six contacts now have review-log coverage.
+New pointers are metadata-derived proposals for review, not source checks.
+No new source was read, no person was impersonated, and no new item was approved.
+
+Shared researcher/team node and contact IDs have joint review facets for entity
+identity, collaborator role and public route. Read all source-specific assertions
+under an ID before signing it; the existing CLI promotes that ID only when its
+log rows are signed. Public discovery routes are not confirmed resource ownership.
+Preprint version_of and the published citation remain distinct. Preprint checks
+do not establish that the published text was read; retain each version caveat.
+
+The two overlay assessments remain needs_information; local feasibility remains
+unknown because no feasibility evidence is recorded. 21 edges remain pending
+until a person checks their new source pointers. This is expected.
+
+SAFE COMMANDS (from repo root)
+  .venv/bin/python curation/sign_off.py --list
+  .venv/bin/python curation/sign_off.py --reviewer "Srinath" --ids <IDs actually checked>
+  .venv/bin/python curation/validate_overlay.py
+Signing now records the actual signing date. Unknown IDs fail before writing.
+Restart the API after actual sign-offs. No signing command was run against live
+data during integration; CLI regression signing used temporary test copies only.
+
+REPRODUCING A FRESH DRAFT
+build_overlay.py now refuses to overwrite targets containing any source_checked
+item. For draft generation, use a fresh directory:
+  .venv/bin/python curation/build_overlay.py --output-dir /tmp/rarebridge-fresh-draft
+Do not replace the live signed files with a fresh pending draft.
+The updated validator rejects missing logs and incomplete shared contact facets.
+
+VERIFIED
+27 curation tests, 46 API tests, 99 AI tests, 11 foundation checks passed.
+Engine audit: 6/6; its unsigned/after-signoff states are simulated in memory.
+Running localhost API checks confirmed withdrawal/reset and the reviewed shared
+route. See submission/INTEGRATION_VERIFICATION.json. Frontend and timing pilot
+remain pending; no speedup measurement was invented.
+
+The original v1 handover below is historical context. Its 22-log counts,
+all-pending statements and destructive regeneration instructions are superseded
+by the update above. Source reading notes and discrepancies remain applicable.
+
+==========================================================================
+ORIGINAL V1 HANDOVER
+
+RareBridge — evidence / assets / organizations lane (curation/ + evaluation/)
+Owner: Saanvi (the package files call this lane "Dhruv"; same lane).
+Built: 2026-10-04 with an AI coding assistant. Contract: rarebridge.handoff.v1
+
+STATUS IN ONE LINE
+Valid overlay with one complete route; EVERY record is review_status "pending"
+because an AI drafted it and no person has confirmed it yet.
+
+RUN (from repo root, Python 3.10+)
+  pip install -r curation/requirements.txt          # jsonschema only
+  python3 curation/build_overlay.py                 # regenerates both JSON files
+  python3 curation/validate_overlay.py              # schema + semantic rules -> VALID
+  python3 -m unittest curation/test_validate_overlay.py -v   # 9 rule tests
+  python3 evaluation/run_eval.py --engine-audit     # 6/6 rule-engine cases pass
+Schema path searched: handoffs/contracts/overlay.schema.json, contracts/overlay.schema.json
+(or pass --schema). Base data read from rarebridge/data/.
+
+FOR SRINATH (loading)
+  File: curation/atlas-overlay.json   (load after base graph + base bundles)
+  Counts: 15 nodes, 25 edges, 6 assets, 6 contacts, 2 assessment bundles,
+          22 review-log entries, 9 sources (2 papers-as-versions + 7 web pages)
+  New assessment IDs: framework-for-stxbp1, citizen-dataset-for-syngap1
+    -> STXBP1 search now has its own bundle; do not reuse framework-for-syngap1.
+  New node types: study, organization, researcher, study_team (plus asset, publication).
+  New relations: describes_study, studied_in, framework_used_by,
+    shares_published_study_framework_with (claim_origin "inferred"),
+    partners_on_study, coordinates_study, leads_study, corresponding_author_of,
+    study_site_for, method_used_in, dataset_covers_disease,
+    provides_access_route_to, used_as_comparison_data_in, platform_used_in.
+  Source DOI:10.1002/epi.70374 is copied verbatim from the base bundle, so the
+    registry sees one definition. The preprint is a separate source with
+    "version_of" pointing at it; claims cite the published ID, so hiding the
+    paper removes them (no double counting).
+  Contacts store public page URLs only, never personal email addresses.
+  disease_synonyms adds STXBP1-RD / SYNGAP1-RD spellings for search.
+
+THE DEMO ROUTE (all pending until signed off)
+  SYNGAP1 --shares_published_study_framework_with--> STXBP1
+    (inferred; explanation says shared METHOD, not shared biology/treatment)
+  -> STARR / ProMMiS framework (DOI:10.1002/epi.70374)
+  -> STXBP1 Foundation / CURE SYNGAP1 (partners) and CHOP ENDD team (coordinator)
+  -> Next questions from framework-for-stxbp1: protocol/instrument access,
+     licences, staff + 128-channel EEG needs, fit for our cohort.
+  Second useful route: CURE SYNGAP1 Citizen dataset -> needs an academic
+     partner with IRB? (requester-eligibility = unknown)
+
+CURRENT ENGINE OUTCOMES
+  As shipped (pending):  both bundles -> needs_source_review
+  After human sign-off:  both bundles -> needs_information
+    (framework, target and org-involvement supported; access, feasibility,
+     current enrollment, endpoint and requester eligibility stay unknown)
+
+HOW TO SIGN OFF (person only; ~20-30 min)
+  python3 curation/sign_off.py --list
+  Open each source at the listed location, compare with the claim, then:
+  python3 curation/sign_off.py --reviewer "Saanvi" --ids <claim_or_check_id> ...
+  python3 curation/validate_overlay.py
+  The validator rejects source_checked entries signed by an AI.
+  Note: checks were made against the medRxiv PREPRINT (published version not
+  read). Signing off means "the preprint says this"; keep that caveat.
+
+WHAT WAS CHECKED (by reading, 2026-10-04)
+  medRxiv preprint v1 full text (methods, results, discussion, tables, refs).
+  STXBP1 Foundation home + STARR pages; CURE SYNGAP1 ProMMiS blog + data-request
+  page. ENDD, Stanford, Global Genes pages via search snippets only.
+
+DISCREPANCIES FOUND (recorded, not resolved)
+  1. STARR sites: preprint lists 6 incl. Rush; foundation page lists 5, no Rush.
+  2. Study name spelling: ProMMiS (paper, CURE SYNGAP1) vs PRoMiSS (Stanford).
+  3. published_on 2026-07-14 is inherited from the base bundle; not verified by
+     us. A news aggregator dated an Epilepsia write-up 2026-07-19. Lead to confirm.
+  4. Enrollment counts (164 / 159) come from the preprint; published numbers
+     may differ.
+
+NOT DONE / GAPS
+  - Published Epilepsia text not read (paywall); preprint used instead.
+  - NCT06555965 reported by the foundation; registry record not machine-readable.
+  - STARR "continues through June 2028" news item seen as a headline only (HTTP 429).
+  - DisMech mouse model (PMID:10657302) and GEO GSE252400 NOT promoted: primary
+    sources not opened. They stay as pending base-graph assets.
+  - Simons Searchlight access terms not checked (asset is paper-reported only).
+  - ORCID link in the base SYNGAP1 fixture not verified by us.
+  - No SCN2A organization or asset added.
+  - No qualified scientific reviewer confirmed; evaluation is a source/rule audit.

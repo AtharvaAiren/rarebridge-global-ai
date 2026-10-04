@@ -1,0 +1,149 @@
+RareBridge — impact case and measurement worksheet
+
+CURRENT OBSERVED STATUS
+Public app: https://rarebridge-global-ai.vercel.app
+Timing tool: https://rarebridge-global-ai.vercel.app/impact-pilot.html
+The integrated app and genuine Claude workflow work; local graph/product/AI
+browser checks passed. Public discovery/Q&A and its 9/9 live browser journey are
+verified; public extraction and hidden-source explanation also passed. The public
+release checker passed 11/11 runtime/binding checks, without medical validation.
+The timing tool is functional but no human timing runs or
+measured 10x result have been supplied. Browser timer/control tests are not impact
+measurements. The fields below remain empty until actual quality-reviewed runs.
+
+TARGET MILESTONE
+Help a patient organization reach an expert-reviewed feasibility decision about
+adapting an existing natural-history framework or using relevant research data.
+This is one milestone on the route to treatment research. An editable brief is
+an intermediate artifact; faster writing alone does not prove a faster study,
+trial, treatment or cure.
+
+BASELINE PATH
+The organization searches publications and program pages, identifies relevant
+resources, separates documented use from gaps, checks access requirements,
+locates appropriate public collaborator routes, and drafts a sourced inquiry.
+Researchers must still check applicability, consent/access, implementation,
+measurement properties and the proposed cohort. Those reviews can dominate the
+time to the actual feasibility milestone.
+
+PROPOSED PATH
+RareBridge organizes that same source set into explained routes and use-specific
+checks. Sources remain inspectable; duplicate identifiers remain one paper.
+Unanswered checks become concrete questions with collaborator roles. A reviewed
+brief can make the first expert conversation more focused and reduce repeated
+discovery or requests for missing information. This is the proposed mechanism of
+benefit, to be measured rather than assumed.
+
+SMALL PILOT: OBSERVABLE INTERMEDIATE OUTCOME
+Task: prepare a first collaboration brief for a SYNGAP1 organization considering
+the published STARR/ProMMiS framework for a natural-history study.
+Use the same frozen source set and identical fictional local-cohort assumptions
+for both methods. Label the assumptions; do not invent real participants.
+Completion requires all of these:
+  - Correct target, goal, resource and scoped proposed use.
+  - Accurate supported/unknown checks, including access and local fit.
+  - Source URLs and no duplicated-paper evidence inflation.
+  - At least two concrete unanswered questions and responsible roles.
+  - A sourced public collaborator route and a reviewable draft message.
+  - No claim of approved reuse, established SCN2A fit or treatment benefit.
+
+Manual method: source pack/browser plus a blank text editor, no RareBridge.
+App method: the integrated app using the same pack, including its visible gaps.
+Start timing when the participant receives the task. Stop when the brief passes
+the completion checklist. Record active work and elapsed wall time separately.
+Both methods include source inspection and corrections. Record failures/omissions
+rather than silently excluding a slow or incomplete run.
+Prefer two participants with reversed order to reduce practice effects. If time
+allows only one participant, report a one-person pilot and the order limitation.
+Do not compare an expert's app use with a beginner's manual task as if controlled.
+Review briefs without knowing the method when practical. No patient data needed.
+
+RUN LOG — FILL WITH OBSERVED VALUES; EMPTY MEANS NOT MEASURED
+Date/time:
+Integrated code commit:
+Frozen source-set version/hash:
+Task and fictional local constraints:
+Participant identifier/domain familiarity:
+Method/order:
+Active minutes:
+Elapsed minutes:
+Checklist pass/fail:
+Incorrect assertions/missing checks:
+Corrections required:
+Brief/export file:
+Reviewer and notes:
+AI generation mode/model:
+
+SUMMARY — KEEP EMPTY UNTIL THE PILOT IS COMPLETE
+Number of participants/runs:
+Manual times:
+App times:
+Comparable successful-run ratio (manual time / app time):
+Quality differences:
+Known order/training limitations:
+Did a researcher review feasibility? yes/no:
+What milestone was actually observed:
+
+The measured ratio describes brief preparation only. A failed run cannot be used
+as a completed baseline. Report small sample size and observed range; this pilot
+does not establish statistically generalizable performance or clinical validity.
+
+THE 10X AMBITION: EXPLICIT ASSUMPTIONS
+The challenge asks for acceleration of a meaningful treatment-path milestone.
+Our ambition is a shorter route to a feasibility decision through reuse and
+better prepared collaboration. Use estimates only as scenarios, not findings.
+
+Let D = manual discovery/preparation time, R = partner response and expert-review
+time, F = follow-up/corrections time. Baseline milestone time is D + R + F.
+Let D_app, R_app and F_app denote the same components with RareBridge.
+Potential milestone acceleration = (D + R + F) / (D_app + R_app + F_app).
+Fill every component from observation or a named stakeholder estimate. If only
+D was measured, the milestone ratio remains unknown. If R is unchanged and
+dominates, a large preparation gain may produce only a small overall gain.
+Reusing an established framework could avoid some new design work, but estimate
+that only with investigator input; the hackathon does not validate it.
+
+If discovery/preparation includes follow-up and partner/expert review remains r,
+10x requires (D_manual + r) / (D_app + r) >= 10, or
+D_manual >= 10 * D_app + 9 * r. Purely illustrative, not observed: D_app=1 abstract
+unit and r=1 unit require D_manual>=19 units. These are hypothetical units, not
+claimed hours or actual impact evidence.
+
+SCENARIO WORKSHEET — ASSUMPTIONS, NOT MEASUREMENTS
+Baseline discovery/preparation D:
+Baseline response/review R:
+Baseline correction/follow-up F:
+Proposed discovery/preparation D_app:
+Proposed response/review R_app:
+Proposed correction/follow-up F_app:
+Estimate owner, basis and date for each component:
+Computed scenario ratio:
+What would have to be true to reach 10x:
+What could prevent that result:
+Next real-world validation step:
+
+DEFENSIBLE PITCH WORDING
+Before measurement: "We aim to shorten the route to an expert-reviewed decision
+by finding reusable resources and making unresolved checks actionable."
+After the pilot: "In [N] pilot runs on the same sources, brief preparation took
+[OBSERVED TIMES], with [QUALITY RESULT]. We have not measured study launch or
+treatment development time."
+After stakeholder estimates: "Under [EXPLICIT ASSUMPTIONS], the feasibility
+scenario suggests [RATIO]. We will test those assumptions with study partners."
+
+DIFFERENTIATION BOUNDARY
+Disease graphs, resource directories, partner networks and outcome-measure
+adaptation already exist. RareBridge's contribution is their integration into
+an inspectable proposed-use workflow: explain a candidate, assess recorded
+support, expose source dependencies, identify gaps, and prepare a sourced next
+action. The STXBP1/SYNGAP1 published link validates the workflow; it is not our
+discovery. Candidate suggestions and new extraction remain qualified/pending.
+
+SUBMISSION CHECK
+The user requires the real public HTTPS app, plus accessible source with setup,
+dataset reproduction/attribution, a team video and a separate one-minute product
+walkthrough. Use the final checklist in REMAINING_BEFORE_SUBMISSION.txt and the
+portal's actual fields/limits. Report software checks, source reviews and actual
+impact measurements separately. Genuine Claude has succeeded and its live/cache
+provenance is recorded; retain the user's organizer approval of Claude credits.
+Do not claim independent prize eligibility or a successful OpenAI generation.

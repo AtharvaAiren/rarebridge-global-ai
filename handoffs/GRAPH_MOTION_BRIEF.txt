@@ -1,0 +1,364 @@
+RareBridge animated graph: creative and technical handoff for Srinath's Claude
+
+YOUR ROLE AND AUTHORITY
+Act as a senior interaction designer, motion designer and frontend engineer.
+The teammate has selected a coding assistant with strong motion capabilities;
+use that capability to implement a distinctive, polished graph experience.
+Own the visual composition, animation system and implementation choices.
+Inspect the existing frontend first, choose a coherent direction and build it.
+Do not stop at a proposal, a static mockup or a default graph-library example.
+Make routine design decisions autonomously within the existing frontend scope.
+This brief concerns the coding assistant, not RareBridge's runtime AI provider:
+do not change the app's configured Claude model, credentials or AI API contract.
+
+WHAT IS FIXED / WHAT YOU CAN INVENT
+Fixed: actual API data/IDs, relationship meaning/direction, review states,
+source aliases/versions, current-assessment export, accessible controls and
+public deployment compatibility. The evidence/data sections below are precise.
+Creative freedom: canvas composition, node shapes, palette, typography, lighting,
+depth, camera choreography, easing, layout forces, reveal transitions and panel
+composition. Screen proportions, palette, file names and timings below are
+starting suggestions. Improve them when your design serves the journey better.
+Treat semantic correctness and visual ambition as simultaneous deliverables.
+
+OBJECTIVE
+Upgrade the existing frontend's graph into an animated, understandable atlas.
+Keep the current search, assessment and export journey working. The public
+submission must use a hosted API; do not hard-code localhost in production.
+Read this brief alongside handoffs/contracts/API_CONTRACT.txt and the current
+backend implementation. Old handoff owner names are historical: Srinath is now
+handling the frontend, Saanvi the evidence, Dhruv evaluation.
+
+THE EXPERIENCE
+When Maria searches SYNGAP1, the selected disease appears and its actual
+connections spread into place. A focused view shows related diseases, studies,
+the selected resource, a paper and public collaborators. The user can expand
+the biology, inspect a relationship, hide a source, see the resulting evidence
+gaps and prepare a collaboration brief. Node movement follows these actions.
+
+The memorable moment is evidence sensitivity: hide the anchor paper and the
+affected links dim while the assessment's changed checks become visible.
+Reset restores the displayed support. This is an inspection of source
+dependencies, not a simulated biological experiment or a retracted publication.
+
+CREATIVE TARGET
+Make the graph feel like a carefully designed scientific instrument that a
+family can use: spatial, tactile, alive and immediately understandable.
+Use motion to reveal structure, direct attention and explain changes. Give the
+scene depth through layering, focused light, occlusion-aware labels and camera
+movement. Aim for a compelling first five seconds and an equally clear minute
+of actual use. The essential visual hierarchy is the patient's disease, a
+specific research resource, the evidence behind it and the next collaborator.
+Treat the evidence-hide interaction as the signature scene of the product.
+
+Compose three connected moments:
+1. Discovery: a selected disease becomes the anchor; real neighbors emerge and
+   settle into a readable constellation. Clearly labeled entity groups appear.
+2. Understanding: selection focuses a connection, the route becomes legible,
+   and the inspector explains its sources and unanswered checks.
+3. Action: inspecting the resource leads naturally to an editable sourced brief.
+   Preserve the visual context while the user moves from map to next action.
+
+Keep the existing product identity where it works. You may redesign the graph
+page and its inspector/toolbar together for a coherent result. Preserve existing
+search, assessment and export functionality; avoid introducing a second app.
+
+1. SCREEN STRUCTURE
+Desktop:
+  Top: existing navigation, global search and natural-history study goal.
+  Graph toolbar: Focused / Explore, Fit view, Pause motion, Reset view, Legend.
+  Main: suggested canvas share 65-70%; inspector 330-380px at right. You may
+        improve this composition with an overlay inspector or staged panels.
+  Bottom: compact persistent journey controls: Connection / Resource / Evidence
+          / Collaboration brief. These are UI stages, not fabricated graph nodes.
+  Footer: real coverage, visible node count and pending/source-checked legend.
+
+Initial inspector: disease summary, the selected resource and open questions.
+Node selection: label, type, recorded review state, description if available,
+relevant sources and an action appropriate to that node.
+Edge selection: plain explanation, relationship, claim origin, review state,
+confidence label, source title/URL, source version and provenance.
+Resource selection: open the real assessment; button to prepare the brief.
+Contact selection: explain recorded role and open the public URL. Never label a
+paper author as confirmed resource owner unless the record actually says that.
+Mobile: graph above a collapsible inspector or bottom sheet; keep the same data
+and provide a list of nodes/relationships for keyboard and screen-reader use.
+
+2. GRAPH ORGANIZATION
+Two modes share one data source and one selection state.
+
+FOCUSED (default): target roughly 12-18 real nodes as available. Include selected
+disease, selected asset, assessment sources, a relevant recorded route and its
+study nodes, related disease and recorded collaborators/organizations. Preserve
+actual edge endpoints and IDs. A route requiring more nodes takes precedence
+over the target count. Do not silently drop intermediate claim nodes and draw
+an unsupported direct edge. A source-checked-only filter may yield a smaller or
+disconnected graph; show that honestly.
+
+EXPLORE: start with the backend's 40-node response. Let the user reveal biology,
+phenotypes and additional assets. Fetch max_nodes=80 for an optional expansion
+and display the returned coverage. The server's current limit is 150; the demo
+does not need to render every available node. Hidden nodes are not absent data.
+
+Suggested placement is a visual aid, not clustering evidence. You may choose
+a radial, spatial or other readable arrangement instead:
+  Selected disease: central/left anchor, fixed while browsing.
+  Genes, mechanism claims, cell types/processes and phenotypes: left/lower area.
+  Related diseases and study nodes: middle area.
+  Selected research resource: prominent right-center anchor.
+  Publications: upper area near the relationships they support.
+  Organizations, researchers and study teams: right/lower area near their studies.
+For a force-based layout, use soft position forces plus repulsion/collision;
+permit dragging. Do not claim
+that geometric distance means biological similarity or asset compatibility.
+
+CURRENT REAL RECORDS TO EXPECT
+  SYNGAP1 disease: MONDO:0012960
+  STXBP1 disease: MONDO:0012812
+  SCN2A disease: MONDO:0013388
+  Shared resource: DOI:10.1002/epi.70374#framework
+  Anchor publication: DOI:10.1002/epi.70374
+  Studies: study:prommis and study:starr
+  Organizations: org:cure-syngap1 and org:stxbp1-foundation
+  Researcher example: researcher:ingo-helbig
+  Team example: team:chop-endd-nhs
+These are identifiers for integration checks, not a replacement for API data.
+
+IMPORTANT ROUTE DISTINCTION
+The direct SYNGAP1/STXBP1 shares_published_study_framework_with navigation edge
+is source_checked AND claim_origin=inferred. The longer route through ProMMiS,
+framework and STARR contains pending edges. Do not promote the longer route
+because the direct edge was reviewed. A published shared framework does not
+establish shared treatment response or SCN2A applicability.
+
+3. VISUAL LANGUAGE
+Starting direction: dark navy canvas (#09111F), subtle spatial background and
+readable pale labels. You may propose a stronger coherent visual direction and
+implement it without waiting for aesthetic approval. Maintain text contrast.
+Use restrained depth/lighting throughout and stronger emphasis for the selected
+node and route. Every visual effect should preserve labels, shapes and status.
+Suggested entity palette; alternatives are welcome with a clear type legend:
+  Disease: blue circle, selected radius about 18-24 graph units.
+  Gene: violet small circle or capsule.
+  Mechanism/claim/process/cell type: coral small diamond; label actual type.
+  Phenotype: warm gold small circle.
+  Asset/study: turquoise rounded square/hexagon; selected asset is prominent.
+  Publication/source: pale document-shaped mark.
+  Organization/researcher/study team: rose mark plus type label.
+Never interpret these colors as safety, approval, disease severity or confidence.
+Node size reflects UI importance/type, not patient count or scientific certainty.
+
+Encode relationship origin separately from source review:
+  Recorded/imported + source_checked: solid muted pale line.
+  Recorded/imported + pending: short dashed line with pending indicator.
+  Inferred: dotted line regardless of source review, with an explicit Inferred
+            label in the inspector; a checked inferred edge keeps its checked
+            badge without becoming a proven biological relationship.
+  Selected link: thicker bright line, retain its dash pattern and status.
+  Source hidden for current inspection: subdued opacity with a visible label.
+Actual conflicting/refuted assessment checks use their actual status badges;
+do not invent contradictory research to obtain red graph edges.
+You may improve these visual encodings, provided origin and review remain
+separately inspectable, text labels remain available and checked inferred
+navigation never appears as proven biology.
+
+Label selected disease, selected resource and selected route nodes at all zoom
+levels. Show other labels on hover/selection or sufficiently close zoom. Use
+plain shortened display labels with full original label in the inspector.
+Separate parallel links with small curves; preserve each edge ID/check ID.
+
+4. MOTION CHOREOGRAPHY (STARTING STORYBOARD; DESIGN AND TUNE IT)
+Build a coordinated motion system: consistent easing, short spring responses,
+intentional pauses and interruptible transitions. Prefer fewer well-composed
+sequences over many unrelated effects. You own the final timing and technique.
+A. Search: fade selected disease in, then reveal adjacent nodes in 60-100ms
+   stagger groups. Run the settling simulation for roughly 1-2 seconds.
+B. Hover: highlight the node and adjacent edges; dim unrelated marks modestly.
+   Avoid re-running layout on hover.
+C. Click: pan/zoom to selection over 450-650ms and open the inspector. Freeze
+   selected node position while its evidence is being read.
+D. Drag: linked nodes react naturally; optionally retain the dragged position.
+E. Reveal a neighborhood: insert new nodes near their actual neighbor, then
+   reheat the simulation briefly. Existing nodes should move as little as possible.
+F. Trace selected route: sequentially highlight its nodes/edges. A small light
+   particle on a selected link is optional; retain source-to-target direction
+   and explain that this is connection tracing, not biological material flow.
+G. Hide source: fade only affected support markings over 250-400ms; keep node
+   positions unchanged. Show the changed checks from the API alongside them.
+H. Reset: restore current-view support markings and the original assessment;
+   do not scramble the layout.
+I. A gentle pulse around a selected node is optional. Keep node coordinates
+   stable after settling so labels and click targets remain usable.
+
+ENHANCED MOTION OPPORTUNITIES
+- A node birth sequence with outward spread and a subtle elastic settle.
+- Depth through soft shadow, selective glow and restrained perspective; consider
+  pointer parallax on background layers while keeping hit targets aligned.
+- A path-reveal sequence that opens the explanation as the final node settles.
+- Semantic zoom: close views reveal relationship labels and source details;
+  wide views emphasize communities/resources with readable context.
+- A coordinated source-hide sequence: paper treatment changes, referencing
+  links dim, changed checks receive an emphasis animation, questions become
+  salient. Animate only real returned changes, preserving unrelated context.
+- A resource-to-brief transition that retains the selected resource identity
+  and makes the next step feel connected to the map.
+Choose the subset you can complete and verify before handover. Extra effects
+must remain interruptible, respect reduced-motion and keep the public build
+responsive. Decorative particles are not additional graph nodes or evidence.
+
+For a 3D implementation, give users a deliberate default camera and a reliable
+Fit/Reset action. Pause automatic camera movement during inspection and after
+manual input. Keep node/edge labels legible, selected items visible and desktop
+and phone selection usable. True 3D is a design option, not a required feature.
+
+Pause motion means stop physics and decorative animation while keeping pan,
+zoom, selection and evidence controls operational. Respect reduced-motion:
+initial deterministic positions, no particles/pulsing/staggered reveal, instant
+camera movement. For react-force-graph, do not use pauseAnimation() for a
+user-facing pause if it also disables interaction; freeze physics using fixed
+coordinates/engine controls.
+
+5. DATA AND STATE: USE THE EXISTING BACKEND
+GET /api/search?q=...&limit=10
+GET /api/diseases/{encodeURIComponent(id)}/overview?goal=natural_history
+GET /api/graph?disease_id=...&assessment_id=...&max_nodes=40
+POST /api/assessments/evaluate
+  {assessment_id:'framework-for-syngap1',withdrawn_source_ids:[]}
+POST /api/ai/explain (optional)
+  {assessment_id:'framework-for-syngap1',withdrawn_source_ids:[]}
+
+Graph envelope: nodes, edges, sources, coverage, data_origin, schema_version.
+Adapt edges to the renderer's links property. Copy API records into mutable
+renderer objects; force libraries can replace source/target IDs with node
+objects and attach coordinates. Never feed mutated renderer objects back to
+assessment state, export or API calls. Keep a helper endpointId(x) accepting
+either a string or an object with id. Preserve sourceId/targetId separately.
+
+Graph UI state should include selectedNodeId, selectedEdgeId, selectedDiseaseId,
+assessmentId, canonical withdrawnSourceIds, viewMode, visibleNodeIds,
+highlightedEdgeIds, positionsById, motionEnabled and reducedMotion.
+Keep the untouched graph response and current assessment response separately.
+Memoize renderer data; do not rebuild all node objects on each hover/animation
+frame. Ignore stale async responses after rapid disease/assessment switching.
+
+ROUTE HIGHLIGHTING
+Use overview.related_diseases[].recorded_routes[].edge_ids and node_path.
+Check every highlighted edge/node is present in the graph response. Fetch a
+larger view if a route is incomplete; otherwise show that it is incomplete.
+The node_path is navigation order and may traverse an edge backwards. Preserve
+the edge's actual relationship direction; don't reverse a scientific assertion.
+The graph's candidate_shared_annotations edges are already marked inferred and
+pending. Use the returned explanation. Score is only a ranking aid: no percent
+confidence label and no conversion into thickness suggesting clinical certainty.
+
+SOURCE WITHDRAWAL
+The graph endpoint does not accept withdrawal state and is not recomputed by
+assessment evaluation. Implement a current-view overlay, not a rewritten graph.
+Canonicalize aliases from response.sources: PMID:42446932 and
+DOI:10.1002/epi.70374 identify one paper. A preprint version_of relationship is
+NOT an alias and must not be collapsed into that same source identity.
+Evaluate with the selected canonical withdrawnSourceIds. Use after.checks and
+changed_checks as authoritative for check support; use remaining_support when
+returned. Dim the hidden paper and mark referencing graph edges as affected,
+but do not declare an entire multi-source edge unsupported just because one
+source was hidden. For general graph relationships there is no recomputed
+source-support verdict: label the view change, retaining original review status.
+For evidence_for_check edges, check_id binds the affected check. With the anchor
+paper hidden, two checks lose support and the overall outcome can remain
+needs_information. Display that actual result. An assessment_scope link remains
+the selected scope even when its supporting checks change; it is not permission.
+Reset sends an empty withdrawal list. Source-checked history is not erased.
+Existing export must always use the current after assessment and withheld-source
+list. Any AI explanation/draft must be refreshed or clearly invalidated after
+withdrawal; never display an older explanation as the current assessment.
+
+6. IMPLEMENTATION STRUCTURE AND ENGINE CHOICE
+Inspect the existing graph, state, package.json and export implementation before
+choosing an engine. Reuse the current API client and assessment state.
+Suggested structure; adapt it to existing conventions rather than treating the
+file list as a mandatory framework:
+  components/graph/AtlasGraph.tsx        canvas/interaction orchestration
+  components/graph/GraphToolbar.tsx     view/fit/motion/legend controls
+  components/graph/GraphInspector.tsx   node/edge evidence and actions
+  components/graph/GraphLegend.tsx      type/origin/review meanings
+  components/graph/GraphList.tsx        accessible equivalent selection
+  components/graph/graphStyles.ts       visual mappings, label/edge renderers
+  components/graph/graphAdapter.ts      copied API -> renderer records
+  components/graph/useGraphLayout.ts    position cache and layout transitions
+  components/graph/useGraphSelection.ts actual route/neighborhood selections
+  Existing assessment store            single current withdrawal/export state
+
+You may choose the renderer that best achieves the design in the time available:
+- Existing graph engine: retain and customize it if it meets interaction needs.
+- Canvas/2D with depth styling: react-force-graph-2d plus d3-force is a practical
+  starting point for custom node drawing, stable physics and focused camera moves.
+- WebGL/3D: an option if it materially improves the experience and you can finish
+  picking, labels, source states, mobile behavior and production integration.
+- A custom SVG/Canvas renderer is acceptable if it provides the required graph
+  interactions and can be verified without delaying the handover.
+Choose once after inspection and avoid an engine rewrite late in delivery.
+Use an animation helper already present in the frontend when suitable. Add a
+new dependency only for a concrete need; keep the existing package manager,
+pin the tested resolution and return its lockfile.
+
+If using react-force-graph-2d, hooks to consider: nodeCanvasObject, nodePointerAreaPaint,
+linkLineDash, linkCurvature, linkDirectionalParticles, onNodeClick/onLinkClick,
+d3Force, d3ReheatSimulation, centerAt, zoom, zoomToFit, cooldownTime.
+Use ResizeObserver for canvas/container sizing. Verify custom draw and pointer
+hit areas match; custom edges need sufficiently generous click precision.
+Settle simulation separately from renderer redraw. Disable persistent redraw
+when there are no active animations; if a custom pulse is running after physics
+stops, the canvas needs redraw (autoPauseRedraw configuration). Clean up timers,
+observers and animation frames. Avoid React setState on every animation frame.
+Tooltips should render plain escaped text, never untrusted source HTML.
+
+PERFORMANCE AND FINISH
+Design for the actual 40-node response and optional 80-node expansion. Aim for
+smooth interaction on a normal laptop, ideally near 60fps; measure if tooling
+is available rather than claiming a frame rate you did not observe. On phones,
+lower decoration complexity before sacrificing inspection or readable labels.
+Limit persistent blur/bloom, particles and full-scene redraws. Keep selection
+responsive during transitions. Preserve positions across inspector changes and
+withdrawal. Rehearse search -> route -> source hide -> reset -> export quickly
+and deliberately to catch races, stuck animation and stale text.
+
+7. BUILD ORDER AND HANDOVER
+Begin with a brief implementation decision: chosen visual direction, renderer
+and the state you will reuse. Then build immediately; aesthetic approval is
+not a prerequisite. Prioritize one complete signature sequence early.
+First: real API graph + basic draw + node/edge inspector + working assessment
+and export. Second: stable positions, focus/explore and selected-route zoom.
+Third: evidence-hide/reset overlay and corresponding changed checks. Fourth:
+node reveal, settling motion and optional route trace. Fit/reduced-motion/list
+accessibility must keep essential interactions available throughout.
+Return the existing frontend/ with source, package.json, lockfile, build/run
+commands and concise HANDOVER.txt. Do not edit backend or signed curation data.
+Production API configuration uses same-origin /api or a public HTTPS API base;
+VITE_API_BASE_URL is public configuration and contains no provider credentials.
+
+Include a short interaction recording if capture tooling is available, otherwise
+screenshots of the opening graph, selected route and hidden-source state. State
+which behavior you actually verified, the build command/result, remaining issues
+and any measured performance. Leave no broken controls or silent fixture fallback
+in the delivery. List omitted enhancements explicitly so integration is clear.
+
+ACCEPTANCE
+- Real graph records and review/origin distinctions survive selection and zoom.
+- A node can be dragged and then read without endless coordinate jitter.
+- Edge click opens its actual sources/explanation, including pending/inferred.
+- The direct reviewed route is not confused with its longer pending route.
+- SCN2A shows candidate/unknown applicability, not approved reuse.
+- Hiding the canonical publication shows the two actual check changes; reset
+  restores them. Multi-source links and source-version distinctions remain honest.
+- Export and any AI explanation match the current assessment, not stale state.
+- Pause/reduced-motion keeps controls and keyboard/list inspection usable.
+- Production build succeeds; public deployment has no localhost API calls.
+- The first reveal, selection and source-hide sequence look intentional and
+  coordinated; selected labels remain readable during/after animation.
+- Rapid selection or source changes cannot leave stale inspector, AI prose or
+  export state. Essential controls work while motion is disabled.
+
+PRIMARY IMPLEMENTATION REFERENCES
+https://github.com/vasturiano/react-force-graph
+https://d3js.org/d3-force/position
+https://d3js.org/d3-force/collide

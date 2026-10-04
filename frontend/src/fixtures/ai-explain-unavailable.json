@@ -1,0 +1,12 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "error": {
+    "code": "model_unavailable",
+    "message": "The AI explanation service is not connected.",
+    "details": [
+      {
+        "msg": "AI service module not installed"
+      }
+    ]
+  }
+}

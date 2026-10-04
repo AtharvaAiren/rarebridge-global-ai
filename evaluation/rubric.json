@@ -1,0 +1,18 @@
+{
+  "schema_version": "rarebridge.eval.v1",
+  "scope": "Factual source/rule audit of a tiny pilot (9 cases). Not clinical validation; no qualified scientific reviewer is confirmed. Report denominators with every number.",
+  "criteria": [
+    {"id": "source_accuracy", "type": "auto+manual", "scale": "0-2",
+     "auto": "1 point if at least one expected source (alias-aware) is cited when must_cite_any is non-empty.",
+     "manual": "+1 if the cited location actually supports the sentence it is attached to."},
+    {"id": "unsupported_positive_assertions", "type": "auto", "scale": "count (lower is better)",
+     "auto": "Number of must_not_assert phrases found in the answer text, plus 1 if the outcome is in forbidden_outcomes."},
+    {"id": "required_gaps_detected", "type": "auto", "scale": "fraction",
+     "auto": "Share of required_gap_check_ids that appear in the answer's follow-up check IDs."},
+    {"id": "correct_scoping", "type": "auto", "scale": "0/1",
+     "auto": "1 if the outcome is in allowed_outcomes (cases with no allowed list are scored manually)."},
+    {"id": "next_action_usefulness", "type": "manual", "scale": "0-2",
+     "manual": "0 = no actionable next step; 1 = generic next step; 2 = specific question + named public contact route."}
+  ],
+  "comparison": "Same cases, same corpus: (a) retrieval-only baseline, (b) asset-check workflow. The lead runs both; answers are collected before scoring."
+}

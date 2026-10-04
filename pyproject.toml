@@ -1,0 +1,18 @@
+[project]
+name = "rarebridge"
+version = "0.2.0"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "fastapi==0.142.2",
+    "starlette==1.7.0",
+    "pydantic==2.13.5",
+    "uvicorn==0.54.0",
+    "jsonschema==4.26.0",
+]
+
+[tool.vercel]
+entrypoint = "app:app"
+
+[tool.vercel.fastapi.static]
+cdn = true
+exclude = true

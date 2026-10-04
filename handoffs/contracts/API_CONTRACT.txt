@@ -1,0 +1,134 @@
+RareBridge integration contract — rarebridge.handoff.v1
+
+This contract is the handoff target, not a claim that these endpoints already
+exist. Srinath implements them; Saanvi uses fixtures with the same response
+shapes. Dhruv supplies the optional curation overlay. Lead owns AI services.
+
+Default backend: http://127.0.0.1:8000
+Default frontend: http://localhost:5173
+API prefix: /api
+All JSON response envelopes include schema_version='rarebridge.handoff.v1'.
+IDs are opaque strings. URL-encode them with encodeURIComponent on the client.
+Only goal ID natural_history is required. Unknown goals receive HTTP 422.
+Empty search is HTTP 200 with items=[] and helpful coverage, not a server error.
+Unknown disease/asset/assessment/source IDs receive HTTP 404. Invalid withdrawal
+IDs receive HTTP 422. Errors have {schema_version,error:{code,message,details}}.
+details is [] if there are no field-specific details. Treat unexpected service
+errors as errors; do not silently replace a failed live response with a mock.
+
+1. GET /api/health
+Response: {schema_version,status:'ok',capabilities:{search:true,
+  assessment:true,graph:true,curation_overlay:false,ai_extraction:false,
+  ai_explanation:false},data_snapshot:string}
+Capabilities report actual availability. This is not a live-model claim.
+
+2. GET /api/search?q=syngap1&limit=10
+Response: {schema_version,query:string,items:[{id,type,label,matched_on:string,
+  disease_ids:[string]}],coverage:{disease_count:3,scope_note:string}}
+Minimum searchable types: disease, gene, phenotype, mechanism claim, organization
+when organization metadata is available. Mechanism claim item type is claim.
+Search names, synonyms and exact IDs; return relevant disease IDs for a gene,
+phenotype, mechanism or patient group so the UI can enter the disease journey.
+Clamp limit to 1..25. Do not promise fuzzy search for every medical vocabulary.
+
+3. GET /api/diseases/{disease_id}/overview?goal=natural_history
+Response: {schema_version,disease:{id,type:'disease',label,summary:string},
+  goal_id:'natural_history',related_diseases:[{id,label,reason:string,
+    basis_claim_ids:[string],source_ids:[string],review_status:string}],
+  opportunities:[{id:string,asset:{id,label,type,url,access_status},
+    assessment_id:string,reason:string,source_ids:[string],
+    candidate_score:number|null,ranking_method:string}],
+  organizations:[Contact],coverage:{disease_count,scope_note},data_origin:string}
+Contact: {id,label,kind:'organization'|'researcher'|'study_team',url:string,
+  role:string,source_ids:[string],review_status:'pending'|'source_checked',
+  last_checked:string|null}. A paper author is a potential contact, not
+automatically the current asset owner. last_checked is an ISO date or null.
+An organization missing from our slice is not globally nonexistent.
+If no bundle exists for an asset+target+goal, do not link to a different target's
+assessment. Return no assessed opportunity yet and explain the coverage gap.
+
+4. POST /api/assessments/evaluate
+Request: {assessment_id:string,withdrawn_source_ids:[string]}
+Response: {schema_version,before:Assessment,after:Assessment,
+  changed_checks:[{check_id,before:string,after:string,remaining_support:[string]}],
+  sources:{canonicalSourceId:Source},coverage:string,
+  contacts:[Contact],explanation:Explanation,data_origin:string}
+Always return both before and after, even with an empty withdrawal list.
+before/after use the exact result shape of rarebridge.assessment.assess().
+Use rarebridge.assessment.compare_withdrawal() for nonempty withdrawal lists.
+Sources include aliases and titles/URLs so the UI does not construct sources.
+Do not mutate source records. Reset withdrawal by requesting an empty list.
+The current fixture retains the overall needs_information outcome after hiding
+the anchor paper, but two checks lose support; the UI must show those changes.
+Source: {title,url,aliases:[string],published_on:string|null,source_kind:string,
+  note:string} (additional source metadata is allowed).
+Explanation: {generation_mode:'none'|'live'|'cached',text:string|null,
+  cited_source_ids:[string],model:string|null}.
+A deterministic check list is not an AI-generated explanation.
+
+5. GET /api/graph?disease_id={id}&assessment_id={id}&max_nodes=40
+Response: {schema_version,nodes:[GraphNode],edges:[GraphEdge],
+  sources:{canonicalSourceId:Source},coverage:{scope_note,truncated:boolean,
+  total_nodes:number,total_edges:number},data_origin:string}
+GraphNode uses the existing graph.json shape: {id,type,label,...attributes}.
+GraphEdge preserves {id,source,target,relation,provenance,review_status} and adds
+source_ids:[string],confidence_label:string and a short explanation:string.
+Optional source_ids may point to original publications or to the clearly named
+upstream DisMech record; cite what was actually checked. Imported relations remain
+pending; render confidence_label='Unassessed — source review pending'. It is a
+qualitative review label, not a probability. No unsupported therapeutic edge.
+Include the relevant disease, claim/biology, related disease, asset, source and
+contact nodes as available. Limit by explanatory relevance, not random slicing.
+Keep edge endpoints in nodes. Report graph truncation rather than implying that
+hidden nodes are absent. Return [] if no route is recorded, with a coverage note.
+
+6. GET /api/sources/{source_id}
+Response: {schema_version,canonical_id:string,source:Source}
+Resolve source aliases. Use a path converter supporting encoded ':' and '/'
+in DOI IDs (for example FastAPI {source_id:path}); a DOI contains a slash.
+
+AI CONNECTION — LEAD IMPLEMENTS, SRINATH WIRES ONLY
+Optional POST /api/ai/extract: {source_id,title,url,published_on,text}
+Optional POST /api/ai/explain: {assessment_id,withdrawn_source_ids:[]}
+When not connected, respond HTTP 503 with model_unavailable. Do not fabricate
+successful model responses. Read ai-capabilities dynamically; seed journey
+continues to function. Lead provides Python functions in rarebridge/ai/service.py:
+  async extract_source(payload:dict)->dict
+  async explain_assessment(assessment:dict,sources:dict)->dict
+Extraction output is checked against extraction.schema.json; every relationship
+is pending. Explanation uses the Explanation shape above. Let the lead perform
+source-to-graph import validation and any source-review promotion.
+
+ACTION EXPORT — SAANVI OWNS RENDERING
+Produce a client-side printable one-page brief from the SAME assessment response
+the user sees. Include target disease, goal, asset, supported/open checks,
+differences if recorded, numbered sources, public collaborator routes, question
+list, proposed next milestone and draft message. Use browser print/save PDF and
+plain-text download; a server-side PDF service is unnecessary for MVP.
+Include data coverage and generation mode. After withdrawal, export after and
+identify withheld sources. Copy and download work without emailing anyone.
+
+CURATION — DHRUV PRODUCES, SRINATH LOADS
+Optional file curation/atlas-overlay.json, validated by overlay.schema.json.
+Load original data first, then append curated nodes/edges and bundles. Conflict
+of existing IDs or incompatible source aliases must produce a clear data error,
+not silently overwrite a record. Dhruv uses new assessment IDs for new bundles.
+No overlay: use existing assessment files. No target bundle: show a useful gap.
+Reload after file changes/restart for MVP; no multi-user editing required.
+evaluation/heldout-cases.json is not included in app sources, prompts or search.
+
+CHECKS FOR INTEGRATION
+Unknown query -> helpful empty state.
+SYNGAP1 -> framework-for-syngap1 -> recorded support plus implementation gaps.
+SCN2A -> framework-for-scn2a -> additional unknown target evidence.
+Withdraw PMID:42446932 -> canonical DOI removed from all relevant checks.
+Reset -> original recorded support returns.
+DOI source path containing '/' -> fetch succeeds.
+Model unavailable -> real data exploration remains usable and clearly labelled.
+Print/export -> includes original source URLs, questions and actual current state.
+
+Official stack references:
+  https://vite.dev/guide/
+  https://fastapi.tiangolo.com/tutorial/
+Pin the versions successfully used. Vite's current guide requires Node 20.19+
+or 22.12+ (templates may require more); check runtime before setup.

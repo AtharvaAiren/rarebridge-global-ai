@@ -1,0 +1,54 @@
+RareBridge: current frontend and motion handoff for Srinath's coding assistant
+
+The integrated app is already implemented. Continue within frontend/; inspect
+its current files before editing. The supplied screenshot is a terminal status
+report, not a new product layout to reproduce.
+
+Actual design inputs
+- frontend/src/styles/token.css: the supplied token file, preserved unchanged.
+- frontend/src/assets/brand/wordmark-light.png and wordmark-dark.png.
+- frontend/public/favicon.png and apple-touch-icon.png.
+- frontend/src/styles/graph.css, product.css, research.css: current refinements.
+- frontend/screenshots/integrated-* show checked current behavior.
+Use the navy/gold identity, Lexend/Source Serif 4 and existing duration/easing
+tokens. Keep custom SVG/d3-force motion and the app's typed API client.
+
+Working interaction system
+The selected disease births a focused constellation. Paths trace actual edges;
+pan/zoom, dragging, pause, reduced motion and list inspection work. Hiding one
+paper fades source dependencies while preserving positions. Two actual checks
+change, and the overall result can stay unchanged. Switching to the Citizen
+dataset selects that dataset's anchor and clears the previous route highlight.
+
+The app now has Patient / simple and Doctor / expert reading modes, settings,
+public research contacts, account/profile previews and an appointment preview.
+Local profile storage is not authenticated login. Public research contact routes
+are not a live clinical booking service. Keep these labels explicit.
+
+Research AI additions
+POST /api/ai/discover generates pending, inferred research hypotheses using the
+configured pretrained Claude model and registry sources. Known routes stay
+labeled known; new proposals need review and do not merge into the graph.
+POST /api/ai/ask answers the selected assessment and hidden-source state in
+patient/expert language. The evidence panel also supports the original grounded
+explanation and public-excerpt extraction as a pending preview.
+Invalidate prose after assessment, mode or source changes. The trained model
+does not replace authoritative check outcomes or provide a clinical percentage.
+
+Polish priorities, if additional time is available
+1. Improve coordinated selection/inspector and source-hide emphasis using existing
+   tokens; keep movement interruptible and preserve every scientific status.
+2. Maintain clear simple-mode copy, legible node labels and a short next action.
+3. Check narrow 320px screens, large-text settings and keyboard access after edits.
+4. Keep export current, use real API records, and return package-lock.json plus
+   the successful build command. Avoid an engine rewrite during final integration.
+
+Public hosting
+Production uses same-origin /api and the root FastAPI/Vercel entrypoint. Do not
+insert localhost URLs or provider credentials into frontend configuration.
+No UI placeholder may pretend to send an inquiry, authenticate or book a doctor.
+The timing page /impact-pilot.html records actual attempts; no 10x result exists
+until comparable real runs pass the review checklist.
+
+Read handoffs/GRAPH_MOTION_BRIEF.txt for detailed semantic/motion acceptance.
+Read README.txt and submission/VERCEL_DEPLOYMENT.txt for current setup/deployment.

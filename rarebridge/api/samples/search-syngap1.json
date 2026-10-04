@@ -1,0 +1,113 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "query": "syngap1",
+  "items": [
+    {
+      "id": "MONDO:0012960",
+      "type": "disease",
+      "label": "SYNGAP1-Related Developmental and Epileptic Encephalopathy",
+      "matched_on": "name",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1-Related Developmental and Epileptic Encephalopathy"
+    },
+    {
+      "id": "hgnc:11497",
+      "type": "gene",
+      "label": "SYNGAP1",
+      "matched_on": "gene symbol",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1"
+    },
+    {
+      "id": "org:cure-syngap1",
+      "type": "organization",
+      "label": "CURE SYNGAP1",
+      "matched_on": "organization name",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "CURE SYNGAP1"
+    },
+    {
+      "id": "study:prommis",
+      "type": "study",
+      "label": "ProMMiS natural history study (SYNGAP1-RD)",
+      "matched_on": "study name",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "ProMMiS natural history study (SYNGAP1-RD)"
+    },
+    {
+      "id": "asset:curesyngap1-citizen-nhs-dataset",
+      "type": "asset",
+      "label": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)",
+      "matched_on": "asset name",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1 retrospective medical-record dataset (Citizen Health, via CURE SYNGAP1)"
+    },
+    {
+      "id": "asset:simons-searchlight-prom-data",
+      "type": "asset",
+      "label": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)",
+      "matched_on": "asset name",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "matched_text": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)"
+    },
+    {
+      "id": "asset:e375ed4859f211c50386",
+      "type": "asset",
+      "label": "Epigenetic Modulation to perturb the SYNGAP1 Intellectual Disability (ID) that ameliorates synaptic and behavioural deficits",
+      "matched_on": "asset name",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "Epigenetic Modulation to perturb the SYNGAP1 Intellectual Disability (ID) that ameliorates synaptic and behavioural deficits"
+    },
+    {
+      "id": "claim:e54d6427d01535332295",
+      "type": "claim",
+      "label": "SYNGAP1 Haploinsufficiency",
+      "matched_on": "mechanism claim",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1 Haploinsufficiency"
+    },
+    {
+      "id": "claim:043ed760355e9aebde50",
+      "type": "claim",
+      "label": "SYNGAP1 Haploinsufficiency → Reduced SynGAP at the Excitatory Postsynaptic Density",
+      "matched_on": "mechanism claim",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1 Haploinsufficiency → Reduced SynGAP at the Excitatory Postsynaptic Density"
+    },
+    {
+      "id": "PMID:26912996",
+      "type": "publication",
+      "label": "SYNGAP1: Mind the Gap.",
+      "matched_on": "title",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "matched_text": "SYNGAP1: Mind the Gap."
+    }
+  ],
+  "coverage": {
+    "disease_count": 3,
+    "scope_note": "Names, synonyms and IDs in a 3-disease slice (STXBP1, SYNGAP1, SCN2A; pinned DisMech snapshot plus curated overlay). Not a literature search; no match here does not mean nothing exists."
+  },
+  "total_matches": 16,
+  "limit": 10
+}

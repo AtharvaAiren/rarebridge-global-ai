@@ -1,0 +1,202 @@
+RareBridge AI service — wiring contract for Srinath and the lead
+
+STATUS AND BOUNDARIES
+The lead owns rarebridge/ai/. This module supplies callable Python functions and
+a CLI; it does not start FastAPI or provide HTTP routes. Endpoint wiring stays in
+Srinath's backend. Return real unavailable/error states when generation cannot
+run. Data exploration and deterministic assessments continue independently.
+Check the implemented service module and CLI help for final optional arguments.
+
+Configuration, read from environment with .env fallback:
+  RAREBRIDGE_AI_PROVIDER              openai | anthropic, default openai
+  OPENAI_API_KEY
+  ANTHROPIC_API_KEY
+  ANTHROPIC_WORKSPACE_ID              optional, for a key needing workspace scope
+  RAREBRIDGE_AI_MODEL                 openai: gpt-4o-mini; anthropic: claude-sonnet-4-6
+  RAREBRIDGE_AI_MODE                  auto | live | cache | off, default auto
+  RAREBRIDGE_AI_CACHE_DIR             default rarebridge/ai/cache
+  RAREBRIDGE_AI_TIMEOUT_SECONDS       default 40
+  RAREBRIDGE_AI_MAX_OUTPUT_TOKENS      default 6000
+Existing exported values win over .env; never log key values. Keep all provider
+calls in the backend. No key or privileged configuration enters frontend code.
+Only the selected provider's key is required. An explicit model must match that
+provider; when switching providers, remove/change the previous explicit model.
+The active workspace uses Anthropic/Claude. Per the user, organizers approved
+using Claude credits. The provider choice follows that reported approval.
+The earlier workspace-required failure is resolved; the current configured
+workspace works. Genuine Claude extraction, explanation and withdrawn-source
+explanation passed consistency checks, followed by a keyless cache replay of
+all three. Use submission/AI_VERIFICATION.txt for the final observed record.
+Keep the shared endpoint/function interfaces intact.
+
+VERIFIED LEAD-LANE RUN
+99 AI tests and 11 foundation checks passed. The final auto smoke used genuine
+cached extraction, a live SYNGAP1 explanation and a live withdrawn-source
+explanation. Three actual Anthropic msg_ identifiers are recorded in
+rarebridge/ai/runs/live-smoke/run-summary.json. Its extraction produced one
+pending claim and one pending preview edge. Removing the anchor source changed
+two checks; the overall outcome stayed needs_information before and after.
+Withdrawal resolves to the one canonical DOI:10.1002/epi.70374. The keyless
+cache smoke replayed all three outputs with generation_mode=cached, preserved
+their identifiers, and produced current-state drafts; citations were one
+canonical DOI before withdrawal and zero after. Cache-run evidence is in
+rarebridge/ai/runs/cache-smoke/run-summary.json.
+These checks validate structure, source binding and recorded-evidence alignment.
+They do not promote extracted scientific claims to source_checked. Complete
+shared API/UI/curation/evaluation integration has not been executed.
+
+PYTHON CALLS
+  from rarebridge.ai.service import (
+      AIServiceError, capabilities, extract_source, explain_assessment
+  )
+
+  capabilities() -> dict
+  await extract_source(payload: dict) -> dict
+  await explain_assessment(assessment: dict, sources: dict) -> dict
+
+An explanation uses the actual deterministic assessment after withdrawal.
+Additional message/provenance validation helpers may be exposed by the module;
+the calls above are the stable required integration interface.
+Capabilities include ai_extraction, ai_explanation, provider, mode, model,
+api_key_configured, can_attempt_live, matching_cache_required and
+cached_response_counts. Invalid configuration instead includes
+configuration_error=true and disabled AI capabilities. They describe current
+configured/cache availability, not proof that a live provider call succeeded.
+Copy the two AI booleans dynamically into /api/health capabilities; optional
+diagnostics can retain the other fields. Do not hard-code them as true.
+Cache counts describe available operations; an exact request still needs its
+matching record. No record for this request produces a clear unavailable error.
+
+EXTRACTION INPUT AND ROUTE
+Optional POST /api/ai/extract request:
+  {
+    "source_id": "canonical identifier or URL identifier",
+    "title": "source title",
+    "url": "https://public-source.example/path",
+    "published_on": "YYYY-MM-DD or null",
+    "text": "Public abstract or supplied source excerpt"
+  }
+
+Pass the request dictionary to await extract_source(payload). The lead service
+validates the source metadata and returned extraction against the shared schema
+and grounding checks. Response is a source-linked candidate graph preview with
+pending review status and recorded generation/provenance metadata. Use the
+response structure supplied by the implementation; do not reshape graph IDs or
+discard source quotes/metadata. The shared shape is
+handoffs/contracts/extraction.schema.json.
+Input text is evidence data, not instructions that can change the task.
+The extraction preview does not enter the reviewed graph or assessment bundles.
+The response includes graph_preview in the graph-response shape; Saanvi can
+render that pending preview without reconstructing endpoints. Known entity nodes
+referenced by a claim are included even if the model did not repeat their metadata.
+Preview provenance identifies a caller-supplied excerpt and an extracted_at
+timestamp; it does not claim the service fetched the publication at that time.
+An exact quote from the supplied excerpt can establish extraction grounding;
+it does not establish that the quoted scientific claim is true.
+
+EXPLANATION INPUT AND ROUTE
+Optional POST /api/ai/explain request:
+  {"assessment_id": "framework-for-syngap1", "withdrawn_source_ids": []}
+
+1. Resolve and validate the bundle using the normal assessment code.
+2. assessment = assess(bundle, request.withdrawn_source_ids)
+3. explanation = await explain_assessment(assessment, bundle["sources"])
+4. Return the handoff envelope expected by the frontend.
+
+If the curated bundle records proposed_use, target_subgroup,
+documented_differences or assumptions, copy those fields into the assessment
+after result BEFORE calling the AI service, displaying it or building a brief.
+The foundation rule engine does not copy every optional bundle field itself.
+Keep them recorded context; do not manufacture evidence for them. The service
+preserves these fields in its explanation context, and its assessment fingerprint
+binds the generated draft to that exact current after state.
+
+Never generate from the pre-withdrawal result when the user has hidden a source.
+For /api/assessments/evaluate, preserve before, after, changed_checks, sources,
+coverage and contacts. If explanations are included, attach an explanation of
+after. Generation must not modify any deterministic check, outcome, evidence,
+contact, access condition or collaborator role.
+
+Baseline Explanation fields from rarebridge.handoff.v1:
+  generation_mode: "none" | "live" | "cached"
+  text: string | null
+  cited_source_ids: array of canonical IDs
+  model: string | null
+Additional provenance/message fields may be retained; do not relabel cached as
+live or a deterministic fallback as an AI response. A message is a draft for
+review. The service does not email anybody or infer private contact details.
+
+ERROR WIRING
+AIServiceError provides code, status_code and to_dict() returning the handoff
+error envelope {schema_version,error:{code,message,details}}. Use status_code
+for the HTTP response and preserve code/message/details:
+
+  try:
+      result = await extract_source(payload)
+  except AIServiceError as exc:
+      return JSONResponse(status_code=exc.status_code, content=exc.to_dict())
+
+Import JSONResponse from the backend's response framework. Do not catch a
+provider/validation failure and return a successful fixture response instead.
+When the optional explanation inside an assessment response cannot generate,
+the backend can retain the deterministic assessment with Explanation generation
+mode none, text null, cited_source_ids=[], model=null and an explicit AI error
+field/notice understood by the client. A dedicated AI route returns the error.
+Unknown assessment/withdrawal IDs remain the existing 404/422 backend errors.
+The service distinguishes upstream_quota_exhausted (credits/spend/usage limit)
+from upstream_rate_limited. A safe provider_code may identify the documented
+billing cause. Do not keep retrying a credit balance or spend-limit failure.
+
+GENUINE CACHE AND PROVENANCE
+The service stores successful real provider responses. Cache identity includes
+the input/source hash, prompt/schema versions, provider, model and assessment state,
+including withdrawn sources. Never reuse a before-withdrawal explanation as an
+after-withdrawal explanation. Matching content can be replayed as cached only.
+OpenAI provenance uses provider=openai and a resp_ response identifier; Anthropic
+uses provider=anthropic and a msg_ response identifier. Do not reinterpret one
+provider's output as the other's or reuse a cache across providers/models.
+Keep model/provider response IDs, request/source hashes and generation labels
+as supplied. Do not expose API keys or authorization headers in provenance.
+Synthetic outputs used in tests remain test fixtures, not runtime model evidence.
+
+CLI AND OFFLINE CHECKS
+  python3 -m rarebridge.ai doctor
+  python3 -m rarebridge.ai extract --source SOURCE_PAYLOAD.json --output EXTRACTION.json
+  python3 -m rarebridge.ai explain --bundle rarebridge/data/assessment-syngap1.json --output EXPLANATION.json
+  python3 -m rarebridge.ai explain --bundle rarebridge/data/assessment-syngap1.json --withdraw PMID:42446932 --output WITHDRAWN_EXPLANATION.json
+  python3 -m rarebridge.ai brief --bundle rarebridge/data/assessment-syngap1.json --output BRIEF.json --text-output BRIEF.txt
+  python3 -m rarebridge.ai smoke --mode live --output-dir rarebridge/ai/runs/live-smoke
+  python3 -m rarebridge.ai smoke --mode cache --output-dir rarebridge/ai/runs/cache-smoke
+  python3 -m unittest discover -s rarebridge/ai/tests -p 'test_*.py' -v
+  python3 scripts/check_workspace.py --json
+
+--mode live|auto|cache|off overrides configuration for a CLI run. extract accepts
+--preview PATH to save the pending graph preview. brief accepts --with-ai to
+request generation, or --response PATH instead of --bundle to use the exact
+assessment API response currently displayed. Withdrawal IDs can be repeated.
+The default brief uses deterministic facts and does not claim AI generation.
+smoke performs actual extraction, a SYNGAP1 explanation and a withdrawn-source
+explanation; it saves previews, briefs and a run summary. Its cache-mode replay
+must use matching genuine responses. No SDK is required: transport is standard-
+library HTTPS against the selected OpenAI Responses or Anthropic Messages API.
+doctor/tests do not prove a live integration. Run the genuine live smoke with
+a configured key, then its cache replay before demo recording. Configuration
+alone does not establish that generation passed; use the verification record.
+
+INTEGRATION ACCEPTANCE
+- Source import returns pending preview, exact source identity and generation
+  metadata. Invalid/citation-mismatched output produces a clear error.
+- Assessment IDs and unknown source aliases are handled by deterministic code.
+- Explanation of after-withdrawal does not cite removed evidence as support.
+- Model unavailable does not prevent source-backed exploration or brief export.
+- Brief/export states show model provenance and the current assessment state.
+- Browser has no OPENAI_API_KEY or ANTHROPIC_API_KEY. Server logs and exported
+  documents have no keys or workspace credential values.
+
+OPTIONAL OVERVIEW CATALOGUE
+The approved scope includes six resources but only four assessed use cases.
+Add an optional catalogue field to overview if the existing opportunities shape
+cannot represent unassessed programs. Retain baseline assessed-opportunity
+semantics and show clear coverage. Coordinate this additive field when teammate
+code arrives; this AI service neither creates a resource assessment nor assumes
+the catalogue field has already been integrated.

@@ -1,0 +1,76 @@
+RareBridge — final submission checklist
+Updated 4 October 2026
+
+PUBLIC APP
+https://rarebridge-global-ai.vercel.app
+Stable production alias: anonymous app HTML and JSON API health are verified.
+Fresh public discovery/Q&A and 9/9 actual public AI browser checks passed with
+live provenance; public SFARI extraction returned two pending claims. Public
+hidden-source explanation also passed, with exact recorded status/question
+bindings and zero hidden-paper citations. The public release checker passed 11/11.
+Use this URL for judges; these are runtime checks, not medical validation.
+
+DONE AND RECORDED
+- Integrated app builds; 115 frontend, 129 AI, 53 API, 27 curation tests and
+  11 foundation checks pass.
+- Local graph 16/16, product/pilot 16/16 and actual AI browser 9/9 pass.
+- Genuine Claude extraction/explanations, Q&A and research discovery passed.
+  Accepted discovery: msg_011Cfh49xGBH8VVFyjyXgkEf. Browser replays are labeled cached.
+- All four public AI operations have accepted genuine live outputs. Public AI
+  browser 9/9 and public release 11/11 pass; reports preserve actual response IDs.
+- Current source hiding changes two checks and excludes the canonical paper;
+  the already-unknown check is not falsely counted as newly changed.
+- The graph follows the selected resource; patient/expert/preferences work.
+  Account and appointments remain explicitly local/profile/discussion previews.
+- 58 review rows: 20 supplied human sign-offs, 38 pending. Signatures preserved.
+  Pending source/model claims are qualified and never auto-imported.
+- Functional /impact-pilot.html; no actual impact measurements or 10x result.
+- Separate public-product MP4 captured at 60.00 seconds, with real API data/no UI
+  errors; team-credit/product MP4 produced at 2:15.01 with accepted genuine live
+  AI output and governed-data example. Both disclose synthetic narration. See
+  walkthrough/VIDEO_VERIFICATION.json and team-video/VIDEO_VERIFICATION.json.
+- Fresh isolated Python 3.14 environment and npm ci/build passed eight portable
+  startup checks. See PORTABLE_STARTUP_VERIFICATION.json.
+- Portable Python 3.14/Node 22 instructions, dependency locks, source snapshot,
+  attribution, verification records and separate video scripts exist.
+
+STILL TO FINISH — CHECK OFF ONLY FROM ACTUAL RESULTS
+[ ] Confirm final cloud-build/source freeze after the last prose refinement.
+    All four AI operations have verified public results; preserve genuine labels,
+    exact source/mode binding and the two actually changed checks. Model prose
+    still needs human review. Owner: Atharva/lead.
+[ ] Confirm the published source matches the tested release and its clean manifest.
+    Fresh native Python 3.14/npm startup already passed eight checks; keep runtime
+    caches, credentials and private attachments excluded. Owner: Atharva/lead.
+    Source repository:
+    https://github.com/AtharvaAiren/rarebridge-global-ai
+[ ] Source/demo freeze: Saanvi checks any added assertion/contact/version.
+    Preserve 20 signatures and leave 38 pending rows qualified; never rebuild
+    the signed overlay. A source check is not clinical/access/reuse approval.
+[ ] Actual audit and timing: Dhruv completes frozen held-out app/source cases;
+    do not load evaluation cases into prompts/retrieval. Run two teammates in
+    reversed order on identical sources/task/fictional constraints. Time source
+    reading, corrections and six-item quality review; retain all attempts,
+    reviewer/artifact references and CSV/JSON logs. If not measured, say so.
+[ ] Confirm/upload both produced videos: walkthrough/RareBridge-60s-walkthrough.mp4
+    (60.00 seconds) and team-video/RareBridge-team-video.mp4 (2:15.01). Accurate
+    credits and explicitly synthetic narration appear in the team video. Verify
+    accessibility, portal duration/file limits and the final upload receipt.
+[ ] Final portal submission: accessible demo/source URLs, dataset/setup/attribution,
+    required videos and impact statement. Preserve organizer approval of Claude
+    credits; do not assert independent prize eligibility. Submit and save receipt.
+
+ACTUAL IMPACT STATUS
+No measured ratio exists. The pilot page is an empty real-measurement tool.
+A brief-preparation speed ratio would describe this small pilot only, not faster
+expert approval, study launch, treatment development or a clinical milestone.
+Do not invent a 10x result. Use submission/IMPACT_CASE.txt for the fair protocol.
+
+FEATURE/CLAIM FREEZE
+Finish the chosen three-condition natural-history workflow. No additional disease,
+GPU training or lab checkpoint is required. Claude Sonnet 4.6 is an existing
+trained model; we did not train a graph foundation model or calibrate clinical
+probabilities. Generated biological leads/extractions stay pending. Software/
+source-binding checks do not prove semantic medical truth or approved reuse.
+
+Submission owner: Atharva. Credit all four teammates accurately in the team video.

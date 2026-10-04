@@ -1,0 +1,75 @@
+Backend integration into the lead workspace — 4 October 2026
+
+IMPORT
+The teammate archive srinath-backend-v1.zip supplied 30 files, 372627
+uncompressed bytes. The archived HANDOVER.txt exactly matched the supplied
+srinath-backend-HANDOVER_1.txt. Only rarebridge/api/, rarebridge/services/,
+tests/api/ and requirements-backend.txt were imported. Preflight rejected path
+traversal, symlinks, encrypted members, duplicate names, disallowed ownership,
+existing destinations and oversized members. No shared data or AI file was
+overwritten. The original HANDOVER.txt is preserved as the author's record.
+
+DEPENDENCIES
+The root installed requirements-backend.txt into .venv using Python 3.14.
+Pinned: fastapi 0.142.2, starlette 1.7.0, pydantic 2.13.5, uvicorn 0.54.0,
+jsonschema 4.26.0; test dependencies pytest 9.1.1 and httpx 0.28.1.
+No new dependencies were added by these integration fixes.
+
+ACTUAL INTEGRATION FIXES
+1. ai_bridge.py used to collapse every lead AIServiceError into a generic 502
+   and include unexpected exception text. It now retains the lead's public-safe
+   code/message/details/status, including quota 429, unavailable 503 and timeout
+   504. Unexpected import, capability and generation exception contents are not
+   reflected in API responses or health notes.
+2. The bridge used to discard all explanation fields except the four baseline
+   fields. It now preserves validated draft_message, check explanations,
+   provenance and the exact assessment fingerprint. The collaboration brief can
+   retain the validated message rather than silently switch to its template.
+3. The bridge rejects mismatched current-assessment fingerprints and citations
+   to withdrawn publications, including DOI/PMID aliases.
+4. assessments.py copies recorded proposed_use, target_subgroup,
+   documented_differences and assumptions into before/after when present in a
+   bundle. It does not invent these fields from similarity or asset metadata and
+   does not change deterministic checks/outcomes. The copied scope participates
+   in explanation/brief current-state hashing.
+5. Known extraction source aliases resolve to the registry's canonical ID before
+   the lead function is called. The response retains requested_source_id. This
+   prevents a correct canonical source response from failing the bridge's source
+   identity check. Extraction still returns a pending preview with
+   import_status=not_imported; the reviewed graph is unchanged.
+
+VALIDATION
+The original 36 backend tests passed before integration patches. All 46 backend
+tests then passed, including 10 new boundary tests using synthetic injected AI
+services only. Test fixtures are test-only, never saved as genuine runtime model
+responses. These tests read no .env, make no provider requests and change no real
+curation files. The only test warning is Starlette's httpx TestClient deprecation;
+the pinned suite passes and the production server is unaffected by this warning.
+Command: .venv/bin/python -m pytest tests/api -q
+
+CURRENT SIGNED OVERLAY, READ THROUGH THE REGISTRY
+The latest registry check loaded 58 review-log rows. Exactly 20 rows were
+source_checked and all 20 retained Srinath's human sign-off. Newly added entries
+remain pending unless a person reviews them. No sign-off was added by backend
+integration. All four assessment outcomes were needs_information:
+  framework-for-syngap1
+  framework-for-scn2a
+  framework-for-stxbp1
+  citizen-dataset-for-syngap1
+The documented SYNGAP1-to-STXBP1 route was source_checked. The original handover's
+unsigned-overlay outcomes describe the older package state, not current data.
+Source checked is a narrow factual review, not permission to implement a study.
+
+RUN
+.venv/bin/python -m uvicorn rarebridge.api.app:app --host 127.0.0.1 --port 8000
+Restart after overlay changes. All source IDs are opaque; use URL encoding and
+the existing path source resolver for DOI identifiers containing '/'.
+
+REMAINING BOUNDARY
+This validates backend routes, signed-data loading and the injected AI boundary.
+This note records the original backend import. The frontend is now integrated;
+current suites include 53 API tests and verified local graph/product/AI journeys.
+Genuine Claude verification is recorded in submission/AI_VERIFICATION.txt;
+no live AI calls were made during these original backend tests. Runtime extraction
+does not approve evidence or merge it into curated claims. Final app tests must
+use the returned pending/source-checked and live/cached labels faithfully.

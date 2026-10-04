@@ -1,0 +1,16 @@
+{
+  "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+  "title": "SFARI Base — project access requirement excerpt",
+  "url": "https://www.sfari.org/resource/sfari-base/",
+  "published_on": null,
+  "text": "Create a SFARI Base project, which includes the title, abstract, and an IRB approval or exemption document.",
+  "known_entities": [
+    {
+      "id": "resource:sfari-base",
+      "type": "asset",
+      "label": "SFARI Base",
+      "aliases": ["SFARI Base project"],
+      "synonyms": []
+    }
+  ]
+}

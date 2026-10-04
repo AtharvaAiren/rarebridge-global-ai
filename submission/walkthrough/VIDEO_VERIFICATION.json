@@ -1,0 +1,49 @@
+{
+  "capture_source": "https://rarebridge-global-ai.vercel.app",
+  "real_public_api": true,
+  "mocked_responses": false,
+  "duration": "00:01:00.00",
+  "video_file": "submission/walkthrough/RareBridge-60s-walkthrough.mp4",
+  "bytes": 5483070,
+  "narration": "macOS Samantha synthesized narration",
+  "browser_errors": [],
+  "events": [
+    {
+      "seconds": 0,
+      "name": "Public production search"
+    },
+    {
+      "seconds": 6.3,
+      "name": "Disease and natural-history goal"
+    },
+    {
+      "seconds": 10.9,
+      "name": "Trace the actual reviewed inferred route"
+    },
+    {
+      "seconds": 19.3,
+      "name": "Specific resource assessment"
+    },
+    {
+      "seconds": 26.3,
+      "name": "Two supported checks lose support"
+    },
+    {
+      "seconds": 34,
+      "name": "Restore support without changing records"
+    },
+    {
+      "seconds": 39.9,
+      "name": "SCN2A applicability remains unknown"
+    },
+    {
+      "seconds": 47.3,
+      "name": "Sourced collaboration proposal"
+    },
+    {
+      "seconds": 53,
+      "name": "Actual text export"
+    }
+  ],
+  "purpose": "Separate one-minute product walkthrough; does not replace the team video."
+}

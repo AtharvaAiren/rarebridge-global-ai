@@ -1,0 +1,130 @@
+{
+  "title": "RareBridge — team video and product evidence",
+  "target_duration_seconds": 135,
+  "format": "Real public product footage/screenshots with truthful team-credit cards and explicitly synthesized narration",
+  "public_demo_url": "https://rarebridge-global-ai.vercel.app",
+  "source_repository_url": "https://github.com/AtharvaAiren/rarebridge-global-ai",
+  "source_publication_status": "Source repository URL provided; release snapshot must match the final tested build.",
+  "narration_disclosure": "Synthetic narration (macOS Samantha); no impersonated team voices or fabricated human faces.",
+  "team_credits": [
+    {
+      "name": "Atharva",
+      "role": "AI, integration and deployment"
+    },
+    {
+      "name": "Srinath",
+      "role": "Backend and frontend"
+    },
+    {
+      "name": "Saanvi",
+      "role": "Evidence and curation"
+    },
+    {
+      "name": "Dhruv",
+      "role": "Evaluation and timing tool"
+    }
+  ],
+  "cards": [
+    {
+      "id": "intro",
+      "title": "RareBridge",
+      "subtitle": "A specific resource. A sourced research question. A collaboration plan.",
+      "body": [
+        "For patient organizations planning rare-disease research.",
+        "STXBP1 · SYNGAP1 · SCN2A"
+      ],
+      "footer": "Real public prototype"
+    },
+    {
+      "id": "ai",
+      "title": "AI reads the current evidence",
+      "subtitle": "Existing Claude Sonnet 4.6 · no new model training",
+      "body": [
+        "Answers follow the selected assessment and active sources.",
+        "Known routes keep their labels; new hypotheses remain pending.",
+        "The real response's live/cached label stays visible."
+      ],
+      "footer": "Source binding is not scientific or clinical validation."
+    },
+    {
+      "id": "collaboration_impact",
+      "title": "Make the next research conversation concrete",
+      "subtitle": "Sources · open checks · collaborator route · reviewable brief",
+      "body": [
+        "Atharva — AI, integration and deployment",
+        "Srinath — backend and frontend",
+        "Saanvi — evidence and curation",
+        "Dhruv — evaluation and timing tool"
+      ],
+      "footer": "10x is a target. The pilot is ready; milestone gain is unmeasured."
+    }
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "start_seconds": 0,
+      "duration_seconds": 8,
+      "visual": "intro card",
+      "narration": "RareBridge helps rare-disease patient groups turn research connections into specific, sourced questions and a practical collaboration proposal."
+    },
+    {
+      "id": "walkthrough",
+      "start_seconds": 8,
+      "duration_seconds": 60,
+      "visual": "submission/walkthrough/RareBridge-60s-walkthrough.mp4",
+      "narration": "Use the existing clip audio; do not add a second narrator over it.",
+      "scope": "Actual public core workflow, source hide/reset, unknown SCN2A applicability and brief export."
+    },
+    {
+      "id": "current_answer",
+      "start_seconds": 68,
+      "duration_seconds": 10,
+      "visual": "Actual accepted public assessment-answer screenshot, with its genuine provenance label visible",
+      "narration": "Claude Sonnet four point six answers from the current sources. Hidden papers stay excluded, and unanswered checks become questions for a researcher.",
+      "capture_gate": "Use only accepted output from the final verified public build. No mocked or rejected answer."
+    },
+    {
+      "id": "research_scout",
+      "start_seconds": 78,
+      "duration_seconds": 12,
+      "visual": "Actual accepted public research-scout screenshot showing known-route and proposed-hypothesis labels",
+      "narration": "The existing trained model also proposes research leads from recorded graph relationships. Known routes keep their labels; new biological hypotheses need review and never auto-import.",
+      "capture_gate": "Retain the actual live or cached label, source links and pending inference state. Use full-source view."
+    },
+    {
+      "id": "governed_data",
+      "start_seconds": 90,
+      "duration_seconds": 30,
+      "visual": "Actual public 30-second Citizen dataset assessment/contact capture",
+      "narration": "The SYNGAP1 dataset is another specific resource. Its access route involves academic researchers, a research agreement and an IRB submission. The assessment leaves requester eligibility and fit for prospective planning open. A useful next step is to ask a qualified research partner about permissions and proposed use. Finding a resource does not grant access.",
+      "capture_gate": "Show the real scoped dataset record, unresolved checks and public collaborator page. No patient records, implied permission, appointment or sent inquiry."
+    },
+    {
+      "id": "credits_impact",
+      "start_seconds": 120,
+      "duration_seconds": 15,
+      "visual": "collaboration_impact card with all four team credits",
+      "narration": "Built by Atharva, Srinath, Saanvi and Dhruv. The target is a faster feasibility decision. The pilot is ready, and milestone gains remain unmeasured.",
+      "capture_gate": "No invented hours, completed pilot result, clinical benefit, exclusive novelty or measured tenfold claim."
+    }
+  ],
+  "scientific_boundaries": [
+    "The STXBP1/SYNGAP1 published connection is a known workflow anchor, not a new discovery.",
+    "The selected SCN2A framework applicability is unknown, not disproved.",
+    "58 review rows contain 20 preserved human sign-offs and 38 pending rows; do not claim all assertions or contacts are reviewed.",
+    "Generated leads/extractions stay pending and never modify reviewed evidence automatically.",
+    "Source withdrawal is a view-level dependence test, not paper retraction or biological causality.",
+    "Account/profile and appointment controls are explicit previews; no cloud authentication, booking or outreach is performed.",
+    "The prepared timing pilot measures brief preparation only; no actual measured 10x or clinical milestone gain exists."
+  ],
+  "final_checks": [
+    "All four AI operations have accepted genuine public outputs; public AI browser 9/9 and release runtime/binding checks 11/11 passed. Confirm the final build/source freeze.",
+    "Verify stable public access and the genuine provenance labels on every shown AI frame.",
+    "Match the final source publication and tested build; preserve the clean release manifest.",
+    "Verify final combined duration (~135 seconds), intelligible audio, readable credits and portal duration/format limits.",
+    "Produced team-video artifact and VIDEO_VERIFICATION.json exist; verify portal format/file limits, accessibility and actual upload."
+  ],
+  "produced_artifact": "submission/team-video/RareBridge-team-video.mp4",
+  "actual_duration": "00:02:15.01",
+  "verification_artifact": "submission/team-video/VIDEO_VERIFICATION.json"
+}

@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "rarebridge.handoff.v1"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "generation_mode": {
+      "enum": [
+        "live",
+        "cached"
+      ]
+    },
+    "model": {
+      "type": "string"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "label"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "subject_id": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          },
+          "object_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_location": {
+            "type": "string"
+          },
+          "source_excerpt": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "review_status": {
+            "const": "pending"
+          },
+          "evidence_type": {
+            "type": "string"
+          },
+          "qualifiers": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "subject_id",
+          "relation",
+          "object_id",
+          "source_id",
+          "source_location",
+          "source_excerpt",
+          "rationale",
+          "review_status",
+          "evidence_type",
+          "qualifiers"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_id",
+    "generation_mode",
+    "model",
+    "entities",
+    "claims",
+    "limitations"
+  ],
+  "additionalProperties": true,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,217 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "extraction": {
+    "schema_version": "rarebridge.handoff.v1",
+    "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+    "generation_mode": "live",
+    "model": "claude-sonnet-4-6",
+    "entities": [
+      {
+        "id": "candidate:sfari-base",
+        "type": "asset",
+        "label": "SFARI Base"
+      },
+      {
+        "id": "candidate:sfari-base-project",
+        "type": "asset",
+        "label": "SFARI Base project (title, abstract, IRB document)"
+      },
+      {
+        "id": "candidate:irb-approval",
+        "type": "asset",
+        "label": "IRB approval or exemption document"
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim:sfari-base-access-req-1",
+        "subject_id": "candidate:sfari-base",
+        "relation": "has_access_requirement",
+        "object_id": "candidate:sfari-base-project",
+        "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+        "source_location": "supplied excerpt",
+        "source_excerpt": "Create a SFARI Base project, which includes the title, abstract, and an IRB approval or exemption document.",
+        "rationale": "The excerpt explicitly states that accessing SFARI Base requires creation of a project including a title, abstract, and IRB approval or exemption document, indicating an access requirement.",
+        "review_status": "pending",
+        "evidence_type": "access_requirement",
+        "qualifiers": {
+          "variant": null,
+          "experimental_context": null,
+          "proposed_use": "Access to SFARI Base datasets"
+        }
+      },
+      {
+        "id": "claim:sfari-base-access-req-2",
+        "subject_id": "candidate:sfari-base",
+        "relation": "has_access_requirement",
+        "object_id": "candidate:irb-approval",
+        "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+        "source_location": "supplied excerpt",
+        "source_excerpt": "Create a SFARI Base project, which includes the title, abstract, and an IRB approval or exemption document.",
+        "rationale": "An IRB approval or exemption document is explicitly listed as a required component of a SFARI Base project application, indicating an ethics review access requirement.",
+        "review_status": "pending",
+        "evidence_type": "access_requirement",
+        "qualifiers": {
+          "variant": null,
+          "experimental_context": null,
+          "proposed_use": "Access to SFARI Base datasets"
+        }
+      }
+    ],
+    "limitations": [
+      "The excerpt is extremely short (a single sentence) and provides only a minimal description of the SFARI Base access requirement. No information about specific datasets hosted, diseases covered, or research outcomes is present. No relationships to known entities (diseases, genes, studies) can be extracted from this text alone."
+    ],
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
+      "request_id": "req_011Cfh61s6t4MqByVsL2uQx5",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 4828,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 527,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "87e0d2368814704c2973d08a006a3236eefaeefc22cf51afdf8ce2ce5d373554",
+      "generated_at": "2026-10-04T11:05:07.043547+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "cache_saved": true,
+      "source_sha256": "d1c33f68a544c11660c7dc151165fec6e821c2fbe8875def54e22c55fdf2eccd",
+      "supplied_source_id": "URL:https://www.sfari.org/resource/sfari-base/"
+    },
+    "source": {
+      "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+      "title": "SFARI Base — project access requirement excerpt",
+      "url": "https://www.sfari.org/resource/sfari-base/",
+      "published_on": null
+    },
+    "validation": {
+      "status": "passed",
+      "checks": [
+        "schema",
+        "source_binding",
+        "literal_excerpts",
+        "entity_references"
+      ],
+      "meaning": "Claims remain pending factual review; extraction is not verification."
+    },
+    "graph_preview": {
+      "schema_version": "rarebridge.handoff.v1",
+      "nodes": [
+        {
+          "id": "candidate:sfari-base",
+          "type": "asset",
+          "label": "SFARI Base",
+          "review_status": "pending"
+        },
+        {
+          "id": "candidate:sfari-base-project",
+          "type": "asset",
+          "label": "SFARI Base project (title, abstract, IRB document)",
+          "review_status": "pending"
+        },
+        {
+          "id": "candidate:irb-approval",
+          "type": "asset",
+          "label": "IRB approval or exemption document",
+          "review_status": "pending"
+        },
+        {
+          "id": "URL:https://www.sfari.org/resource/sfari-base/",
+          "type": "publication",
+          "label": "SFARI Base — project access requirement excerpt",
+          "url": "https://www.sfari.org/resource/sfari-base/",
+          "review_status": "pending"
+        }
+      ],
+      "edges": [
+        {
+          "id": "ai-preview:9bc1f5ea5a4966bf5954",
+          "source": "candidate:sfari-base",
+          "target": "candidate:sfari-base-project",
+          "relation": "has_access_requirement",
+          "source_ids": [
+            "URL:https://www.sfari.org/resource/sfari-base/"
+          ],
+          "review_status": "pending",
+          "claim_origin": "imported",
+          "confidence_label": "AI-extracted — source review pending",
+          "explanation": "The excerpt explicitly states that accessing SFARI Base requires creation of a project including a title, abstract, and IRB approval or exemption document, indicating an access requirement.",
+          "source_excerpt": "Create a SFARI Base project, which includes the title, abstract, and an IRB approval or exemption document.",
+          "source_location": "supplied excerpt",
+          "evidence_type": "access_requirement",
+          "qualifiers": {
+            "variant": null,
+            "experimental_context": null,
+            "proposed_use": "Access to SFARI Base datasets"
+          },
+          "provenance": {
+            "source_url": "https://www.sfari.org/resource/sfari-base/",
+            "source_sha256": "d1c33f68a544c11660c7dc151165fec6e821c2fbe8875def54e22c55fdf2eccd",
+            "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
+            "extracted_at": "2026-10-04T11:05:07.043547+00:00",
+            "source_origin": "caller_supplied_excerpt"
+          }
+        },
+        {
+          "id": "ai-preview:f1cb1e4496132f6538cf",
+          "source": "candidate:sfari-base",
+          "target": "candidate:irb-approval",
+          "relation": "has_access_requirement",
+          "source_ids": [
+            "URL:https://www.sfari.org/resource/sfari-base/"
+          ],
+          "review_status": "pending",
+          "claim_origin": "imported",
+          "confidence_label": "AI-extracted — source review pending",
+          "explanation": "An IRB approval or exemption document is explicitly listed as a required component of a SFARI Base project application, indicating an ethics review access requirement.",
+          "source_excerpt": "Create a SFARI Base project, which includes the title, abstract, and an IRB approval or exemption document.",
+          "source_location": "supplied excerpt",
+          "evidence_type": "access_requirement",
+          "qualifiers": {
+            "variant": null,
+            "experimental_context": null,
+            "proposed_use": "Access to SFARI Base datasets"
+          },
+          "provenance": {
+            "source_url": "https://www.sfari.org/resource/sfari-base/",
+            "source_sha256": "d1c33f68a544c11660c7dc151165fec6e821c2fbe8875def54e22c55fdf2eccd",
+            "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
+            "extracted_at": "2026-10-04T11:05:07.043547+00:00",
+            "source_origin": "caller_supplied_excerpt"
+          }
+        }
+      ],
+      "sources": {
+        "URL:https://www.sfari.org/resource/sfari-base/": {
+          "title": "SFARI Base — project access requirement excerpt",
+          "url": "https://www.sfari.org/resource/sfari-base/",
+          "aliases": [],
+          "published_on": null,
+          "source_kind": "supplied_source_excerpt",
+          "note": "Extracted source excerpt; all generated relationships await factual review."
+        }
+      },
+      "coverage": {
+        "scope_note": "Preview of one supplied source; not merged into the reviewed atlas.",
+        "truncated": false,
+        "total_nodes": 4,
+        "total_edges": 2
+      },
+      "data_origin": "ai_pending_preview",
+      "generation_mode": "live"
+    }
+  },
+  "import_status": "not_imported",
+  "requested_source_id": "URL:https://www.sfari.org/resource/sfari-base/",
+  "note": "Extracted relationships remain pending in a preview; the curated graph is unchanged."
+}

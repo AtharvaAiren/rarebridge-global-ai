@@ -1,0 +1,83 @@
+RareBridge Vercel deployment
+
+Deploy from the repository root. The root app.py exports the real FastAPI app
+and registers frontend/dist through app.frontend(). Production frontend requests
+use the same origin at /api/...; development fixtures are not the deployed API.
+Vercel's build command runs npm ci/build in frontend before collecting the static
+frontend for its CDN. Python3.14 and Node22 are selected in project configuration.
+
+Current public deployment
+- Stable judge URL: https://rarebridge-global-ai.vercel.app . Anonymous HTML,
+  JSON API health and real same-origin data are verified without Vercel login.
+- Project rarebridge-global-ai is deployed under team slug saanvi-s-space.
+  Use the stable production alias; immutable deployment URLs may require login.
+- Official Vercel documentation confirms this FastAPI frontend/CDN configuration
+  and Python3.14 support. Exact pinned Python dependencies import locally.
+- The root entrypoint serves / and /api/health locally with the real graph/overlay.
+- A genuine Vercel cloud build and public deployment have succeeded. Public
+  discovery/Q&A, extraction and hidden-source explanation have accepted genuine
+  live provider results. The public AI browser passed 9/9 and the public release
+  checker passed 11/11 runtime/binding checks. See submission/AI_VERIFICATION.txt,
+  ai-public-browser-verification/report.json and
+  public-release-verification/explanation-retest/summary.json.
+- Model/source binding and browser checks do not establish biomedical truth.
+
+Credential-safe helper
+  .venv/bin/python scripts/deploy_vercel.py prepare
+  .venv/bin/python scripts/deploy_vercel.py probe
+  .venv/bin/python scripts/deploy_vercel.py probe --project PROJECT --scope TEAM
+  .venv/bin/python scripts/deploy_vercel.py configure --project PROJECT --scope TEAM
+  .venv/bin/python scripts/deploy_vercel.py deploy --project PROJECT --scope TEAM
+  .venv/bin/python scripts/deploy_vercel.py deploy --project rarebridge-global-ai --create-project
+
+Replace PROJECT/TEAM with the actual project name/ID and team slug/ID. Omit --scope
+for the token's personal account. The helper resolves real project/account IDs
+before environment mutation. Missing projects fail unless --create-project is
+supplied to configure/deploy; that explicit flag can create the selected project
+(default rarebridge-global-ai) in the chosen account/scope. It never creates a team
+or account. Reusing a project requires explicit --project or matching real local
+.vercel/project.json linkage; an exported project ID alone is not sufficient.
+
+Set VERCEL_TOKEN in the ignored root .env or exported environment. Local .env is
+read as literal text, never sourced/executed; exported settings take precedence.
+Do not paste tokens in commands, screenshots, submissions or chats. prepare does
+not read .env. probe only verifies access. configure changes allowlisted production
+environment values. deploy configures those values and publishes production.
+
+Production environment
+- Only the selected provider's key is uploaded: ANTHROPIC_API_KEY for anthropic,
+  or OPENAI_API_KEY for openai. Optional ANTHROPIC_WORKSPACE_ID is sent only for
+  anthropic. Unselected keys, VERCEL_TOKEN and VITE/public settings are not uploaded.
+- Provider/model/mode/output-token settings follow the local validated AI config.
+  Production mode must be auto/live with a real selected-provider key. Timeout is
+  capped at100s, inside the research endpoint's110s and Vercel's120s budget.
+- RAREBRIDGE_AI_CACHE_DIR is set to /tmp/rarebridge-ai-cache. This is an ephemeral,
+  best-effort cache; cold starts do not guarantee cached responses. Local genuine
+  smoke caches/runs are excluded from deployment. Cloud inference uses the provider.
+- The helper upserts production variables only and leaves unrelated existing
+  project variables untouched. Its output lists names, never values. Vercel token
+  is supplied through the CLI environment, not argv, and is not a project variable.
+- The installed CLI uses workspace tooling/cache directories with update checks
+  and telemetry disabled. Provider keys are not passed to its child environment.
+
+Public verification after deployment
+1. Open the returned URL in a signed-out/incognito window. If Vercel deployment
+   protection blocks judges, adjust the intended project's protection settings.
+   The stable production alias above already passes anonymous verification.
+2. GET /api/health: verify real graph/overlay counts and all four AI capabilities.
+3. Confirm the UI loads source links, graph, assessment and withdrawn-source view.
+4. Make genuine discovery, Q&A, extraction and explanation requests. Check provider
+   response provenance; invalid generations must fail visibly without a fabricated
+   fallback. A provider key being configured does not itself prove provider access.
+5. Test proposal export and one hidden-source assessment. Judge URL and submission
+   documents should use the verified production URL, not a guessed domain.
+
+Primary documentation checked October4,2026
+https://vercel.com/docs/frameworks/backend/fastapi
+https://vercel.com/docs/functions/runtimes/python
+https://vercel.com/docs/cli/global-options
+https://vercel.com/docs/cli/deploy
+https://vercel.com/docs/rest-api/projects/find-a-project-by-id-or-name
+https://vercel.com/docs/rest-api/projects/create-a-new-project
+https://vercel.com/docs/rest-api/projects/create-one-or-more-environment-variables
+https://vercel.com/docs/deployments/vercel-ignore

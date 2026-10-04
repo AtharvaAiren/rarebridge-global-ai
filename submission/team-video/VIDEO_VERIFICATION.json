@@ -1,0 +1,48 @@
+{
+  "video_file": "submission/team-video/RareBridge-team-video.mp4",
+  "duration": "00:02:15.01",
+  "bytes": 8570265,
+  "public_app": "https://rarebridge-global-ai.vercel.app",
+  "source_repository": "https://github.com/AtharvaAiren/rarebridge-global-ai",
+  "narration": "macOS Samantha synthesized narration",
+  "team_credits": [
+    {
+      "name": "Atharva",
+      "role": "AI, integration and deployment"
+    },
+    {
+      "name": "Srinath",
+      "role": "Backend and frontend"
+    },
+    {
+      "name": "Saanvi",
+      "role": "Evidence and curation"
+    },
+    {
+      "name": "Dhruv",
+      "role": "Evaluation and timing tool"
+    }
+  ],
+  "real_public_ui_capture": true,
+  "mocked_responses": false,
+  "ai_capture_evidence": "submission/ai-public-browser-verification/report.json",
+  "ai_provider_results": [
+    {
+      "operation": "ask",
+      "mode": "live",
+      "response_id": "msg_011Cfh6iifkxtdRfBL7PdrAJ"
+    },
+    {
+      "operation": "ask-withdrawn",
+      "mode": "live",
+      "response_id": "msg_011Cfh6jLLcWCW3XSzPtdvb2"
+    },
+    {
+      "operation": "discover",
+      "mode": "live",
+      "response_id": "msg_011Cfh6k3Zqw28nyCC4v6Zir"
+    }
+  ],
+  "scope": "Team video using real patient-group workflow, accepted public AI output, governed-access example and truthful credits.",
+  "impact": "No measured 10x or treatment milestone acceleration is claimed."
+}

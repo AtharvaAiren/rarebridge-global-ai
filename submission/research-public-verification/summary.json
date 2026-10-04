@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-04T11:03:53.590968+00:00",
+  "scope": "Real API/provider structure and current-state checks, not biomedical or clinical validation.",
+  "cases": [
+    {
+      "case": "discovery",
+      "passed": true,
+      "generation_mode": "live",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5wF8JVEqTdHCL6qaiX",
+      "hypotheses": 2,
+      "basis_kinds": [
+        "known_route",
+        "proposed_hypothesis"
+      ]
+    },
+    {
+      "case": "patient-answer",
+      "passed": true,
+      "generation_mode": "live",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5xmmaCp8qrbtzSmxxK",
+      "cited_source_ids": [],
+      "evidence_state": "insufficient_evidence"
+    },
+    {
+      "case": "withdrawn-answer",
+      "passed": true,
+      "generation_mode": "live",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5yCuAebdo9E2HiW4bU",
+      "cited_source_ids": [],
+      "evidence_state": "insufficient_evidence"
+    }
+  ]
+}

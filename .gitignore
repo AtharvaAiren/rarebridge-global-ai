@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+.tools/
+.vercel/
+frontend/dist/
+/public/
+venv/
+node_modules/
+.DS_Store
+rarebridge/ai/cache/
+rarebridge/ai/runs/
+*.zip
+source-notes/

@@ -1,0 +1,16 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "error": {
+    "code": "unknown_assessment",
+    "message": "This assessment is not in the current data slice.",
+    "details": [
+      {
+        "loc": [
+          "body",
+          "assessment_id"
+        ],
+        "msg": "nope"
+      }
+    ]
+  }
+}

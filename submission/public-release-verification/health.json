@@ -1,0 +1,46 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "status": "ok",
+  "capabilities": {
+    "search": true,
+    "assessment": true,
+    "graph": true,
+    "curation_overlay": true,
+    "ai_extraction": true,
+    "ai_explanation": true,
+    "ai_discovery": true,
+    "ai_assistant": true
+  },
+  "data_snapshot": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+  "data_origin": "dismech_snapshot+curation_overlay",
+  "ai_status_note": null,
+  "research_ai_status_note": "Configured access is unverified; cached responses require the exact registry/question/assessment state.",
+  "overlay": {
+    "loaded": true,
+    "sha256": "d88faddae5e6bef762ffb29d2bfd97e5a0a7c0849bbaf3034192b0607dacaa0a",
+    "counts": {
+      "nodes": 15,
+      "edges": 25,
+      "assets": 6,
+      "contacts": 6,
+      "assessment_bundles": 2,
+      "review_log": 58
+    },
+    "review_log_status": {
+      "source_checked": 20,
+      "pending": 38
+    },
+    "pending_edges": 21,
+    "merge_notes": []
+  },
+  "counts": {
+    "total_nodes": 235,
+    "total_edges": 346,
+    "diseases": 3,
+    "assessments": 4,
+    "sources": 30
+  },
+  "goals": [
+    "natural_history"
+  ]
+}

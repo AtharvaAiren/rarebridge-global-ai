@@ -1,0 +1,168 @@
+RareBridge frontend — integrated handover
+Srinath supplied the frontend; lead integration/product lanes extended it.
+Contract: rarebridge.handoff.v1. Updated 4 October 2026.
+
+CURRENT STATE
+Frontend, real backend, evidence overlay, graph motion, product shell and Claude
+AI UI are integrated. Type checking and production build pass; 115 frontend tests
+pass. Local production graph browser verification passed 16/16 checks against real
+same-origin API data. Product/pilot browser checks separately passed 16/16, with
+zero page errors or AI requests. Actual AI browser checks passed 9/9 using genuine
+cached answers/leads. Public demo: https://rarebridge-global-ai.vercel.app.
+Public discovery/Q&A and its 9/9 browser journey now passed with live provenance;
+SFARI extraction passed with two pending claims. Hidden-source explanation passed
+with all five recorded statuses, exact next questions and no hidden citations;
+the public release checker passed 11/11. Final build/source freeze, any actual
+impact pilot and portal submission remain checks. The separate 60.00-second
+walkthrough and 2:15.01 team video
+are produced with real public footage and explicitly synthetic narration.
+Backend checks: 129 AI, 53 API, 27 curation tests and 11 foundation checks passed.
+
+RUNTIME AND COMMANDS
+Use Node 22.18+ in the 22.x line with npm. Workspace .tools/ contains Node 22.23.3,
+used for integration; it is a development install, not a shipped runtime. The
+integrated backend/deployment uses Python 3.14. See the root README.txt.
+
+Inside frontend/:
+  npm ci                      install exact package-lock.json dependencies
+  npm run dev                 Vite development server, localhost:5173
+  npm test                    Node runner: 115 passing tests
+  npm run build               tsc -b + Vite production build into dist/: passing
+  npm run lint                oxlint: 0 errors, 9 warnings in current build
+  npm run capture-fixtures    explicitly refresh saved examples from an API
+
+From the root:
+  npm run build
+  .venv/bin/python -m uvicorn app:app --host 127.0.0.1 --port 8000
+
+Root build runs npm ci/build in frontend/. app.py serves frontend/dist/ and /api
+on one origin. Recorded graph checks used this setup on port 18800. Native commands
+and lockfiles above are the portable setup, not the workspace-installed .tools/.
+
+LIVE AND SAVED-EXAMPLE MODES
+  Development, VITE_API_BASE_URL empty: explicit manifest-listed fixture replay.
+  Production, VITE_API_BASE_URL empty: live same-origin API.
+  VITE_API_BASE_URL=/: live same-origin API.
+  VITE_API_BASE_URL=http://127.0.0.1:8000: live local development API.
+  VITE_API_BASE_URL=https://<public-api>: live split hosting; configure backend CORS.
+
+To develop against the API, inside frontend/:
+  VITE_API_BASE_URL=http://127.0.0.1:8000 npm run dev
+
+The transport picks mode; components share a typed contract. Saved-example mode
+only answers listed requests. Live failures show errors and Retry, never saved
+data. Production calls the real server. Vite configuration is public; provider
+keys belong only in backend/server secrets.
+
+WHAT IS BUILT
+1. Search/route discovery: covered disease/gene/phenotype/organization queries,
+   disease choice/shortcuts, natural-history explanation and empty/error states.
+   Recorded routes show source, review/origin and partner routes. Suggested disease
+   connections stay qualified; resources without matching bundles stay unassessed.
+
+2. Research map: d3-force/SVG with crisp HTML labels, focused/explore, deterministic
+   settled layout, staged node births, eased camera focus, gold multi-step recorded
+   route trace, portrait reflow, pan/drag/zoom/fit/reset, legend and accessible list.
+   Hover/selection exposes relationship details. Anchor follows the actual selected
+   assessment; prior selection/trace clears when its resource changes. Source hiding
+   fades citing links/source without moving or erasing records. Pause freezes trace
+   progress; native and product reduced motion suppress animation while interactions
+   remain available. Entity shape/hue and solid/dashed/dotted review/origin styling
+   remain distinct: pending edges stay pending and inferred links remain inferred.
+
+3. Evidence: outcome/tally, source-dependence test, actual changed checks, questions
+   disclosing support/gaps, public contacts, source/version context and pinned brief
+   action. Patient/simple folds depth; doctor/expert exposes more provenance for
+   the same records. Only an exact current hidden-list response is current.
+
+4. Brief: exact assessment after-state, supported/open checks, differences, concrete
+   next questions, public collaborator route, editable draft, sources/exclusions
+   and boundaries. Copy, text download and print/PDF presentation are implemented;
+   messages are reviewable artifacts and are never automatically sent.
+
+5. AI: research leads, question assistant, view explanation and paper-excerpt import.
+   POST /api/ai/discover takes disease_id/goal_id; POST /api/ai/ask takes assessment_id,
+   withdrawn_source_ids, question and patient/expert mode. /api/ai/explain and
+   /api/ai/extract are wired. Requests are explicit, with model and live/cached
+   provenance; changing assessment/source state invalidates its old answer. New
+   hypotheses/extractions remain pending/not imported. Genuine Claude Q&A, extraction
+   and explanations work. Genuine live discovery passed with two pending leads;
+   local browser replay preserves truthful cached labels. Failures are visible;
+   no automatic paid retries,
+   fake successful answers or live-to-fixture fallback occur.
+
+6. Product shell: real patient/expert, text size/motion preferences, guide and public
+   contact routes; explicitly local profile preview behind signup/login/account,
+   and booking/discussion preview. No cloud authentication, booked appointment or
+   sent outreach is performed. These preview boundaries are visible.
+
+7. /impact-pilot.html: actual-timing page, initially empty. Records wall/active time,
+   source/task/constraint metadata, six quality checks, reviewer/artifact references,
+   failures, CSV/JSON exports and eligible matched-pair ratios. Actual two-teammate
+   reversed-order measurements remain required. Controls record human review;
+   they do not judge brief correctness or generate impact results.
+
+MODEL AND SCIENCE BOUNDARIES
+Active AI is existing trained Claude Sonnet 4.6, not a newly trained graph model
+or calibrated biomedical predictor. Schema/source binding constrains citations
+and recorded state, not semantic medical truth. Published STXBP1/SYNGAP1 connection
+is a known validation example; SCN2A proposed fit is unknown. Related disease does
+not approve resource/treatment transfer. Model hypotheses need review.
+
+VERIFIED GRAPH ACCEPTANCE
+submission/GRAPH_BROWSER_VERIFICATION.json records 16 checks and seven
+frontend/screenshots/integrated-graph-*.png screenshots. Production frontend plus
+real local API were used. AI endpoints were blocked during graph testing; no AI
+request was attempted and no browser page error occurred.
+
+  [verified] Staged node opening settles into static geometry.
+  [verified] Four recorded links trace to STXBP1 with pending badges retained.
+  [verified] Pause freezes trace/geometry; zoom remains interactive.
+  [verified] Framework source hide changes two checks (2 supported -> 0 supported),
+    overall stays "Questions still open"; all node transforms remain identical.
+    Source show/reset restores dependency styles without layout churn.
+  [verified] Patient evidence folds depth: 1 of 11 details open in this case.
+  [verified] Citizen evidence sends its assessment_id to /api/graph; anchor and
+    inspector retain that resource after evidence closes.
+  [verified] Selected resource highlights and its camera focuses.
+  [verified] Drag responds then settles without continuing jitter.
+  [verified] Desktop-to-390px portrait reflow keeps disease/resource labels in
+    frame and has no page horizontal overflow.
+  [verified] Product Reduce motion and native prefers-reduced-motion suppress
+    animation; reduced-motion trace appears complete and zoom remains usable.
+
+Product/pilot results are in submission/PRODUCT_BROWSER_VERIFICATION.json, with
+eight additional captures. These are browser/control checks, not impact measurements.
+Actual AI browser results are in submission/ai-browser-verification/report.json:
+9/9 pass, including active-source Q&A, hidden-source/mode invalidation, pending
+research leads, current-state text export and real headless PDF generation.
+Request provenance is in submission/research-live-verification/summary.json.
+Unit/local browser checks do not substitute for final public full-journey checks.
+See submission/AI_VERIFICATION.txt for the current local/public boundary.
+
+DATA, DESIGN AND LIMITS
+Supplied navy/gold tokens, fonts and logos remain the design system. Lexend and
+Source Serif 4 are self-hosted. package-lock.json pins React 19.3.0, d3-force 3.0.0,
+Vite 8.3.2 and TypeScript 6.0.3. Integrated curation has 58 review rows: 20 supplied
+human sign-offs and 38 pending. Do not rebuild or promote claims from UI output.
+
+Saved examples may predate current source sign-offs/catalogues or omit requests;
+refresh explicitly if needed. Production never substitutes them on live failure.
+Hidden sources are page state: reload starts with no exclusions. Physical-phone
+touch dragging, a full manual keyboard walk and real print-dialog pagination have
+not been verified by the graph checks. Actual Chromium PDF generation is verified
+separately; the OS print dialog remains untested. Clipboard needs an actual action.
+No current FPS benchmark is claimed. Lint exits successfully with nine warnings
+for context Fast Refresh structure, scene ref-registration analysis and motion
+synchronization; no lint errors.
+
+PUBLIC DEPLOYMENT AND RELEASE
+Vercel setup uses app.frontend() static/CDN handling, Python 3.14, Node 22 and root
+npm run build. Same-origin production uses server-side provider keys. The stable
+public alias https://rarebridge-global-ai.vercel.app serves anonymous app HTML and
+API health. Public discovery/Q&A and its live browser journey passed 9/9; public
+extraction and hidden-source explanation also passed. The public release checker
+passed 11/11 runtime/binding checks. Confirm final build/source freeze, any actual
+impact pilot and submission; see submission/REMAINING_BEFORE_SUBMISSION.txt.
+frontend/screenshots/ remains workspace evidence excluded from the clean archive;
+current reports, their submission captures and both actual videos are included.

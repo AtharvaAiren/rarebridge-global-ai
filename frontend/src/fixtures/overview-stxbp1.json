@@ -1,0 +1,514 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "disease": {
+    "id": "MONDO:0012812",
+    "type": "disease",
+    "label": "STXBP1 Encephalopathy",
+    "summary": "A developmental and epileptic encephalopathy caused by de novo heterozygous loss-of-function variants in STXBP1, which encodes Munc18-1 (syntaxin-binding protein 1), a Sec1/Munc18 protein essential for synaptic vesicle release. Munc18-1 chaperones syntaxin-1 and templates assembly of the neuronal SNARE complex that drives Ca2+-triggered synaptic vesicle fusion, so its haploinsufficiency reduces neurotransmitter…",
+    "synonyms": [
+      "STXBP1-RD",
+      "STXBP1-related disorder",
+      "STXBP1-related disorders"
+    ],
+    "summary_source_ids": [
+      "DISMECH:STXBP1_Encephalopathy.yaml"
+    ],
+    "summary_review_status": "pending",
+    "summary_note": "First sentences of the AI-curated DisMech description; pending independent review."
+  },
+  "goal_id": "natural_history",
+  "related_diseases": [
+    {
+      "id": "MONDO:0012960",
+      "label": "SYNGAP1-Related Developmental and Epileptic Encephalopathy",
+      "reason": "Inferred connection for navigation: both diseases have cohorts in the same published natural-history framework. This is a shared study method, not shared biology, treatment response or proof that results transfer; the paper reports disease-specific developmental and seizure patterns. Also: the upstream DisMech records for both diseases annotate 4 shared terms (most specific in this slice: glutamatergic neuron, Hypotonia, Autistic behavior). These AI-curated annotations are pending review and do not establish a shared mechanism, asset compatibility or treatment applicability.",
+      "basis_claim_ids": [
+        "claim:0167c950a7f88c32465c",
+        "claim:027d9ec581d3001a8ad4",
+        "claim:10d0a797e2b0b5bc780d",
+        "claim:3a82b1529b5c64f80502",
+        "claim:3fc344ca39f77810b584",
+        "claim:42a2712679d7a5eb674d",
+        "claim:4ba43f92711398b8f86d",
+        "claim:4fa54b4f372c3eab9877",
+        "claim:54b3f4cda3a56080869e",
+        "claim:657e3106a62d24cf4a3f",
+        "claim:8b5992479dbfd66c5c6a",
+        "claim:8db248998c1e8f693a28",
+        "claim:a5f6a26eb853fdb6a0ab",
+        "claim:c98f8adcb3f532073c7d",
+        "claim:cdca127a6a7f64237b4d",
+        "claim:ea0663f6b3a4baa9ce55",
+        "claim:fabb8b0a95e4d6fe87e5"
+      ],
+      "source_ids": [
+        "DISMECH:STXBP1_Encephalopathy.yaml",
+        "DISMECH:SYNGAP1-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "relation_kind": "published_co_study",
+      "ranking_method": "recorded_route",
+      "candidate_score": 0.0465,
+      "candidate_score_method": "idf_weighted_jaccard_shared_annotations_v1",
+      "score_note": "Ranking aid only; not a probability, similarity of biology or clinical confidence.",
+      "recorded_routes": [
+        {
+          "kind": "direct_edge",
+          "edge_ids": [
+            "edge:overlay:syngap1-stxbp1-shared-framework"
+          ],
+          "node_path": [
+            "MONDO:0012812",
+            "MONDO:0012960"
+          ],
+          "source_ids": [
+            "DOI:10.1002/epi.70374"
+          ],
+          "review_status": "pending",
+          "claim_origin": "inferred",
+          "explanation": "Inferred connection for navigation: both diseases have cohorts in the same published natural-history framework. This is a shared study method, not shared biology, treatment response or proof that results transfer; the paper reports disease-specific developmental and seizure patterns."
+        },
+        {
+          "kind": "shared_study_framework",
+          "edge_ids": [
+            "edge:overlay:stxbp1-studied-in-starr",
+            "edge:overlay:framework-covers-starr",
+            "edge:overlay:framework-covers-prommis",
+            "edge:overlay:syngap1-studied-in-prommis"
+          ],
+          "node_path": [
+            "MONDO:0012812",
+            "study:starr",
+            "DOI:10.1002/epi.70374#framework",
+            "study:prommis",
+            "MONDO:0012960"
+          ],
+          "source_ids": [
+            "DOI:10.1002/epi.70374"
+          ],
+          "review_status": "pending",
+          "claim_origin": "inferred",
+          "explanation": "Both diseases have cohorts in studies using one documented framework (STARR / ProMMiS natural-history framework). A shared study method, not shared biology or treatment response."
+        }
+      ],
+      "shared_terms": [
+        {
+          "id": "CL:0000679",
+          "label": "glutamatergic neuron",
+          "type": "cell_type",
+          "diseases_with_term_in_slice": 2,
+          "weight": 0.6931,
+          "query_claim_ids": [
+            "claim:0167c950a7f88c32465c"
+          ],
+          "related_claim_ids": [
+            "claim:4ba43f92711398b8f86d",
+            "claim:8db248998c1e8f693a28",
+            "claim:cdca127a6a7f64237b4d"
+          ]
+        },
+        {
+          "id": "HP:0001252",
+          "label": "Hypotonia",
+          "type": "phenotype",
+          "diseases_with_term_in_slice": 2,
+          "weight": 0.6931,
+          "query_claim_ids": [
+            "claim:10d0a797e2b0b5bc780d"
+          ],
+          "related_claim_ids": [
+            "claim:027d9ec581d3001a8ad4"
+          ]
+        },
+        {
+          "id": "HP:0000729",
+          "label": "Autistic behavior",
+          "type": "phenotype",
+          "diseases_with_term_in_slice": 3,
+          "weight": 0.2877,
+          "query_claim_ids": [
+            "claim:ea0663f6b3a4baa9ce55"
+          ],
+          "related_claim_ids": [
+            "claim:657e3106a62d24cf4a3f"
+          ]
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron",
+          "type": "cell_type",
+          "diseases_with_term_in_slice": 3,
+          "weight": 0.2877,
+          "query_claim_ids": [
+            "claim:42a2712679d7a5eb674d",
+            "claim:4fa54b4f372c3eab9877",
+            "claim:54b3f4cda3a56080869e",
+            "claim:a5f6a26eb853fdb6a0ab"
+          ],
+          "related_claim_ids": [
+            "claim:3a82b1529b5c64f80502",
+            "claim:3fc344ca39f77810b584",
+            "claim:8b5992479dbfd66c5c6a",
+            "claim:c98f8adcb3f532073c7d",
+            "claim:fabb8b0a95e4d6fe87e5"
+          ]
+        }
+      ],
+      "shared_term_count": 4,
+      "upstream_cited_publications": [
+        "PMID:10657302",
+        "PMID:18469812",
+        "PMID:23141534",
+        "PMID:26865513",
+        "PMID:26912996",
+        "PMID:27905812",
+        "PMID:30789692",
+        "PMID:32815282"
+      ],
+      "organizations": [
+        {
+          "id": "org:cure-syngap1",
+          "label": "CURE SYNGAP1",
+          "kind": "organization",
+          "url": "https://curesyngap1.org/contact/",
+          "role": "Patient organization; supports ProMMiS and co-selected its outcome measures; runs a researcher data-request route for a retrospective SYNGAP1 dataset.",
+          "source_ids": [
+            "WEB:curesyngap1-prommis-blog",
+            "WEB:curesyngap1-request-nhs-data",
+            "DOI:10.1002/epi.70374"
+          ],
+          "review_status": "pending",
+          "last_checked": "2026-10-04",
+          "disease_ids": [
+            "MONDO:0012960"
+          ],
+          "relevance": "Recorded as working on this disease in the curated slice."
+        }
+      ]
+    },
+    {
+      "id": "MONDO:0013388",
+      "label": "SCN2A-Related Developmental and Epileptic Encephalopathy",
+      "reason": "Candidate only: the upstream DisMech records for both diseases annotate 4 shared terms (most specific in this slice: Epileptic encephalopathy, Epileptic spasm, Autistic behavior). These AI-curated annotations are pending review and do not establish a shared mechanism, asset compatibility or treatment applicability.",
+      "basis_claim_ids": [
+        "claim:012d857b6385120c8324",
+        "claim:203c5e00906fa31ed34b",
+        "claim:2f9864e51a967bdf48d2",
+        "claim:42a2712679d7a5eb674d",
+        "claim:4a7e6d46a883ade18917",
+        "claim:4fa54b4f372c3eab9877",
+        "claim:54b3f4cda3a56080869e",
+        "claim:a12589c9c381bb068f91",
+        "claim:a5f6a26eb853fdb6a0ab",
+        "claim:b37c94cf857b627d5756",
+        "claim:bc0c87486d5c146b746c",
+        "claim:ea0663f6b3a4baa9ce55",
+        "claim:f0360867ca932867d8e1"
+      ],
+      "source_ids": [
+        "DISMECH:SCN2A-Related_Developmental_and_Epileptic_Encephalopathy.yaml",
+        "DISMECH:STXBP1_Encephalopathy.yaml"
+      ],
+      "review_status": "pending",
+      "relation_kind": "shared_upstream_annotations",
+      "ranking_method": "idf_weighted_jaccard_shared_annotations_v1",
+      "candidate_score": 0.0557,
+      "candidate_score_method": "idf_weighted_jaccard_shared_annotations_v1",
+      "score_note": "Ranking aid only; not a probability, similarity of biology or clinical confidence.",
+      "recorded_routes": [],
+      "shared_terms": [
+        {
+          "id": "HP:0200134",
+          "label": "Epileptic encephalopathy",
+          "type": "phenotype",
+          "diseases_with_term_in_slice": 2,
+          "weight": 0.6931,
+          "query_claim_ids": [
+            "claim:4a7e6d46a883ade18917"
+          ],
+          "related_claim_ids": [
+            "claim:a12589c9c381bb068f91"
+          ]
+        },
+        {
+          "id": "HP:0011097",
+          "label": "Epileptic spasm",
+          "type": "phenotype",
+          "diseases_with_term_in_slice": 2,
+          "weight": 0.6931,
+          "query_claim_ids": [
+            "claim:bc0c87486d5c146b746c"
+          ],
+          "related_claim_ids": [
+            "claim:012d857b6385120c8324"
+          ]
+        },
+        {
+          "id": "HP:0000729",
+          "label": "Autistic behavior",
+          "type": "phenotype",
+          "diseases_with_term_in_slice": 3,
+          "weight": 0.2877,
+          "query_claim_ids": [
+            "claim:ea0663f6b3a4baa9ce55"
+          ],
+          "related_claim_ids": [
+            "claim:203c5e00906fa31ed34b"
+          ]
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron",
+          "type": "cell_type",
+          "diseases_with_term_in_slice": 3,
+          "weight": 0.2877,
+          "query_claim_ids": [
+            "claim:42a2712679d7a5eb674d",
+            "claim:4fa54b4f372c3eab9877",
+            "claim:54b3f4cda3a56080869e",
+            "claim:a5f6a26eb853fdb6a0ab"
+          ],
+          "related_claim_ids": [
+            "claim:2f9864e51a967bdf48d2",
+            "claim:b37c94cf857b627d5756",
+            "claim:f0360867ca932867d8e1"
+          ]
+        }
+      ],
+      "shared_term_count": 4,
+      "upstream_cited_publications": [
+        "PMID:10657302",
+        "PMID:18469812",
+        "PMID:26865513",
+        "PMID:28256214",
+        "PMID:28379373",
+        "PMID:29691040",
+        "PMID:30813884",
+        "PMID:31904126",
+        "PMID:34348148"
+      ],
+      "organizations": []
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opportunity:framework-for-stxbp1",
+      "asset": {
+        "id": "DOI:10.1002/epi.70374#framework",
+        "label": "STARR / ProMMiS natural-history framework",
+        "type": "published_study_framework",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Published description only. Permission to adopt the protocol, its instrument licences and staff/equipment needs are not checked.",
+        "public_researcher_routes": [
+          {
+            "name": "STARR study team via STXBP1 Foundation STARR page",
+            "url": "https://www.stxbp1disorders.org/starr"
+          },
+          {
+            "name": "ENDD Center natural history study page (CHOP / Penn)",
+            "url": "https://endd.med.upenn.edu/research/natural-history-study/"
+          }
+        ]
+      },
+      "assessment_id": "framework-for-stxbp1",
+      "reason": "A patient organization planning a natural history study reviews which framework components could inform its own protocol. Assessment framework-for-stxbp1 is scoped to STXBP1-related disorder; current outcome needs_source_review with 4 open required checks. Inspect the checks before any reuse.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "candidate_score": null,
+      "ranking_method": "curated_target_scoped_assessment",
+      "outcome": "needs_source_review",
+      "open_required_check_ids": [
+        "documented-framework",
+        "target-observed",
+        "implementation-access",
+        "local-feasibility"
+      ],
+      "documented_for_other_disease_ids": [
+        "MONDO:0012960"
+      ],
+      "bundle_origin": "curation_overlay"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "org:stxbp1-foundation",
+      "label": "STXBP1 Foundation",
+      "kind": "organization",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "role": "Parent-led patient organization; funds STARR and co-selected its outcome measures. The STARR page lists a research inbox for study questions.",
+      "source_ids": [
+        "WEB:stxbp1-foundation-starr",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812"
+      ],
+      "relevance": "Recorded as working on this disease in the curated slice."
+    },
+    {
+      "id": "team:chop-endd-nhs",
+      "label": "CHOP / Penn ENDD natural history study team",
+      "kind": "study_team",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "role": "Prime site and data coordinating centre for STARR and ProMMiS per the paper; the ENDD page gives a study contact route.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:endd-natural-history-study"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Recorded as working on this disease in the curated slice."
+    },
+    {
+      "id": "team:stanford-synaptopathy",
+      "label": "Stanford Medicine Children's Health synaptopathy team",
+      "kind": "study_team",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "role": "Study site for STARR and ProMMiS per the paper and its own page.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Recorded as working on this disease in the curated slice."
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "label": "Ingo Helbig, MD",
+      "kind": "researcher",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "role": "Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Recorded as working on this disease in the curated slice."
+    },
+    {
+      "id": "researcher:jillian-mckee",
+      "label": "Jillian L. McKee, MD, PhD",
+      "kind": "researcher",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "role": "Corresponding (first) author of the framework paper. A potential collaborator.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Recorded as working on this disease in the curated slice."
+    }
+  ],
+  "coverage": {
+    "disease_count": 3,
+    "scope_note": "3-disease demonstration slice (pinned DisMech snapshot 3426c0eec2ad plus curated overlay). Not a complete literature search; missing items here are not evidence they do not exist. 22 curated assertions are still pending human source review.",
+    "gaps": []
+  },
+  "data_origin": "dismech_snapshot+curation_overlay",
+  "goal_label": "Plan or inform a natural-history study",
+  "unassessed_assets": [
+    {
+      "asset": {
+        "id": "asset:seizure-history-reconstruction",
+        "label": "Medical-record seizure history reconstruction method",
+        "type": "measurement_method",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Method described in the paper and earlier cited work. Coding manual or templates not checked."
+      },
+      "assessment_id": null,
+      "reason": "Documented for this disease by its sources, but no scoped assessment exists yet for this disease and goal. Inspect the sources before planning any use.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "unverified": [
+        "availability of coding templates",
+        "training needed",
+        "validity outside these cohorts"
+      ]
+    },
+    {
+      "asset": {
+        "id": "asset:starr-prommis-qeeg-protocol",
+        "label": "Quantitative EEG acquisition protocol (resting state, VEP, AEP)",
+        "type": "biomarker_acquisition_protocol",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Acquisition settings described in the paper. Analysis pipeline code availability not checked."
+      },
+      "assessment_id": null,
+      "reason": "Documented for this disease by its sources, but no scoped assessment exists yet for this disease and goal. Inspect the sources before planning any use.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "unverified": [
+        "equipment requirements at other sites",
+        "pipeline availability",
+        "biomarker validity"
+      ]
+    },
+    {
+      "asset": {
+        "id": "asset:simons-searchlight-prom-data",
+        "label": "Simons Searchlight retrospective caregiver-reported data (STXBP1, SYNGAP1)",
+        "type": "registry_dataset",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Use reported in the paper only. Access conditions not checked; Simons Searchlight's own pages not reviewed."
+      },
+      "assessment_id": null,
+      "reason": "Documented for this disease by its sources, but no scoped assessment exists yet for this disease and goal. Inspect the sources before planning any use.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "unverified": [
+        "access process",
+        "current data volume",
+        "permitted uses"
+      ]
+    },
+    {
+      "asset": {
+        "id": "asset:rare-x-prom-collection",
+        "label": "RARE-X caregiver-reported outcome collection (used by STARR/ProMMiS)",
+        "type": "data_collection_platform",
+        "url": "https://doi.org/10.1002/epi.70374",
+        "access_status": "Paper states PROMs moved to RARE-X from year two once licensing agreements were finalized. Terms for another organization not checked."
+      },
+      "assessment_id": null,
+      "reason": "Documented for this disease by its sources, but no scoped assessment exists yet for this disease and goal. Inspect the sources before planning any use.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:globalgenes-rarex-stxbp1-2024"
+      ],
+      "review_status": "pending",
+      "unverified": [
+        "licensing cost and terms",
+        "which instruments are licensed on the platform"
+      ]
+    }
+  ]
+}

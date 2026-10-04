@@ -1,0 +1,68 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "assessment_id": "framework-for-syngap1",
+  "withdrawn_source_ids": [],
+  "answer": {
+    "text": "The two most important gaps to fill are permissions and local fit. You could ask the study coordinator: Can we access the protocol and instrument materials, and what permissions, staff and equipment are required? You could also ask the clinical investigator: Which components need adapting to our cohort and local study capacity? A third useful question, for an outcome-measure researcher, would be about treatment endpoints: What additional validation is needed before selecting a treatment-trial endpoint? Suitability, permissions and feasibility require expert review.",
+    "cited_source_ids": [],
+    "check_ids": [
+      "implementation-access",
+      "local-feasibility",
+      "trial-endpoint"
+    ],
+    "followup_questions": [
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "check_id": "trial-endpoint",
+        "question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+        "contact_role": "outcome-measure researcher"
+      }
+    ],
+    "evidence_state": "insufficient_evidence",
+    "generation_mode": "live",
+    "mode": "patient",
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "response_id": "msg_011Cfh5xmmaCp8qrbtzSmxxK",
+    "sources": {},
+    "provenance": {
+      "provider": "anthropic",
+      "response_id": "msg_011Cfh5xmmaCp8qrbtzSmxxK",
+      "request_id": "req_011Cfh5xmPk73H6GWKxKwfQn",
+      "model": "claude-sonnet-4-6",
+      "provider_created_at": null,
+      "usage": {
+        "input_tokens": 2042,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 162,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stop_reason": "end_turn",
+      "prompt_version": "rarebridge.ai.v1",
+      "request_sha256": "9b7661fda5a9fae6e1808edb08c9eae218247952497e379adbccf3d1fe614cc0",
+      "generated_at": "2026-10-04T11:04:20.440801+00:00",
+      "requested_model": "claude-sonnet-4-6",
+      "cache_saved": true,
+      "assessment_sha256": "688aa57006905e8e06d66a4a38f450bedc67cdd57c23763cb9083b39a12ae47e",
+      "context_sha256": "7ec694fc209762221ee14be721be407895ef12fe71172970d009938256ad9cfb",
+      "source_binding": "reviewed_active_sources_of_selected_checks",
+      "followup_binding": "exact_recorded_questions_and_roles_of_selected_checks"
+    }
+  },
+  "data_origin": "dismech_snapshot+curation_overlay"
+}

@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-04T11:21:02Z",
+  "source": "isolated allowlisted source checkout, fresh Python 3.14 virtual environment, fresh npm ci/build",
+  "passed": true,
+  "checks": [
+    {
+      "name": "fresh pinned Python environment starts 200 health with four bundles and AI explicitly unavailable",
+      "passed": true,
+      "details": {
+        "data_snapshot": "3426c0eec2ade9297b6aadefe95e5dc7cd3806e6",
+        "counts": {
+          "total_nodes": 235,
+          "total_edges": 346,
+          "diseases": 3,
+          "assessments": 4,
+          "sources": 30
+        },
+        "ai_status_note": "AI service reports no capability"
+      }
+    },
+    {
+      "name": "fresh npm ci/build serves the production frontend over the same origin",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "standalone impact pilot ships with the isolated build",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "search returns real included source records",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "all four assessment bundles evaluate from included files",
+      "passed": true,
+      "details": {
+        "outcomes": {
+          "framework-for-syngap1": "needs_information",
+          "framework-for-scn2a": "needs_information",
+          "framework-for-stxbp1": "needs_information",
+          "citizen-dataset-for-syngap1": "needs_information"
+        }
+      }
+    },
+    {
+      "name": "canonical source withdrawal changes the two checks without changing the overall result",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "graph loads included base and curated records",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "signed curation retains 20 source-checked entries among 58 matched review-log rows",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "provider_calls": false,
+  "ai_configuration": "auto mode, no provider credentials, no runtime caches copied",
+  "limitations": [
+    "This verifies portable local startup, not cloud cold-start behavior or scientific correctness.",
+    "Model capabilities are intentionally unavailable without a server-side key; no model request was made."
+  ]
+}

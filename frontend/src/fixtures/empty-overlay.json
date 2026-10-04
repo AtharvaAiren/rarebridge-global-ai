@@ -1,0 +1,12 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "sources": {},
+  "nodes": [],
+  "edges": [],
+  "assets": [],
+  "contacts": [],
+  "assessment_bundles": [],
+  "disease_synonyms": {},
+  "review_log": [],
+  "coverage_note": "Empty starter overlay. This is not a completed curated dataset."
+}

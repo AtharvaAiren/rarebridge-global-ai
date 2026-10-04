@@ -1,0 +1,199 @@
+RareBridge backend lane: handover v1
+Owner: Srinath (backend, graph, search). Contract: rarebridge.handoff.v1
+Built 2026-10-04 with an AI coding assistant; every behavior below was run, not assumed.
+Lane names in this file: Saanvi = evidence/curation lane (the package files call it
+"Dhruv"); Dhruv = frontend lane (the package files call it "Saanvi").
+
+STATUS IN ONE LINE
+All six contract endpoint groups run against the pinned snapshot plus Saanvi's
+overlay; 36/36 API tests, the 11 foundation checks, Saanvi's validator (VALID) and
+her 9 rule tests pass. Every live response contains every field path of the
+matching frozen fixture, so the frontend switches by changing its base URL.
+
+OWNED FILES (copy only these into the integration branch)
+  rarebridge/api/__init__.py, app.py, models.py, HANDOVER.txt, samples/*.json
+  rarebridge/services/__init__.py, constants.py, registry.py, search.py, related.py,
+                      contacts.py, overview.py, graph_select.py, assessments.py, ai_bridge.py
+  tests/api/test_api.py
+  requirements-backend.txt
+No shared file was edited: assessment.py, build_graph.py, data/, curation/,
+evaluation/, frontend/ and the frozen contracts are untouched (checked with git).
+
+RUN (repository root, Python 3.10+; verified on 3.12.3)
+  pip install -r requirements-backend.txt
+  python -m uvicorn rarebridge.api.app:app --host 127.0.0.1 --port 8000
+  python -m pytest tests/api -q                                   # 36 passed
+  python3 -m unittest discover -s rarebridge -p 'test_*.py'       # 11 foundation checks
+Optional environment:
+  RAREBRIDGE_OVERLAY=off            run on base data only (default: curation/atlas-overlay.json if present)
+  RAREBRIDGE_OVERLAY=/path/x.json   load a different overlay
+  RAREBRIDGE_CORS_ORIGINS=http://localhost:3000   extra origins (5173 on localhost and 127.0.0.1 are built in)
+  RAREBRIDGE_AI_TIMEOUT=90          seconds to wait for the lead's AI service
+Pinned versions that work: fastapi 0.142.2, starlette 1.7.0, pydantic 2.13.5,
+uvicorn 0.54.0, jsonschema 4.26.0; tests: pytest 9.1.1, httpx 0.28.1. Verified by a
+clean venv install of requirements-backend.txt followed by the full test run.
+
+SAMPLE REQUESTS (URL-encoded; live outputs are in rarebridge/api/samples/)
+  curl -s 'http://127.0.0.1:8000/api/health'
+  curl -s 'http://127.0.0.1:8000/api/search?q=syngap1&limit=10'
+  curl -s 'http://127.0.0.1:8000/api/search?q=STXBP1%20Foundation'
+  curl -s 'http://127.0.0.1:8000/api/diseases/MONDO%3A0012960/overview?goal=natural_history'
+  curl -s 'http://127.0.0.1:8000/api/diseases/MONDO%3A0012812/overview?goal=natural_history'
+  curl -s -X POST 'http://127.0.0.1:8000/api/assessments/evaluate' -H 'content-type: application/json' \
+       -d '{"assessment_id":"framework-for-syngap1","withdrawn_source_ids":["PMID:42446932"]}'
+  curl -s -X POST 'http://127.0.0.1:8000/api/assessments/evaluate' -H 'content-type: application/json' \
+       -d '{"assessment_id":"framework-for-syngap1","withdrawn_source_ids":[]}'      # reset
+  curl -s 'http://127.0.0.1:8000/api/graph?disease_id=MONDO%3A0012960&assessment_id=framework-for-syngap1&max_nodes=40'
+  curl -s 'http://127.0.0.1:8000/api/sources/DOI%3A10.1002%2Fepi.70374'
+  curl -s 'http://127.0.0.1:8000/api/sources/PMID%3A42446932'       # alias -> canonical DOI
+
+ENDPOINTS
+  GET  /api/health                          real capabilities; AI flags read dynamically
+  GET  /api/search?q=&limit=                diseases, genes, phenotypes, mechanism claims,
+                                            GO/CL/UBERON terms, organizations, study teams,
+                                            researchers, studies (incl. aliases, NCT ID),
+                                            assets, sources (ID, alias, title). Limit clamped 1..25.
+  GET  /api/diseases (additive)             list of the three diseases with synonyms
+  GET  /api/diseases/{id}/overview?goal=    404 unknown disease; 422 unknown goal
+  POST /api/assessments/evaluate            404 unknown assessment; 422 unknown source ID
+  GET  /api/graph?disease_id=&assessment_id=&max_nodes=   max_nodes clamped 5..150 (default 40);
+                                            disease_id optional when assessment_id is given
+  GET  /api/sources/{source_id:path}        raw '/' and %2F both work; aliases resolve
+  POST /api/ai/extract, /api/ai/explain     503 model_unavailable until the lead's service exists
+Errors always use {schema_version, error:{code, message, details}}.
+
+HOW THE IMPORTANT PARTS WORK
+Load order: graph.json, disorders.json, base bundles, then the overlay. The overlay
+only appends. Startup fails with a full list of problems (nothing overwritten) on: a
+source alias mapping to two canonical sources, a source redefined with a different
+URL/aliases, a node ID reused with a different type, a duplicate edge or assessment
+ID, an edge endpoint or source that does not exist, an unknown target disease, a
+schema violation, or an email address stored as a contact URL. Same-type node reuse
+merges new keys only and is reported in /api/health overlay.merge_notes. A missing
+overlay file is not an error.
+
+Search: normalized exact > word prefix > substring > all-token prefix; diseases are
+listed first because search enters the disease journey. Exact IDs and aliases are
+matched case-insensitively and returned unchanged. A bare DOI (10.1002/...) finds
+the DOI source. Disease association for non-disease hits walks the graph but never
+through a hub (another disease, ontology term, gene or publication), so a shared GO
+term cannot attach every disease to every claim.
+
+Related diseases (overview and graph), two families kept apart:
+  recorded: an explicit overlay edge between the two diseases, or a graph path
+    disease -studied_in-> study <-framework_used_by- asset -framework_used_by-> study <-studied_in- disease.
+    ranking_method "recorded_route"; review_status is source_checked only if every
+    edge of at least one route is source_checked.
+  candidate: shared HPO/GO/CL/UBERON annotations in the DisMech records, each term
+    weighted ln((N+1)/df) over the N diseases of the slice, score = weighted Jaccard.
+    ranking_method "idf_weighted_jaccard_shared_annotations_v1". basis_claim_ids are
+    the real claim IDs on both sides; source_ids are the DisMech records. Always
+    pending; reason text says it establishes no shared mechanism or treatment.
+  One entry per related disease; recorded routes first. Each entry also carries that
+  community's organizations (additive "organizations").
+
+Opportunities are strictly target-scoped: (asset, target disease, goal). STXBP1
+shows framework-for-stxbp1 only. With the overlay off it shows none, and
+coverage.gaps says framework-for-syngap1 was not substituted. Assets documented for
+the disease but with no scoped bundle appear in additive "unassessed_assets" with
+assessment_id null, never in opportunities.
+
+Assessment: before/after are the exact assess() results; nonempty withdrawals call
+compare_withdrawal(). DOI and PMID withdraw the same paper. An empty list is the
+reset. The stored bundle is deep-copied and never mutated (tested). A source that
+exists elsewhere in the slice but is not cited by this assessment is reported in
+withdrawn_source_ids_ignored instead of failing, so a global "hide this source"
+toggle works across views; a truly unknown ID gives 422.
+
+Contacts: curated overlay contacts first, then the asset record's
+public_researcher_routes, matched by name first and by URL only when the URL is
+unambiguous. Unmatched routes become derived contacts with review_status pending
+and last_checked null. A contact whose every source is withdrawn is flagged
+all_sources_withdrawn.
+
+Graph: node groups are added whole in relevance order (query disease, assessment
+asset and sources, assessment contacts, related diseases, recorded route, contacts,
+related-community organizations, gene associations, key mechanism claims, shared
+annotation basis, assets, remaining claims, phenotypes, upstream evidence). Nodes
+left without any served edge are dropped. Every edge has provenance, review_status,
+source_ids, claim_origin, a qualitative confidence_label and an explanation.
+Imported DisMech edges carry the contract pending label ("Unassessed ... source review pending"). Synthetic
+edges: assessment_scope and evidence_for_check (from the curated bundle),
+listed_as_public_route, candidate_shared_annotations (inferred, pending). No
+therapeutic or eligibility relation is ever served (tested). coverage.truncated
+means relevant nodes were hidden by max_nodes; omitted_relevant_nodes and
+skipped_groups say which.
+
+DIFFERENCES FROM THE FIXTURES (all fixture field paths are present; values differ)
+  1. Disease labels come from DisMech: "SYNGAP1-Related Developmental and Epileptic
+     Encephalopathy", "STXBP1 Encephalopathy", "SCN2A-Related ...". The fixture's
+     "SYNGAP1-related disorder" is still a searchable synonym.
+  2. Route-derived researcher contacts are review_status "pending". The fixture said
+     "source_checked", but no review-log entry checks authorship.
+  3. ranking_method values: "curated_target_scoped_assessment" for opportunities,
+     "recorded_route" or the candidate method name for related diseases.
+  4. data_origin is "dismech_snapshot" or "dismech_snapshot+curation_overlay", not "mock".
+  5. Overlay researcher IDs are researcher:jillian-mckee and researcher:ingo-helbig
+     (fixture: researcher:jillian-l.-mckee). The frontend must not hardcode contact IDs.
+  6. Additive fields exist on most responses (outcome, open_required_check_ids,
+     shared_terms, recorded_routes, coverage.gaps, source_roles, asset_context, ...).
+     They are optional; nothing in the contract changed meaning.
+
+CURRENT OUTCOMES (overlay v1, nothing signed off)
+  framework-for-syngap1        needs_information  (base bundle, already source checked)
+  framework-for-scn2a          needs_information  (target-observed unknown)
+  framework-for-stxbp1         needs_source_review
+  citizen-dataset-for-syngap1  needs_source_review
+  SYNGAP1 -> STXBP1 route      review_status pending
+After a person signs off Saanvi's log and the API restarts, a synthetic test of the
+same code path shows both overlay assessments at needs_information and the route at
+source_checked.
+
+PROBLEMS FOUND IN THE OVERLAY (for Saanvi; not fixed here, her lane owns curation/)
+  A. 21 of 25 overlay edges, 7 nodes and 3 contacts have no review-log entry, so
+     sign_off.py can never promote them. Examples: every studied_in,
+     framework_used_by, describes_study, method_used_in and Stanford edge;
+     edge:overlay:stxbp1-foundation-partners-starr; contacts researcher:ingo-helbig,
+     researcher:jillian-mckee, team:stanford-synaptopathy. They stay "pending" in the
+     graph forever. Fix in build_overlay.py so it stays reproducible.
+  B. researcher:ingo-helbig's URL is the STXBP1 Foundation page (same as the
+     organization) and researcher:jillian-mckee's URL is the paper DOI. Fine to keep,
+     but a personal profile URL would be a better public route.
+  C. framework-for-stxbp1/local-feasibility has a review-log entry but no evidence,
+     so signing it changes nothing. Expected, but worth knowing during sign-off.
+  D. Rebuilding with build_overlay.py wipes sign-offs (her own note). Report claim
+     errors to her instead of rebuilding.
+
+KNOWN LIMITATIONS
+  - Three diseases. Annotation overlap is sparse: each disease pair shares 4 terms,
+    scores about 0.05. SCN2A connects to the others only through these candidates.
+  - Search is lexical. No fuzzy matching, no medical vocabulary expansion.
+  - No database, no live recruitment or availability check, no multi-user editing.
+    Overlay changes need an API restart.
+  - The overview runs assess() per opportunity on each request; fine at this size.
+  - Graph responses keep upstream_record on nodes (about 75 kB for 40 nodes).
+  - The candidate score is a ranking aid, not a probability or clinical confidence.
+
+FOR THE LEAD: AI SERVICE HOOK
+Create rarebridge/ai/__init__.py and rarebridge/ai/service.py with:
+  async def extract_source(payload: dict) -> dict        # must pass extraction.schema.json
+  async def explain_assessment(assessment: dict, sources: dict) -> dict
+       -> {generation_mode: "live"|"cached", text, cited_source_ids, model}
+  def capabilities() -> dict   # recommended: {"ai_extraction": bool, "ai_explanation": bool},
+                               # e.g. False when OPENAI_API_KEY is missing
+  class ModelUnavailable(Exception)   # optional; raised -> HTTP 503 model_unavailable
+The bridge imports the module on demand (no backend change needed), validates
+extraction output against the schema, rejects any extracted claim that is not
+"pending" and any explanation citing a source outside the assessment (HTTP 502
+ai_output_invalid), and times out with 502 ai_timeout. POST /api/ai/explain
+computes the post-withdrawal assessment and passes it with its sources. Extraction
+results are returned with import_status "not_imported"; graph import and any
+review promotion stay with the lead.
+
+REMAINING INTEGRATION STEPS
+  1. Dhruv (frontend): point the API client at http://127.0.0.1:8000, run the
+     journey SYNGAP1 -> STXBP1 route -> framework-for-stxbp1 -> contact -> export.
+  2. Srinath: sign off Saanvi's review log personally (sign_off.py --list), rerun
+     validate_overlay.py, restart the API, confirm the outcomes above change.
+  3. Saanvi: add review-log entries for the edges in problem A.
+  4. Lead: drop in rarebridge/ai/service.py; /api/health flips the AI flags.

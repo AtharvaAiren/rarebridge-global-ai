@@ -1,0 +1,54 @@
+{
+  "verified_at": "2026-10-04T03:51:24.415422+00:00",
+  "status": "passed",
+  "scope": "running local backend and signed overlay; frontend and timing pilot pending",
+  "base_url": "http://127.0.0.1:8000",
+  "health": "ok",
+  "capabilities": {
+    "search": true,
+    "assessment": true,
+    "graph": true,
+    "curation_overlay": true,
+    "ai_extraction": true,
+    "ai_explanation": true
+  },
+  "assessments": [
+    {
+      "assessment_id": "framework-for-syngap1",
+      "outcome": "needs_information"
+    },
+    {
+      "assessment_id": "framework-for-scn2a",
+      "outcome": "needs_information"
+    },
+    {
+      "assessment_id": "framework-for-stxbp1",
+      "outcome": "needs_information"
+    },
+    {
+      "assessment_id": "citizen-dataset-for-syngap1",
+      "outcome": "needs_information"
+    }
+  ],
+  "source_withdrawal": {
+    "canonical_source": "DOI:10.1002/epi.70374",
+    "changed_checks": 2,
+    "reset_restored_original": true
+  },
+  "syngap1_to_stxbp1_route_review_status": "source_checked",
+  "curation": {
+    "review_log_rows": 58,
+    "existing_signed_rows_preserved": 20,
+    "new_rows_pending": 36,
+    "existing_objects_unchanged": true,
+    "rebuild_performed": false
+  },
+  "tests": {
+    "curation": 27,
+    "api": 46,
+    "ai": 99,
+    "foundation": 11,
+    "engine_audit_passed": 6,
+    "engine_audit_total": 6
+  }
+}

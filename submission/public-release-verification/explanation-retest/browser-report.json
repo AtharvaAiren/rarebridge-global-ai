@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "actual_download": true,
+  "download_name": "rarebridge-brief-starr-prommis-natural-history-framework-2026-10-04.txt",
+  "changed_checks": 2,
+  "blocked_ai_requests": 0,
+  "browser_errors": [],
+  "pdf_scope": "Headless print layout; OS dialog not tested"
+}

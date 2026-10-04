@@ -1,0 +1,506 @@
+{
+  "schema_version": "rarebridge.handoff.v1",
+  "before": {
+    "assessment_id": "framework-for-syngap1",
+    "target_disease": {
+      "id": "MONDO:0012960",
+      "label": "SYNGAP1-related disorder"
+    },
+    "goal": "Plan a natural-history study using an existing assessment framework",
+    "asset": {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "label": "STARR / ProMMiS natural-history framework",
+      "type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "public_researcher_routes": [
+        {
+          "name": "Jillian L. McKee",
+          "url": "https://orcid.org/0000-0001-9724-0403"
+        },
+        {
+          "name": "Ingo Helbig",
+          "url": "https://doi.org/10.1002/epi.70374"
+        }
+      ],
+      "access_status": "Implementation permissions and resources not checked"
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "documented-framework",
+        "question": "Is an existing natural-history framework documented?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The methods describe STARR and ProMMiS protocols."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "target-observed",
+        "question": "Does this paper report use in SYNGAP1?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "SYNGAP1 is a studied cohort."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Do our proposed participants resemble the studied cohort?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "implementation-access",
+        "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "local-feasibility",
+        "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+        "required": true,
+        "category": "implementation",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "trial-endpoint",
+        "question": "Has responsiveness to treatment been established by this paper?",
+        "required": false,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "Further longitudinal validation is discussed."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+        "contact_role": "outcome-measure researcher"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "after": {
+    "assessment_id": "framework-for-syngap1",
+    "target_disease": {
+      "id": "MONDO:0012960",
+      "label": "SYNGAP1-related disorder"
+    },
+    "goal": "Plan a natural-history study using an existing assessment framework",
+    "asset": {
+      "id": "DOI:10.1002/epi.70374#framework",
+      "label": "STARR / ProMMiS natural-history framework",
+      "type": "published_study_framework",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "public_researcher_routes": [
+        {
+          "name": "Jillian L. McKee",
+          "url": "https://orcid.org/0000-0001-9724-0403"
+        },
+        {
+          "name": "Ingo Helbig",
+          "url": "https://doi.org/10.1002/epi.70374"
+        }
+      ],
+      "access_status": "Implementation permissions and resources not checked"
+    },
+    "outcome": "needs_information",
+    "checks": [
+      {
+        "id": "documented-framework",
+        "question": "Is an existing natural-history framework documented?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "The methods describe STARR and ProMMiS protocols."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Which protocol components can be shared with our group?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "target-observed",
+        "question": "Does this paper report use in SYNGAP1?",
+        "required": true,
+        "category": "research",
+        "status": "supported",
+        "supporting_sources": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "support",
+            "review_status": "source_checked",
+            "rationale": "SYNGAP1 is a studied cohort."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "Do our proposed participants resemble the studied cohort?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "implementation-access",
+        "question": "Have permissions, materials and implementation resources been confirmed for our proposed study?",
+        "required": true,
+        "category": "access",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator"
+      },
+      {
+        "id": "local-feasibility",
+        "question": "Has the framework been assessed for our group's age range, travel constraints and study sites?",
+        "required": true,
+        "category": "implementation",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [],
+        "withdrawn_evidence": [],
+        "next_question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator"
+      },
+      {
+        "id": "trial-endpoint",
+        "question": "Has responsiveness to treatment been established by this paper?",
+        "required": false,
+        "category": "research",
+        "status": "unknown",
+        "supporting_sources": [],
+        "refuting_sources": [],
+        "active_evidence": [
+          {
+            "source_id": "DOI:10.1002/epi.70374",
+            "polarity": "uncertain",
+            "review_status": "source_checked",
+            "rationale": "Further longitudinal validation is discussed."
+          }
+        ],
+        "withdrawn_evidence": [],
+        "next_question": "What additional validation is needed before selecting a treatment-trial endpoint?",
+        "contact_role": "outcome-measure researcher"
+      }
+    ],
+    "followup_questions": [
+      {
+        "check_id": "implementation-access",
+        "question": "Can we access the protocol and instrument materials, and what permissions, staff and equipment are required?",
+        "contact_role": "study coordinator",
+        "reason": "unknown"
+      },
+      {
+        "check_id": "local-feasibility",
+        "question": "Which components need adapting to our cohort and local study capacity?",
+        "contact_role": "clinical investigator",
+        "reason": "unknown"
+      }
+    ],
+    "withdrawn_sources": [],
+    "limitations": "A rule-based assessment of curated evidence. No biological validation, access permission, treatment recommendation or calibrated probability is implied."
+  },
+  "changed_checks": [],
+  "sources": {
+    "DOI:10.1002/epi.70374": {
+      "title": "A prospective natural history study protocol for clinical trial readiness in synaptic disorders",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "aliases": [
+        "PMID:42446932"
+      ],
+      "published_on": "2026-07-14",
+      "source_kind": "human_observational_study",
+      "note": "One paper, regardless of the number of claims or identifiers. Source checked for the narrow facts below; applicability still needs scientific review.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:curesyngap1-prommis-blog": {
+      "title": "Four Stories, One Purpose: Our Visits to CHOP (CURE SYNGAP1 blog)",
+      "url": "https://curesyngap1.org/blog/four-stories-one-purpose-syngap1-visits-to-chop/",
+      "aliases": [],
+      "published_on": "2026-03-26",
+      "source_kind": "organization_webpage",
+      "note": "Official CURE SYNGAP1 blog post describing ProMMiS sites and how families register. Read on 2026-10-04.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:curesyngap1-request-nhs-data": {
+      "title": "Request Citizen Health Natural History Study (NHS) Data, CURE SYNGAP1",
+      "url": "https://curesyngap1.org/request-nhs-data/",
+      "aliases": [],
+      "published_on": "2023-03-01",
+      "source_kind": "organization_webpage",
+      "note": "Page metadata says last modified 2025-10-31. Read on 2026-10-04. Describes researcher access to a SYNGAP1 retrospective dataset.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:endd-natural-history-study": {
+      "title": "Natural History Study, ENDD Center (Penn Medicine / CHOP)",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "institution_webpage",
+      "note": "Study team page for the STXBP1 and SYNGAP1 natural history studies. Read via search snippet on 2026-10-04; full page not opened.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:stanford-synaptopathy-research": {
+      "title": "Synaptopathy Research and Innovation, Stanford Medicine Children's Health",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "institution_webpage",
+      "note": "Read via search snippet on 2026-10-04. Spells the SYNGAP1 study 'PRoMiSS'; the paper and CURE SYNGAP1 use 'ProMMiS'.",
+      "withdrawn_in_this_view": false
+    },
+    "WEB:stxbp1-foundation-starr": {
+      "title": "STARR study page, STXBP1 Foundation",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "aliases": [],
+      "published_on": null,
+      "source_kind": "organization_webpage",
+      "note": "Official STXBP1 Foundation page; undated. Read on 2026-10-04. Current-status statements are only as current as the page.",
+      "withdrawn_in_this_view": false
+    }
+  },
+  "coverage": "This demonstration checks one published framework. It does not search all natural-history studies or establish current recruitment.",
+  "contacts": [
+    {
+      "id": "org:cure-syngap1",
+      "label": "CURE SYNGAP1",
+      "kind": "organization",
+      "url": "https://curesyngap1.org/contact/",
+      "role": "Patient organization; supports ProMMiS and co-selected its outcome measures; runs a researcher data-request route for a retrospective SYNGAP1 dataset.",
+      "source_ids": [
+        "WEB:curesyngap1-prommis-blog",
+        "WEB:curesyngap1-request-nhs-data",
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "all_sources_withdrawn": false
+    },
+    {
+      "id": "team:chop-endd-nhs",
+      "label": "CHOP / Penn ENDD natural history study team",
+      "kind": "study_team",
+      "url": "https://endd.med.upenn.edu/research/natural-history-study/",
+      "role": "Prime site and data coordinating centre for STARR and ProMMiS per the paper; the ENDD page gives a study contact route.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:endd-natural-history-study"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "all_sources_withdrawn": false
+    },
+    {
+      "id": "team:stanford-synaptopathy",
+      "label": "Stanford Medicine Children's Health synaptopathy team",
+      "kind": "study_team",
+      "url": "https://www.stanfordchildrens.org/en/services/synaptopathy/research-innovation.html",
+      "role": "Study site for STARR and ProMMiS per the paper and its own page.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stanford-synaptopathy-research"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "all_sources_withdrawn": false
+    },
+    {
+      "id": "researcher:ingo-helbig",
+      "label": "Ingo Helbig, MD",
+      "kind": "researcher",
+      "url": "https://www.stxbp1disorders.org/starr",
+      "role": "Corresponding author of the framework paper; named multi-site PI of STARR on the foundation page. A potential collaborator, not the confirmed owner of protocol materials.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374",
+        "WEB:stxbp1-foundation-starr"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "additional_routes": [
+        {
+          "name": "Ingo Helbig",
+          "url": "https://doi.org/10.1002/epi.70374",
+          "listed_by": "asset record in assessment framework-for-syngap1",
+          "review_status": "pending"
+        }
+      ],
+      "all_sources_withdrawn": false
+    },
+    {
+      "id": "researcher:jillian-mckee",
+      "label": "Jillian L. McKee, MD, PhD",
+      "kind": "researcher",
+      "url": "https://doi.org/10.1002/epi.70374",
+      "role": "Corresponding (first) author of the framework paper. A potential collaborator.",
+      "source_ids": [
+        "DOI:10.1002/epi.70374"
+      ],
+      "review_status": "pending",
+      "last_checked": "2026-10-04",
+      "disease_ids": [
+        "MONDO:0012812",
+        "MONDO:0012960"
+      ],
+      "relevance": "Works on the target disease and is documented by a source this assessment cites.",
+      "additional_routes": [
+        {
+          "name": "Jillian L. McKee",
+          "url": "https://orcid.org/0000-0001-9724-0403",
+          "listed_by": "asset record in assessment framework-for-syngap1",
+          "review_status": "pending"
+        }
+      ],
+      "all_sources_withdrawn": false
+    }
+  ],
+  "explanation": {
+    "generation_mode": "none",
+    "text": null,
+    "cited_source_ids": [],
+    "model": null
+  },
+  "goal_id": "natural_history",
+  "goal_id_inferred": true,
+  "interpretation": "No source is withdrawn; this is the recorded support.",
+  "withdrawn_source_ids_applied": [],
+  "withdrawn_source_ids_ignored": [],
+  "source_roles": {
+    "DOI:10.1002/epi.70374": [
+      "assessment_evidence",
+      "contact_route"
+    ],
+    "WEB:curesyngap1-prommis-blog": [
+      "contact_route"
+    ],
+    "WEB:curesyngap1-request-nhs-data": [
+      "contact_route"
+    ],
+    "WEB:endd-natural-history-study": [
+      "contact_route"
+    ],
+    "WEB:stanford-synaptopathy-research": [
+      "contact_route"
+    ],
+    "WEB:stxbp1-foundation-starr": [
+      "contact_route"
+    ]
+  },
+  "asset_context": {
+    "description": "Multi-site prospective natural history protocol for STXBP1-RD (STARR) and SYNGAP1-RD (ProMMiS): clinician-administered developmental measures, caregiver-reported measures, seizure-history reconstruction and quantitative EEG, with CHOP as prime site and data coordinating centre.",
+    "documented_context": "Studied in STXBP1-RD and SYNGAP1-RD cohorts only. The authors state an aim to generalize the framework to other DEEs; that extension is not demonstrated in this paper.",
+    "unverified": [
+      "instrument licensing",
+      "protocol document access",
+      "fit for other diseases or age ranges",
+      "site capacity"
+    ],
+    "owner_status": "Study team documented (CHOP-led consortium). Ownership of protocol materials not established.",
+    "proposed_use": "A patient organization planning a natural history study reviews which framework components could inform its own protocol.",
+    "goal_ids": [
+      "natural_history"
+    ],
+    "target_disease_ids": [
+      "MONDO:0012812",
+      "MONDO:0012960"
+    ],
+    "source_ids": [
+      "DOI:10.1002/epi.70374"
+    ],
+    "access_status": "Published description only. Permission to adopt the protocol, its instrument licences and staff/equipment needs are not checked."
+  },
+  "review_summary": {
+    "evidence_items": 3,
+    "pending": 0,
+    "source_checked": 3,
+    "note": "'source_checked' means a person checked a narrow factual assertion against the cited source. It is not clinical validation or permission to reuse an asset."
+  },
+  "bundle_origin": "base bundle assessment-syngap1.json",
+  "data_origin": "dismech_snapshot+curation_overlay"
+}
