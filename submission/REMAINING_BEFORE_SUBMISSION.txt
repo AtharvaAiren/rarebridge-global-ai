@@ -34,20 +34,22 @@ DONE AND RECORDED
 - Portable Python 3.14/Node 22 instructions, dependency locks, source snapshot,
   attribution, verification records and separate video scripts exist.
 
-STILL TO FINISH — CHECK OFF ONLY FROM ACTUAL RESULTS
-[ ] Confirm final cloud-build/source freeze after the last prose refinement.
+FINAL STATUS — CHECKED ITEMS HAVE RECORDED RESULTS
+[x] Final cloud-build/source freeze verified after the last prose refinement.
     All four AI operations have verified public results; preserve genuine labels,
     exact source/mode binding and the two actually changed checks. Model prose
     still needs human review. Owner: Atharva/lead.
-[ ] Confirm the published source matches the tested release and its clean manifest.
+[x] Published source matches the tested release; exact final SHA is recorded
+    separately in SOURCE_REPOSITORY.json and ZIP integrity in RELEASE_ARCHIVE.json.
     Fresh native Python 3.14/npm startup already passed eight checks; keep runtime
     caches, credentials and private attachments excluded. Owner: Atharva/lead.
     Source repository:
     https://github.com/AtharvaAiren/rarebridge-global-ai
-[ ] Source/demo freeze: Saanvi checks any added assertion/contact/version.
-    Preserve 20 signatures and leave 38 pending rows qualified; never rebuild
+[x] Signed curation/demo frozen with 20 supplied signatures preserved and 38 rows
+    still pending; no automatic promotion or new human sign-off was performed.
+    Saanvi reviews any future assertion/contact/version additions. Never rebuild
     the signed overlay. A source check is not clinical/access/reuse approval.
-[ ] Actual audit and timing: Dhruv completes frozen held-out app/source cases;
+[ ] Optional human impact audit and timing: Dhruv completes frozen held-out app/source cases;
     do not load evaluation cases into prompts/retrieval. Run two teammates in
     reversed order on identical sources/task/fictional constraints. Time source
     reading, corrections and six-item quality review; retain all attempts,

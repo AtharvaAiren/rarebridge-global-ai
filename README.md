@@ -41,6 +41,12 @@ cp -n .env.example .env
 
 Supported providers are Anthropic and OpenAI. The demonstrated provider is Anthropic Claude Sonnet 4.6. Credentials belong only in server-side configuration. See [README.txt](README.txt) for exact settings, development setup, endpoints and checks. A fresh clone contains no provider credentials or runtime response cache. Missing credentials or failed generation produce explicit unavailable/error states.
 
+## Architecture
+
+The pinned YAML/JSON data snapshot and additive signed overlay feed a [registry](rarebridge/services/registry.py) for search and graph views. [Deterministic resource checks](rarebridge/assessment.py) produce the assessment and recompute it when a source is hidden. The [server-side AI services](rarebridge/ai/) use that bounded context for Claude extraction, research discovery, Q&A and explanation. The [React/TypeScript SVG/d3 interface](frontend/src/features/graph/) displays the graph, checks and evidence, while the [brief assembler](rarebridge/ai/brief.py) exports the current assessment state and collaboration questions. [app.py](app.py) serves the application and FastAPI routes together.
+
+Source/status binding remains controlled by code. AI output cannot change recorded check outcomes; new extractions and hypotheses stay pending without automatic import. Provider keys remain server-side. See [README.txt](README.txt) for the API contracts and reproduction details.
+
 ## Evidence and AI boundaries
 
 The overlay contains 58 review-log rows: 20 supplied human sign-offs preserved and 38 pending rows. Coverage includes 25 edges, 15 nodes and six contacts. A source sign-off checks a narrow recorded assertion; it does not grant consent, instrument permission, data access or clinical suitability. **Do not rebuild the signed overlay.** Generate a pending draft in a fresh output directory if needed; see [curation/HANDOVER.txt](curation/HANDOVER.txt).

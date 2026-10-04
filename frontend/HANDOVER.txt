@@ -12,8 +12,9 @@ cached answers/leads. Public demo: https://rarebridge-global-ai.vercel.app.
 Public discovery/Q&A and its 9/9 browser journey now passed with live provenance;
 SFARI extraction passed with two pending claims. Hidden-source explanation passed
 with all five recorded statuses, exact next questions and no hidden citations;
-the public release checker passed 11/11. Final build/source freeze, any actual
-impact pilot and portal submission remain checks. The separate 60.00-second
+the public release checker passed 11/11. The final cloud build and source are
+frozen and publicly verified. Optional human impact measurements and portal
+upload/submission remain. The separate 60.00-second
 walkthrough and 2:15.01 team video
 are produced with real public footage and explicitly synthetic narration.
 Backend checks: 129 AI, 53 API, 27 curation tests and 11 foundation checks passed.
@@ -162,7 +163,7 @@ npm run build. Same-origin production uses server-side provider keys. The stable
 public alias https://rarebridge-global-ai.vercel.app serves anonymous app HTML and
 API health. Public discovery/Q&A and its live browser journey passed 9/9; public
 extraction and hidden-source explanation also passed. The public release checker
-passed 11/11 runtime/binding checks. Confirm final build/source freeze, any actual
+passed 11/11 runtime/binding checks. The final build/source freeze is verified. Any actual
 impact pilot and submission; see submission/REMAINING_BEFORE_SUBMISSION.txt.
 frontend/screenshots/ remains workspace evidence excluded from the clean archive;
 current reports, their submission captures and both actual videos are included.

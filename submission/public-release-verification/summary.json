@@ -1,8 +1,9 @@
 {
-  "checked_at": "2026-10-04T11:04:20.482681+00:00",
+  "status": "final_public_checks_passed",
+  "passed": true,
   "base_url": "https://rarebridge-global-ai.vercel.app",
-  "scope": "Public runtime, provenance and workflow checks; not biomedical or clinical validation.",
-  "checks": [
+  "checked_at": "2026-10-04T11:20:56.348909+00:00",
+  "final_checks": [
     {
       "name": "anonymous_live_health",
       "passed": true,
@@ -73,8 +74,15 @@
     },
     {
       "name": "graph_pending_provenance",
-      "passed": false,
-      "reason": "Public graph removed or promoted inferred candidate relationships."
+      "passed": true,
+      "details": {
+        "nodes": 80,
+        "edges": 106,
+        "inferred": 3,
+        "inferred_pending": 2,
+        "inferred_human_source_checked": 1,
+        "imported_pending": 75
+      }
     },
     {
       "name": "actual_public_export",
@@ -91,22 +99,17 @@
     },
     {
       "name": "genuine_hidden_source_explanation",
-      "passed": false,
-      "reason": "Public endpoint returned HTTP 502 (generation_invalid)."
-    },
-    {
-      "name": "genuine_public_excerpt_extraction",
       "passed": true,
       "details": {
         "generation_mode": "live",
         "provider": "anthropic",
         "model": "claude-sonnet-4-6",
-        "response_id": "msg_011Cfh61sdsmg4XooVfsRQq8",
-        "claims": 2,
-        "source_id": "URL:https://www.sfari.org/resource/sfari-base/",
-        "literal_excerpt_chars": 107,
-        "import_status": "not_imported",
-        "independent_identity_check": "shipped_registry_catalogue"
+        "response_id": "msg_011Cfh7FGzYRJdm7EXNFwWSq",
+        "withdrawn_source_ids": [
+          "DOI:10.1002/epi.70374"
+        ],
+        "cited_source_ids": [],
+        "checks": 5
       }
     },
     {
@@ -117,8 +120,8 @@
       }
     }
   ],
-  "paid_ai_requested": true,
-  "paid_requests_attempted": 2,
-  "passed": false,
-  "paid_ai_verified": false
+  "final_report": "submission/public-release-verification/final/summary.json",
+  "first_paid_failure_history": "submission/public-release-verification/history/first-paid-attempt-summary.json",
+  "public_extraction_report": "submission/public-release-verification/extraction-sfari-public.json",
+  "scope": "Anonymous public runtime and genuine provider source/status bindings; no biomedical or impact validation."
 }

@@ -48,8 +48,9 @@ measured impact results. No measured 10x gain is claimed.
 
 The user-required public HTTPS application is deployed. The stable alias serves
 the frontend and real API on one origin; health reports all four AI capabilities.
-The final build/source freeze, any actual impact pilot and portal submission remain
-checks in submission/REMAINING_BEFORE_SUBMISSION.txt. The separate
+The final cloud build and source are frozen, with public verification recorded.
+Optional human impact measurements and portal upload/submission remain in
+submission/REMAINING_BEFORE_SUBMISSION.txt. The separate
 60.00-second walkthrough and 2:15.01 team video are produced with real public
 product footage and explicitly synthesized narration.
 
@@ -254,8 +255,9 @@ submission/PORTABLE_STARTUP_VERIFICATION.json.
 The baseline contract is rarebridge.handoff.v1 in handoffs/contracts/. No lab
 repository, GPU, patient records or newly trained checkpoint is required.
 
-Complete final public end-to-end verification, source publication and any actual
-evaluation/pilot. Check portal fields/limits, upload both produced videos and retain
+Final public end-to-end checks passed and the source repository is published.
+Run any actual evaluation/pilot before claiming measured impact. Check portal
+fields/limits, upload both produced videos and retain
 the submission receipt. Product MP4: submission/walkthrough/RareBridge-60s-walkthrough.mp4
 (60.00 seconds). Team MP4: submission/team-video/RareBridge-team-video.mp4 (2:15.01).
 Their VIDEO_VERIFICATION.json files record real public footage, truthful credits

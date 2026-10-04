@@ -132,8 +132,8 @@ availability and proposed reuse require appropriate partner/expert review. No
 calibrated compatibility or clinical benefit is established. The optional lab
 adapter/checkpoint has not been integrated.
 
-The final build/source freeze, any actual impact measurements and portal submission
-remain release checks. Both public-footage videos
+The final cloud build and source are frozen and publicly verified. Optional human
+impact measurements and portal upload/submission remain. Both public-footage videos
 are produced: the separate 60.00-second walkthrough and 2:15.01 team video, with
 explicit synthetic narration. Clean portable startup passed eight isolated
 Python 3.14/npm checks.

@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-10-04T11:20:30.397080+00:00",
+  "recorded_at": "2026-10-04T11:22:38.043632+00:00",
   "scope": "Aggregate of recorded public runtime, provenance, portable startup and produced-video checks. Not biomedical, permissions or impact validation.",
   "public_demo_url": "https://rarebridge-global-ai.vercel.app",
   "source_repository_url": "https://github.com/AtharvaAiren/rarebridge-global-ai",
-  "source_publication_status": "Public source push in progress; publication agent records the actual commit after push.",
-  "runtime_code_status": "Frozen with 129 AI and 53 API tests passed; final cloud redeploy of a prose-only prompt refinement is in progress.",
+  "source_publication_status": "Published public repository; exact final commit and anonymous access checks are recorded in the separately generated SOURCE_REPOSITORY.json.",
+  "runtime_code_status": "Frozen and deployed; all 11 final public release checks passed after the current-view prose refinement.",
   "software_tests": {
     "frontend": 115,
     "ai": 129,
@@ -41,8 +41,8 @@
   "public_release_checks": {
     "passed": 11,
     "total": 11,
-    "report": "submission/public-release-verification/explanation-retest/summary.json",
-    "checked_at": "2026-10-04T11:14:17.911134+00:00",
+    "report": "submission/public-release-verification/final/summary.json",
+    "checked_at": "2026-10-04T11:20:56.348909+00:00",
     "scope": "Public runtime, provenance and workflow checks; not biomedical or clinical validation."
   },
   "portable_startup": {
@@ -82,9 +82,10 @@
     {
       "operation": "explain-withdrawn",
       "mode": "live",
-      "response_id": "msg_011Cfh6jb8MqcjRHc647Nn2z",
+      "response_id": "msg_011Cfh7FGzYRJdm7EXNFwWSq",
       "recorded_check_statuses": 5,
-      "cited_source_ids": []
+      "cited_source_ids": [],
+      "manual_prose_review": "Separates current unknown checks from evidence removal; no fabricated historical or retraction claim."
     }
   ],
   "curation": {
@@ -117,8 +118,6 @@
     "pilot_tool_url": "https://rarebridge-global-ai.vercel.app/impact-pilot.html"
   },
   "remaining": [
-    "Confirm the last cloud deployment and any final recorded prose check.",
-    "Record actual published source commit and clean release archive.",
     "Upload or provide accessible required videos, complete portal fields and preserve submission receipt.",
     "Measure a quality-controlled manual/app pilot before reporting an empirical speed ratio."
   ],

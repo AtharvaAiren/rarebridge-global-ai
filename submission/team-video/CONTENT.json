@@ -4,7 +4,7 @@
   "format": "Real public product footage/screenshots with truthful team-credit cards and explicitly synthesized narration",
   "public_demo_url": "https://rarebridge-global-ai.vercel.app",
   "source_repository_url": "https://github.com/AtharvaAiren/rarebridge-global-ai",
-  "source_publication_status": "Source repository URL provided; release snapshot must match the final tested build.",
+  "source_publication_status": "Public source repository published; the separately generated SOURCE_REPOSITORY.json records the exact final commit.",
   "narration_disclosure": "Synthetic narration (macOS Samantha); no impersonated team voices or fabricated human faces.",
   "team_credits": [
     {
@@ -118,9 +118,9 @@
     "The prepared timing pilot measures brief preparation only; no actual measured 10x or clinical milestone gain exists."
   ],
   "final_checks": [
-    "All four AI operations have accepted genuine public outputs; public AI browser 9/9 and release runtime/binding checks 11/11 passed. Confirm the final build/source freeze.",
+    "All four AI operations have accepted genuine public outputs; public AI browser 9/9 and release runtime/binding checks 11/11 passed. The final cloud build/source freeze is verified.",
     "Verify stable public access and the genuine provenance labels on every shown AI frame.",
-    "Match the final source publication and tested build; preserve the clean release manifest.",
+    "Published source matches the tested release; preserve the separately generated exact source/ZIP manifests.",
     "Verify final combined duration (~135 seconds), intelligible audio, readable credits and portal duration/format limits.",
     "Produced team-video artifact and VIDEO_VERIFICATION.json exist; verify portal format/file limits, accessibility and actual upload."
   ],

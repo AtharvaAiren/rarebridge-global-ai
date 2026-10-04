@@ -65,7 +65,7 @@ def main():
               "sha256": sha256(destination.read_bytes()).hexdigest(), "integrity_checked": True,
               "excluded": "Credentials, private attachments, runtime caches/runs, dependencies, local tooling, builds, frontend screenshots and workspace-only capture metadata.",
               "included_verification": "Public verification captures and final walkthrough/team videos are included when present in the selected source tree.",
-              "deployment_verification_files": ["submission/public-release-verification/summary.json", "submission/research-public-verification/summary.json"],
+              "deployment_verification_files": ["submission/public-release-verification/final/summary.json", "submission/ai-public-browser-verification/report.json", "submission/research-public-verification/summary.json"],
               "deployment_verification": "The referenced reports record their own actual public checks; creating this archive does not rerun or certify a cloud build."}
     (ROOT / "submission/RELEASE_ARCHIVE.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))

@@ -1,0 +1,32 @@
+{
+  "reviewed_response_id": "msg_011Cfh7FGzYRJdm7EXNFwWSq",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "generation_mode": "live",
+  "reviewed_by": "coding_assistant",
+  "scope": "Reading this generated public sample for current-view causal and historical consistency; not scientific or clinical validation and not a guarantee of future generations.",
+  "checks": [
+    {
+      "name": "current_status_count_separate_from_removed_evidence",
+      "passed": true,
+      "finding": "The summary records five currently unknown questions, separately identifies three checks with a hidden recorded evidence item, and identifies two existing gaps independent of hiding. It does not claim that all five statuses changed."
+    },
+    {
+      "name": "no_lifetime_source_history_invention",
+      "passed": true,
+      "finding": "No claim says that a source was ever or never linked. Source availability statements concern the current view or source pack. The optional trial paragraph uses 'ever' only for a possible future goal."
+    },
+    {
+      "name": "source_hiding_not_retraction",
+      "passed": true,
+      "finding": "The explanation describes a source hidden in the current assessment view and does not invent a publication retraction or cancelled research."
+    },
+    {
+      "name": "reviewable_collaboration_proposal",
+      "passed": true,
+      "finding": "The draft requests scientific review, access clarification and discussion of participant fit. It provides no invented named collaborator, email, approved permission, defined age range or treatment recommendation."
+    }
+  ],
+  "passed_for_this_sample": true,
+  "machine_validated_fields": "Exact recorded check statuses, eligible current-view source bindings, zero citations after hiding, required follow-up question/role pairs, and the current assessment fingerprint were separately checked by verify_public_release.py."
+}
