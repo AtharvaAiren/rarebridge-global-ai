@@ -1,7 +1,7 @@
 RareBridge — team video, accurate credits and real product evidence
-For the user's new human recording, use submission/SELF_RECORDING_GUIDE.txt
-(or .docx). It includes the technical demo, team credits and exact screen actions
-for the white interface. The actual MP4 described below is an older-theme backup.
+For the user's new human TEAM recording, use submission/TEAM_SELF_RECORDING_SCRIPT.txt
+(or .docx). The technical demo has its own TECHNICAL_DEMO_SCRIPT.txt/.docx and must
+remain a separate recording. The actual MP4 below is an older-theme backup.
 Actual artifact: submission/team-video/RareBridge-team-video.mp4 (2:15.01).
 Verification: submission/team-video/VIDEO_VERIFICATION.json.
 Portal duration/format takes precedence.

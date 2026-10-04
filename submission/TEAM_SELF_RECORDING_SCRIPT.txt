@@ -1,0 +1,57 @@
+RareBridge — standalone team video for your own recording
+Separate file from the technical demo and the one-minute patient walkthrough.
+Suggested duration: 60–90 seconds. The portal's actual limit takes precedence.
+
+WHAT THIS VIDEO PROVES
+Who built the project, the problem you chose, the distinctive workflow and what
+you would validate next. Keep the detailed system walkthrough in the separate
+technical demo. Use real team members speaking, if practical, or one person
+introducing the team alongside an accurate credit slide.
+
+0:00–0:15 — ATHARVA: INTRODUCE THE PROBLEM
+SHOW: Atharva on camera or the four-name team slide, then the live homepage.
+SAY:
+  "We are the team behind RareBridge. Patient organizations find related research
+  without knowing whether a particular study method or dataset fits their own
+  goal. We help them turn that uncertainty into a sourced collaboration proposal."
+
+0:15–0:30 — SRINATH: EXPLAIN THE PRODUCT
+SHOW: Srinath or the research map, followed by the actual evidence inspector.
+SAY:
+  "I contributed to the backend and frontend. Our product connects source-linked
+  research records, assesses one resource for one proposed use, and shows both
+  supported checks and questions that remain open."
+
+0:30–0:45 — SAANVI: EXPLAIN THE EVIDENCE
+SHOW: Saanvi or the two changed checks after hiding the paper; then restore it.
+SAY:
+  "I worked on evidence and curation. Users can inspect the sources and see which
+  checks depend on a paper. Source review and inference remain distinct, and new
+  AI claims stay pending instead of automatically becoming accepted facts."
+
+0:45–1:00 — DHRUV: EXPLAIN THE VALIDATION
+SHOW: Dhruv or the real empty timing tool and quality-review checklist.
+SAY:
+  "I worked on evaluation. Our next step is expert review and a quality-controlled
+  manual-versus-app timing pilot. Tenfold acceleration is an ambition, not a
+  measured result; expert response time matters too."
+
+1:00–1:15 — ATHARVA: CLOSE WITH THE RESULT
+SHOW: collaboration brief, public app URL and all four names. Atharva can speak
+on camera alongside it. Keep the real sources and next questions visible.
+SAY:
+  "I handled AI, integration and deployment. Existing Claude Sonnet 4.6 supports
+  explanations and research leads. RareBridge gives a patient organization a
+  concrete, evidence-qualified next step for a research partner to review."
+
+Use actual contributions; change a line if a role is inaccurate. Keep the known
+STXBP1/SYNGAP1 framework distinct from a new discovery. Do not claim measured 10x,
+approved reuse, a newly trained graph model or automatic doctor booking.
+
+FILE PLAN
+RareBridge-team-video.mp4 — this team introduction/pitch.
+RareBridge-technical-demo.mp4 — separate engineering demonstration.
+RareBridge-60s-walkthrough.mp4 — separate patient/group journey.
+The existing synthesized-narration videos are older-theme backups, not your new
+human recordings. Confirm the portal limits, play each export and upload each
+to its corresponding field.

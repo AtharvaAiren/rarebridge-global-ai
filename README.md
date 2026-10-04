@@ -20,6 +20,8 @@ Patient and doctor/researcher modes show the same records at different detail. S
 
 The interface now uses a white background throughout the page, research map and content panels, including on computers using dark mode. Navy text and stronger graph colours keep labels readable; motion and evidence controls remain available. See the separate [white-interface verification](submission/white-theme-verification/report.json). For your own recordings, the [complete recording guide](submission/SELF_RECORDING_GUIDE.txt) provides a 60-second walkthrough and a four-minute technical demo with exact clicks, spoken text and public-page links.
 
+Keep the submissions distinct: the [technical-demo script](submission/TECHNICAL_DEMO_SCRIPT.txt) proves the system's operation; the [team-video script](submission/TEAM_SELF_RECORDING_SCRIPT.txt) introduces the people, contributions and pitch; the one-minute walkthrough demonstrates the patient/group journey. Suggested recording durations do not override portal limits.
+
 ## Run locally
 
 Use Python **3.14** and Node **22.18+ in the 22.x line**, with npm. From the repository root:

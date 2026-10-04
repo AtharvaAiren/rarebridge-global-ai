@@ -1,26 +1,10 @@
-RareBridge — three separate recordings: walkthrough, technical demo and team video
-Updated 4 October 2026. These scripts replace the narration plan for your new
-recordings; the previously generated MP4s are optional backups of the older theme.
+RareBridge — standalone technical demo recording script
 
-RECORD THREE SEPARATE VIDEOS
-1. Product walkthrough: 60 seconds. Tell the patient organization's story and
-   show the evidence-to-action workflow. Keep implementation details for video 2.
-2. Technical demo: suggested 4 minutes, plus optional 30-second extension. Show
-   the real app, existing trained AI, evidence controls and public architecture.
-   This duration is our recommendation, not a confirmed portal limit. Check the
-   portal. Submit this as its own recording, separately from the walkthrough
-   and team video. Standalone script: TECHNICAL_DEMO_SCRIPT.txt/.docx.
-3. Team video: suggested 60–90 seconds, unless the portal specifies otherwise.
-   Introduce all four people, their actual contributions, the problem, USP and
-   next validation. Standalone script: TEAM_SELF_RECORDING_SCRIPT.txt/.docx.
+This is a separate submission from the patient walkthrough and the team video.
+Suggested length: four minutes, plus an optional extension if the portal permits.
+Submit the public app and source links with it wherever the field allows.
 
-The supplied PS lists the working prototype, source repository, team video and
-one-minute walkthrough on page 6. You have reported a separate technical-demo
-deliverable in the submission flow, so keep its recording separate too. Include
-the public app and source URLs wherever the technical-demo field permits them.
-None of our suggested durations overrides a portal limit.
-
-YOUR RECORDING SETUP — DO THIS FIRST
+SETUP AND EXACT TABS
 - Open https://rarebridge-global-ai.vercel.app in Chrome. Use the stable public
   URL throughout. Do not record a localhost URL or a login-protected deployment.
 - Record a browser window, not your whole desktop. Hide bookmarks and unrelated
@@ -51,75 +35,7 @@ D. Governed SYNGAP1 dataset:
 E. Source/architecture: https://github.com/AtharvaAiren/rarebridge-global-ai
 F. Real timing tool: https://rarebridge-global-ai.vercel.app/impact-pilot.html
 
-======================================================================
-VIDEO 1 — THE ONE-MINUTE PATIENT/GROUP WALKTHROUGH
-======================================================================
-Purpose: prove that a patient organization can go from a question to a sourced
-collaboration brief. The graph is context; the brief and concrete questions are
-the useful result. Do not spend the minute explaining every node or AI operation.
-
-0:00–0:08 | SHOW: public homepage and "Patient / simple" selected.
-SAY:
-  "RareBridge helps rare-disease patient groups find research they can build on.
-  Our group wants to study how SYNGAP1 changes over time."
-DO: begin typing SYNGAP1 near the end of this sentence.
-
-0:08–0:17 | SHOW: search, SYNGAP1 result, then its research map.
-DO: Search -> SYNGAP1 result. Natural-history study is the selected goal.
-SAY:
-  "We search SYNGAP1. The map shows related studies, resources and research teams."
-Do not try to drag several nodes or expand the whole atlas in this short video.
-
-0:17–0:27 | SHOW: the specific framework in the Evidence inspector.
-DO: bottom journey bar -> Evidence. If needed, Fit view and scroll the map into
-view. Check the title is "STARR / ProMMiS natural-history framework", for SYNGAP1.
-SAY:
-  "This published framework has documented use, but access and fit still need
-  checking. Similar diseases do not automatically share usable resources."
-POINT: the "2 supported · 3 open" tally and "Questions still open" outcome.
-
-0:27–0:38 | SHOW: "What if a source were missing?" and two changed checks.
-DO: click Hide beside the framework publication. Wait for "2 checks changed".
-SAY:
-  "Hide this paper: two checks lose support. We can see exactly what depends on
-  it, without changing the underlying records."
-Hold the changed-check rows for 2 seconds. Keep the real numbers visible.
-
-0:38–0:44 | SHOW: restored evidence tally.
-DO: click Show again. Wait for the changed-check rows to disappear.
-SAY:
-  "Restore it, and that support returns."
-
-0:44–0:56 | SHOW: the collaboration brief, open questions and public contact route.
-DO: Prepare collaboration brief -> scroll to Next questions/Public contact
-routes -> Download as text. The download is real; you do not have to open it.
-SAY:
-  "Now we prepare a brief with sources, unanswered questions and a public
-  collaborator route, ready for a research partner to review."
-
-0:56–1:00 | SHOW: keep the brief on screen. No end-card construction is necessary.
-SAY:
-  "RareBridge turns uncertain reuse into a clear next step."
-
-READ-THROUGH SCRIPT — ALL NARRATION IN ONE PLACE
-  RareBridge helps rare-disease patient groups find research they can build on.
-  Our group wants to study how SYNGAP1 changes over time. We search SYNGAP1.
-  The map shows related studies, resources and research teams. This published
-  framework has documented use, but access and fit still need checking. Similar
-  diseases do not automatically share usable resources. Hide this paper: two
-  checks lose support. We can see exactly what depends on it, without changing
-  the underlying records. Restore it, and that support returns. Now we prepare
-  a brief with sources, unanswered questions and a public collaborator route,
-  ready for a research partner to review. RareBridge turns uncertain reuse into
-  a clear next step.
-
-If a click takes too long, trim a pause in editing or begin the recording after
-the homepage has loaded. Do not accelerate footage and present it as measured
-app speed. Aim for an actual 60-second final exported file.
-
-======================================================================
-VIDEO 2 — THE SEPARATE TECHNICAL DEMO
-======================================================================
+TECHNICAL DEMO — EXACT SCREEN ACTIONS AND SPOKEN SCRIPT
 Suggested length: 4 minutes. Speak at a normal pace; make cuts between segments
 if necessary. Each quoted block below is the complete spoken text for that shot.
 You can keep a webcam inset, but ensure it never covers the inspector or labels.
@@ -269,9 +185,7 @@ B. Paper ingestion — tab B, about 15 seconds plus an honest wait cut:
   If the exact source sample is unavailable, choose a passage you can open and
   verify yourself; this optional shot should not delay the main recording.
 
-======================================================================
-PRESENTATION AND EDITING NOTES
-======================================================================
+PRESENTATION NOTES
 - Say SYNGAP1 approximately "sin-gap one", STXBP1 "S-T-X-B-P one", SCN2A
   "S-C-N two A". Say natural-history study as "tracking how the condition changes
   over time". You do not need to teach molecular biology in the walkthrough.
@@ -295,3 +209,6 @@ PRESENTATION AND EDITING NOTES
 - Export MP4, play it once end to end, check microphone/readability and the exact
   60-second walkthrough duration. Confirm the portal's technical/team-video
   length and file limits, upload the new files and save the submission receipt.
+
+Name your new recording RareBridge-technical-demo.mp4. Upload it to the technical-demo
+field, the patient walkthrough to its own field and the team video to its own field.
