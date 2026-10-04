@@ -2,6 +2,19 @@ RareBridge frontend — integrated handover
 Srinath supplied the frontend; lead integration/product lanes extended it.
 Contract: rarebridge.handoff.v1. Updated 4 October 2026.
 
+WHITE INTERFACE UPDATE
+The app now explicitly uses the light theme: white page, graph, label pills,
+inspector/content bands and timing pilot, including on computers set to dark mode.
+Graph entity hues, text and links were adjusted for contrast on white; motion,
+review/origin distinctions and source-dependence interactions are preserved.
+The header uses the navy wordmark on white in both OS colour preferences.
+The earlier MP4s and screenshots show the prior navy graph. They are backups,
+not captures of this theme. For new human recordings use
+submission/SELF_RECORDING_GUIDE.txt (one-minute walkthrough + technical demo).
+See submission/white-theme-verification/report.json for the separate actual
+verification of this update once completed; earlier core checks below are
+historical results, not a claim that every backend test was rerun for CSS.
+
 CURRENT STATE
 Frontend, real backend, evidence overlay, graph motion, product shell and Claude
 AI UI are integrated. Type checking and production build pass; 115 frontend tests
@@ -142,7 +155,7 @@ Unit/local browser checks do not substitute for final public full-journey checks
 See submission/AI_VERIFICATION.txt for the current local/public boundary.
 
 DATA, DESIGN AND LIMITS
-Supplied navy/gold tokens, fonts and logos remain the design system. Lexend and
+Supplied navy/gold accents, fonts and logos remain the design system on white. Lexend and
 Source Serif 4 are self-hosted. package-lock.json pins React 19.3.0, d3-force 3.0.0,
 Vite 8.3.2 and TypeScript 6.0.3. Integrated curation has 58 review rows: 20 supplied
 human sign-offs and 38 pending. Do not rebuild or promote claims from UI output.

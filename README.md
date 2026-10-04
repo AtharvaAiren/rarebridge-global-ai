@@ -18,6 +18,8 @@ The published STARR/ProMMiS framework is documented for STXBP1 and SYNGAP1; acce
 
 Patient and doctor/researcher modes show the same records at different detail. Source references remain accessible in both. Account and appointment screens are explicitly local previews; they do not authenticate users, book appointments or send messages.
 
+The interface now uses a white background throughout the page, research map and content panels, including on computers using dark mode. Navy text and stronger graph colours keep labels readable; motion and evidence controls remain available. See the separate [white-interface verification](submission/white-theme-verification/report.json). For your own recordings, the [complete recording guide](submission/SELF_RECORDING_GUIDE.txt) provides a 60-second walkthrough and a four-minute technical demo with exact clicks, spoken text and public-page links.
+
 ## Run locally
 
 Use Python **3.14** and Node **22.18+ in the 22.x line**, with npm. From the repository root:
@@ -72,6 +74,6 @@ These commands rewrite base derivatives, not the signed overlay. They do not ver
 
 ## Submission artifacts and impact measurement
 
-The [submission directory](submission/) contains verification reports, portal text, a [60-second walkthrough](submission/walkthrough/RareBridge-60s-walkthrough.mp4) and a [2:15 team video](submission/team-video/RareBridge-team-video.mp4). The videos use real public product capture and explicitly synthesized narration; their verification metadata records the actual durations and provenance. The [timing pilot](https://rarebridge-global-ai.vercel.app/impact-pilot.html) starts with no results. It compares matched manual/app brief-preparation tasks using the same source pack and quality review; see [evaluation/README.txt](evaluation/README.txt). No measured 10× gain, expert approval, launched study or treatment improvement is claimed.
+The [submission directory](submission/) contains verification reports, portal text, a [60-second walkthrough](submission/walkthrough/RareBridge-60s-walkthrough.mp4) and a [2:15 team video](submission/team-video/RareBridge-team-video.mp4). These videos are optional backups of the previous navy-graph interface. They use real public product capture and explicitly synthesized narration; their verification metadata records the actual durations and provenance. The user is recording new videos of the current white interface using [SELF_RECORDING_GUIDE.txt](submission/SELF_RECORDING_GUIDE.txt). The [timing pilot](https://rarebridge-global-ai.vercel.app/impact-pilot.html) starts with no results. It compares matched manual/app brief-preparation tasks using the same source pack and quality review; see [evaluation/README.txt](evaluation/README.txt). No measured 10× gain, expert approval, launched study or treatment improvement is claimed.
 
 `scripts/package_release.py` builds a source archive from an explicit allowlist. The separately generated `submission/RELEASE_ARCHIVE.json` records its SHA-256 and integrity check; it is excluded from the archive to avoid self-reference. Packaging excludes credentials, private attachments, runtime caches, dependencies, local tooling, builds and screenshots. Public verification reports document actual checks; packaging itself does not rerun a cloud deployment.

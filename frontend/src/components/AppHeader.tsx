@@ -1,4 +1,3 @@
-import wordmarkDark from '../assets/brand/wordmark-dark.png'
 import wordmarkLight from '../assets/brand/wordmark-light.png'
 import { usePreferences } from '../app/PreferencesContext.tsx'
 import { routeHash } from '../routing.ts'
@@ -13,10 +12,7 @@ export function AppHeader() {
     <header className="app-header">
       <div className="rb-container app-header__inner">
         <a className="app-header__brand" href={routeHash({ name: 'home' })}>
-          <picture>
-            <source srcSet={wordmarkDark} media="(prefers-color-scheme: dark)" />
-            <img src={wordmarkLight} alt="RareBridge home" width={WORDMARK_WIDTH} height={WORDMARK_HEIGHT} />
-          </picture>
+          <img src={wordmarkLight} alt="RareBridge home" width={WORDMARK_WIDTH} height={WORDMARK_HEIGHT} />
         </a>
         <nav className="product-nav" aria-label="Main navigation">
           <a href={routeHash({ name: 'home' })}>Explore</a>

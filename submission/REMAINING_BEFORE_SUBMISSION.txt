@@ -1,6 +1,13 @@
 RareBridge — final submission checklist
 Updated 4 October 2026
 
+LATEST WHITE-INTERFACE UPDATE
+Record new videos yourself using SELF_RECORDING_GUIDE.txt/.docx. The page, graph
+and panels are white, including on dark-mode computers. Separate theme/browser
+results are in white-theme-verification/report.json; prior core/AI verification
+below remains recorded history. Existing MP4s show the prior navy graph and are
+optional backups. Match your new recordings to the current public app.
+
 PUBLIC APP
 https://rarebridge-global-ai.vercel.app
 Stable production alias: anonymous app HTML and JSON API health are verified.

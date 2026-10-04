@@ -1,0 +1,288 @@
+RareBridge — record your own walkthrough and technical demo
+Updated 4 October 2026. These scripts replace the narration plan for your new
+recordings; the previously generated MP4s are optional backups of the older theme.
+
+RECORD TWO DIFFERENT VIDEOS
+1. Product walkthrough: 60 seconds. Tell the patient organization's story and
+   show the evidence-to-action workflow. Keep implementation details for video 2.
+2. Technical demo: suggested 4 minutes, plus optional 30-second extension. Show
+   the real app, existing trained AI, evidence controls and public architecture.
+   This duration is our recommendation, not a confirmed portal limit. Check the
+   portal. If it wants a team video, include the short team introduction below;
+   do not assume a technical demo replaces every required submission artifact.
+
+YOUR RECORDING SETUP — DO THIS FIRST
+- Open https://rarebridge-global-ai.vercel.app in Chrome. Use the stable public
+  URL throughout. Do not record a localhost URL or a login-protected deployment.
+- Record a browser window, not your whole desktop. Hide bookmarks and unrelated
+  tabs. Use Do Not Disturb. Keep the address bar visible for the opening shot.
+- On a Mac, Command-Shift-5 -> Record Selected Portion -> Options -> select your
+  microphone. Record your voice. A webcam is optional unless the portal says so.
+- Aim for 1920x1080 if available. Browser zoom 100%, or 110% if the actual labels
+  are too small. Test the finished file: the evidence tally must be readable.
+- Choose Patient / simple in the header. Show all sources before starting. Keep
+  the motion setting on for the opening; use Pause motion if movement distracts
+  you while explaining. Close account/settings/brief dialogs.
+- Do one rehearsal before recording. Wait for the real API to finish loading.
+  If AI takes time, make a clean cut or keep the loading state. If you prepare
+  an answer earlier, say "This is an AI answer generated for this exact view"
+  and retain its displayed live/saved label. Never fake typing or response speed.
+- Keep .env, terminal environment output, credentials, private lab chats and
+  personal patient records outside the recorded window. Any screen-shared editor
+  must have .env closed. Use only the fictional patient-group scenario below.
+
+USEFUL TABS — OPEN BEFORE THE TECHNICAL RECORDING
+A. Home: https://rarebridge-global-ai.vercel.app
+B. SYNGAP1 framework, evidence already open:
+   https://rarebridge-global-ai.vercel.app/#/disease/MONDO%3A0012960?goal=natural_history&evidence=framework-for-syngap1
+C. SCN2A framework, evidence already open:
+   https://rarebridge-global-ai.vercel.app/#/disease/MONDO%3A0013388?goal=natural_history&evidence=framework-for-scn2a
+D. Governed SYNGAP1 dataset:
+   https://rarebridge-global-ai.vercel.app/#/disease/MONDO%3A0012960?goal=natural_history&evidence=citizen-dataset-for-syngap1
+E. Source/architecture: https://github.com/AtharvaAiren/rarebridge-global-ai
+F. Real timing tool: https://rarebridge-global-ai.vercel.app/impact-pilot.html
+
+======================================================================
+VIDEO 1 — THE ONE-MINUTE PATIENT/GROUP WALKTHROUGH
+======================================================================
+Purpose: prove that a patient organization can go from a question to a sourced
+collaboration brief. The graph is context; the brief and concrete questions are
+the useful result. Do not spend the minute explaining every node or AI operation.
+
+0:00–0:08 | SHOW: public homepage and "Patient / simple" selected.
+SAY:
+  "RareBridge helps rare-disease patient groups find research they can build on.
+  Our group wants to study how SYNGAP1 changes over time."
+DO: begin typing SYNGAP1 near the end of this sentence.
+
+0:08–0:17 | SHOW: search, SYNGAP1 result, then its research map.
+DO: Search -> SYNGAP1 result. Natural-history study is the selected goal.
+SAY:
+  "We search SYNGAP1. The map shows related studies, resources and research teams."
+Do not try to drag several nodes or expand the whole atlas in this short video.
+
+0:17–0:27 | SHOW: the specific framework in the Evidence inspector.
+DO: bottom journey bar -> Evidence. If needed, Fit view and scroll the map into
+view. Check the title is "STARR / ProMMiS natural-history framework", for SYNGAP1.
+SAY:
+  "This published framework has documented use, but access and fit still need
+  checking. Similar diseases do not automatically share usable resources."
+POINT: the "2 supported · 3 open" tally and "Questions still open" outcome.
+
+0:27–0:38 | SHOW: "What if a source were missing?" and two changed checks.
+DO: click Hide beside the framework publication. Wait for "2 checks changed".
+SAY:
+  "Hide this paper: two checks lose support. We can see exactly what depends on
+  it, without changing the underlying records."
+Hold the changed-check rows for 2 seconds. Keep the real numbers visible.
+
+0:38–0:44 | SHOW: restored evidence tally.
+DO: click Show again. Wait for the changed-check rows to disappear.
+SAY:
+  "Restore it, and that support returns."
+
+0:44–0:56 | SHOW: the collaboration brief, open questions and public contact route.
+DO: Prepare collaboration brief -> scroll to Next questions/Public contact
+routes -> Download as text. The download is real; you do not have to open it.
+SAY:
+  "Now we prepare a brief with sources, unanswered questions and a public
+  collaborator route, ready for a research partner to review."
+
+0:56–1:00 | SHOW: keep the brief on screen. No end-card construction is necessary.
+SAY:
+  "RareBridge turns uncertain reuse into a clear next step."
+
+READ-THROUGH SCRIPT — ALL NARRATION IN ONE PLACE
+  RareBridge helps rare-disease patient groups find research they can build on.
+  Our group wants to study how SYNGAP1 changes over time. We search SYNGAP1.
+  The map shows related studies, resources and research teams. This published
+  framework has documented use, but access and fit still need checking. Similar
+  diseases do not automatically share usable resources. Hide this paper: two
+  checks lose support. We can see exactly what depends on it, without changing
+  the underlying records. Restore it, and that support returns. Now we prepare
+  a brief with sources, unanswered questions and a public collaborator route,
+  ready for a research partner to review. RareBridge turns uncertain reuse into
+  a clear next step.
+
+If a click takes too long, trim a pause in editing or begin the recording after
+the homepage has loaded. Do not accelerate footage and present it as measured
+app speed. Aim for an actual 60-second final exported file.
+
+======================================================================
+VIDEO 2 — THE TECHNICAL DEMO / TEAM PRODUCT EXPLANATION
+======================================================================
+Suggested length: 4 minutes. Speak at a normal pace; make cuts between segments
+if necessary. Each quoted block below is the complete spoken text for that shot.
+You can keep a webcam inset, but ensure it never covers the inspector or labels.
+
+0:00–0:25 | THE PROBLEM AND THE UNIT OF ASSESSMENT
+SHOW: SYNGAP1 framework tab B with the disease, goal, resource and open tally.
+SAY:
+  "We built RareBridge for patient organizations that want to build on existing
+  research. Finding a related disease is not enough: a study method or dataset
+  may have different participant, access and staffing requirements. Our unit
+  is a disease, a goal and one specific resource. We turn the evidence and
+  unresolved conditions into a collaboration proposal."
+
+0:25–0:50 | THE REAL GRAPH AND ITS REVIEW STATES
+SHOW: map and Legend; select a connection or a route using Trace on the map in
+the Overview inspector, or the bottom Connection button. The actual inspector
+shows relationship origin and source review separately.
+SAY:
+  "The map uses source-linked records. This shared framework between STXBP1 and
+  SYNGAP1 is already published; we use it to validate the workflow. A reviewed
+  navigation inference is still an inference. Other relationships remain
+  pending. We preserve those distinctions instead of turning every path into
+  a proven biological connection."
+DO: allow the route trace to settle. Show its actual pending/source-checked badge.
+Do not describe a longer pending route as reviewed because a direct route was.
+
+0:50–1:20 | THE SIGNATURE SOURCE-DEPENDENCE TEST
+SHOW: Evidence, its 2 supported/3 open tally, Hide, then the two changed rows.
+SAY:
+  "The assessment separates documented use from questions such as access and
+  local fit. Hiding this publication changes two supported checks to unknown.
+  Three checks were already open. The overall outcome can stay 'Questions still
+  open'. This is a test of source dependence, not a paper retraction or biological
+  experiment. Restoring the source restores support without moving the graph."
+DO: Show again. Wait until the restored tally is visible before the next shot.
+
+1:20–1:55 | THE TRAINED AI AND A SOURCE-BOUND PATIENT ANSWER
+SHOW: Evidence inspector -> expand "Plain-language explanation (AI)" ->
+"Ask a question". Fill "What should we ask a researcher next?" -> click
+"Ask the research assistant". Show the genuine answer, model/live-or-saved label,
+citations if returned, and "Questions for a research partner".
+SAY:
+  "Existing Claude Sonnet 4.6 provides the trained AI layer. Ask a question in
+  patient mode and it explains this exact resource and its current checks.
+  The server binds selected check IDs to eligible active sources and recorded
+  follow-up questions. Changing the evidence or reading mode invalidates the
+  old answer. These controls protect the recorded state; generated medical
+  meaning still requires human review."
+If the call is slow, cut the waiting interval and disclose that you cut a wait.
+Do not claim every answer has citations: a record-based unknown may have none.
+
+1:55–2:25 | LESS-OBVIOUS LEADS WITHOUT AUTOMATIC APPROVAL
+SHOW: scroll below the map to "What else could we investigate?" -> Find research
+leads. Show one known-route interpretation and a proposed hypothesis IF the
+returned result includes both. Do not narrate a category that was not returned.
+SAY:
+  "The research scout can propose leads by interpreting recorded relationships,
+  rather than only following a fixed ranking. Each returned lead carries its
+  sources, basis and unanswered questions. Known-route interpretation and new
+  proposals are labeled separately. Every generated lead stays pending review.
+  We propose what to investigate; we do not claim an approved shared treatment."
+Fallback if only known routes are returned: say "This run returned a known-route
+interpretation; the system can also propose hypotheses when the records justify
+them." Show the actual run. Restore sources before using the scout: it reads
+the full registry and is disabled while a source is hidden.
+
+2:25–2:50 | AN HONEST UNKNOWN AND A CONCRETE NEXT ACTION
+SHOW: switch to SCN2A tab C. Point at unanswered applicability in this source
+pack. Return to restored SYNGAP1 tab B -> Prepare collaboration brief -> public
+contact routes/open questions -> Download as text.
+SAY:
+  "For SCN2A, this framework's applicability is unanswered in our current
+  records. Unknown does not mean it cannot work, or that no research exists.
+  Back in our SYNGAP1 case, the brief packages the sources, open checks, a public
+  contact route and an editable draft. A human decides what to ask and whether
+  to send it. Export always uses the current evidence view."
+
+2:50–3:20 | THE TECHNICAL ARCHITECTURE
+SHOW: public GitHub README, scroll to Architecture. Optional: DevTools Network
+in a separate clean shot, with Fetch/XHR selected, for a real evaluate request.
+Show its assessment_id and withdrawn_source_ids plus changed_checks response;
+do not show environment variables, account credentials or private files.
+SAY:
+  "React and TypeScript render the SVG and D3 graph. A FastAPI backend serves
+  the graph, search, assessments and AI on the same Vercel origin. A pinned
+  public DisMech snapshot plus a curation overlay provides the registry.
+  Deterministic checks control outcomes; Claude handles interpretation and
+  candidates. DOI and PMID aliases count as one paper, while preprint versions
+  remain separate. The core workflow still works without an AI response."
+Optional exact requests for a readable Network close-up:
+  POST /api/assessments/evaluate
+  {"assessment_id":"framework-for-syngap1","withdrawn_source_ids":["DOI:10.1002/epi.70374"]}
+  POST /api/ai/ask
+  {"assessment_id":"framework-for-syngap1","withdrawn_source_ids":[],
+   "question":"What should we ask a researcher next?","mode":"patient"}
+Use requests the app actually makes; this is explanatory copy, not fake traffic.
+
+3:20–3:45 | VERIFICATION AND THE 10X QUESTION
+SHOW: GitHub submission/public-release-verification/final/summary.json and/or
+switch to the real timing tool tab F. The timer begins empty, which is honest.
+SAY:
+  "The recorded release passed 335 software checks and eleven public workflow
+  checks. The updated white interface has its own browser verification. We do
+  not have a measured tenfold improvement. Our pilot compares manual and app
+  preparation on the same task and sources, with quality review. The intended
+  milestone is an expert-reviewed feasibility decision, so expert response time
+  must count too. Faster drafting alone does not prove faster research."
+The 335/11 results are the earlier recorded core-release checks; do not say the
+CSS update retrained a model or reran every backend test. The new theme browser
+report is submission/white-theme-verification/report.json once checked.
+
+3:45–4:00 | TEAM AND CLOSING
+SHOW: the live collaboration brief or a simple credit slide with actual names.
+SAY:
+  "Atharva handled AI, integration and deployment; Srinath contributed backend
+  and frontend; Saanvi handled evidence; Dhruv handled evaluation. RareBridge's
+  contribution is the journey from a possible connection to a resource-specific
+  check and a sourced question for the right research partner."
+Adjust credits if a teammate's actual contribution differs.
+
+OPTIONAL 30-SECOND EXTENSION — DATA ACCESS AND PAPER INGESTION
+Show these only if the portal gives you extra time. Otherwise mention them in
+Q&A rather than rushing the essential workflow.
+
+A. Governed dataset — tab D, about 15 seconds:
+  SHOW: exact dataset asset, access checks and public contact route.
+  SAY: "This dataset example adds a different reuse constraint: governed access.
+  The app exposes the access route and need for a qualified research partner;
+  it does not distribute restricted patient data or grant permission."
+
+B. Paper ingestion — tab B, about 15 seconds plus an honest wait cut:
+  SHOW: evidence -> Plain-language explanation (AI) -> Add a paper. Fill Source
+  title, Public source URL and Abstract or excerpt using a real short public
+  passage. Click Preview candidate claims. Show source_excerpt and 'review
+  pending' on the real result. A previously verified demonstration uses:
+    Source title: SFARI Base
+    Public source URL: https://www.sfari.org/resource/sfari-base/
+    Abstract or excerpt: Create a SFARI Base project, which includes the title,
+    abstract, and an IRB approval or exemption document.
+  This literal public-source excerpt is preserved in the public repository file
+  submission/public-release-verification/extraction-sfari-public.json.
+  Verify it against the official page before recording. Do not substitute the
+  model's generated rationale for source text. This is an ingestion example,
+  not evidence about the separate Citizen SYNGAP1 dataset.
+  SAY: "A public excerpt becomes source-linked candidate claims. They remain
+  pending and do not automatically enter the reviewed graph."
+  If the exact source sample is unavailable, choose a passage you can open and
+  verify yourself; this optional shot should not delay the main recording.
+
+======================================================================
+PRESENTATION AND EDITING NOTES
+======================================================================
+- Say SYNGAP1 approximately "sin-gap one", STXBP1 "S-T-X-B-P one", SCN2A
+  "S-C-N two A". Say natural-history study as "tracking how the condition changes
+  over time". You do not need to teach molecular biology in the walkthrough.
+- Narrate what changes on screen. Slow down at the two-check change and the
+  next questions. Keep the cursor still when you want viewers to read.
+- Keep the existing live/saved model labels, source status and inference badges
+  visible. Text overlays should name the action, not invent a measurement.
+- Do not spend demo time on settings/account/login/booking previews. They are
+  explicitly previews, and their presence is not the core contribution.
+- The strongest closing is the actual collaboration brief, not a full-screen
+  graph with no next action. Show the public contact route and concrete questions.
+- Do not claim: a newly trained graph foundation model, all claims reviewed,
+  approved SCN2A reuse, granted dataset access, a new STXBP1/SYNGAP1 discovery,
+  measured 10x speed, guaranteed medical truth, or a booked doctor appointment.
+- Answer "What is new?" with: "The resource-specific, source-inspectable journey
+  from connection to open checks and a sourced collaboration proposal." Do not
+  claim exclusive worldwide novelty.
+- Answer "Why deterministic checks?" with: "Recorded evidence and access
+  conditions should be repeatable. The trained model interprets and proposes;
+  the check engine keeps the current recorded state inspectable."
+- Export MP4, play it once end to end, check microphone/readability and the exact
+  60-second walkthrough duration. Confirm the portal's technical/team-video
+  length and file limits, upload the new files and save the submission receipt.

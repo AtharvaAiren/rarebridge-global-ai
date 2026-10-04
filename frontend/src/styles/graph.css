@@ -1,24 +1,24 @@
 /* ==========================================================================
-   Research map. A dark instrument canvas (navy-950) in both themes.
+   Research map. A white canvas with readable navy labels and entity colours.
    Entity type = shape + muted hue (never safety, severity or confidence).
    Gold is reserved for selection, tracing and focus.
    ========================================================================== */
 
 .atlas {
-  --g-bg: var(--rb-navy-950);
-  --g-ink: #EAF0F6;
-  --g-ink-muted: #A9BBCC;
-  --g-line: #9DB9D4;
-  --g-route: #C9D9E8;
-  --g-select: var(--rb-gold-500);
-  --g-disease: #7DB1E2;
-  --g-resource: #62C3CC;
-  --g-study: #62C3CC;
-  --g-publication: #E4ECF4;
-  --g-people: #DF97B4;
-  --g-gene: #B1A3E6;
-  --g-biology: #EBA186;
-  --g-phenotype: #D8C28A;
+  --g-bg: #FFFFFF;
+  --g-ink: var(--rb-text);
+  --g-ink-muted: var(--rb-text-muted);
+  --g-line: #72869A;
+  --g-route: #385B77;
+  --g-select: var(--rb-gold-ink);
+  --g-disease: #386C99;
+  --g-resource: #217F88;
+  --g-study: #217F88;
+  --g-publication: #526B81;
+  --g-people: #B0587C;
+  --g-gene: #7966A5;
+  --g-biology: #B36B4D;
+  --g-phenotype: #A57C24;
   --atlas-height: clamp(420px, 64vh, 680px);
 }
 
@@ -63,7 +63,7 @@
   background: var(--g-bg);
   border-radius: var(--rb-radius-lg);
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(157, 185, 212, 0.16), 0 10px 28px -22px rgba(6, 30, 49, 0.55);
+  box-shadow: inset 0 0 0 1px var(--rb-line);
 }
 .atlas-status {
   position: absolute; left: 22px; top: 19px; z-index: 2;
@@ -79,7 +79,8 @@
 .atlas-status__signal.is-settling { animation: atlas-signal 900ms ease-in-out infinite; }
 .atlas-status__hidden {
   justify-self: start; padding: 4px 9px; border-radius: var(--rb-radius-sm);
-  background: rgba(248, 187, 10, 0.11); color: var(--rb-gold-200);
+  background: #FFFFFF; color: var(--rb-gold-ink);
+  box-shadow: inset 0 0 0 1px var(--rb-gold-500);
   font-size: 11.5px; line-height: 1.5;
 }
 @keyframes atlas-signal { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
@@ -93,12 +94,12 @@
   cursor: grab; user-select: none; -webkit-user-select: none;
 }
 .atlas-svg:active { cursor: grabbing; }
-.atlas-grid-dot { fill: rgba(157, 185, 212, 0.13); }
+.atlas-grid-dot { fill: none; }
 /* ---------- Edges: origin and review by dash pattern, never by colour alone ---------- */
 .g-edge { transition: opacity 320ms var(--rb-ease-fluid); }
 .g-edge.is-dim { opacity: 0.16; }
 .g-edge__line {
-  fill: none; stroke: var(--g-line); stroke-opacity: 0.38; stroke-width: 1.3;
+  fill: none; stroke: var(--g-line); stroke-opacity: 0.55; stroke-width: 1.3;
   vector-effect: non-scaling-stroke;
   transition: stroke 280ms var(--rb-ease-fluid), stroke-opacity 320ms var(--rb-ease-fluid), stroke-width 220ms var(--rb-ease-fluid);
 }
@@ -167,7 +168,8 @@
 .atlas-hint {
   position: absolute; left: 50%; bottom: var(--rb-space-3); transform: translateX(-50%);
   padding: var(--rb-space-1) var(--rb-space-3); border-radius: var(--rb-radius-pill);
-  background: rgba(6, 30, 49, 0.92); color: var(--g-ink); font-size: var(--rb-text-sm);
+  background: #FFFFFF; color: var(--g-ink); font-size: var(--rb-text-sm);
+  box-shadow: inset 0 0 0 1px var(--rb-line);
   pointer-events: none; white-space: nowrap;
 }
 
@@ -309,7 +311,7 @@
 .g-node__orbit--outer { stroke-opacity: 0.16; stroke-dasharray: 2 4; }
 .g-node:hover .g-node__shape { filter: brightness(1.12); }
 .g-edge.is-hovered .g-edge__line { stroke-opacity: 1; stroke-width: 2.4; }
-.g-edge.is-route.is-hovered .g-edge__line { stroke: #FFFFFF; }
+.g-edge.is-route.is-hovered .g-edge__line { stroke: var(--g-select); }
 
 /* Labels: HTML pills over the canvas, a steady 12px at any zoom. */
 .atlas-labels { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
@@ -318,8 +320,8 @@
   display: flex; flex-direction: column; align-items: center;
   max-width: 15rem; padding: 2px 9px;
   border-radius: var(--rb-radius-pill);
-  background: rgba(6, 30, 49, 0.86);
-  box-shadow: inset 0 0 0 1px rgba(157, 185, 212, 0.22);
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px var(--rb-line);
   color: var(--g-ink);
   font: var(--rb-weight-medium) 12px/1.35 var(--rb-font-sans);
   white-space: nowrap;
@@ -329,12 +331,12 @@
 .g-label__name { overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 .g-label--anchor { padding: 4px 12px 5px; border-radius: 12px; font-size: 13.5px; font-weight: var(--rb-weight-semibold); }
 .g-label--focusResource { box-shadow: inset 0 0 0 1px rgba(248, 187, 10, 0.38); }
-.g-label__caption { font-size: 10.5px; font-weight: var(--rb-weight-medium); color: var(--rb-gold-400); letter-spacing: 0.01em; }
+.g-label__caption { font-size: 10.5px; font-weight: var(--rb-weight-medium); color: var(--rb-gold-ink); letter-spacing: 0.01em; }
 .g-label.is-selected { color: var(--g-select); box-shadow: inset 0 0 0 1.5px var(--g-select); }
 .g-label.is-traced { box-shadow: inset 0 0 0 1.5px rgba(248, 187, 10, 0.7); }
 .g-label.is-dim { opacity: 0.28; }
 .g-label.is-source-hidden { opacity: 0.6; font-style: italic; }
-.g-label__tag { font-size: 10.5px; font-style: normal; color: var(--rb-gold-400); }
+.g-label__tag { font-size: 10.5px; font-style: normal; color: var(--rb-gold-ink); }
 
 /* Hover tooltip for relationships. */
 .atlas-tooltip {
@@ -355,24 +357,24 @@
   position: absolute; right: var(--rb-space-3); bottom: var(--rb-space-3);
   display: flex; flex-direction: column; overflow: hidden;
   border-radius: var(--rb-radius-md);
-  background: rgba(15, 42, 64, 0.92);
-  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(157, 185, 212, 0.2);
+  background: #FFFFFF;
+  box-shadow: var(--rb-shadow-float), inset 0 0 0 1px var(--rb-line);
 }
 .atlas-control {
   display: grid; place-items: center; width: var(--rb-tap-min); height: var(--rb-tap-min);
   border: 0; background: none; color: var(--g-ink); cursor: pointer;
   font: var(--rb-weight-regular) 1.25rem/1 var(--rb-font-sans);
 }
-.atlas-control + .atlas-control { border-top: 1px solid rgba(157, 185, 212, 0.18); }
-.atlas-control:hover { background: rgba(157, 185, 212, 0.14); }
+.atlas-control + .atlas-control { border-top: 1px solid var(--rb-line); }
+.atlas-control:hover { background: var(--rb-navy-50); }
 .atlas-control:focus-visible { outline-offset: -3px; }
 .atlas-key {
   position: absolute; left: var(--rb-space-3); bottom: var(--rb-space-3);
   display: flex; flex-wrap: wrap; gap: var(--rb-space-1) var(--rb-space-3);
   padding: var(--rb-space-1) var(--rb-space-3);
   border-radius: var(--rb-radius-pill);
-  background: rgba(6, 30, 49, 0.8);
-  box-shadow: inset 0 0 0 1px rgba(157, 185, 212, 0.16);
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px var(--rb-line);
   color: var(--g-ink-muted); font-size: var(--rb-text-xs);
   pointer-events: none;
 }

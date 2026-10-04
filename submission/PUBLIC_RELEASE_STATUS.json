@@ -126,5 +126,16 @@
     "Source/schema/status binding is not semantic medical truth.",
     "Hiding the canonical framework source changes two checks; three were already unknown.",
     "No approved resource reuse, dataset access, clinical benefit, new trained graph model or exclusive worldwide novelty is claimed."
-  ]
+  ],
+  "white_interface_update": {
+    "checked_at": "2026-10-04T12:22:01.404Z",
+    "report": "submission/white-theme-verification/report.json",
+    "passed": true,
+    "checks": 7,
+    "browser_errors": [],
+    "new_model_calls": 0,
+    "existing_core_reports": "Prior recorded runtime and AI checks; backend/model/data unchanged."
+  },
+  "recording_guide": "submission/SELF_RECORDING_GUIDE.txt",
+  "prior_videos_status": "Optional older-theme backups; the user is recording their own replacement videos."
 }

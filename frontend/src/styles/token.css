@@ -52,10 +52,10 @@
   --rb-gold-ink: #8A6300; /* gold-family text on light grounds, 5.4:1 */
 
   /* ---------- Semantic surfaces ---------- */
-  --rb-bg:            #F7F9FB;  /* app ground */
+  --rb-bg:            #FFFFFF;  /* white app ground */
   --rb-surface:       #FFFFFF;  /* raised / floating only */
-  --rb-surface-tint:  #EEF3F7;  /* fluid bands, sunk regions */
-  --rb-surface-warm:  var(--rb-gold-100); /* the one highlighted region per view */
+  --rb-surface-tint:  #FFFFFF;  /* white content bands */
+  --rb-surface-warm:  #FFFFFF;  /* white highlighted regions; accents stay on controls */
   --rb-surface-brand: var(--rb-navy-900); /* hero band, app bar on mobile */
 
   /* ---------- Text ---------- */

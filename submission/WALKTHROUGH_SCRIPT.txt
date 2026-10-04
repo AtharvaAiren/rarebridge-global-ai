@@ -1,6 +1,11 @@
 RareBridge — separate one-minute product walkthrough
 Public app: https://rarebridge-global-ai.vercel.app
 
+NEW HUMAN RECORDING
+Use submission/SELF_RECORDING_GUIDE.txt (or .docx) for the current white interface:
+complete 60-second narration, exact clicks and a separate technical demo.
+The MP4 described below captures the earlier navy graph and is a backup only.
+
 ACTUAL RECORDING
 submission/walkthrough/RareBridge-60s-walkthrough.mp4
 submission/walkthrough/VIDEO_VERIFICATION.json

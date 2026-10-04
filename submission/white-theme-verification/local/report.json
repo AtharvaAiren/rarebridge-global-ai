@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-04T12:01:10.751Z",
+  "base_url": "http://127.0.0.1:19100",
+  "passed": true,
+  "checks": [
+    {
+      "name": "home and readable navy logo stay on white with system dark mode",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "real search and scoped evidence load with readable white atlas",
+      "passed": true,
+      "details": {
+        "anchor_contrast": 16.16
+      }
+    },
+    {
+      "name": "paper hiding changes two actual checks and preserves geometry on white",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "restore and real current-state brief download remain functional",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "phone layout stays white with no horizontal page overflow",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "dark preference and reduced motion retain fit and essential inspection",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "timing page stays white and readable under system dark mode",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "browser_errors": [],
+  "ai_requests": [],
+  "scope": "White-theme browser appearance, real source-hide/reset and text-export controls. No model, clinical or impact validation; no mocked API results."
+}

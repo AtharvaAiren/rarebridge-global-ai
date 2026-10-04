@@ -12,6 +12,14 @@ proposed use and conditions for use. Related diseases do not automatically share
 suitable resources or treatments. See PROTOTYPE_SCOPE.txt.
 
 CURRENT INTEGRATED STATE
+White-interface update: page, graph, content panels and timing tool use white,
+with navy text and readable entity colours in both OS colour preferences.
+Motion and source-hide/reset/export behavior remain. Separate theme verification:
+submission/white-theme-verification/report.json. New human recording instructions:
+submission/SELF_RECORDING_GUIDE.txt and submission/SELF_RECORDING_GUIDE.docx.
+The existing synthesized-narration MP4s capture the previous navy graph and are
+optional backups; they have not been recaptured for the white interface.
+
 The React/TypeScript frontend, animated research graph, patient/expert modes,
 settings, evidence drawer, source hiding/reset, current-state collaboration brief,
 AI tools and FastAPI backend are integrated and build successfully. The graph
