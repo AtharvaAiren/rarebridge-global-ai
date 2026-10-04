@@ -5,11 +5,10 @@ recordings; the previously generated MP4s are optional backups of the older them
 RECORD THREE SEPARATE VIDEOS
 1. Product walkthrough: 60 seconds. Tell the patient organization's story and
    show the evidence-to-action workflow. Keep implementation details for video 2.
-2. Technical demo: suggested 4 minutes, plus optional 30-second extension. Show
-   the real app, existing trained AI, evidence controls and public architecture.
-   This duration is our recommendation, not a confirmed portal limit. Check the
-   portal. Submit this as its own recording, separately from the walkthrough
-   and team video. Standalone script: TECHNICAL_DEMO_SCRIPT.txt/.docx.
+2. Technical demo: exactly 60 seconds, as confirmed by the user. Show the real
+   architecture, source-dependence checks, trained AI, pending leads and export.
+   Submit it separately from the walkthrough and team video.
+   Standalone script: TECHNICAL_DEMO_SCRIPT.txt/.docx.
 3. Team video: suggested 60–90 seconds, unless the portal specifies otherwise.
    Introduce all four people, their actual contributions, the problem, USP and
    next validation. Standalone script: TEAM_SELF_RECORDING_SCRIPT.txt/.docx.
@@ -118,156 +117,135 @@ the homepage has loaded. Do not accelerate footage and present it as measured
 app speed. Aim for an actual 60-second final exported file.
 
 ======================================================================
-VIDEO 2 — THE SEPARATE TECHNICAL DEMO
+VIDEO 2 — THE ONE-MINUTE TECHNICAL DEMO
 ======================================================================
-Suggested length: 4 minutes. Speak at a normal pace; make cuts between segments
-if necessary. Each quoted block below is the complete spoken text for that shot.
-You can keep a webcam inset, but ensure it never covers the inspector or labels.
-The separate team video has its own script; this demo proves how the system works.
+RareBridge — standalone ONE-MINUTE technical demo
+Required duration: 60 seconds, as confirmed by the user.
+Separate recording from the 60-second patient walkthrough and the team video.
+Filename: RareBridge-technical-demo.mp4
 
-0:00–0:25 | THE PROBLEM AND THE UNIT OF ASSESSMENT
-SHOW: SYNGAP1 framework tab B with the disease, goal, resource and open tally.
+WHAT THIS MINUTE SHOULD PROVE
+Show the working architecture, repeatable source-dependent assessments, existing
+trained AI with recorded-state controls, and a reproducible exported result.
+The patient walkthrough tells the patient group's story. This demo shows how
+our system produces and constrains that result.
+
+PREPARE THESE SHOTS BEFORE RECORDING
+Use the live white interface at https://rarebridge-global-ai.vercel.app.
+Do one rehearsal; record the actual final file at 60 seconds.
+
+A. ARCHITECTURE (already scrolled to Architecture):
+   https://github.com/AtharvaAiren/rarebridge-global-ai#architecture
+B. EVIDENCE:
+   https://rarebridge-global-ai.vercel.app/#/disease/MONDO%3A0012960?goal=natural_history&evidence=framework-for-syngap1
+   Open Evidence with the framework selected. Begin with all sources shown and
+   the actual "2 supported · 3 open" tally. Keep Hide and Show again reachable.
+C. REAL AI ANSWER: another tab at the same URL as B, with all sources shown.
+   Patient / simple -> expand "Plain-language explanation (AI)" -> Ask a question.
+   Ask "What should we ask a researcher next?" before recording and let the
+   genuine result finish. Keep its model, live/saved label and source links visible.
+D. REAL SCOUT RESULT: another tab at the same URL, with no sources hidden.
+   Scroll to "What else could we investigate?" -> Find research leads.
+   Let a genuine result finish before recording. Keep the returned pending label,
+   sources and unresolved questions visible. Show the actual returned lead;
+   a known-route interpretation is not a new scientific discovery.
+E. BRIEF: another tab at the same URL, all sources shown -> Prepare collaboration
+   brief. Scroll to its sources/open questions and keep Download as text reachable.
+
+Preparing actual results is allowed: the video demonstrates the working system,
+not model generation latency. Add a small caption when showing a prepared AI
+result: "Actual result generated before recording". Preserve any Saved/Cached
+label. Do not fake typing, a streaming response, citations or a pending lead.
+If a call fails, show a previous genuine result with its true context/provenance
+or omit that result; do not fabricate success. Do not rush live model calls into
+this one-minute recording. Waiting intervals may be cut and disclosed.
+
+======================================================================
+EXACT 60-SECOND STORYBOARD AND SPOKEN SCRIPT
+======================================================================
+
+0:00–0:08 — ARCHITECTURE
+SHOW: tab A, the README Architecture section with the frontend/backend/data flow.
 SAY:
-  "We built RareBridge for patient organizations that want to build on existing
-  research. Finding a related disease is not enough: a study method or dataset
-  may have different participant, access and staffing requirements. Our unit
-  is a disease, a goal and one specific resource. We turn the evidence and
-  unresolved conditions into a collaboration proposal."
+  "RareBridge uses React and FastAPI on Vercel. A pinned, source-linked graph
+  feeds resource-specific assessments."
 
-0:25–0:50 | THE REAL GRAPH AND ITS REVIEW STATES
-SHOW: map and Legend; select a connection or a route using Trace on the map in
-the Overview inspector, or the bottom Connection button. The actual inspector
-shows relationship origin and source review separately.
+0:08–0:22 — REPEATABLE EVIDENCE CHECKS
+SHOW: tab B. Click Hide beside the framework paper. Wait for "2 checks changed";
+point at the supported-to-unknown rows. Click Show again and show restored support.
 SAY:
-  "The map uses source-linked records. This shared framework between STXBP1 and
-  SYNGAP1 is already published; we use it to validate the workflow. A reviewed
-  navigation inference is still an inference. Other relationships remain
-  pending. We preserve those distinctions instead of turning every path into
-  a proven biological connection."
-DO: allow the route trace to settle. Show its actual pending/source-checked badge.
-Do not describe a longer pending route as reviewed because a direct route was.
+  "Deterministic checks preserve recorded evidence. Hiding this paper changes
+  two supported checks to unknown; restoring it brings support back."
+Optional technical close-up, only if rehearsed: show the actual
+POST /api/assessments/evaluate request's Payload and Preview in DevTools.
+Its payload uses assessment_id and withdrawn_source_ids; its response includes
+changed_checks. Use a clean cut from the actual request. Keep headers,
+credentials and unrelated traffic outside the recording. This close-up replaces
+part of these fourteen seconds; it does not extend the video.
 
-0:50–1:20 | THE SIGNATURE SOURCE-DEPENDENCE TEST
-SHOW: Evidence, its 2 supported/3 open tally, Hide, then the two changed rows.
+0:22–0:36 — EXISTING TRAINED MODEL AND SERVER CONTROLS
+SHOW: tab C, the genuine answer, model/live-or-saved label, sources if returned,
+and recorded questions for a research partner.
 SAY:
-  "The assessment separates documented use from questions such as access and
-  local fit. Hiding this publication changes two supported checks to unknown.
-  Three checks were already open. The overall outcome can stay 'Questions still
-  open'. This is a test of source dependence, not a paper retraction or biological
-  experiment. Restoring the source restores support without moving the graph."
-DO: Show again. Wait until the restored tally is visible before the next shot.
+  "Claude Sonnet 4.6 interprets these records. The server binds eligible sources
+  and follow-up questions; changing evidence invalidates old answers."
+You are showing a real prepared result, not claiming instantaneous generation.
+The code controls recorded state and identifiers, not the medical truth of prose.
 
-1:20–1:55 | THE TRAINED AI AND A SOURCE-BOUND PATIENT ANSWER
-SHOW: Evidence inspector -> expand "Plain-language explanation (AI)" ->
-"Ask a question". Fill "What should we ask a researcher next?" -> click
-"Ask the research assistant". Show the genuine answer, model/live-or-saved label,
-citations if returned, and "Questions for a research partner".
+0:36–0:47 — QUALIFIED RESEARCH DISCOVERY
+SHOW: tab D, a genuine scout lead with its actual known-route/proposed label,
+"review pending", source links and questions to investigate.
 SAY:
-  "Existing Claude Sonnet 4.6 provides the trained AI layer. Ask a question in
-  patient mode and it explains this exact resource and its current checks.
-  The server binds selected check IDs to eligible active sources and recorded
-  follow-up questions. Changing the evidence or reading mode invalidates the
-  old answer. These controls protect the recorded state; generated medical
-  meaning still requires human review."
-If the call is slow, cut the waiting interval and disclose that you cut a wait.
-Do not claim every answer has citations: a record-based unknown may have none.
+  "The scout proposes source-linked research leads. Hypotheses remain pending
+  review and never automatically become accepted graph facts."
+Use the lead actually returned; do not relabel a known route as a new hypothesis.
 
-1:55–2:25 | LESS-OBVIOUS LEADS WITHOUT AUTOMATIC APPROVAL
-SHOW: scroll below the map to "What else could we investigate?" -> Find research
-leads. Show one known-route interpretation and a proposed hypothesis IF the
-returned result includes both. Do not narrate a category that was not returned.
+0:47–0:57 — CURRENT-STATE OUTPUT AND REPRODUCTION
+SHOW: tab E, open questions and sources. Click Download as text. Keep the brief
+visible; opening the download is unnecessary. The download itself is real.
 SAY:
-  "The research scout can propose leads by interpreting recorded relationships,
-  rather than only following a fixed ranking. Each returned lead carries its
-  sources, basis and unanswered questions. Known-route interpretation and new
-  proposals are labeled separately. Every generated lead stays pending review.
-  We propose what to investigate; we do not claim an approved shared treatment."
-Fallback if only known routes are returned: say "This run returned a known-route
-interpretation; the system can also propose hypotheses when the records justify
-them." Show the actual run. Restore sources before using the scout: it reads
-the full registry and is disabled while a source is hidden.
+  "The export preserves the current assessment, sources and unresolved questions.
+  The repository documents architecture and dataset reproduction."
 
-2:25–2:50 | AN HONEST UNKNOWN AND A CONCRETE NEXT ACTION
-SHOW: switch to SCN2A tab C. Point at unanswered applicability in this source
-pack. Return to restored SYNGAP1 tab B -> Prepare collaboration brief -> public
-contact routes/open questions -> Download as text.
+0:57–1:00 — CLOSE
+SHOW: keep the actual brief visible, with the public app/source URLs as a small
+caption if convenient. Do not add an extra long end card.
 SAY:
-  "For SCN2A, this framework's applicability is unanswered in our current
-  records. Unknown does not mean it cannot work, or that no research exists.
-  Back in our SYNGAP1 case, the brief packages the sources, open checks, a public
-  contact route and an editable draft. A human decides what to ask and whether
-  to send it. Export always uses the current evidence view."
+  "Working prototype; human validation comes next."
 
-2:50–3:20 | THE TECHNICAL ARCHITECTURE
-SHOW: public GitHub README, scroll to Architecture. Optional: DevTools Network
-in a separate clean shot, with Fetch/XHR selected, for a real evaluate request.
-Show its assessment_id and withdrawn_source_ids plus changed_checks response;
-do not show environment variables, account credentials or private files.
-SAY:
-  "React and TypeScript render the SVG and D3 graph. A FastAPI backend serves
-  the graph, search, assessments and AI on the same Vercel origin. A pinned
-  public DisMech snapshot plus a curation overlay provides the registry.
-  Deterministic checks control outcomes; Claude handles interpretation and
-  candidates. DOI and PMID aliases count as one paper, while preprint versions
-  remain separate. The core workflow still works without an AI response."
-Optional exact requests for a readable Network close-up:
-  POST /api/assessments/evaluate
-  {"assessment_id":"framework-for-syngap1","withdrawn_source_ids":["DOI:10.1002/epi.70374"]}
-  POST /api/ai/ask
-  {"assessment_id":"framework-for-syngap1","withdrawn_source_ids":[],
-   "question":"What should we ask a researcher next?","mode":"patient"}
-Use requests the app actually makes; this is explanatory copy, not fake traffic.
+READ-THROUGH — ALL NARRATION IN ONE PLACE
+  RareBridge uses React and FastAPI on Vercel. A pinned, source-linked graph feeds
+  resource-specific assessments. Deterministic checks preserve recorded evidence.
+  Hiding this paper changes two supported checks to unknown; restoring it brings
+  support back. Claude Sonnet 4.6 interprets these records. The server binds eligible
+  sources and follow-up questions; changing evidence invalidates old answers.
+  The scout proposes source-linked research leads. Hypotheses remain pending review
+  and never automatically become accepted graph facts. The export preserves the
+  current assessment, sources and unresolved questions. The repository documents
+  architecture and dataset reproduction. Working prototype; human validation
+  comes next.
 
-3:20–3:45 | VERIFICATION AND THE 10X QUESTION
-SHOW: GitHub submission/public-release-verification/final/summary.json and/or
-switch to the real timing tool tab F. The timer begins empty, which is honest.
-SAY:
-  "The recorded release passed 335 software checks and eleven public workflow
-  checks. The updated white interface has its own browser verification. We do
-  not have a measured tenfold improvement. Our pilot compares manual and app
-  preparation on the same task and sources, with quality review. The intended
-  milestone is an expert-reviewed feasibility decision, so expert response time
-  must count too. Faster drafting alone does not prove faster research."
-The 335/11 results are the earlier recorded core-release checks; do not say the
-CSS update retrained a model or reran every backend test. The new theme browser
-report is submission/white-theme-verification/report.json once checked.
+CUT FROM THIS ONE-MINUTE TECHNICAL DEMO
+- Search/homepage onboarding, team introductions and the full patient story.
+- Extra SCN2A, dataset-access and paper-ingestion examples. Put them in the PPT,
+  Q&A or linked documentation; there is no optional video extension now.
+- Long code scrolling, installing dependencies, running the entire test suite,
+  doctor-booking/account previews or an empty timing-pilot tour.
+- Any claim of measured 10x gain, a newly trained graph foundation model,
+  guaranteed medical truth, approved reuse or fully reviewed graph coverage.
 
-3:45–4:00 | TECHNICAL RESULT AND CLOSING
-SHOW: the actual exported brief and the public app/source URLs.
-SAY:
-  "This is the technical result: a source-inspectable assessment and an exported
-  brief that preserves the current checks, evidence gaps and next questions.
-  Judges can use the public app and reproduce the dataset and application from
-  the repository. Expert validation and impact measurement are the next steps."
+RECORD AND CHECK
+On a Mac: Command-Shift-5 -> Record Selected Portion -> Options -> Microphone.
+Use Do Not Disturb, readable browser zoom and only the prepared public tabs.
+Close .env and private chats. Record your actual voice; keep cursor motion calm.
+You may record six short clips and join them, or switch tabs in one take.
+Do not speed up footage and present it as measured app speed.
+Export MP4 and play it end to end: exactly 60 seconds, readable labels and clear
+audio. Upload this technical file separately from the patient walkthrough and
+team video, using the correct portal fields. The live app and source links are:
+https://rarebridge-global-ai.vercel.app
+https://github.com/AtharvaAiren/rarebridge-global-ai
 
-OPTIONAL 30-SECOND EXTENSION — DATA ACCESS AND PAPER INGESTION
-Show these only if the portal gives you extra time. Otherwise mention them in
-Q&A rather than rushing the essential workflow.
-
-A. Governed dataset — tab D, about 15 seconds:
-  SHOW: exact dataset asset, access checks and public contact route.
-  SAY: "This dataset example adds a different reuse constraint: governed access.
-  The app exposes the access route and need for a qualified research partner;
-  it does not distribute restricted patient data or grant permission."
-
-B. Paper ingestion — tab B, about 15 seconds plus an honest wait cut:
-  SHOW: evidence -> Plain-language explanation (AI) -> Add a paper. Fill Source
-  title, Public source URL and Abstract or excerpt using a real short public
-  passage. Click Preview candidate claims. Show source_excerpt and 'review
-  pending' on the real result. A previously verified demonstration uses:
-    Source title: SFARI Base
-    Public source URL: https://www.sfari.org/resource/sfari-base/
-    Abstract or excerpt: Create a SFARI Base project, which includes the title,
-    abstract, and an IRB approval or exemption document.
-  This literal public-source excerpt is preserved in the public repository file
-  submission/public-release-verification/extraction-sfari-public.json.
-  Verify it against the official page before recording. Do not substitute the
-  model's generated rationale for source text. This is an ingestion example,
-  not evidence about the separate Citizen SYNGAP1 dataset.
-  SAY: "A public excerpt becomes source-linked candidate claims. They remain
-  pending and do not automatically enter the reviewed graph."
-  If the exact source sample is unavailable, choose a passage you can open and
-  verify yourself; this optional shot should not delay the main recording.
 
 ======================================================================
 PRESENTATION AND EDITING NOTES
@@ -293,5 +271,5 @@ PRESENTATION AND EDITING NOTES
   conditions should be repeatable. The trained model interprets and proposes;
   the check engine keeps the current recorded state inspectable."
 - Export MP4, play it once end to end, check microphone/readability and the exact
-  60-second walkthrough duration. Confirm the portal's technical/team-video
-  length and file limits, upload the new files and save the submission receipt.
+  60-second duration for BOTH the walkthrough and technical demo. Confirm the
+  team-video length and all file limits, upload the new files and save the submission receipt.
